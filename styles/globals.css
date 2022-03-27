@@ -3,7 +3,30 @@
 @tailwind utilities;
 
 @layer utilities {
-    /*///*/
+    .neon-border{
+        border-color: transparent;
+        background:linear-gradient(93.13deg, #3F65EC 6.03%, #D43FEC 99.41%) border-box; /*3*/
+        -webkit-mask: /*4*/
+                linear-gradient(#fff 0 0) padding-box,
+                linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor; /*5'*/
+        mask-composite: exclude; /*5*/
+    }
+    .neon-border-button{
+        background: #D43FEC;
+        /*opacity: 0.4;*/
+        border-radius: inherit;
+    }
+    .neon-white-border{
+        border-color: transparent;
+    }
+
+    .offer-gradient{
+        background: linear-gradient(92.38deg, rgba(175, 82, 208, 0.56) 5.95%, rgba(63, 101, 236, 0.5) 97.3%);
+    }
+    /*.neon-white-border:hover{*/
+    /*    border-color: white;*/
+    /*}*/
 }
 
 @font-face {
