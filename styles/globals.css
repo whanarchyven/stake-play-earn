@@ -24,6 +24,15 @@
     .offer-gradient{
         background: linear-gradient(92.38deg, rgba(175, 82, 208, 0.56) 5.95%, rgba(63, 101, 236, 0.5) 97.3%);
     }
+    .offer-purple{
+        background: rgba(175, 82, 208, 0.43);
+    }
+    .text-in-shape{
+        justify-content: center;
+        justify-items: center;
+        justify-items: center;
+        align-items: center;
+    }
     /*.neon-white-border:hover{*/
     /*    border-color: white;*/
     /*}*/

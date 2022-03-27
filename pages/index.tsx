@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import NeonButton from "../components/NeonButton";
+import React from "react";
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +15,9 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
+
+          {/*INTRO*/}
+
           <div className={'w-[100vw] relative block h-[61vw] bg-cover bg-[url("../public/images/main.png")]'}>
 
               <div className={'z-50 justify-between justify-items-center items-center w-[38.4vw] h-[2vw] absolute inline-flex left-[29.7vw] top-[11.1vw]'}>
@@ -70,6 +74,54 @@ const Home: NextPage = () => {
                   <Image src={'/images/telegram.svg'} layout={'fill'}></Image>
               </div>
           </div>
+
+
+          {/*STACKING*/}
+
+          <div className={'w-[100vw] relative block h-[52.5vw] bg-cover bg-[url("../public/images/staking.png")]'}>
+              <div className={'left-[18vw] top-[5vw] w-[64vw] h-[3.5vw] absolute inline-block'}>
+                  <Image src={'/images/release.svg'} layout={'fill'}></Image>
+              </div>
+              <h1 className={'tracking-[0.015em] absolute left-[21.6vw] text-[4.5vw] top-[14vw] text-right text-white font-gilroy font-bold'}>383,025.80%</h1>
+              <h2 className={'absolute left-[25vw] text-[2.2vw] top-[20.5vw] text-right text-white font-gilroy font-regular'}>Fixed Staking APY</h2>
+
+
+
+              <div className={'cursor-pointer w-[9.1vw] h-[3.7vw] left-[21.7vw] top-[25.6vw] rounded-full text-in-shape absolute inline-flex offer-purple'}>
+                  <p className={'text-white font-gilroy font-semibold text-[1.7vw]'}>AUDIT</p>
+              </div>
+
+
+              <div className={'cursor-pointer offer-gradient w-[15.5vw] h-[3.7vw] left-[31.5vw] top-[25.6vw] rounded-full text-in-shape absolute inline-flex'}>
+                  <p className={'text-white font-gilroy font-semibold text-[1.7vw]'}>WHITEPAPER</p>
+              </div>
+
+              <div className={'cursor-pointer bg-purple w-[16.7vw] h-[4.5vw] left-[32vw] top-[40.9vw] rounded-full text-in-shape absolute inline-flex'}>
+                  <p className={'text-white font-gilroy font-semibold text-[1.7vw]'}>BUY $TOKEN</p>
+              </div>
+
+              <div className={'cursor-pointer bg-blue w-[17.1vw] h-[4.5vw] left-[51.2vw] top-[40.9vw] rounded-full text-in-shape absolute inline-flex'}>
+                  <p className={'text-white font-gilroy font-semibold text-[1.7vw]'}>CALCULATOR</p>
+              </div>
+
+              <div className={'absolute inline-block rotate-180 left-[20.2vw] top-[34.3vw]  w-[59.7vw] h-[4.3vw] rounded-full'}>
+                  <div className={'w-[inherit] h-[inherit] relative flex items-center justify-items-center justify-center rounded-[inherit]'}>
+                    <div className={'z-[4] w-[99.5%] absolute flex h-[99.5%] rounded-[inherit] border-white border-solid border-[1px] m-[0.5%]'}></div>
+                    <div className={'relative inline-block flex justify-center justify-items-center blur-[1px] rounded-[inherit] h-full w-full'}>
+                      <div className={'z-[1] absolute w-full h-full border-[3px] rounded-[inherit] neon-border'}></div>
+                    </div>
+                  </div>
+              </div>
+
+              <div className={'w-[32vw] h-[22vw] left-[50vw] top-[11vw] absolute inline-block'}>
+                  <Image src={'/images/graphic.svg'} layout={'fill'}></Image>
+              </div>
+
+
+
+
+          </div>
+
 
 
       </main>

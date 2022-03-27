@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'gilroy': ['Another Danger Slanted', 'system-ui'],
+      'gilroy': ['Gilroy', 'system-ui'],
     },
     colors: {
       purple: "#7D1ABA",

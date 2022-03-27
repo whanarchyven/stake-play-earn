@@ -5,6 +5,7 @@
   overflow: hidden;
   min-height: 100vh;
   flex: 1;
+  background: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
