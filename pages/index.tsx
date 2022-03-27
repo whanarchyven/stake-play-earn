@@ -83,7 +83,7 @@ const Home: NextPage = () => {
               <div className={'left-[18vw] top-[5vw] w-[64vw] h-[3.5vw] absolute inline-block'}>
                   <Image src={'/images/release.svg'} layout={'fill'}></Image>
               </div>
-              <h1 className={'tracking-[0.015em] absolute left-[21.6vw] text-[4.5vw] top-[14vw] text-right text-white font-gilroy font-bold'}>383,025.80%</h1>
+              <h2 className={'tracking-[0.015em] absolute left-[21.6vw] text-[4.5vw] top-[14vw] text-right text-white font-gilroy font-bold'}>383,025.80%</h2>
               <h2 className={'absolute left-[25vw] text-[2.2vw] top-[20.5vw] text-right text-white font-gilroy font-regular'}>Fixed Staking APY</h2>
 
 
@@ -126,6 +126,32 @@ const Home: NextPage = () => {
               <Calculator></Calculator>
           </div>
 
+          {/*BNB*/}
+
+          <div className={'w-[100vw] relative block h-[41.25vw] bg-[#000]'}>
+              <div className={'left-[20vw] top-[7vw] w-[59.9vw] text-in-shape h-[6vw] absolute inline-flex '}>
+                  <div className={'w-full h-full neon-border border-[2px] rounded-full'}></div>
+                  <h2 className={'text-white inline-block absolute text-center text-[2.3vw] font-gilroy font-medium'}>$BNB distribution offer closing Pinksale presale</h2>
+              </div>
+              <h2 className={'text-white font-gilroy font-black absolute inline-block uppercase left-[36.4vw] top-[15.8vw] text-[3.37vw]'}>$BNB collected</h2>
+              <div className={'w-[9vw] left-[27vw] top-[18vw] h-[5vw] absolute inline-block'}>
+                  <Image src={'/images/corner_left.svg'} layout={'fill'}></Image>
+              </div>
+              <div className={'w-[1vw] left-[48.1vw] top-[20vw] h-[7vw] absolute inline-block'}>
+                  <Image src={'/images/corner_bottom.svg'} layout={'fill'}></Image>
+              </div>
+              <div className={'w-[7.4vw] left-[64vw] top-[18vw] h-[5vw] absolute inline-block'}>
+                  <Image src={'/images/corner_right.svg'} layout={'fill'}></Image>
+              </div>
+              <p className={'font-semibold text-semiblue top-[22vw] left-[23.8vw] inline-block absolute text-center text-[3.8vw] font-gilroy '}>60%</p>
+              <p className={'font-semibold text-semiblue top-[27vw] left-[45.6vw] inline-block absolute text-center text-[3.8vw] font-gilroy '}>10%</p>
+              <p className={'font-semibold text-semiblue top-[22vw] left-[68.5vw] inline-block absolute text-center text-[3.8vw] font-gilroy '}>30%</p>
+
+              <p className={'font-medium uppercase text-white top-[26.4vw] left-[23.8vw] inline-block absolute text-center text-[2.1vw] font-gilroy '}>liquidity</p>
+              <p className={'font-medium uppercase text-white top-[31.4vw] left-[45.6vw] inline-block absolute text-center text-[2.1vw] font-gilroy '}>team%</p>
+              <p className={'leading-[111%] font-medium uppercase text-white top-[27.4vw] left-[60.5vw] inline-block absolute text-right w-[15vw] text-[1.8vw] font-gilroy '}>$BNB staking rewards pool</p>
+
+          </div>
 
 
       </main>
