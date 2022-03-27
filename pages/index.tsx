@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import NeonButton from "../components/NeonButton";
 import React from "react";
+import Calculator from "../components/Calculator";
 
 const Home: NextPage = () => {
   return (
@@ -117,9 +118,12 @@ const Home: NextPage = () => {
                   <Image src={'/images/graphic.svg'} layout={'fill'}></Image>
               </div>
 
+          </div>
 
+          {/*CALCULATOR*/}
 
-
+          <div className={'w-[100vw] relative block h-[57vw] bg-cover bg-[url("../public/images/calculator.png")]'}>
+              <Calculator></Calculator>
           </div>
 
 
