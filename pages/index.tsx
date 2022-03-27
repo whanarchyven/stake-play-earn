@@ -153,6 +153,119 @@ const Home: NextPage = () => {
 
           </div>
 
+          {/*METAVERSE*/}
+
+          <div className={'w-[100vw] relative block h-[71.6vw] bg-cover bg-[url("../public/images/metaverse.png")]'}>
+
+              <h2 className={'tracking-[0.03em] text-white font-gilroy font-black absolute inline-block uppercase left-[22.2vw] top-[7vw] text-[5.9vw]'}>METAVERSE</h2>
+              <div className={'absolute inline-block left-[58.5vw] top-[3.2vw] w-[28.6vw] h-[28.6vw]'}>
+                  <Image src={'/images/1.png'} layout={'fill'}></Image>
+              </div>
+              <div className={'absolute inline-block left-0 top-[15.2vw] w-[33vw] h-[37vw]'}>
+                  <Image src={'/images/2.png'} layout={'fill'}></Image>
+              </div>
+              <div className={'absolute inline-block left-[34.4vw] top-[24.5vw] w-[31vw] h-[32vw]'}>
+                  <Image src={'/images/3.png'} layout={'fill'}></Image>
+              </div>
+              <div className={'absolute inline-block right-0 top-[32vw] w-[33.5vw] h-[37.5vw]'}>
+                  <Image src={'/images/4.png'} layout={'fill'}></Image>
+              </div>
+              <div className={'cursor-pointer left-[16.4vw] top-[55.5vw] w-[28vw] text-in-shape h-[9vw] absolute inline-flex '}>
+                  <div className={'w-full h-full neon-border border-[5px] inline-block rounded-full'}></div>
+                  <div className={'offer-gradient w-[90%] rounded-full h-[75%] p-[2vw] inline-block absolute'}></div>
+                  <h2 className={'text-white inline-block absolute text-center text-[3.2vw] font-gilroy font-regular'}><strong>PLAY</strong> DEMO</h2>
+              </div>
+          </div>
+
+          {/*TEAM*/}
+
+          <div className={'w-[100vw] relative block h-[71.6vw] bg-cover bg-[url("../public/images/team.png")]'}>
+              <h2 className={'tracking-[0.03em] text-white font-gilroy font-black absolute inline-block uppercase right-[9.2vw] top-[6vw] text-[5.9vw]'}>TEAM</h2>
+
+              <div className={'w-[15.5vw] h-[21vw] left-[38.7vw] top-[18.6vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>
+                  <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>
+                      <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>
+                      <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>
+                          <Image src={'/images/fufel1.png'} layout={'fill'}></Image>
+                      </div>
+                  </div>
+                  <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>
+                  <div className={'w-[9vw] h-[4vw] absolute top-[15vw]'}>
+                      <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>
+                  </div>
+              </div>
+
+              <div className={'w-[15.5vw] h-[21vw] left-[58vw] top-[18.6vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>
+                  <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>
+                      <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>
+                      <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>
+                          <Image src={'/images/fufel2.png'} layout={'fill'}></Image>
+                      </div>
+                  </div>
+                  <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>
+                  <div className={'w-[9vw] h-[4vw] absolute top-[15vw]'}>
+                      <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>
+                  </div>
+              </div>
+
+
+              <div className={'w-[15.5vw] h-[21vw] left-[77vw] top-[18.6vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>
+                  <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>
+                      <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>
+                      <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>
+                          <Image src={'/images/fufel3.png'} layout={'fill'}></Image>
+                      </div>
+                  </div>
+                  <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>
+                  <div className={'w-[9vw] h-[4vw] absolute top-[15vw]'}>
+                      <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>
+                  </div>
+              </div>
+
+              <div className={'w-[15.5vw] h-[21vw] left-[58vw] top-[43vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>
+                  <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>
+                      <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>
+                      <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>
+                          <Image src={'/images/fufel4.png'} layout={'fill'}></Image>
+                      </div>
+                  </div>
+                  <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>
+                  <div className={'w-[9vw] h-[4vw] absolute top-[15vw]'}>
+                      <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>
+                  </div>
+              </div>
+
+
+              <div className={'w-[15.5vw] h-[21vw] left-[77vw] top-[43vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>
+                  <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>
+                      <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>
+                      <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>
+                          <Image src={'/images/fufel5.png'} layout={'fill'}></Image>
+                      </div>
+                  </div>
+                  <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>
+                  <div className={'w-[9vw] h-[4vw] absolute top-[15vw]'}>
+                      <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>
+                  </div>
+              </div>
+          </div>
+
+
+          {/*ROADMAP*/}
+
+          <div className={'w-[100vw] relative block h-[112vw] bg-cover bg-[url("../public/images/roadmap.png")]'}>
+
+              <div className={'absolute inline-block rotate-180 left-[6vw] top-[6.5vw]  w-[88vw] h-[95.3vw] rounded-[4.5vw] rotate-180'}>
+                  <div className={'w-[inherit] h-[inherit] relative flex items-center justify-items-center justify-center rounded-[inherit]'}>
+                      <div className={'z-[4] w-[99.5%] absolute flex h-[99.5%] rounded-[inherit] border-white border-solid border-[1px] m-[0.5%]'}></div>
+                      <div className={'relative inline-block flex justify-center justify-items-center blur-[1px] rounded-[inherit] h-full w-full'}>
+                          <div className={'z-[1] absolute w-full h-full border-[3px] rounded-[inherit] neon-border'}></div>
+                      </div>
+                  </div>
+              </div>
+              <h2 className={'text-white font-gilroy font-black absolute inline-block left-[38.1vw] top-[8.9vw] text-[4.9vw]'}>ROADMAP</h2>
+
+          </div>
 
       </main>
 
