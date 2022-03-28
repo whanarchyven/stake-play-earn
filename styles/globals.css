@@ -36,6 +36,9 @@
         justify-content: center;
         justify-items: center;
     }
+    .menu-bg{
+        background: linear-gradient(180deg, #000000 71.98%, rgba(0, 0, 0, 0) 100%);
+    }
 
     .roadmap-card{
         background: rgba(71, 10, 148, 0.26);

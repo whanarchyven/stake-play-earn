@@ -51,14 +51,14 @@ const Calculator = () => {
             </div>
             <div className={'absolute bg-[rgba(108, 20, 251, 0.14)] rounded-[1vw] inline-block w-[51vw] h-[8vw] bottom-[4vw] left-[24vw]'}>
                 <p className={'left-[3%] top-[10%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>Your initial investment</p>
-                <p className={'left-[3%] top-[28%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>Current wealth</p>
+                {/*<p className={'left-[3%] top-[28%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>Current wealth</p>*/}
                 <p className={'left-[3%] top-[48%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>Token rewards estimation</p>
-                <p className={'left-[3%] top-[68%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>Potential return</p>
+                {/*<p className={'left-[3%] top-[68%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>Potential return</p>*/}
 
-                <p className={'right-[3%] text-right top-[10%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>${tokenAmount*147.06}</p>
-                <p className={'right-[3%] text-right top-[28%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>${tokenAmount*147.06}</p>
+                <p className={'right-[3%] text-right top-[10%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>{tokenAmount} Token</p>
+                {/*<p className={'right-[3%] text-right top-[28%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>${tokenAmount*147.06}</p>*/}
                 <p className={'right-[3%] text-right top-[48%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>{tokenAmount*((1+0.00000079)**(days*28800))} Token</p>
-                <p className={'right-[3%] text-right top-[68%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>${tokenAmount * ((1 + 0.00000079)** (days * 28800)) * 147.06}</p>
+                {/*<p className={'right-[3%] text-right top-[68%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>${tokenAmount * ((1 + 0.00000079)** (days * 28800)) * 147.06}</p>*/}
             </div>
 
 
