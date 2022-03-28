@@ -177,6 +177,24 @@ const Home: NextPage = () => {
               </div>
           </div>
 
+
+          {/*TEASER*/}
+
+          <div className={'w-[100vw] relative block h-[60.5vw] bg-[#000]]'}>
+              <iframe className={'inline-block absolute left-[14vw] w-[72vw] h-[37vw] top-[7vw]'} width="949" height="534" src="https://www.youtube.com/embed/0Eo1c2grmq8"
+                      title="YouTube video player" frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen></iframe>
+              <div className={'justify-items-center justify-center items-center absolute inline-flex left-[39.67vw] top-[47.7vw] w-[20.8vw] h-[5.5vw] rounded-full bg-purple'}>
+                  <h2 className={'text-white text-center uppercase text-[1.7vw] font-gilroy font-bold'}>BUY $TOKEN</h2>
+              </div>
+          </div>
+
+
+
+
+
+
           {/*TEAM*/}
 
           <div className={'w-[100vw] relative block h-[71.6vw] bg-cover bg-[url("../public/images/team.png")]'}>
@@ -257,32 +275,135 @@ const Home: NextPage = () => {
 
               <div className={'absolute inline-block rotate-180 left-[6vw] top-[6.5vw]  w-[88vw] h-[95.3vw] rounded-[4.5vw] rotate-180'}>
                   <div className={'w-[inherit] h-[inherit] relative flex items-center justify-items-center justify-center rounded-[inherit]'}>
-                      <div className={'z-[4] w-[99.5%] absolute flex h-[99.5%] rounded-[inherit] border-white border-solid border-[1px] m-[0.5%]'}></div>
+                      <div className={'z-[4] w-[99.9%] absolute flex h-[99.9%] rounded-[inherit] border-white border-solid border-[1px] m-[0.1%]'}></div>
                       <div className={'relative inline-block flex justify-center justify-items-center blur-[1px] rounded-[inherit] h-full w-full'}>
                           <div className={'z-[1] absolute w-full h-full border-[3px] rounded-[inherit] neon-border'}></div>
                       </div>
                   </div>
               </div>
               <h2 className={'text-white font-gilroy font-black absolute inline-block left-[38.1vw] top-[8.9vw] text-[4.9vw]'}>ROADMAP</h2>
+              <div className={'w-[51vw] h-[20vw] absolute inline-block left-[19.5vw] top-[5.53vw]'}>
+                  <Image src={'/images/roadmap_vectors.svg'} layout={'fill'}></Image>
+              </div>
+              <div className={'justify-between justify-items-center flex-nowrap w-[71vw] h-[75vw] absolute inline-flex left-[14.5vw] top-[24vw]'}>
+                  <div className={'w-[30%] h-full inline-block flex roadmap-card rounded-[1vw] text-in-roadmap-card p-[3%]'}>
+                      <div className={'w-[13vw] h-[4.4vw] top-[-2.5vw] rounded-[1vw] flex text-in-shape bg-purple absolute'}>
+                          <p className={'leading-[89%]  text-[2vw] text-white font-gilroy font-bold'}>1H’2022</p>
+                      </div>
+                      <p className={'leading-[89%] mt-[1.5vw] text-[1.545vw] text-white font-gilroy font-normal'}>Website development
+                          contract deploy<br/><br/>
+                          Seed round<br/><br/>
+                          KOL management<br/><br/>
+                          Coinscope audit<br/><br/>
+                          KYC by Pinksale<br/><br/>
+                          Presale on Pinksale<br/><br/>
+                          10 Voice AMA<br/><br/>
+                          DEX marketing activities<br/><br/>
+                          Launching the protocol<br/><br/>
+                          Dex Launch<br/><br/>
+                          Articles in cryptomagazines<br/><br/>
+                          Results of autostaking APY rates<br/><br/>
+                          Boost APR NFTs sale<br/><br/>
+                          P2E game beta launch<br/><br/>
+                          Dextools marketing ads<br/><br/>
+                          Coinsniper rating top 5<br/><br/>
+                          Coinmarketcap list and rate<br/><br/>
+                          CoinGecko list and rate<br/><br/>
+                          ASP app<br/><br/>
+                          DAO pool opening<br/><br/>
+                          DAO voting system<br/><br/>
+                          Collaboration laboratory
+
+                      </p>
+                  </div>
+                  <div className={'w-[30%] h-[90%] inline-block flex roadmap-card rounded-[1vw] text-in-roadmap-card p-[3%]'}>
+                      <div className={'w-[13vw] h-[4.4vw] top-[-2.5vw] rounded-[1vw] flex text-in-shape bg-semiblue absolute'}>
+                          <p className={'leading-[89%]  text-[2vw] text-white font-gilroy font-bold'}>2H’2022</p>
+                      </div>
+                      <p className={'leading-[89%] mt-[1.5vw] text-[1.545vw] text-white font-gilroy font-normal'}>ASP app in appStore<br/><br/>
+                          first wave of DAO rewards<br/><br/>
+                          NFT marketplace<br/><br/>
+                          official P2E game opening<br/><br/>
+                          Collaboration with guilds<br/><br/>
+                          NFT artists contest<br/><br/>
+                          Certik Audit<br/><br/>
+                          ASP app modification. Chat<br/><br/>
+                          ASP app modification. News<br/><br/>
+                          Collaboration with space-gaming projects<br/><br/>
+                          IDO governance token sale<br/><br/>
+                          Collected 10 mln foundraise form Tier1-Tier2 partners<br/><br/>
+                          NFT Avatar sale<br/><br/>
+                          Social network opening<br/><br/>
+                          Networking online contest<br/><br/>
+                          Grant unicorn program<br/><br/>
+                          80 mln Market Cap<br/><br/>
+                      </p>
+                  </div>
+                  <div className={'w-[30%] h-[85%] inline-block flex roadmap-card rounded-[1vw] text-in-roadmap-card p-[3%]'}>
+                      <div className={'w-[17vw] h-[4.4vw] top-[-2.5vw] rounded-[1vw] flex text-in-shape bg-blue absolute'}>
+                          <p className={'leading-[89%]  text-[2vw] text-white font-gilroy uppercase font-bold'}>2023 pipeline</p>
+                      </div>
+                      <p className={'leading-[89%] mt-[1.5vw] text-[1.545vw] text-white font-gilroy font-normal'}>DEX optimisation protocol<br/><br/>
+                          ASP desktop crypted version<br/><br/>
+                          ASP wallet<br/><br/>
+                          Holland auction mechanics for NFT sale of the projects<br/><br/>
+                          Multichain launch<br/><br/>
+                          NFT mechanics for social network ASP<br/><br/>
+                          Multichain NFT marketplace<br/><br/>
+                          Bloomberg article<br/><br/>
+                          Charity program for African education<br/><br/>
+                          GameFi liquidity pools<br/><br/>
+                          Network safety crypto protocol<br/><br/>
+                          OpenSea collaboration<br/><br/>
+                          Layer2 eth upgrade<br/><br/>
+                          Offline ASP conference<br/><br/>
+                          Offline grants program and competition<br/><br/>
+                          800 mln Market Cap<br/><br/>
+                      </p>
+                  </div>
+              </div>
 
           </div>
 
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+          <div className={'w-[98vw] h-[21.25vw] relative block'}>
+              <p className={'absolute inline-block top-[4.2vw] left-[12.6vw] text-[1.46vw] text-white font-gilroy font-semibold'}>THE WEB 3 PROJECT</p>
+              <p className={'absolute inline-block top-[7.5vw] left-[12.6vw] w-[22vw] text-[1.07vw] text-white font-gilroy font-light'}>Accelerating the transition to a WEB3 world.
+                  It is your data, and only yours.</p>
+
+              <p className={'absolute inline-block top-[4.2vw] left-[39vw] text-[1.2vw] text-white font-gilroy font-[400]'}>MENU</p>
+
+              <a className={'absolute inline-block top-[7.7vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Home</a>
+              <a className={'absolute inline-block top-[9.9vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Our Ecosystem</a>
+              <a className={'absolute inline-block top-[12.1vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Roadmap</a>
+              <a className={'absolute inline-block top-[14.3vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Contact</a>
+              <a className={'absolute inline-block top-[16.5vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Whitepaper</a>
+
+
+              <p className={'absolute inline-block top-[4.2vw] left-[54vw] text-[1.2vw] text-white font-gilroy font-[400]'}>FOLLOW US</p>
+
+              <a className={'absolute inline-block top-[7.7vw] left-[54vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Telegram</a>
+              <a className={'absolute inline-block top-[9.9vw] left-[54vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Discord</a>
+              <a className={'absolute inline-block top-[12.1vw] left-[54vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Twitter</a>
+
+
+
+              <p className={'absolute inline-block top-[4.2vw] left-[69vw] text-[1.2vw] text-white font-gilroy font-[400]'}>CONTACT US</p>
+
+              <a className={'absolute inline-block top-[7.7vw] left-[69vw] text-[1.1vw] text-white font-gilroy font-[400]'}>contact@theweb3project.com</a>
+
+
+              <p className={'absolute inline-block top-[18vw] left-[12.6vw] text-[1vw] text-[#464199] font-gilroy font-[400]'}>The Web3 Project © 2022 </p>
+              <p className={'absolute inline-block top-[18vw] left-[69vw] text-[1vw] text-[#464199] font-gilroy font-[400]'}>Powered by Binance Smart Chain</p>
+
+
+
+          </div>
       </footer>
     </div>
   )
-}
+};
 
 export default Home

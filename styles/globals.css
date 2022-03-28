@@ -30,8 +30,15 @@
     .text-in-shape{
         justify-content: center;
         justify-items: center;
-        justify-items: center;
         align-items: center;
+    }
+    .text-in-roadmap-card{
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .roadmap-card{
+        background: rgba(71, 10, 148, 0.26);
     }
     /*.neon-white-border:hover{*/
     /*    border-color: white;*/
