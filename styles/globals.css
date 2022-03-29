@@ -46,6 +46,9 @@
     /*.neon-white-border:hover{*/
     /*    border-color: white;*/
     /*}*/
+    .calculator-result{
+        background: rgba(108, 20, 251, 0.14);;
+    }
 }
 
 @font-face {

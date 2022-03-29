@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import styles from '../styles/Home.module.css'
 import Image from "next/image";
-
-
+import {motion} from "framer-motion";
+import Particles from "react-tsparticles";
 
 const Calculator = () => {
-    const [apy,setApy]=useState(383025.8);
+    const [apy,setApy]=useState(1041035);
     const [tokenAmount,setTokenAmount]=useState(1);
     const [tokenBalance,setTokenBalance]=useState(0);
     const [days,setDays]=useState(365);
@@ -46,10 +46,10 @@ const Calculator = () => {
             <div className={'left-[24vw] z-50 top-[25vw] w-[52vw] absolute inline-block'}>
                 <input type={"range"} min={10} max={365} value={days} onChange={event =>{if(event.target.value!=''){setDays(parseFloat(event.target.value))}}} ></input>
             </div>
-            <div className={'left-[21vw] top-[24vw] w-[57vw] h-[20vw] absolute inline-block'}>
-                <Image src={'/images/cards.svg'} layout={'fill'}></Image>
-            </div>
-            <div className={'absolute bg-[rgba(108, 20, 251, 0.14)] rounded-[1vw] inline-block w-[51vw] h-[8vw] bottom-[4vw] left-[24vw]'}>
+            {/*<div className={'left-[21vw] top-[24vw] w-[57vw] h-[20vw] absolute inline-block'}>*/}
+            {/*    <Image src={'/images/cards.svg'} layout={'fill'}></Image>*/}
+            {/*</div>*/}
+            <div className={'absolute calculator-result rounded-[1vw] inline-block w-[51vw] h-[8vw] bottom-[14vw] left-[24vw]'}>
                 <p className={'left-[3%] top-[10%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>Your initial investment</p>
                 {/*<p className={'left-[3%] top-[28%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>Current wealth</p>*/}
                 <p className={'left-[3%] top-[48%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>Token rewards estimation</p>
@@ -57,7 +57,7 @@ const Calculator = () => {
 
                 <p className={'right-[3%] text-right top-[10%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>{tokenAmount} Token</p>
                 {/*<p className={'right-[3%] text-right top-[28%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>${tokenAmount*147.06}</p>*/}
-                <p className={'right-[3%] text-right top-[48%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>{tokenAmount*((1+0.00000079)**(days*28800))} Token</p>
+                <p className={'right-[3%] text-right top-[48%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>{tokenAmount*((1+0.00000088)**(days*28800))} Token</p>
                 {/*<p className={'right-[3%] text-right top-[68%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>${tokenAmount * ((1 + 0.00000079)** (days * 28800)) * 147.06}</p>*/}
             </div>
 
