@@ -88,7 +88,7 @@
 }
 @font-face {
     font-family: "Gilroy";
-    src: url("../public/fonts/Gilroy/Gilroy-SemiBold.ttf");
+    src: url("../public/fonts/Gilroy/Gilroy-Semibold.ttf");
     font-style: normal;
     font-weight: 600;
     font-display: swap;
@@ -102,7 +102,7 @@
 }
 @font-face {
     font-family: "Gilroy";
-    src: url("../public/fonts/Gilroy/Gilroy-ExtraBold.ttf");
+    src: url("../public/fonts/Gilroy/Gilroy-Extrabold.ttf");
     font-style: normal;
     font-weight: 800;
     font-display: swap;
