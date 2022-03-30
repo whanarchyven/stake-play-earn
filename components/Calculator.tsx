@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import styles from '../styles/Home.module.css'
 import Image from "next/image";
 import {motion} from "framer-motion";
-import Particles from "react-tsparticles";
 
 const Calculator = () => {
     const [apy,setApy]=useState(1041035);
