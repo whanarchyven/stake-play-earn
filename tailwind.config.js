@@ -10,6 +10,7 @@ module.exports = {
     },
     colors: {
       purple: "#7D1ABA",
+      aue:"#b03efc",
       blue: "#3F65EC",
       semiblue:"#8952FF",
       white:'#FFFFFF',

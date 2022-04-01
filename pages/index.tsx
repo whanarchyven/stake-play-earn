@@ -12,12 +12,19 @@ import AnimatedNumber from "animated-number-react";
 import {InView, useInView} from "react-intersection-observer";
 import {ConnectMM} from "../components/ConnectMM";
 import {spring} from "popmotion";
+import styled from 'styled-components';
 
+
+
+
+const Parallax = styled.div<{xPosition: string, yPosition:string}>`
+  left: ${props => props.xPosition};
+  top: ${props => props.yPosition};
+`
 
 const Home: NextPage = () => {
     const [apyValue,setApyValue]=useState(0);
     const [apyDuration,setApyDuration]=useState(1500);
-
     const { ref, inView, entry, } = useInView();
 
     const suka =()=>{
@@ -73,12 +80,98 @@ const Home: NextPage = () => {
 
           {/*INTRO*/}
 
-          <div className={'w-[100vw] relative block h-[61vw] bg-cover bg-[url("../public/images/main.png")]'}>
+          <div className={'w-[100vw] relative block h-[61vw] bg-cover bg-[#000]'}>
+              <Particles
+                  id="tsparticles"
+                  options={{
+                      background: {
+                          color: {
+                              value: "#000",
+                          },
+                      },
+                      fpsLimit: 120,
+                      interactivity: {
+                          events: {
+                              onClick: {
+                                  enable: false,
+                                  mode: "push",
+                              },
+                              onHover: {
+                                  enable: true,
+                                  mode: "bounce",
+                              },
+                              resize: true,
+                          },
+                          modes: {
+                              bubble: {
+                                  distance: 400,
+                                  duration: 2,
+                                  opacity: 0.8,
+                                  size: 40,
+                              },
+                              push: {
+                                  quantity: 4,
+                              },
+                              repulse: {
+                                  distance: 200,
+                                  duration: 0.4,
+                              },
+                          },
+                      },
+                      particles: {
+                          number: { value: 160, density: { enable: true, value_area: 800 } },
+                          color: { value: "#ffffff" },
+                          shape: {
+                              type: "circle",
+                              stroke: { width: 0, color: "#000000" },
+                              polygon: { nb_sides: 5 },
+                              image: { src: "img/github.svg", width: 100, height: 100 },
+                          },
+                          opacity: {
+                              value: 1,
+                              random: true,
+                              anim: { enable: true, speed: 1, opacity_min: 0, sync: false },
+                          },
+                          size: {
+                              value: 3,
+                              random: true,
+                              anim: { enable: false, speed: 4, size_min: 0.3, sync: false },
+                          },
+                          line_linked: {
+                              enable: false,
+                              distance: 150,
+                              color: "#ffffff",
+                              opacity: 0.4,
+                              width: 1,
+                          },
+                          move: {
+                              enable: true,
+                              speed: 1,
+                              direction: "none",
+                              random: true,
+                              straight: false,
+                              out_mode: "out",
+                              bounce: false,
+                              attract: { enable: false, rotateX: 600, rotateY: 600 },
+                          },
+                      },
+                      detectRetina: true,
+                  }}
+                  className={'w-full h-full'} />
+              <motion.div initial="hidden"
+                          animate={'visible'}
+                          transition={{ duration: 80, repeat:Infinity, repeatType:'loop', ease:'linear'}}
+                          variants={{
+                              visible: { opacity: 1, rotate:0 },
+                              hidden: { opacity: 1, rotate:-360 }
+                          }} className={'w-[139vw] h-[162vw] absolute inline-block top-[-86vw] left-[-21vw]'}>
+                  <Image src={'/images/galactic1.png'} layout={'fill'}></Image>
+              </motion.div>
               <div className={' justify-items-center items-center justify-align-center w-[22vw] h-[5.5vw] left-[28.3vw] top-[16.3vw] rounded-full absolute inline-flex offer-gradient'}>
                   <h2 className={'animate-pulse w-full text-center text-white font-gilroy font-extrabold text-[2.2vw]'}>1 041 035% APY</h2>
               </div>
               {/*<motion.div className={'absolute inline-block left-0 bottom-0'} ></motion.div>*/}
-              <div className={'w-[57vw] h-[53vw] absolute inline-block bottom-[5vw] left-0'}>
+              <div className={'w-[28vw] h-[28vw] absolute inline-block bottom-[13vw] left-[16vw]'}>
                   <Image src={'/images/phone.png'} layout={'fill'}></Image>
               </div>
               <div className={'cursor-pointer z-[8000] left-[14.4vw] top-[37vw] w-[8.7vw] h-[2.3vw] absolute inline-block'}>
@@ -185,7 +278,18 @@ const Home: NextPage = () => {
 
           {/*STACKING*/}
 
-          <div className={'w-[100vw] relative block h-[52.5vw] bg-cover bg-[url("../public/images/staking.png")]'} >
+          <div className={'w-[100vw] relative block h-[52.5vw] bg-cover bg-[]'} >
+              <motion.div
+                  initial="hidden"
+                  animate={'visible'}
+                  transition={{ type:"tween",duration: 4, repeat:Infinity, repeatType:'reverse'}}
+                  variants={{
+                      visible: { opacity: 1, scale:1 },
+                      hidden: { opacity: 1, scale:0.9 }
+                  }}
+                  className={' left-[-8vw] top-[6.3vw] w-[41vw] h-[41vw] absolute inline-block'}>
+                  <Image src={'/images/planet1.png'} layout={'fill'}></Image>
+              </motion.div>
               <motion.div className={'left-[18vw] top-[5vw] w-[64vw] h-[3.5vw] absolute inline-block'} initial="hidden"
                           ref={ref}
                           whileInView={'visible'}
@@ -283,7 +387,7 @@ const Home: NextPage = () => {
 
           {/*CALCULATOR*/}
 
-          <motion.div  className={'w-[100vw] relative block h-[57vw] bg-cover bg-[url("../public/images/calculator.png")]'}>
+          <motion.div  className={'w-[100vw] relative block h-[57vw] bg-cover bg-[]'}>
               <motion.div initial="hidden"
                           whileInView={'visible'}
                           viewport={{once:true}}
@@ -291,7 +395,7 @@ const Home: NextPage = () => {
                           variants={{
                               visible: { opacity: 1, scale:1 },
                               hidden: { opacity: 0, scale:0.8 }
-                          }} className={'w-[100vw] relative block h-[57vw]'}>
+                          }} className={'w-[100vw] z-50 absolute top-0 block h-[57vw]'}>
                   <Calculator></Calculator>
               </motion.div>
 
@@ -299,7 +403,7 @@ const Home: NextPage = () => {
 
           {/*BNB*/}
 
-          <div className={'w-[100vw] relative block h-[41.25vw] bg-[#000]'}>
+          <div className={'w-[100vw] relative block h-[41.25vw] bg-[]'}>
               <motion.div initial="hidden"
                           whileInView={'visible'}
                           viewport={{once:true}}
@@ -410,8 +514,18 @@ const Home: NextPage = () => {
 
           {/*METAVERSE*/}
 
-          <div className={'w-[100vw] relative block h-[71.6vw] bg-cover bg-[url("../public/images/metaverse.png")]'}>
-
+          <div className={'w-[100vw] relative block h-[71.6vw] bg-cover bg-[]'}>
+              <motion.div
+                  initial="hidden"
+                  animate={'visible'}
+                  transition={{ type:"tween",duration: 4, repeat:Infinity, repeatType:'reverse'}}
+                  variants={{
+                      visible: { opacity: 1, scale:1 },
+                      hidden: { opacity: 1, scale:0.9 }
+                  }}
+                  className={'w-[55vw] right-[-3vw] top-[11vw] h-[55vw] absolute inline-block'}>
+                  <Image src={'/images/planet2.png'} layout={'fill'}></Image>
+              </motion.div>
               <motion.h2 initial="hidden"
                          whileInView={'visible'}
                          viewport={{once:true}}
@@ -427,8 +541,32 @@ const Home: NextPage = () => {
                          variants={{
                              visible: { opacity: 1, scale:1 },
                              hidden: { opacity: 0, scale:0.1 }
-                         }} className={'absolute inline-block left-[58.5vw] top-[3.2vw] w-[28.6vw] h-[28.6vw]'}>
+                         }} className={'justify-center justify-items-center items-center absolute inline-flex left-[58.5vw] top-[3.2vw] w-[28.6vw] h-[28.6vw]'}>
                   <Image src={'/images/1.png'} layout={'fill'}></Image>
+                  {/*<div className={'w-full absolute h-full'}>*/}
+                  {/*    <video*/}
+                  {/*        id="background-video"*/}
+                  {/*        loop*/}
+                  {/*        autoPlay*/}
+                  {/*        muted*/}
+                  {/*        style={{*/}
+                  {/*            position: "relative",*/}
+                  {/*            width: "inherit",*/}
+                  {/*            height: "inherit",*/}
+                  {/*            left: 0,*/}
+                  {/*            top: 0,*/}
+                  {/*            backgroundSize:"cover",*/}
+                  {/*            borderRadius:'100%',*/}
+                  {/*        }} className={'relative w-[100vw] h-[58vw]'}*/}
+                  {/*    >*/}
+                  {/*        <source src={'/images/metaverse/metaverse1.mp4'} type="video/mp4" />*/}
+                  {/*        Your browser does not support the video tag.*/}
+                  {/*    </video>*/}
+                  {/*</div>*/}
+                  {/*<div className={'w-full absolute h-full'}>*/}
+                  {/*    <Image src={'/images/metaverse/1.svg'} layout={'fill'}></Image>*/}
+                  {/*</div>*/}
+                  {/*<p className={'text-white inline-block absolute text-center w-[65%] mt-[14vw] leading-[100%] text-[2vw] font-gilroy font-regular'}>Create your own character</p>*/}
               </motion.div>
               <motion.div initial="hidden"
                          whileInView={'visible'}
@@ -568,7 +706,7 @@ const Home: NextPage = () => {
 
           {/*ROADMAP*/}
 
-          <div className={'w-[100vw] relative block h-[112vw] bg-cover bg-[url("../public/images/roadmap.png")]'}>
+          <div className={'w-[100vw] relative block h-[112vw] bg-cover bg-[]'}>
 
               <div className={'absolute inline-block rotate-180 left-[6vw] top-[6.5vw]  w-[88vw] h-[95.3vw] rounded-[4.5vw] rotate-180'}>
                   <div className={'w-[inherit] h-[inherit] relative flex items-center justify-items-center justify-center rounded-[inherit]'}>
@@ -693,7 +831,7 @@ const Home: NextPage = () => {
       </main>
 
       <footer className={styles.footer}>
-          <div className={'w-[98vw] h-[21.25vw] relative block'}>
+          <div className={'w-[98vw] h-[21.25vw] bg-[#000] relative block'}>
               {/*<p className={'absolute inline-block top-[4.2vw] left-[12.6vw] text-[1.46vw] text-white font-gilroy font-semibold'}>THE WEB 3 PROJECT</p>*/}
               {/*<p className={'absolute inline-block top-[7.5vw] left-[12.6vw] w-[22vw] text-[1.07vw] text-white font-gilroy font-light'}>Accelerating the transition to a WEB3 world.*/}
               {/*    It is your data, and only yours.</p>*/}

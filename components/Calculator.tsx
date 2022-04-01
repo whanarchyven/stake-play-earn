@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import styles from '../styles/Home.module.css'
 import Image from "next/image";
 import {motion} from "framer-motion";
+import PlanetCard from "./PlanetCard";
 
 const Calculator = () => {
     const [apy,setApy]=useState(1041035);
@@ -45,10 +46,26 @@ const Calculator = () => {
             <div className={'left-[24vw] z-50 top-[25vw] w-[52vw] absolute inline-block'}>
                 <input type={"range"} min={10} max={365} value={days} onChange={event =>{if(event.target.value!=''){setDays(parseFloat(event.target.value))}}} ></input>
             </div>
-            {/*<div className={'left-[21vw] top-[24vw] w-[57vw] h-[20vw] absolute inline-block'}>*/}
-            {/*    <Image src={'/images/cards.svg'} layout={'fill'}></Image>*/}
-            {/*</div>*/}
-            <div className={'absolute calculator-result rounded-[1vw] inline-block w-[51vw] h-[8vw] bottom-[14vw] left-[24vw]'}>
+            <div className={'left-[21vw] top-[25vw] w-[57vw] h-[19vw] absolute inline-block] '}>
+                <div className={'justify-around flex absolute bottom-0 w-full h-[80%]'}>
+                    <div className={'w-[20%] h-full relative'}>
+                        <PlanetCard name={'X-3121'} image={'/images/planets/1.png'} apyIncrease={80000}></PlanetCard>
+                    </div>
+                    <div className={'w-[20%] h-full relative'}>
+                        <PlanetCard name={'Y-8265'} image={'/images/planets/2.png'} apyIncrease={12000}></PlanetCard>
+                    </div>
+                    <div className={'w-[20%] h-full relative'}>
+                        <PlanetCard name={'Zyx-3512'} image={'/images/planets/3.png'} apyIncrease={180000}></PlanetCard>
+                    </div>
+                    <div className={'w-[20%] h-full relative'}>
+                        <PlanetCard name={'UMY-1010'} image={'/images/planets/4.png'} apyIncrease={250000}></PlanetCard>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div className={'absolute calculator-result rounded-[1vw] inline-block w-[51vw] h-[8vw] bottom-[3vw] left-[24vw]'}>
                 <p className={'left-[3%] top-[10%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>Your initial investment</p>
                 {/*<p className={'left-[3%] top-[28%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>Current wealth</p>*/}
                 <p className={'left-[3%] top-[48%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>Token rewards estimation</p>
