@@ -287,7 +287,7 @@ const Home: NextPage = () => {
                       visible: { opacity: 1, scale:1 },
                       hidden: { opacity: 1, scale:0.9 }
                   }}
-                  className={' left-[-8vw] top-[6.3vw] w-[41vw] h-[41vw] absolute inline-block'}>
+                  className={' left-[-8vw] top-[6.3vw] w-[41vw] h-[41vw] rounded-full bg-[#000] absolute inline-block'}>
                   <Image src={'/images/planet1.png'} layout={'fill'}></Image>
               </motion.div>
               <motion.div className={'left-[18vw] top-[5vw] w-[64vw] h-[3.5vw] absolute inline-block'} initial="hidden"
@@ -514,7 +514,7 @@ const Home: NextPage = () => {
 
           {/*METAVERSE*/}
 
-          <div className={'w-[100vw] relative block h-[71.6vw] bg-cover bg-[]'}>
+          <div className={'w-[100vw] relative block  h-[71.6vw] bg-cover bg-[]'}>
               <motion.div
                   initial="hidden"
                   animate={'visible'}
@@ -523,7 +523,7 @@ const Home: NextPage = () => {
                       visible: { opacity: 1, scale:1 },
                       hidden: { opacity: 1, scale:0.9 }
                   }}
-                  className={'w-[55vw] right-[-3vw] top-[11vw] h-[55vw] absolute inline-block'}>
+                  className={'w-[55vw] right-[-3vw] top-[11vw] rounded-full bg-[#000] h-[55vw] absolute inline-block'}>
                   <Image src={'/images/planet2.png'} layout={'fill'}></Image>
               </motion.div>
               <motion.h2 initial="hidden"
@@ -542,31 +542,34 @@ const Home: NextPage = () => {
                              visible: { opacity: 1, scale:1 },
                              hidden: { opacity: 0, scale:0.1 }
                          }} className={'justify-center justify-items-center items-center absolute inline-flex left-[58.5vw] top-[3.2vw] w-[28.6vw] h-[28.6vw]'}>
-                  <Image src={'/images/1.png'} layout={'fill'}></Image>
-                  {/*<div className={'w-full absolute h-full'}>*/}
-                  {/*    <video*/}
-                  {/*        id="background-video"*/}
-                  {/*        loop*/}
-                  {/*        autoPlay*/}
-                  {/*        muted*/}
-                  {/*        style={{*/}
-                  {/*            position: "relative",*/}
-                  {/*            width: "inherit",*/}
-                  {/*            height: "inherit",*/}
-                  {/*            left: 0,*/}
-                  {/*            top: 0,*/}
-                  {/*            backgroundSize:"cover",*/}
-                  {/*            borderRadius:'100%',*/}
-                  {/*        }} className={'relative w-[100vw] h-[58vw]'}*/}
-                  {/*    >*/}
-                  {/*        <source src={'/images/metaverse/metaverse1.mp4'} type="video/mp4" />*/}
-                  {/*        Your browser does not support the video tag.*/}
-                  {/*    </video>*/}
-                  {/*</div>*/}
-                  {/*<div className={'w-full absolute h-full'}>*/}
-                  {/*    <Image src={'/images/metaverse/1.svg'} layout={'fill'}></Image>*/}
-                  {/*</div>*/}
-                  {/*<p className={'text-white inline-block absolute text-center w-[65%] mt-[14vw] leading-[100%] text-[2vw] font-gilroy font-regular'}>Create your own character</p>*/}
+                  {/*<Image src={'/images/1.png'} layout={'fill'}></Image>*/}
+                  <div className={'w-[95%] absolute h-[95%]'}>
+                      <video
+                          id="background-video"
+                          loop
+                          autoPlay
+                          muted
+                          style={{
+                              position: "relative",
+                              width: "inherit",
+                              height: "inherit",
+                              left: 0,
+                              top: 0,
+                              backgroundSize:"cover",
+                              borderRadius:'100%',
+                          }} className={'relative w-[100vw] h-[58vw]'}
+                      >
+                          <source src={'/images/metaverse/metaverse1.mp4'} type="video/mp4" />
+                          Your browser does not support the video tag.
+                      </video>
+                  </div>
+                  <div className={'w-full absolute h-full'}>
+                      <Image src={'/images/metaverse/1.svg'} layout={'fill'}></Image>
+                  </div>
+                  <div className={'w-[9vw] h-[9vw] top-0 left-[1vw] absolute'}>
+                      <Image src={'/images/metaverse/num1.svg'} layout={'fill'}></Image>
+                  </div>
+                  <p className={'text-white inline-block absolute text-center w-[65%] mt-[14vw] leading-[100%] text-[2vw] font-gilroy font-regular'}>Create your own character</p>
               </motion.div>
               <motion.div initial="hidden"
                          whileInView={'visible'}
@@ -575,8 +578,35 @@ const Home: NextPage = () => {
                          variants={{
                              visible: { opacity: 1, scale:1 },
                              hidden: { opacity: 0, scale:0.1 }
-                         }} className={'absolute inline-block left-0 top-[15.2vw] w-[33vw] h-[37vw]'}>
-                  <Image src={'/images/2.png'} layout={'fill'}></Image>
+                         }} className={'absolute inline-block left-[-3vw] top-[15.2vw] w-[33vw] h-[33vw]'}>
+                  {/*<Image src={'/images/2.png'} layout={'fill'}></Image>*/}
+                  <div className={'w-[95%] left-[3%] absolute h-[95%]'}>
+                      <video
+                          id="background-video"
+                          loop
+                          autoPlay
+                          muted
+                          style={{
+                              position: "relative",
+                              width: "inherit",
+                              height: "inherit",
+                              left: 0,
+                              top: 0,
+                              backgroundSize:"cover",
+                              borderRadius:'100%',
+                          }} className={'relative w-[100vw] h-[58vw]'}
+                      >
+                          <source src={'/images/metaverse/metaverse2.mp4'} type="video/mp4" />
+                          Your browser does not support the video tag.
+                      </video>
+                  </div>
+                  <div className={'w-full absolute h-full'}>
+                      <Image src={'/images/metaverse/2.svg'} layout={'fill'}></Image>
+                  </div>
+                  <div className={'w-[9vw] h-[9vw] top-[-2vw] left-[3vw] absolute'}>
+                      <Image src={'/images/metaverse/num2.svg'} layout={'fill'}></Image>
+                  </div>
+                  <p className={'text-white inline-block absolute text-center w-[65%] mx-[17.5%] mt-[22vw] leading-[100%] text-[1.8vw] font-gilroy font-regular'}>Investigate space with friends & create alliance</p>
               </motion.div>
               <motion.div initial="hidden"
                          whileInView={'visible'}
@@ -586,7 +616,34 @@ const Home: NextPage = () => {
                              visible: { opacity: 1, scale:1 },
                              hidden: { opacity: 0, scale:0.1 }
                          }} className={'absolute inline-block left-[34.4vw] top-[24.5vw] w-[31vw] h-[32vw]'}>
-                  <Image src={'/images/3.png'} layout={'fill'}></Image>
+                  {/*<Image src={'/images/3.png'} layout={'fill'}></Image>*/}
+                  <div className={'w-[95%] left-[3%] top-[3%] absolute h-[95%]'}>
+                      <video
+                          id="background-video"
+                          loop
+                          autoPlay
+                          muted
+                          style={{
+                              position: "relative",
+                              width: "inherit",
+                              height: "inherit",
+                              left: 0,
+                              top: 0,
+                              backgroundSize:"cover",
+                              borderRadius:'100%',
+                          }} className={'relative w-[100vw] h-[58vw]'}
+                      >
+                          <source src={'/images/metaverse/metaverse3.mp4'} type="video/mp4" />
+                          Your browser does not support the video tag.
+                      </video>
+                  </div>
+                  <div className={'w-full absolute h-full'}>
+                      <Image src={'/images/metaverse/3.svg'} layout={'fill'}></Image>
+                  </div>
+                  <div className={'w-[9vw] h-[9vw] top-[-2.5vw] left-[4vw] absolute'}>
+                      <Image src={'/images/metaverse/num3.svg'} layout={'fill'}></Image>
+                  </div>
+                  <p className={'text-white inline-block absolute text-center w-[70%] mx-[15%] mt-[20.5vw] leading-[100%] text-[1.8vw] font-gilroy font-regular'}>Develope your space base, strenthen defences, get unique resourses</p>
               </motion.div>
               <motion.div initial="hidden"
                          whileInView={'visible'}
@@ -596,7 +653,34 @@ const Home: NextPage = () => {
                              visible: { opacity: 1, scale:1 },
                              hidden: { opacity: 0, scale:0.1 }
                          }} className={'absolute inline-block right-0 top-[32vw] w-[33.5vw] h-[37.5vw]'}>
-                  <Image src={'/images/4.png'} layout={'fill'}></Image>
+                  {/*<Image src={'/images/4.png'} layout={'fill'}></Image>*/}
+                  <div className={'w-[95%] left-[3%] top-[6%] absolute h-[93%]'}>
+                      <video
+                          id="background-video"
+                          loop
+                          autoPlay
+                          muted
+                          style={{
+                              position: "relative",
+                              width: "inherit",
+                              height: "inherit",
+                              left: 0,
+                              top: 0,
+                              backgroundSize:"cover",
+                              borderRadius:'100%',
+                          }} className={'relative w-[100vw] h-[58vw]'}
+                      >
+                          <source src={'/images/metaverse/metaverse4.mp4'} type="video/mp4" />
+                          Your browser does not support the video tag.
+                      </video>
+                  </div>
+                  <div className={'w-full absolute h-full'}>
+                      <Image src={'/images/metaverse/4.svg'} layout={'fill'}></Image>
+                  </div>
+                  <div className={'w-[9vw] h-[9vw] top-[24.5vw] left-[-2vw] absolute'}>
+                      <Image src={'/images/metaverse/num4.svg'} layout={'fill'}></Image>
+                  </div>
+                  <p className={'text-white inline-block absolute text-center w-[70%] mx-[15%] mt-[24.0vw] leading-[100%] text-[1.8vw] font-gilroy font-regular'}>Develope your space base, strenthen defences, get unique resourses</p>
               </motion.div>
               <motion.div initial="hidden"
                           whileInView={'visible'}
@@ -615,15 +699,15 @@ const Home: NextPage = () => {
 
           {/*TEASER*/}
 
-          {/*<div className={'w-[100vw] relative block h-[60.5vw] bg-[#000]]'}>*/}
-          {/*    <iframe className={'inline-block absolute left-[14vw] w-[72vw] h-[37vw] top-[7vw]'} width="949" height="534" src="https://www.youtube.com/embed/0Eo1c2grmq8"*/}
-          {/*            title="YouTube video player" frameBorder="0"*/}
-          {/*            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"*/}
-          {/*            allowFullScreen></iframe>*/}
-          {/*    <div className={'justify-items-center justify-center items-center absolute inline-flex left-[39.67vw] top-[47.7vw] w-[20.8vw] h-[5.5vw] rounded-full bg-purple'}>*/}
-          {/*        <h2 className={'text-white text-center uppercase text-[1.7vw] font-gilroy font-bold'}>BUY $TOKEN</h2>*/}
-          {/*    </div>*/}
-          {/*</div>*/}
+          <div className={'w-[100vw] relative block h-[60.5vw] bg-[]]'}>
+              <iframe className={'inline-block absolute left-[14vw] w-[72vw] h-[37vw] top-[7vw]'} width="949" height="534" src="https://www.youtube.com/embed/0Eo1c2grmq8"
+                      title="YouTube video player" frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen></iframe>
+              <div className={'justify-items-center justify-center items-center absolute inline-flex left-[39.67vw] top-[47.7vw] w-[20.8vw] h-[5.5vw] rounded-full bg-purple'}>
+                  <h2 className={'text-white text-center uppercase text-[1.7vw] font-gilroy font-bold'}>BUY $TOKEN</h2>
+              </div>
+          </div>
 
 
 
@@ -632,76 +716,88 @@ const Home: NextPage = () => {
 
           {/*TEAM*/}
 
-          {/*<div className={'w-[100vw] relative block h-[71.6vw] bg-cover bg-[url("../public/images/team.png")]'}>*/}
-          {/*    <h2 className={'tracking-[0.03em] text-white font-gilroy font-black absolute inline-block uppercase right-[9.2vw] top-[6vw] text-[5.9vw]'}>TEAM</h2>*/}
+          <div className={'w-[100vw] relative block h-[71.6vw] bg-cover bg-[]'}>
+              <motion.div
+                  initial="hidden"
+                  whileInView={'visible'}
+                  viewport={{once:true}}
+                  transition={{ duration: 30, repeat:Infinity, repeatType:'loop', ease:'linear'}}
+                  variants={{
+                      visible: { opacity: 1, rotate:0 },
+                      hidden: { opacity: 1, rotate: -360 }
+                  }}
+                  className={'w-[60vw] h-[60vw] top-[9vw] left-[-9vw] absolute'}>
+                  <Image src={'/images/galactic2.png'} layout={'fill'}></Image>
+              </motion.div>
+              <h2 className={'tracking-[0.03em] text-white font-gilroy font-black absolute inline-block uppercase right-[9.2vw] top-[6vw] text-[5.9vw]'}>TEAM</h2>
 
-          {/*    <div className={'w-[15.5vw] h-[21vw] left-[38.7vw] top-[18.6vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>*/}
-          {/*        <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>*/}
-          {/*            <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>*/}
-          {/*            <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>*/}
-          {/*                <Image src={'/images/fufel1.png'} layout={'fill'}></Image>*/}
-          {/*            </div>*/}
-          {/*        </div>*/}
-          {/*        <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>*/}
-          {/*        <div className={'w-[9vw] h-[4vw] absolute top-[15vw]'}>*/}
-          {/*            <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>*/}
-          {/*        </div>*/}
-          {/*    </div>*/}
+              <div className={'w-[15.5vw] h-[21vw] left-[38.7vw] top-[18.6vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>
+                  <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>
+                      <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>
+                      <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>
+                          <Image src={'/images/fufel1.png'} layout={'fill'}></Image>
+                      </div>
+                  </div>
+                  <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>
+                  <div className={'w-[9vw] h-[4vw] absolute top-[15vw]'}>
+                      <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>
+                  </div>
+              </div>
 
-          {/*    <div className={'w-[15.5vw] h-[21vw] left-[58vw] top-[18.6vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>*/}
-          {/*        <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>*/}
-          {/*            <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>*/}
-          {/*            <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>*/}
-          {/*                <Image src={'/images/fufel2.png'} layout={'fill'}></Image>*/}
-          {/*            </div>*/}
-          {/*        </div>*/}
-          {/*        <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>*/}
-          {/*        <div className={'w-[9vw] h-[4vw] absolute top-[15vw]'}>*/}
-          {/*            <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>*/}
-          {/*        </div>*/}
-          {/*    </div>*/}
-
-
-          {/*    <div className={'w-[15.5vw] h-[21vw] left-[77vw] top-[18.6vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>*/}
-          {/*        <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>*/}
-          {/*            <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>*/}
-          {/*            <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>*/}
-          {/*                <Image src={'/images/fufel3.png'} layout={'fill'}></Image>*/}
-          {/*            </div>*/}
-          {/*        </div>*/}
-          {/*        <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>*/}
-          {/*        <div className={'w-[9vw] h-[4vw] absolute top-[15vw]'}>*/}
-          {/*            <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>*/}
-          {/*        </div>*/}
-          {/*    </div>*/}
-
-          {/*    <div className={'w-[15.5vw] h-[21vw] left-[58vw] top-[43vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>*/}
-          {/*        <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>*/}
-          {/*            <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>*/}
-          {/*            <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>*/}
-          {/*                <Image src={'/images/fufel4.png'} layout={'fill'}></Image>*/}
-          {/*            </div>*/}
-          {/*        </div>*/}
-          {/*        <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>*/}
-          {/*        <div className={'w-[9vw] h-[4vw] absolute top-[15vw]'}>*/}
-          {/*            <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>*/}
-          {/*        </div>*/}
-          {/*    </div>*/}
+              <div className={'w-[15.5vw] h-[21vw] left-[58vw] top-[18.6vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>
+                  <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>
+                      <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>
+                      <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>
+                          <Image src={'/images/fufel2.png'} layout={'fill'}></Image>
+                      </div>
+                  </div>
+                  <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>
+                  <div className={'w-[9vw] h-[4vw] absolute top-[15vw]'}>
+                      <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>
+                  </div>
+              </div>
 
 
-          {/*    <div className={'w-[15.5vw] h-[21vw] left-[77vw] top-[43vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>*/}
-          {/*        <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>*/}
-          {/*            <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>*/}
-          {/*            <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>*/}
-          {/*                <Image src={'/images/fufel5.png'} layout={'fill'}></Image>*/}
-          {/*            </div>*/}
-          {/*        </div>*/}
-          {/*        <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>*/}
-          {/*        <div className={'w-[9vw] h-[4vw] absolute top-[15vw]'}>*/}
-          {/*            <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>*/}
-          {/*        </div>*/}
-          {/*    </div>*/}
-          {/*</div>*/}
+              <div className={'w-[15.5vw] h-[21vw] left-[77vw] top-[18.6vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>
+                  <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>
+                      <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>
+                      <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>
+                          <Image src={'/images/fufel3.png'} layout={'fill'}></Image>
+                      </div>
+                  </div>
+                  <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>
+                  <div className={'w-[9vw] h-[4vw] absolute top-[15vw]'}>
+                      <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>
+                  </div>
+              </div>
+
+              <div className={'w-[15.5vw] h-[21vw] left-[58vw] top-[43vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>
+                  <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>
+                      <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>
+                      <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>
+                          <Image src={'/images/fufel4.png'} layout={'fill'}></Image>
+                      </div>
+                  </div>
+                  <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>
+                  <div className={'w-[9vw] h-[4vw] absolute top-[15vw]'}>
+                      <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>
+                  </div>
+              </div>
+
+
+              <div className={'w-[15.5vw] h-[21vw] left-[77vw] top-[43vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>
+                  <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>
+                      <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>
+                      <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>
+                          <Image src={'/images/fufel5.png'} layout={'fill'}></Image>
+                      </div>
+                  </div>
+                  <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>
+                  <div className={'w-[9vw] h-[4vw] absolute top-[15vw]'}>
+                      <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>
+                  </div>
+              </div>
+          </div>
 
 
           {/*ROADMAP*/}

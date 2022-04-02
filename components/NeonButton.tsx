@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 interface propsTestComponent {
-    title:string;
+    title:any;
 }
 const NeonButton = ({title }: propsTestComponent) => {
     const [isHover,setIsHover]=useState(false);
