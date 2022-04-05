@@ -49,6 +49,7 @@ const Home: NextPage = () => {
 
 
           {/*MENU*/}
+          BUY $TOKEN
 
           <motion.div initial="hidden"
                       animate={'visible'}
@@ -340,7 +341,7 @@ const Home: NextPage = () => {
               {/*    <p className={'text-white font-gilroy font-semibold text-[1.7vw]'}>BUY $TOKEN</p>*/}
               {/*</div>*/}
 
-              <motion.div initial="hidden"
+              <a href={'#calculator'}><motion.div initial="hidden"
                           whileInView={'visible'}
                           viewport={{once:true}}
                           transition={{ type:"spring",duration: 1.5, delay:0.3, bounce:0.6 ,}}
@@ -349,7 +350,7 @@ const Home: NextPage = () => {
                               hidden: { opacity: 0, y:100 }
                           }} className={'cursor-pointer bg-blue w-[17.1vw] h-[4.5vw] left-[51.2vw] top-[40.9vw] rounded-full text-in-shape absolute inline-flex'}>
                   <p className={'text-white font-gilroy font-semibold text-[1.7vw]'}>CALCULATOR</p>
-              </motion.div>
+              </motion.div></a>
 
               <div className={'absolute inline-block rotate-180 left-[20.2vw] top-[34.3vw]  w-[59.7vw] h-[4.3vw] rounded-full'}>
                   <div className={'w-[inherit] h-[inherit] relative flex items-center justify-items-center justify-center rounded-[inherit]'}>
@@ -402,7 +403,7 @@ const Home: NextPage = () => {
                       <Image src={'/images/30procents.svg'} layout={'fill'}></Image>
                   </div>
                   <p className={'w-[8vw] absolute inline-block top-[50vw] text-[1.6vw] w-[31.2vw] left-[40vw] text-white font-gilroy font-medium'}>from all BNB collected on Pinksale presale will be distributed in $BNB Rewards pool</p>
-                  <button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[34vw] text-[1.5vw] bg-purple text-white rounded-full font-gilroy font-bold'}>BUY $TOKEN</button>
+                  {/*<button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[34vw] text-[1.5vw] bg-purple text-white rounded-full font-gilroy font-bold'}>BUY $TOKEN</button>*/}
                   <button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[51vw] text-[1.5vw] bg-blue text-white rounded-full font-gilroy font-bold'}>LEARN MORE</button>
               </motion.div>
 
@@ -525,10 +526,10 @@ const Home: NextPage = () => {
           {/*MARKETPLACE*/}
 
 
-          <div className={'w-[100vw] relative block  h-[71.6vw] bg-cover bg-[url("../public/images/marketplacebg.png")]'} id={'marketplace'}>
+          <div className={'w-[100vw] relative block  h-[71.6vw] bg-cover bg-[]'} id={'marketplace'}>
               <h2 className={'absolute top-[6vw] left-[29vw] inline-block text-white font-gilroy font-bold text-[5.1vw]'}>NFT MARKETPLACE</h2>
               <p className={'absolute top-[15vw] left-[32vw] inline-block text-white font-gilroy font-medium uppercase text-[2vw]'}>NFT Boosters for <strong>$BNB</strong> Rewards pool</p>
-              <div className={'left-[12vw] top-[20vw] w-[79vw] h-[25.5vw] absolute inline-block] neon-border rounded-[2vw] border-4 '}></div>
+              <div className={'left-[12vw] top-[20vw] w-[79vw] h-[33vw] absolute inline-block] neon-border rounded-[2vw] border-4 '}></div>
               <div className={'left-[12vw] top-[20vw] w-[79vw] h-[26vw] absolute inline-block] '}>
                   <div className={'justify-around top-[3vw] flex absolute bottom-0 w-full h-[80%]'}>
                       <div className={'w-[20%] h-full relative'}>
@@ -748,9 +749,9 @@ const Home: NextPage = () => {
                       title="YouTube video player" frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen></iframe>
-              <div className={'justify-items-center justify-center items-center absolute inline-flex left-[39.67vw] top-[47.7vw] w-[20.8vw] h-[5.5vw] rounded-full bg-purple'}>
-                  <h2 className={'text-white text-center uppercase text-[1.7vw] font-gilroy font-bold'}>BUY $TOKEN</h2>
-              </div>
+              {/*<div className={'justify-items-center justify-center items-center absolute inline-flex left-[39.67vw] top-[47.7vw] w-[20.8vw] h-[5.5vw] rounded-full bg-purple'}>*/}
+              {/*    <h2 className={'text-white text-center uppercase text-[1.7vw] font-gilroy font-bold'}>BUY $TOKEN</h2>*/}
+              {/*</div>*/}
           </div>
 
 
@@ -1083,6 +1084,26 @@ const Home: NextPage = () => {
               </div>
 
           </div>
+
+
+          {/*PARTNERS*/}
+
+          <div className={'w-[100vw] relative block h-[58vw] bg-cover bg-[]'} id={'partners'}>
+              <motion.h2 className={'text-white font-gilroy font-black absolute inline-block left-[17vw] top-[38vw] text-[5.7vw]'}>PARTNERS</motion.h2>
+              <div className={'w-[67.5vw] absolute inline-block left-[16.3vw] top-[8.6vw] h-[26.7vw] bg-[#AF52D0] opacity-[0.22]'}>
+              </div>
+              <div className={'w-[55vw] left-[-3vw] bottom-[-3vw] h-[41vw] absolute inline-block'}>
+                  <Image src={'/images/partners_planet.png'} layout={'fill'}></Image>
+              </div>
+          </div>
+      {/*    initial="hidden"*/}
+      {/*    whileInView={'visible'}*/}
+      {/*    viewport={{once:true}}*/}
+      {/*    transition={{ type:"tween",duration: 1, delay:0.3 ,}}*/}
+      {/*    variants={{*/}
+      {/*    visible: { opacity: 1, scale:1 },*/}
+      {/*    hidden: { opacity: 0, scale:0.5 }*/}
+      {/*}}*/}
 
       </main>
 

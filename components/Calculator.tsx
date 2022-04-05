@@ -5,10 +5,50 @@ import {motion} from "framer-motion";
 import PlanetCard from "./PlanetCard";
 
 const Calculator = () => {
-    const [apy,setApy]=useState(1041035);
     const [tokenAmount,setTokenAmount]=useState(1);
     const [tokenBalance,setTokenBalance]=useState(0);
     const [days,setDays]=useState(365);
+
+    const planet0={
+        planetName:'-',
+        image:'-',
+        apyIncrease:0,
+    };
+
+    const planet1={
+        planetName:'X-3121',
+        image:'/images/planets/1.png',
+        apyIncrease:80000,
+    };
+    const planet2={
+        planetName:'Y-8265',
+        image:'/images/planets/2.png',
+        apyIncrease:120000,
+    };
+    const planet3={
+        planetName:'ZYX - 3512',
+        image:'/images/planets/3.png',
+        apyIncrease:180000,
+    };
+    const planet4={
+        planetName:'UMY-1010',
+        image:'/images/planets/4.png',
+        apyIncrease:250000,
+    }
+
+    const [currentPlanet,setCurrentPlanet]=useState(planet0);
+
+    const [apy,setApy]=useState(1041035);
+
+    function changePlanet(planet:{ planetName:string, image:string, apyIncrease:number, }){
+        setCurrentPlanet(planet);
+        setApy(1041035+planet.apyIncrease);
+        // console.log('planet changed on'+currentPlanet.planetName+' with value '+currentPlanet.apyIncrease);
+        // console.log(apy);
+        // console.log('current planet is'+currentPlanet.planetName+' with value '+currentPlanet.apyIncrease);
+    }
+
+
 
     return (
         <div className={'w-[100vw] h-[inherit]'}>
@@ -49,16 +89,16 @@ const Calculator = () => {
             <div className={'left-[21vw] top-[25vw] w-[57vw] h-[19vw] absolute inline-block] '}>
                 <div className={'justify-around flex absolute bottom-0 w-full h-[80%]'}>
                     <div className={'w-[20%] h-full relative'}>
-                        <PlanetCard planetName={'X-3121'} image={'/images/planets/1.png'} apyIncrease={80000} ></PlanetCard>
+                        <PlanetCard planet={planet1} selectedPlanet={currentPlanet} changePlanet={changePlanet} ></PlanetCard>
                     </div>
                     <div className={'w-[20%] h-full relative'}>
-                        <PlanetCard planetName={'Y-8265'} image={'/images/planets/2.png'} apyIncrease={12000}></PlanetCard>
+                        <PlanetCard planet={planet2} selectedPlanet={currentPlanet} changePlanet={changePlanet}></PlanetCard>
                     </div>
                     <div className={'w-[20%] h-full relative'}>
-                        <PlanetCard planetName={'Zyx-3512'} image={'/images/planets/3.png'} apyIncrease={180000}></PlanetCard>
+                        <PlanetCard planet={planet3} selectedPlanet={currentPlanet} changePlanet={changePlanet}></PlanetCard>
                     </div>
                     <div className={'w-[20%] h-full relative'}>
-                        <PlanetCard planetName={'UMY-1010'} image={'/images/planets/4.png'} apyIncrease={250000}></PlanetCard>
+                        <PlanetCard planet={planet4} selectedPlanet={currentPlanet} changePlanet={changePlanet}></PlanetCard>
                     </div>
                 </div>
 
@@ -73,8 +113,8 @@ const Calculator = () => {
 
                 <p className={'right-[3%] text-right top-[10%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>{tokenAmount} Token</p>
                 {/*<p className={'right-[3%] text-right top-[28%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>${tokenAmount*147.06}</p>*/}
-                <p className={'right-[3%] text-right top-[48%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>{tokenAmount*(((1+0.00000088)**(days*28800)))} Token</p>
-                {/**(apy/1041035)*/}
+                <p className={'right-[3%] text-right top-[48%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>{tokenAmount*(((1+0.00000088)**(days*28800)))*(apy/1041035)} Token</p>
+
                 {/*<p className={'right-[3%] text-right top-[68%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>${tokenAmount * ((1 + 0.00000079)** (days * 28800)) * 147.06}</p>*/}
             </div>
 
