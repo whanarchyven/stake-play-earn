@@ -40,12 +40,12 @@ const Stacker = () => {
                         </div>
                     }
                     {stakeTab=='unstake'?
-                        <div className={'cursor-pointer right-0 absolute w-[30%] inline-block mr-[15%] ml-[5%] text-in-shape'} onClick={()=>{setStakeTab('unstake')}}>
+                        <div className={'cursor-pointer right-0 absolute w-[30%] inline-block mr-[15%] ml-[5%] text-in-shape'}>
                             <div className={'w-full h-[2vw]  border-b-2 neon-border   '}></div>
                             <p className={'w-full top-0 inline-block absolute text-white text-center leading-[5%] text-[1.6vw] font-gilroy'}>Unstake</p>
                         </div>
                         :
-                        <div className={'cursor-pointer right-0 absolute w-[30%] inline-block border-b-2 mr-[15%] ml-[5%] text-in-shape'} onClick={()=>{setStakeTab('unstake')}}>
+                        <div className={'cursor-pointer right-0 absolute w-[30%] inline-block border-b-2 mr-[15%] ml-[5%] text-in-shape'}>
                             <p className={' text-white text-center leading-[5%] text-[1.6vw] font-gilroy'}>Unstake</p>
                         </div>
                     }
