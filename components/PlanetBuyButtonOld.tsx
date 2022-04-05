@@ -3,15 +3,24 @@ import PropTypes from 'prop-types';
 interface propsTestComponent {
     title:any;
     apyIncrease:number;
+    increaseApy:(apyIncrease:number)=>any;
+    decrementApy:(apyIncrease:number)=>any;
 }
-const PlanetBuyButton = ({title, apyIncrease }: propsTestComponent) => {
+const PlanetBuyButtonOld = ({title, apyIncrease, increaseApy,decrementApy }: propsTestComponent) => {
     const [isHover,setIsHover]=useState(false);
     const hovered= ()=>{
         setIsHover(!isHover);
     }
-    if(isHover==true){
+    const [isChecked,setIsChecked]=useState(false);
+    const checked= ()=>{
+        setIsChecked(!isChecked);
+    }
+    const incrementOrDecrement=()=>{
+        isChecked?decrementApy(apyIncrease):increaseApy(-1*(apyIncrease));
+    }
+    if(isChecked==true||isHover==true){
         return (
-            <div className={'w-[inherit] cursor-pointer h-[inherit] relative rounded-[inherit]'} onMouseEnter={()=>{hovered()}} onMouseLeave={()=>{hovered()}} >
+            <div className={'w-[inherit] cursor-pointer h-[inherit] relative rounded-[inherit]'} onMouseEnter={()=>{hovered()}} onMouseLeave={()=>{hovered()}} onClick={()=>{checked();incrementOrDecrement()}}>
                     <div className={'w-[inherit] h-[inherit] relative flex items-center justify-items-center justify-center rounded-[inherit]'}>
                         <div className={'z-[4] w-[99%] absolute flex h-[99%] rounded-[inherit] border-white border-solid border-[1px] m-[1%]'}></div>
                         <h2 className={'z-[3] my-auto absolute flex text-[inherit] filter-none text-white font-gilroy font-medium'}>{title}</h2>
@@ -37,4 +46,4 @@ const PlanetBuyButton = ({title, apyIncrease }: propsTestComponent) => {
         </div>
     );
 };
-export default PlanetBuyButton;
+export default PlanetBuyButtonOld;

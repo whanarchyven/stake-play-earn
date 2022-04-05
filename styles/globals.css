@@ -24,6 +24,9 @@
     .offer-gradient{
         background: linear-gradient(92.38deg, rgba(175, 82, 208, 0.56) 5.95%, rgba(63, 101, 236, 0.5) 97.3%);
     }
+    .dao-gradient{
+        background: linear-gradient(89.15deg, #AF52D0 -1.74%, #3F65EC 113.64%);
+    }
     .offer-purple{
         background: rgba(175, 82, 208, 0.43);
     }
@@ -48,6 +51,22 @@
     /*}*/
     .calculator-result{
         background: rgba(108, 20, 251, 0.14);;
+    }
+    .stacker-active-token{
+        background: rgba(175, 82, 208, 0.44);
+    }
+    .stacker-unactive-token{
+        background: rgba(175, 82, 208, 0.22);
+    }
+    .stake-tab-active-border{
+        border-image-source: linear-gradient(93.13deg, #3F65EC 6.03%, #D43FEC 99.41%);
+    }
+    .stacker-radio{
+        background: rgba(196, 196, 196, 0.25);
+    }
+    .stacker-tabs-round{
+        border-top-right-radius: 1vw;
+        border-bottom-right-radius: 0vw;
     }
 }
 

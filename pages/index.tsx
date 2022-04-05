@@ -13,7 +13,9 @@ import {InView, useInView} from "react-intersection-observer";
 import {ConnectMM} from "../components/ConnectMM";
 import {spring} from "popmotion";
 import styled from 'styled-components';
-
+import Stacker from "../components/Stacker";
+import PlanetCard from "../components/PlanetCard";
+import PlanetCardMarketplace from "../components/PlanetCardMarketplace";
 
 
 
@@ -59,17 +61,17 @@ const Home: NextPage = () => {
                   <Image src={'/images/logodao.svg'} layout={'fill'}></Image>
               </div>
               <div className={'z-[9999] justify-between justify-items-center items-center w-[38.4vw] h-[2vw] fixed inline-flex left-[29.7vw] top-[1.1vw]'}>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'}>nft marketplace</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'}>metaverse</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'}>swap</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'}>TEASER</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'}>DAO</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#marketplace'}>nft marketplace</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#metaverse'}>metaverse</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#'}>swap</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#teaser'}>TEASER</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#dao'}>DAO</a>
               </div>
               <div className={'z-[9999] justify-between justify-items-center items-center w-[28vw] h-[2vw] fixed inline-flex left-[33.6vw] top-[3.1vw]'}>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'}>Stake</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'}>TEAM</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'}>ROADMAP</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'}>PARTNERS</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#stacker'}>Stake</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#team'}>TEAM</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#roadmap'}>ROADMAP</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#'}>PARTNERS</a>
               </div>
               <div className={'z-[9999] justify-items-center justify-center items-center fixed inline-flex left-[71.2vw] top-[1.2vw] w-[12.5vw] h-[3.4vw] rounded-full bg-purple'}>
                   <ConnectMM/>
@@ -80,7 +82,7 @@ const Home: NextPage = () => {
 
           {/*INTRO*/}
 
-          <div className={'w-[100vw] relative block h-[61vw] bg-cover bg-[#000]'}>
+          <div className={'w-[100vw] relative block h-[61vw] bg-cover bg-[#000]'} id={'intro'}>
               <Particles
                   id="tsparticles"
                   options={{
@@ -89,7 +91,7 @@ const Home: NextPage = () => {
                               value: "#000",
                           },
                       },
-                      fpsLimit: 120,
+                      fpsLimit: 1020,
                       interactivity: {
                           events: {
                               onClick: {
@@ -198,7 +200,7 @@ const Home: NextPage = () => {
                       visible: { opacity: 1, y:0 },
                       hidden: { opacity: 0, y: 50 }
                   }}>First DeFi & Metaverse platform</motion.h2>
-              <motion.div className={'cursor-pointer absolute inline-block left-[48vw] top-[33.4vw] w-[14.5vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
+              <a href={'#stacker'}><motion.div className={'cursor-pointer absolute inline-block left-[48vw] top-[33.4vw] w-[14.5vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
                    whileInView={'visible'}
 
                    viewport={{once:true}}
@@ -208,8 +210,8 @@ const Home: NextPage = () => {
                        hidden: { opacity: 0, y: -50 }
                    }}>
                   <NeonButton title={'Stake $Token'}></NeonButton>
-              </motion.div>
-              <motion.div className={'cursor-pointer absolute inline-block left-[64vw] top-[33.4vw] w-[12.4vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
+              </motion.div></a>
+              <a href={'#metaverse'}><motion.div className={'cursor-pointer absolute inline-block left-[64vw] top-[33.4vw] w-[12.4vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
                    whileInView={'visible'}
 
                    viewport={{once:true}}
@@ -219,8 +221,8 @@ const Home: NextPage = () => {
                        hidden: { opacity: 0, y: -50 }
                    }}>
                   <NeonButton title={'Metaverse'}></NeonButton>
-              </motion.div>
-              <motion.div className={'cursor-pointer absolute inline-block left-[78.2vw] top-[33.4vw] w-[8.2vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
+              </motion.div></a>
+              <a href={'#marketplace'}><motion.div className={'cursor-pointer absolute inline-block left-[78.2vw] top-[33.4vw] w-[8.2vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
                    whileInView={'visible'}
 
                    viewport={{once:true}}
@@ -230,7 +232,7 @@ const Home: NextPage = () => {
                        hidden: { opacity: 0, y: -50 }
                    }}>
                   <NeonButton title={'NFT'}></NeonButton>
-              </motion.div>
+              </motion.div></a>
               <motion.div className={'cursor-pointer absolute inline-block left-[50.7vw] top-[38.6vw] w-[8.2vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
                    whileInView={'visible'}
 
@@ -242,7 +244,7 @@ const Home: NextPage = () => {
                    }}>
                   <NeonButton title={'DEX'}></NeonButton>
               </motion.div>
-              <motion.div className={'cursor-pointer absolute inline-block left-[61.1vw] top-[38.6vw] w-[8vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
+              <a href={'#dao'}><motion.div className={'cursor-pointer absolute inline-block left-[61.1vw] top-[38.6vw] w-[8vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
                    whileInView={'visible'}
 
                    viewport={{once:true}}
@@ -252,8 +254,8 @@ const Home: NextPage = () => {
                        hidden: { opacity: 0, y: -50 }
                    }}>
                   <NeonButton title={'DAO'}></NeonButton>
-              </motion.div>
-              <motion.div className={'cursor-pointer absolute inline-block left-[71.5vw] top-[38.6vw] w-[13.5vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
+              </motion.div></a>
+              <a href={'#teaser'}><motion.div className={'cursor-pointer absolute inline-block left-[71.5vw] top-[38.6vw] w-[13.5vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
                    whileInView={'visible'}
 
                    viewport={{once:true}}
@@ -263,7 +265,7 @@ const Home: NextPage = () => {
                        hidden: { opacity: 0, y: -50 }
                    }}>
                   <NeonButton title={'Play-2-Earn'}></NeonButton>
-              </motion.div>
+              </motion.div></a>
               <div className={'cursor-pointer w-[2.3vw] h-[2.3vw] bottom-[15.4vw] left-[14.45vw] absolute inline-block'}>
                   <Image src={'/images/twitter.svg'} layout={'fill'}></Image>
               </div>
@@ -278,7 +280,7 @@ const Home: NextPage = () => {
 
           {/*STACKING*/}
 
-          <div className={'w-[100vw] relative block h-[52.5vw] bg-cover bg-[]'} >
+          <div className={'w-[100vw] relative block h-[52.5vw] bg-cover bg-[]'} id={'release'} >
               <motion.div
                   initial="hidden"
                   animate={'visible'}
@@ -290,15 +292,7 @@ const Home: NextPage = () => {
                   className={' left-[-8vw] top-[6.3vw] w-[41vw] h-[41vw] rounded-full bg-[#000] absolute inline-block'}>
                   <Image src={'/images/planet1.png'} layout={'fill'}></Image>
               </motion.div>
-              <motion.div className={'left-[18vw] top-[5vw] w-[64vw] h-[3.5vw] absolute inline-block'} initial="hidden"
-                          ref={ref}
-                          whileInView={'visible'}
-                          viewport={{once:true}}
-                          transition={{ type:"tween",duration: 1.4 }}
-                          variants={{
-                              visible: { opacity: 1, scale:1 },
-                              hidden: { opacity: 0, scale: 2 }
-                          }}>
+              <motion.div className={'left-[18vw] top-[5vw] w-[64vw] h-[3.5vw] absolute inline-block'}>
                   <Image src={'/images/release.svg'} layout={'fill'}></Image>
               </motion.div>
 
@@ -310,13 +304,7 @@ const Home: NextPage = () => {
                               visible: { opacity: 1, y:0 },
                               hidden: { opacity: 0, y:100 }
                           }}>
-                  <AnimatedNumber
-                      onWheel={()=>{setApyValue(1314314)}}
-                      className={'tracking-[0.015em] absolute left-[21.6vw] text-[4.5vw] top-[14vw] text-right text-white font-gilroy font-bold'}
-                      value={apyValue}
-                      duration={apyDuration}
-                      formatValue={apyValue=>`${Number(apyValue).toFixed(2)} %`}
-                  />
+                  <p className={'tracking-[0.015em] absolute left-[21.6vw] text-[4.5vw] top-[14vw] text-right text-white font-gilroy font-bold'}>1 041 035%</p>
               </motion.div>
 
 
@@ -372,14 +360,7 @@ const Home: NextPage = () => {
                   </div>
               </div>
 
-              <motion.div initial="hidden"
-                          whileInView={'visible'}
-                          viewport={{once:true}}
-                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
-                          variants={{
-                              visible: { opacity: 1, scale:1 },
-                              hidden: { opacity: 0, scale:0.1 }
-                          }} className={'w-[32vw] h-[22vw] left-[50vw] top-[11vw] absolute inline-block'}>
+              <motion.div  className={'w-[32vw] h-[22vw] left-[50vw] top-[11vw] absolute inline-block'}>
                   <Image src={'/images/graphic.svg'} layout={'fill'}></Image>
               </motion.div>
 
@@ -387,7 +368,7 @@ const Home: NextPage = () => {
 
           {/*CALCULATOR*/}
 
-          <motion.div  className={'w-[100vw] relative block h-[57vw] bg-cover bg-[]'}>
+          <motion.div  className={'w-[100vw] relative block h-[57vw] bg-cover bg-[]'} id={'calculator'}>
               <motion.div initial="hidden"
                           whileInView={'visible'}
                           viewport={{once:true}}
@@ -401,9 +382,36 @@ const Home: NextPage = () => {
 
           </motion.div>
 
+
+          {/*STACKER*/}
+
+          <motion.div  className={'w-[100vw] relative block h-[64.65vw] bg-[]'} id={'stacker'}>
+              <div className={'w-[56vw] right-[-6vw] top-[8vw] h-[56vw] absolute inline-block'}>
+                  <Image src={'/images/stakemoon.png'} layout={'fill'}></Image>
+              </div>
+              <motion.div className={'w-[100vw] z-50 absolute top-0 block h-[57vw]'}>
+                  <h2 className={'w-[60%] mx-[20%] text-center text-[3.45vw] text-white font-gilroy font-semibold leading-[100%] mt-[3vw] uppercase'}><strong>Stake your $token</strong><br/>to earn $bnb</h2>
+                  <div className={'justify-center absolute w-[32.3vw] h-[36vw] flex top-[4vw] left-[34vw] top-[13.6vw]'}>
+                      <div className={'neon-border border-4 rounded-[1vw] w-full h-full absolute'}></div>
+                      <div className={'border-white border-2 rounded-[1vw] w-[99.7%] h-[99.7%] absolute'}></div>
+                      <div className={'w-[98%] mt-[6%] h-[98%] absolute'}>
+                          <Stacker></Stacker>
+                      </div>
+                  </div>
+                  <div className={'w-[9vw] h-[6vw] top-[50vw] left-[30vw] absolute inline-block'}>
+                      <Image src={'/images/30procents.svg'} layout={'fill'}></Image>
+                  </div>
+                  <p className={'w-[8vw] absolute inline-block top-[50vw] text-[1.6vw] w-[31.2vw] left-[40vw] text-white font-gilroy font-medium'}>from all BNB collected on Pinksale presale will be distributed in $BNB Rewards pool</p>
+                  <button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[34vw] text-[1.5vw] bg-purple text-white rounded-full font-gilroy font-bold'}>BUY $TOKEN</button>
+                  <button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[51vw] text-[1.5vw] bg-blue text-white rounded-full font-gilroy font-bold'}>LEARN MORE</button>
+              </motion.div>
+
+          </motion.div>
+
+
           {/*BNB*/}
 
-          <div className={'w-[100vw] relative block h-[41.25vw] bg-[]'}>
+          <div className={'w-[100vw] relative block h-[41.25vw] bg-[]'} id={'bnb'}>
               <motion.div initial="hidden"
                           whileInView={'visible'}
                           viewport={{once:true}}
@@ -512,9 +520,45 @@ const Home: NextPage = () => {
 
           </div>
 
+
+
+          {/*MARKETPLACE*/}
+
+
+          <div className={'w-[100vw] relative block  h-[71.6vw] bg-cover bg-[url("../public/images/marketplacebg.png")]'} id={'marketplace'}>
+              <h2 className={'absolute top-[6vw] left-[29vw] inline-block text-white font-gilroy font-bold text-[5.1vw]'}>NFT MARKETPLACE</h2>
+              <p className={'absolute top-[15vw] left-[32vw] inline-block text-white font-gilroy font-medium uppercase text-[2vw]'}>NFT Boosters for <strong>$BNB</strong> Rewards pool</p>
+              <div className={'left-[12vw] top-[20vw] w-[79vw] h-[25.5vw] absolute inline-block] neon-border rounded-[2vw] border-4 '}></div>
+              <div className={'left-[12vw] top-[20vw] w-[79vw] h-[26vw] absolute inline-block] '}>
+                  <div className={'justify-around top-[3vw] flex absolute bottom-0 w-full h-[80%]'}>
+                      <div className={'w-[20%] h-full relative'}>
+                          <PlanetCardMarketplace planetName={'X-3121'} image={'/images/planets/1.png'} apyIncrease={80000} ></PlanetCardMarketplace>
+                          <button className={' w-[75%] mx-[12.5%] mt-[2vw] h-[3.5vw] text-[1.8vw] bg-blue text-white rounded-full font-gilroy font-bold'}>BUY</button>
+                      </div>
+                      <div className={'w-[20%] h-full relative'}>
+                          <PlanetCardMarketplace planetName={'Y-8265'} image={'/images/planets/2.png'} apyIncrease={12000}></PlanetCardMarketplace>
+                          <button className={' w-[75%] mx-[12.5%] mt-[2vw] h-[3.5vw] text-[1.8vw] bg-blue text-white rounded-full font-gilroy font-bold'}>BUY</button>
+                      </div>
+                      <div className={'w-[20%] h-full relative'}>
+                          <PlanetCardMarketplace planetName={'Zyx-3512'} image={'/images/planets/3.png'} apyIncrease={180000}></PlanetCardMarketplace>
+                          <button className={' w-[75%] mx-[12.5%] mt-[2vw] h-[3.5vw] text-[1.8vw] bg-blue text-white rounded-full font-gilroy font-bold'}>BUY</button>
+                      </div>
+                      <div className={'w-[20%] h-full relative'}>
+                          <PlanetCardMarketplace planetName={'UMY-1010'} image={'/images/planets/4.png'} apyIncrease={250000}></PlanetCardMarketplace>
+                          <button className={' w-[75%] mx-[12.5%] mt-[2vw] h-[3.5vw] text-[1.8vw] bg-blue text-white rounded-full font-gilroy font-bold'}>BUY</button>
+                      </div>
+                  </div>
+
+
+
+              </div>
+          </div>
+
+
+
           {/*METAVERSE*/}
 
-          <div className={'w-[100vw] relative block  h-[71.6vw] bg-cover bg-[]'}>
+          <div className={'w-[100vw] relative block  h-[69.4vw] bg-cover bg-[]'} id={'metaverse'}>
               <motion.div
                   initial="hidden"
                   animate={'visible'}
@@ -699,7 +743,7 @@ const Home: NextPage = () => {
 
           {/*TEASER*/}
 
-          <div className={'w-[100vw] relative block h-[60.5vw] bg-[]]'}>
+          <div className={'w-[100vw] relative block h-[60.5vw] bg-[]]'} id={'teaser'}>
               <iframe className={'inline-block absolute left-[14vw] w-[72vw] h-[37vw] top-[7vw]'} width="949" height="534" src="https://www.youtube.com/embed/0Eo1c2grmq8"
                       title="YouTube video player" frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -710,13 +754,119 @@ const Home: NextPage = () => {
           </div>
 
 
+          {/*DAO*/}
 
+          <div className={'w-[100vw] relative block h-[58vw] bg-cover bg-[]'} id={'dao'}>
+              <div className={'top-[1vw] left-[6vw] w-[53vw] h-[53vw] absolute inline-block'}>
+                  <Image src={'/images/galactic3.png'} layout={'fill'}></Image>
+              </div>
+              <div className={'w-[49vw] h-[25.45vw] absolute inline-block top-[13vw] left-[28vw]'}>
+                  <Image src={'/images/daovectors.svg'} layout={'fill'}></Image>
+              </div>
+              <motion.p initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
+                          variants={{
+                              visible: { opacity: 1, scale:1 },
+                              hidden: { opacity: 0, scale:0.1 }
+                          }} className={'absolute inline-block text-white left-[32vw] top-[11vw] font-gilroy font-semibold text-[3vw]'}>Investors</motion.p>
+              <motion.p initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
+                          variants={{
+                              visible: { opacity: 1, scale:1 },
+                              hidden: { opacity: 0, scale:0.1 }
+                          }} className={'absolute inline-block text-white left-[17.5vw] top-[17vw] font-gilroy font-semibold text-[2.6vw]'}>Engineering</motion.p>
+              <motion.p initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
+                          variants={{
+                              visible: { opacity: 1, scale:1 },
+                              hidden: { opacity: 0, scale:0.1 }
+                          }} className={'absolute inline-block text-white left-[24.2vw] top-[29.5vw] font-gilroy font-semibold text-[2.6vw]'}>Management</motion.p>
+              <motion.p initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
+                          variants={{
+                              visible: { opacity: 1, scale:1 },
+                              hidden: { opacity: 0, scale:0.1 }
+                          }} className={'absolute inline-block text-white left-[49.4vw] top-[16.4vw] font-gilroy font-semibold text-[2.55vw]'}>Contractors</motion.p>
+              <motion.p initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
+                          variants={{
+                              visible: { opacity: 1, scale:1 },
+                              hidden: { opacity: 0, scale:0.1 }
+                          }} className={'absolute inline-block text-white left-[53.5vw] top-[28.8vw] font-gilroy font-semibold text-[2.55vw]'}>Community</motion.p>
+              <motion.p initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
+                          variants={{
+                              visible: { opacity: 1, scale:1 },
+                              hidden: { opacity: 0, scale:0.1 }
+                          }} className={'absolute inline-block text-white left-[66vw] top-[9vw] font-gilroy font-normal text-[2.55vw]'}>DEV</motion.p>
+              <motion.p initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
+                          variants={{
+                              visible: { opacity: 1, scale:1 },
+                              hidden: { opacity: 0, scale:0.1 }
+                          }} className={'absolute inline-block text-white left-[68.6vw] top-[16.1vw] font-gilroy font-normal text-[2.55vw]'}>Research</motion.p>
+              <motion.p initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
+                          variants={{
+                              visible: { opacity: 1, scale:1 },
+                              hidden: { opacity: 0, scale:0.1 }
+                          }} className={'absolute inline-block text-white left-[71vw] top-[22vw] font-gilroy font-normal text-[2.55vw]'}>Vote</motion.p>
+              <motion.p initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
+                          variants={{
+                              visible: { opacity: 1, scale:1 },
+                              hidden: { opacity: 0, scale:0.1 }
+                          }} className={'absolute inline-block text-white left-[73vw] top-[33vw] font-gilroy font-normal text-center leading-[100%] w-[12vw] text-[2.55vw]'}>Liquidity providers</motion.p>
+              <motion.p initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
+                          variants={{
+                              visible: { opacity: 1, scale:1 },
+                              hidden: { opacity: 0, scale:0.1 }
+                          }} className={'absolute inline-block text-white left-[34.5vw] top-[36.3vw] font-gilroy font-normal text-center leading-[100%] w-[16vw] text-[2.55vw]'}>Initial cooperation</motion.p>
+              <motion.p initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
+                          variants={{
+                              visible: { opacity: 1, scale:1 },
+                              hidden: { opacity: 0, scale:0.1 }
+                          }} className={'absolute inline-block text-white left-[60vw] top-[37vw] font-gilroy font-normal text-[2.55vw]'}>Gamers</motion.p>
+              <motion.p initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
+                          variants={{
+                              visible: { opacity: 1, scale:1 },
+                              hidden: { opacity: 0, scale:0.1 }
+                          }} className={'absolute inline-block text-white left-[19vw] top-[36.5vw] font-gilroy font-normal text-[2.55vw]'}>Marketing</motion.p>
+              <div className={'absolute inline-block text-white left-[36vw] top-[21vw] text-[3.5vw] font-gilroy font-bold w-[12vw] h-[5.5vw] dao-gradient text-in-shape flex rounded-full'}>DAO</div>
+          </div>
 
 
 
           {/*TEAM*/}
 
-          <div className={'w-[100vw] relative block h-[71.6vw] bg-cover bg-[]'}>
+          <div className={'w-[100vw] relative block h-[71.6vw] bg-cover bg-[]'} id={'team'}>
               <motion.div
                   initial="hidden"
                   whileInView={'visible'}
@@ -802,7 +952,7 @@ const Home: NextPage = () => {
 
           {/*ROADMAP*/}
 
-          <div className={'w-[100vw] relative block h-[112vw] bg-cover bg-[]'}>
+          <div className={'w-[100vw] relative block h-[112vw] bg-cover bg-[]'} id={'roadmap'}>
 
               <div className={'absolute inline-block rotate-180 left-[6vw] top-[6.5vw]  w-[88vw] h-[95.3vw] rounded-[4.5vw] rotate-180'}>
                   <div className={'w-[inherit] h-[inherit] relative flex items-center justify-items-center justify-center rounded-[inherit]'}>
@@ -835,10 +985,20 @@ const Home: NextPage = () => {
                       <div className={'w-[13vw] h-[4.4vw] top-[-2.5vw] rounded-[1vw] flex text-in-shape bg-purple absolute'}>
                           <p className={'leading-[89%]  text-[2vw] text-white font-gilroy font-bold'}>1H’2022</p>
                       </div>
-                      <p className={'leading-[89%] mt-[1.5vw] text-[1.545vw] text-white font-gilroy font-normal'}>Website development
-                          contract deploy<br/><br/>
-                          Seed round<br/><br/>
-                          KOL management<br/><br/>
+                      <div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[3.4vw] absolute inline-block'}>
+                          <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>
+                      </div>
+                      <div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[7vw] absolute inline-block'}>
+                          <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>
+                      </div>
+                      <div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[9.8vw] absolute inline-block'}>
+                          <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>
+                      </div>
+                      <p className={'leading-[89%] mt-[1.5vw] text-[1.545vw] text-white font-gilroy font-normal'}>
+                          <span className={'text-[#F3ACFF] font-semibold'}>Website development</span><br/>
+                          <span className={'text-[#F3ACFF] font-semibold'}>contract deploy</span><br/><br/>
+                          <span className={'text-[#F3ACFF] font-semibold'}>Seed round</span><br/><br/>
+                          <span className={'text-[#F3ACFF] font-semibold'}>KOL management</span><br/><br/>
                           Coinscope audit<br/><br/>
                           KYC by Pinksale<br/><br/>
                           Presale on Pinksale<br/><br/>

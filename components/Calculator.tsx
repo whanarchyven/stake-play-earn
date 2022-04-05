@@ -49,16 +49,16 @@ const Calculator = () => {
             <div className={'left-[21vw] top-[25vw] w-[57vw] h-[19vw] absolute inline-block] '}>
                 <div className={'justify-around flex absolute bottom-0 w-full h-[80%]'}>
                     <div className={'w-[20%] h-full relative'}>
-                        <PlanetCard planetName={'X-3121'} image={'/images/planets/1.png'} apyIncrease={80000} increaseApy={()=>{setApy(apy+80000)}} decrementApy={()=>{setApy(apy-80000)}}></PlanetCard>
+                        <PlanetCard planetName={'X-3121'} image={'/images/planets/1.png'} apyIncrease={80000} ></PlanetCard>
                     </div>
                     <div className={'w-[20%] h-full relative'}>
-                        <PlanetCard planetName={'Y-8265'} image={'/images/planets/2.png'} apyIncrease={12000} increaseApy={()=>{setApy(apy+120000)}} decrementApy={()=>{setApy(apy-120000)}}></PlanetCard>
+                        <PlanetCard planetName={'Y-8265'} image={'/images/planets/2.png'} apyIncrease={12000}></PlanetCard>
                     </div>
                     <div className={'w-[20%] h-full relative'}>
-                        <PlanetCard planetName={'Zyx-3512'} image={'/images/planets/3.png'} apyIncrease={180000} increaseApy={()=>{setApy(apy+180000)}} decrementApy={()=>{setApy(apy-180000)}}></PlanetCard>
+                        <PlanetCard planetName={'Zyx-3512'} image={'/images/planets/3.png'} apyIncrease={180000}></PlanetCard>
                     </div>
                     <div className={'w-[20%] h-full relative'}>
-                        <PlanetCard planetName={'UMY-1010'} image={'/images/planets/4.png'} apyIncrease={250000} increaseApy={()=>{setApy(apy+250000)}} decrementApy={()=>{setApy(apy-250000)}}></PlanetCard>
+                        <PlanetCard planetName={'UMY-1010'} image={'/images/planets/4.png'} apyIncrease={250000}></PlanetCard>
                     </div>
                 </div>
 
@@ -73,7 +73,8 @@ const Calculator = () => {
 
                 <p className={'right-[3%] text-right top-[10%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>{tokenAmount} Token</p>
                 {/*<p className={'right-[3%] text-right top-[28%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>${tokenAmount*147.06}</p>*/}
-                <p className={'right-[3%] text-right top-[48%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>{tokenAmount*(((1+0.00000088)**(days*28800))*(apy/1041035))} Token</p>
+                <p className={'right-[3%] text-right top-[48%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>{tokenAmount*(((1+0.00000088)**(days*28800)))} Token</p>
+                {/**(apy/1041035)*/}
                 {/*<p className={'right-[3%] text-right top-[68%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>${tokenAmount * ((1 + 0.00000079)** (days * 28800)) * 147.06}</p>*/}
             </div>
 
