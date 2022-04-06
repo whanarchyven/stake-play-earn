@@ -38,7 +38,7 @@ const PlanetCardMarketplace = ({planetName, image, apyIncrease,cost}: propsTestC
                         <h2 className={'animate-pulse w-full text-center text-white font-gilroy font-regular text-[1vw]'}>APY +<strong>{apyIncrease}%</strong></h2>
                     </div>
                 </div>
-                <h2 className={'animate-pulse mt-[8vw] font-bold w-full text-center text-white font-gilroy font-regular text-[2vw]'}>{cost} BNB</h2>
+                <h2 className={'animate-pulse mt-[13vw] font-bold w-full text-center text-white font-gilroy font-regular text-[2vw]'}>{cost} BNB</h2>
             </div>
 
 

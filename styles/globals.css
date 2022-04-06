@@ -73,6 +73,12 @@
         backdrop-filter: blur(7.34575px);
         /*border:2px solid white;*/
     }
+    .dashboard-shape{
+        background: rgba(159, 102, 252, 0.26);
+    }
+    .account-shape{
+        background: rgba(204, 102, 252, 0.1);
+    }
 }
 
 @font-face {

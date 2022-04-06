@@ -33,12 +33,90 @@ const Home: NextPage = () => {
 
       <main className={styles.main} >
 
-          <div className={'h-auto w-[100vw] relative block bg-cover bg-[#000]'} id={'intro'}>
+          <div className={'h-auto w-[100vw] relative block bg-cover bg-[]'} id={'intro'}>
 
               {/*LEFT-SIDE-MENU*/}
 
-              <div className={'flex-wrap h-[100vh] top-0 fixed z-[9999] w-[25%] inline-flex justify-center justify-items-center align-top p-[3vw]'}>
-                  <div className={'w-full h-[4vw] block relative '} onClick={()=>{setCurrentTab('dashboard')}}>
+              <Particles
+                  id="tsparticles"
+                  options={{
+                      background: {
+                          color: {
+                              value: "#000",
+                          },
+                      },
+                      fpsLimit: 1020,
+                      interactivity: {
+                          events: {
+                              onClick: {
+                                  enable: false,
+                                  mode: "push",
+                              },
+                              onHover: {
+                                  enable: true,
+                                  mode: "bounce",
+                              },
+                              resize: true,
+                          },
+                          modes: {
+                              bubble: {
+                                  distance: 400,
+                                  duration: 2,
+                                  opacity: 0.8,
+                                  size: 40,
+                              },
+                              push: {
+                                  quantity: 4,
+                              },
+                              repulse: {
+                                  distance: 200,
+                                  duration: 0.4,
+                              },
+                          },
+                      },
+                      particles: {
+                          number: { value: 160, density: { enable: true, value_area: 800 } },
+                          color: { value: "#ffffff" },
+                          shape: {
+                              type: "circle",
+                              stroke: { width: 0, color: "#000000" },
+                              polygon: { nb_sides: 5 },
+                              image: { src: "img/github.svg", width: 100, height: 100 },
+                          },
+                          opacity: {
+                              value: 1,
+                              random: true,
+                              anim: { enable: true, speed: 1, opacity_min: 0, sync: false },
+                          },
+                          size: {
+                              value: 3,
+                              random: true,
+                              anim: { enable: false, speed: 4, size_min: 0.3, sync: false },
+                          },
+                          line_linked: {
+                              enable: false,
+                              distance: 150,
+                              color: "#ffffff",
+                              opacity: 0.4,
+                              width: 1,
+                          },
+                          move: {
+                              enable: true,
+                              speed: 1,
+                              direction: "none",
+                              random: true,
+                              straight: false,
+                              out_mode: "out",
+                              bounce: false,
+                              attract: { enable: false, rotateX: 600, rotateY: 600 },
+                          },
+                      },
+                      detectRetina: true,
+                  }}
+                  className={'w-full z-[1] h-full'} />
+
+              <div className={'flex-wrap h-[100vh] bg-cover bg-[url("../public/images/account/account_tabs.png")] top-0 fixed z-[9999] w-[25%] inline-flex justify-center justify-items-center align-top p-[3vw]'}>
+                  <div className={'w-full cursor-pointer h-[4vw] block relative '} onClick={()=>{setCurrentTab('dashboard')}}>
                       {currentTab=='dashboard'?
                           <div className={'w-full h-full'}>
                               <div className={'account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
@@ -59,7 +137,7 @@ const Home: NextPage = () => {
                           </div>
                       }
                   </div>
-                  <div className={'w-full h-[4vw] block relative '} onClick={()=>{setCurrentTab('account')}}>
+                  <div className={'w-full cursor-pointer h-[4vw] block relative '} onClick={()=>{setCurrentTab('account')}}>
                       {currentTab=='account'?
                           <div className={'w-full h-full'}>
                               <div className={'account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
@@ -80,7 +158,7 @@ const Home: NextPage = () => {
                           </div>
                       }
                   </div>
-                  <div className={'w-full h-[4vw] block relative '} onClick={()=>{setCurrentTab('calculator')}}>
+                  <div className={'w-full cursor-pointer h-[4vw] block relative '} onClick={()=>{setCurrentTab('calculator')}}>
                       {currentTab=='calculator'?
                           <div className={'w-full h-full'}>
                               <div className={'account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
@@ -101,7 +179,7 @@ const Home: NextPage = () => {
                           </div>
                       }
                   </div>
-                  <div className={'w-full h-[4vw] block relative '} onClick={()=>{setCurrentTab('swap')}}>
+                  <div className={'w-full cursor-pointer h-[4vw] block relative '} onClick={()=>{setCurrentTab('swap')}}>
                       {currentTab=='swap'?
                           <div className={'w-full h-full'}>
                               <div className={'account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
@@ -122,7 +200,7 @@ const Home: NextPage = () => {
                           </div>
                       }
                   </div>
-                  <div className={'w-full h-[4vw] block relative '} onClick={()=>{setCurrentTab('docs')}}>
+                  <div className={'w-full cursor-pointer h-[4vw] block relative '} onClick={()=>{setCurrentTab('docs')}}>
                       {currentTab=='docs'?
                           <div className={'w-full h-full'}>
                               <div className={'account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
@@ -143,7 +221,7 @@ const Home: NextPage = () => {
                           </div>
                       }
                   </div>
-                  <div className={'w-full h-[4vw] block relative '} onClick={()=>{setCurrentTab('marketplace')}}>
+                  <div className={'w-full cursor-pointer h-[4vw] block relative '} onClick={()=>{setCurrentTab('marketplace')}}>
                       {currentTab=='marketplace'?
                           <div className={'w-full h-full'}>
                               <div className={'account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
@@ -164,7 +242,7 @@ const Home: NextPage = () => {
                           </div>
                       }
                   </div>
-                  <div className={'w-full h-[4vw] flex justify-around relative '} onClick={()=>{setCurrentTab('swap')}}>
+                  <div className={'w-full cursor-pointer h-[4vw] flex justify-around relative '} onClick={()=>{setCurrentTab('swap')}}>
                       <div className={'w-[3vw] relative inline-block h-[3vw]'}>
                           <Image src={'/images/account/twitter.svg'} layout={'fill'}></Image>
                       </div>
@@ -177,7 +255,7 @@ const Home: NextPage = () => {
                   </div>
 
               </div>
-              <div className={'h-full w-[100%] overflow-y-visible inline-flex justify-center align-top p-[3vw]'}>
+              <div className={'h-full w-[100%] z-[999] overflow-y-visible inline-flex justify-center align-top p-[3vw]'}>
                   <AccountContent currentTab={currentTab}></AccountContent>
               </div>
 

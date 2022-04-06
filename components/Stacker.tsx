@@ -108,12 +108,12 @@ const Stacker = () => {
                             <div className={'w-full h-[5vw]'}>
                                 <div className={'w-[25%] inline-block align-top my-[3%] h-full'}>
                                     <p className={'text-white  font-semibold font-gilroy text-[1.5vw] text-center'}>{currentToken.revaAPR} %</p>
-                                    <p className={'text-white font-light font-gilroy text-center'}>REVA APR</p>
+                                    <p className={'text-white font-light text-[1vw] font-gilroy text-center'}>REVA APR</p>
                                 </div>
                                 <div className={'w-[25%] inline-block align-top my-[3%] h-full'}>
                                     <a href={'#marketplace'}><div className={'cursor-pointer w-[90%] mx-[5%] mt-[7%] h-[3vw] relative flex items-center justify-items-center justify-center rounded-[1vw]'}>
                                         <div className={'z-[4] w-[99%] absolute flex h-[99%] rounded-[inherit] border-white border-solid border-[1px] m-[1%]'}></div>
-                                        <p className={'z-[3] my-auto absolute flex text-[inherit] filter-none text-white font-gilroy font-bold'}>BUY NFT</p>
+                                        <p className={'z-[3] my-auto absolute flex text-[1vw] filter-none text-white font-gilroy font-bold'}>BUY NFT</p>
                                         <div className={'relative inline-block flex justify-center justify-items-center blur-[1px] rounded-[inherit] h-full w-full'}>
                                             <div className={'opacity-[0.4] z-[2] absolute w-full h-full rounded-[inherit] '}></div>
                                             <div className={'z-[1] absolute w-full h-full border-[3px] rounded-[inherit] neon-border'}></div>

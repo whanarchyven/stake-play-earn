@@ -167,9 +167,12 @@ const Home: NextPage = () => {
                           }} className={'w-[139vw] h-[162vw] absolute inline-block top-[-86vw] left-[-21vw]'}>
                   <Image src={'/images/galactic1.png'} layout={'fill'}></Image>
               </motion.div>
-              <div className={' justify-items-center items-center justify-align-center w-[22vw] h-[5.5vw] left-[28.3vw] top-[16.3vw] rounded-full absolute inline-flex offer-gradient'}>
+              <div className={' justify-items-center items-center justify-align-center w-[22vw] h-[5.5vw] left-[38vw] top-[9vw] rounded-full absolute inline-flex offer-gradient'}>
                   <h2 className={'animate-pulse w-full text-center text-white font-gilroy font-extrabold text-[2.2vw]'}>1 041 035% APY</h2>
               </div>
+              <p className={' animate-pulse text-left text-white font-gilroy font-normal text-[1.2vw] w-[22vw] h-[5.5vw] left-[41vw] top-[15vw] absolute inline-flex '}>
+                  rebase function block per block
+              </p>
               {/*<motion.div className={'absolute inline-block left-0 bottom-0'} ></motion.div>*/}
               <div className={'w-[28vw] h-[28vw] absolute inline-block bottom-[13vw] left-[16vw]'}>
                   <Image src={'/images/phone.png'} layout={'fill'}></Image>
@@ -531,19 +534,19 @@ const Home: NextPage = () => {
                   <div className={'justify-around top-[3vw] flex absolute bottom-0 w-full h-[80%]'}>
                       <div className={'w-[20%] h-full relative'}>
                           <PlanetCardMarketplace cost={0.5} planetName={'X-3121'} image={'/images/planets/1.png'} apyIncrease={80000} ></PlanetCardMarketplace>
-                          <button className={' w-[75%] mx-[12.5%] mt-[2vw] h-[3.5vw] text-[1.8vw] bg-blue text-white rounded-full font-gilroy font-bold'}>BUY</button>
+                          <button className={' w-[75%] mx-[12.5%] mt-[4vw] h-[3.5vw] text-[1.8vw] bg-blue text-white rounded-full font-gilroy font-bold'}>BUY</button>
                       </div>
                       <div className={'w-[20%] h-full relative'}>
                           <PlanetCardMarketplace cost={1} planetName={'Y-8265'} image={'/images/planets/2.png'} apyIncrease={12000}></PlanetCardMarketplace>
-                          <button className={' w-[75%] mx-[12.5%] mt-[2vw] h-[3.5vw] text-[1.8vw] bg-blue text-white rounded-full font-gilroy font-bold'}>BUY</button>
+                          <button className={' w-[75%] mx-[12.5%] mt-[4vw] h-[3.5vw] text-[1.8vw] bg-blue text-white rounded-full font-gilroy font-bold'}>BUY</button>
                       </div>
                       <div className={'w-[20%] h-full relative'}>
                           <PlanetCardMarketplace cost={1.5} planetName={'Zyx-3512'} image={'/images/planets/3.png'} apyIncrease={180000}></PlanetCardMarketplace>
-                          <button className={' w-[75%] mx-[12.5%] mt-[2vw] h-[3.5vw] text-[1.8vw] bg-blue text-white rounded-full font-gilroy font-bold'}>BUY</button>
+                          <button className={' w-[75%] mx-[12.5%] mt-[4vw] h-[3.5vw] text-[1.8vw] bg-blue text-white rounded-full font-gilroy font-bold'}>BUY</button>
                       </div>
                       <div className={'w-[20%] h-full relative'}>
                           <PlanetCardMarketplace cost={2} planetName={'UMY-1010'} image={'/images/planets/4.png'} apyIncrease={250000}></PlanetCardMarketplace>
-                          <button className={' w-[75%] mx-[12.5%] mt-[2vw] h-[3.5vw] text-[1.8vw] bg-blue text-white rounded-full font-gilroy font-bold'}>BUY</button>
+                          <button className={' w-[75%] mx-[12.5%] mt-[4vw] h-[3.5vw] text-[1.8vw] bg-blue text-white rounded-full font-gilroy font-bold'}>BUY</button>
                       </div>
                   </div>
 
