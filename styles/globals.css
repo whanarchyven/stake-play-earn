@@ -68,6 +68,11 @@
         border-top-right-radius: 1vw;
         border-bottom-right-radius: 0vw;
     }
+    .account-tab-active{
+        background: linear-gradient(269.78deg, rgba(212, 63, 236, 0.34) 0.19%, rgba(63, 101, 236, 0.34) 100.97%);
+        backdrop-filter: blur(7.34575px);
+        /*border:2px solid white;*/
+    }
 }
 
 @font-face {

@@ -29,12 +29,6 @@ const Home: NextPage = () => {
     const [apyDuration,setApyDuration]=useState(1500);
     const { ref, inView, entry, } = useInView();
 
-    const suka =()=>{
-        if(inView){
-            setApyValue(1041035);
-        }
-
-    }
     let spring = "spring" as const
 
   return (
@@ -45,7 +39,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main} onWheel={()=>{suka()}} >
+      <main className={styles.main}>
 
 
           {/*MENU*/}
@@ -72,10 +66,13 @@ const Home: NextPage = () => {
                   <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#stacker'}>Stake</a>
                   <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#team'}>TEAM</a>
                   <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#roadmap'}>ROADMAP</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#'}>PARTNERS</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#partners'}>PARTNERS</a>
               </div>
               <div className={'z-[9999] justify-items-center justify-center items-center fixed inline-flex left-[71.2vw] top-[1.2vw] w-[12.5vw] h-[3.4vw] rounded-full bg-purple'}>
                   <ConnectMM/>
+              </div>
+              <div className={'font-bold text-white z-[9999] justify-items-center justify-center items-center fixed font-gilroy text-[1.3vw] inline-flex right-[5vw] top-[1.2vw] w-[10vw] h-[3.4vw] rounded-full bg-blue'}>
+                  <a href={'/account'}>APP</a>
               </div>
           </motion.div>
 
@@ -529,23 +526,23 @@ const Home: NextPage = () => {
           <div className={'w-[100vw] relative block  h-[71.6vw] bg-cover bg-[]'} id={'marketplace'}>
               <h2 className={'absolute top-[6vw] left-[29vw] inline-block text-white font-gilroy font-bold text-[5.1vw]'}>NFT MARKETPLACE</h2>
               <p className={'absolute top-[15vw] left-[32vw] inline-block text-white font-gilroy font-medium uppercase text-[2vw]'}>NFT Boosters for <strong>$BNB</strong> Rewards pool</p>
-              <div className={'left-[12vw] top-[20vw] w-[79vw] h-[33vw] absolute inline-block] neon-border rounded-[2vw] border-4 '}></div>
-              <div className={'left-[12vw] top-[20vw] w-[79vw] h-[26vw] absolute inline-block] '}>
+              <div className={'left-[12vw] top-[20vw] w-[79vw] h-[37vw] absolute inline-block] neon-border rounded-[2vw] border-4 '}></div>
+              <div className={'left-[12vw] top-[20vw] w-[79vw] h-[30vw] absolute inline-block] '}>
                   <div className={'justify-around top-[3vw] flex absolute bottom-0 w-full h-[80%]'}>
                       <div className={'w-[20%] h-full relative'}>
-                          <PlanetCardMarketplace planetName={'X-3121'} image={'/images/planets/1.png'} apyIncrease={80000} ></PlanetCardMarketplace>
+                          <PlanetCardMarketplace cost={0.5} planetName={'X-3121'} image={'/images/planets/1.png'} apyIncrease={80000} ></PlanetCardMarketplace>
                           <button className={' w-[75%] mx-[12.5%] mt-[2vw] h-[3.5vw] text-[1.8vw] bg-blue text-white rounded-full font-gilroy font-bold'}>BUY</button>
                       </div>
                       <div className={'w-[20%] h-full relative'}>
-                          <PlanetCardMarketplace planetName={'Y-8265'} image={'/images/planets/2.png'} apyIncrease={12000}></PlanetCardMarketplace>
+                          <PlanetCardMarketplace cost={1} planetName={'Y-8265'} image={'/images/planets/2.png'} apyIncrease={12000}></PlanetCardMarketplace>
                           <button className={' w-[75%] mx-[12.5%] mt-[2vw] h-[3.5vw] text-[1.8vw] bg-blue text-white rounded-full font-gilroy font-bold'}>BUY</button>
                       </div>
                       <div className={'w-[20%] h-full relative'}>
-                          <PlanetCardMarketplace planetName={'Zyx-3512'} image={'/images/planets/3.png'} apyIncrease={180000}></PlanetCardMarketplace>
+                          <PlanetCardMarketplace cost={1.5} planetName={'Zyx-3512'} image={'/images/planets/3.png'} apyIncrease={180000}></PlanetCardMarketplace>
                           <button className={' w-[75%] mx-[12.5%] mt-[2vw] h-[3.5vw] text-[1.8vw] bg-blue text-white rounded-full font-gilroy font-bold'}>BUY</button>
                       </div>
                       <div className={'w-[20%] h-full relative'}>
-                          <PlanetCardMarketplace planetName={'UMY-1010'} image={'/images/planets/4.png'} apyIncrease={250000}></PlanetCardMarketplace>
+                          <PlanetCardMarketplace cost={2} planetName={'UMY-1010'} image={'/images/planets/4.png'} apyIncrease={250000}></PlanetCardMarketplace>
                           <button className={' w-[75%] mx-[12.5%] mt-[2vw] h-[3.5vw] text-[1.8vw] bg-blue text-white rounded-full font-gilroy font-bold'}>BUY</button>
                       </div>
                   </div>
@@ -761,7 +758,7 @@ const Home: NextPage = () => {
               <div className={'top-[1vw] left-[6vw] w-[53vw] h-[53vw] absolute inline-block'}>
                   <Image src={'/images/galactic3.png'} layout={'fill'}></Image>
               </div>
-              <div className={'w-[49vw] h-[25.45vw] absolute inline-block top-[13vw] left-[28vw]'}>
+              <div className={'w-[49vw] h-[25.45vw] absolute inline-block top-[12.2vw] left-[28vw]'}>
                   <Image src={'/images/daovectors.svg'} layout={'fill'}></Image>
               </div>
               <motion.p initial="hidden"
@@ -860,6 +857,7 @@ const Home: NextPage = () => {
                               visible: { opacity: 1, scale:1 },
                               hidden: { opacity: 0, scale:0.1 }
                           }} className={'absolute inline-block text-white left-[19vw] top-[36.5vw] font-gilroy font-normal text-[2.55vw]'}>Marketing</motion.p>
+              <div className={'animate-ping absolute inline-block text-white left-[36vw] top-[21vw] text-[3.5vw] font-gilroy font-bold w-[12vw] h-[5.5vw] dao-gradient text-in-shape flex rounded-full'}></div>
               <div className={'absolute inline-block text-white left-[36vw] top-[21vw] text-[3.5vw] font-gilroy font-bold w-[12vw] h-[5.5vw] dao-gradient text-in-shape flex rounded-full'}>DAO</div>
           </div>
 
@@ -890,7 +888,8 @@ const Home: NextPage = () => {
                       </div>
                   </div>
                   <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>
-                  <div className={'w-[9vw] h-[4vw] absolute top-[15vw]'}>
+                  <p className={'text-white inline-block absolute text-center top-[13.7vw] text-[1.5vw] font-gilroy font-regular'}>CEO</p>
+                  <div className={'w-[9vw] h-[4vw] absolute top-[16vw]'}>
                       <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>
                   </div>
               </div>
@@ -903,7 +902,8 @@ const Home: NextPage = () => {
                       </div>
                   </div>
                   <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>
-                  <div className={'w-[9vw] h-[4vw] absolute top-[15vw]'}>
+                  <p className={'text-white inline-block absolute text-center top-[13.7vw] text-[1.5vw] font-gilroy font-regular'}>CEO</p>
+                  <div className={'w-[9vw] h-[4vw] absolute top-[16vw]'}>
                       <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>
                   </div>
               </div>
@@ -917,7 +917,8 @@ const Home: NextPage = () => {
                       </div>
                   </div>
                   <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>
-                  <div className={'w-[9vw] h-[4vw] absolute top-[15vw]'}>
+                  <p className={'text-white inline-block absolute text-center top-[13.7vw] text-[1.5vw] font-gilroy font-regular'}>CEO</p>
+                  <div className={'w-[9vw] h-[4vw] absolute top-[16vw]'}>
                       <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>
                   </div>
               </div>
@@ -930,7 +931,8 @@ const Home: NextPage = () => {
                       </div>
                   </div>
                   <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>
-                  <div className={'w-[9vw] h-[4vw] absolute top-[15vw]'}>
+                  <p className={'text-white inline-block absolute text-center top-[13.7vw] text-[1.5vw] font-gilroy font-regular'}>CEO</p>
+                  <div className={'w-[9vw] h-[4vw] absolute top-[16vw]'}>
                       <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>
                   </div>
               </div>
@@ -944,7 +946,8 @@ const Home: NextPage = () => {
                       </div>
                   </div>
                   <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>
-                  <div className={'w-[9vw] h-[4vw] absolute top-[15vw]'}>
+                  <p className={'text-white inline-block absolute text-center top-[13.7vw] text-[1.5vw] font-gilroy font-regular'}>CEO</p>
+                  <div className={'w-[9vw] h-[4vw] absolute top-[16vw]'}>
                       <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>
                   </div>
               </div>

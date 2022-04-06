@@ -8,11 +8,11 @@ interface propsTestComponent {
     planetName:string;
     image:string;
     apyIncrease:number;
-
+    cost:number;
 }
 
 
-const PlanetCardMarketplace = ({planetName, image, apyIncrease}: propsTestComponent) => {
+const PlanetCardMarketplace = ({planetName, image, apyIncrease,cost}: propsTestComponent) => {
     return (
         <div className={'inline-flex justify-center justify-items-center w-full h-full bg-[rgba(125,26,186,0.35)] rounded-[1vw]'}>
             <p className={'top-[-7%] text-[2.4vw] absolute inline-block font-bold text-white font-gilroy'}>{planetName}</p>
@@ -38,7 +38,9 @@ const PlanetCardMarketplace = ({planetName, image, apyIncrease}: propsTestCompon
                         <h2 className={'animate-pulse w-full text-center text-white font-gilroy font-regular text-[1vw]'}>APY +<strong>{apyIncrease}%</strong></h2>
                     </div>
                 </div>
+                <h2 className={'animate-pulse mt-[8vw] font-bold w-full text-center text-white font-gilroy font-regular text-[2vw]'}>{cost} BNB</h2>
             </div>
+
 
         </div>
     );

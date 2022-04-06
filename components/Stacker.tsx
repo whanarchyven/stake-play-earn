@@ -111,14 +111,14 @@ const Stacker = () => {
                                     <p className={'text-white font-light font-gilroy text-center'}>REVA APR</p>
                                 </div>
                                 <div className={'w-[25%] inline-block align-top my-[3%] h-full'}>
-                                    <div className={'w-[90%] mx-[5%] mt-[7%] h-[3vw] relative flex items-center justify-items-center justify-center rounded-[1vw]'}>
+                                    <a href={'#marketplace'}><div className={'cursor-pointer w-[90%] mx-[5%] mt-[7%] h-[3vw] relative flex items-center justify-items-center justify-center rounded-[1vw]'}>
                                         <div className={'z-[4] w-[99%] absolute flex h-[99%] rounded-[inherit] border-white border-solid border-[1px] m-[1%]'}></div>
                                         <p className={'z-[3] my-auto absolute flex text-[inherit] filter-none text-white font-gilroy font-bold'}>BUY NFT</p>
                                         <div className={'relative inline-block flex justify-center justify-items-center blur-[1px] rounded-[inherit] h-full w-full'}>
                                             <div className={'opacity-[0.4] z-[2] absolute w-full h-full rounded-[inherit] '}></div>
                                             <div className={'z-[1] absolute w-full h-full border-[3px] rounded-[inherit] neon-border'}></div>
                                         </div>
-                                    </div>
+                                    </div></a>
                                 </div>
                                 <div className={'w-[25%] inline-block align-top my-[3%] h-full'}>
                                     <p className={'uppercase text-white mt-[7%] font-semibold font-gilroy text-[1.2vw] text-center'}>{currentToken.specify}</p>
