@@ -1,0 +1,48 @@
+Date : 2022-04-08 03:22:35
+Directory : c:\Users\Иван Забурдаев\Desktop\stake play earn\stake-play-earn\pages
+Total : 19 files,  357 codes, -1 comments, 65 blanks, all 421 lines
+
+Languages
++------------------+------------+------------+------------+------------+------------+
+| language         | files      | code       | comment    | blank      | total      |
++------------------+------------+------------+------------+------------+------------+
+| TypeScript React |         17 |        348 |         -2 |         62 |        408 |
+| TypeScript       |          1 |         10 |          1 |          3 |         14 |
+| JavaScript       |          1 |         -1 |          0 |          0 |         -1 |
++------------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                 | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                    |         19 |        357 |         -1 |         65 |        421 |
+| ..                                                                                                   |         15 |     -1,008 |         -4 |        -79 |     -1,091 |
+| ..\components                                                                                        |         15 |     -1,008 |         -4 |        -79 |     -1,091 |
+| api                                                                                                  |          1 |         10 |          1 |          3 |         14 |
++------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+
+| filename                                                                                             | language         | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+
+| c:\Users\Иван Забурдаев\Desktop\stake play earn\stake-play-earn\components\Account.tsx               | TypeScript React |        -66 |          0 |         -7 |        -73 |
+| c:\Users\Иван Забурдаев\Desktop\stake play earn\stake-play-earn\components\AccountContent.tsx        | TypeScript React |        -78 |          0 |         -5 |        -83 |
+| c:\Users\Иван Забурдаев\Desktop\stake play earn\stake-play-earn\components\Calculator.tsx            | TypeScript React |       -109 |         -3 |        -21 |       -133 |
+| c:\Users\Иван Забурдаев\Desktop\stake play earn\stake-play-earn\components\ConnectMM.tsx             | TypeScript React |        -30 |         -1 |         -2 |        -33 |
+| c:\Users\Иван Забурдаев\Desktop\stake play earn\stake-play-earn\components\Dashboard.tsx             | TypeScript React |        -62 |          0 |         -3 |        -65 |
+| c:\Users\Иван Забурдаев\Desktop\stake play earn\stake-play-earn\components\NeonActiveShape.tsx       | TypeScript React |        -33 |          0 |         -2 |        -35 |
+| c:\Users\Иван Забурдаев\Desktop\stake play earn\stake-play-earn\components\NeonButton.tsx            | TypeScript React |        -33 |          0 |         -2 |        -35 |
+| c:\Users\Иван Забурдаев\Desktop\stake play earn\stake-play-earn\components\PlanetBuyButton.tsx       | TypeScript React |        -39 |          0 |         -2 |        -41 |
+| c:\Users\Иван Забурдаев\Desktop\stake play earn\stake-play-earn\components\PlanetBuyButtonOld.tsx    | TypeScript React |        -48 |          0 |         -2 |        -50 |
+| c:\Users\Иван Забурдаев\Desktop\stake play earn\stake-play-earn\components\PlanetCard.tsx            | TypeScript React |        -91 |          0 |         -8 |        -99 |
+| c:\Users\Иван Забурдаев\Desktop\stake play earn\stake-play-earn\components\PlanetCardMarketplace.tsx | TypeScript React |        -43 |          0 |         -6 |        -49 |
+| c:\Users\Иван Забурдаев\Desktop\stake play earn\stake-play-earn\components\PlanetCardOld.tsx         | TypeScript React |        -35 |          0 |         -5 |        -40 |
+| c:\Users\Иван Забурдаев\Desktop\stake play earn\stake-play-earn\components\Stacker.tsx               | TypeScript React |       -222 |          0 |         -8 |       -230 |
+| c:\Users\Иван Забурдаев\Desktop\stake play earn\stake-play-earn\components\Swiper.tsx                | TypeScript React |       -118 |          0 |         -6 |       -124 |
+| c:\Users\Иван Забурдаев\Desktop\stake play earn\stake-play-earn\components\mm.js                     | JavaScript       |         -1 |          0 |          0 |         -1 |
+| c:\Users\Иван Забурдаев\Desktop\stake play earn\stake-play-earn\pages\_app.tsx                       | TypeScript React |          6 |          0 |          3 |          9 |
+| c:\Users\Иван Забурдаев\Desktop\stake play earn\stake-play-earn\pages\account.tsx                    | TypeScript React |        277 |          1 |         28 |        306 |
+| c:\Users\Иван Забурдаев\Desktop\stake play earn\stake-play-earn\pages\api\hello.ts                   | TypeScript       |         10 |          1 |          3 |         14 |
+| c:\Users\Иван Забурдаев\Desktop\stake play earn\stake-play-earn\pages\index.tsx                      | TypeScript React |      1,072 |          1 |        110 |      1,183 |
+| Total                                                                                                |                  |        357 |         -1 |         65 |        421 |
++------------------------------------------------------------------------------------------------------+------------------+------------+------------+------------+------------+

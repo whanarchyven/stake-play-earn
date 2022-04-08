@@ -79,6 +79,20 @@
     .account-shape{
         background: rgba(204, 102, 252, 0.1);
     }
+    .swiper-background{
+        background: linear-gradient(322.79deg, #3F65EC 1.11%, #C913E7 96.91%);
+    }
+    .swiper-tab{
+        background: rgba(196, 196, 196, 0.2);
+    }
+    .swiper-price-tab{
+        background: rgba(196, 196, 196, 0.1);
+    }
+    .swiper-select{
+        background: transparent;
+        border: none;
+        outline: none;
+    }
 }
 
 @font-face {

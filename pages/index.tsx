@@ -16,6 +16,7 @@ import styled from 'styled-components';
 import Stacker from "../components/Stacker";
 import PlanetCard from "../components/PlanetCard";
 import PlanetCardMarketplace from "../components/PlanetCardMarketplace";
+import Swiper from "../components/Swiper";
 
 
 
@@ -359,6 +360,9 @@ const Home: NextPage = () => {
                       <div className={'z-[1] absolute w-full h-full border-[3px] rounded-[inherit] neon-border'}></div>
                     </div>
                   </div>
+              </div>
+              <div className={'absolute inline-block left-[20.2vw] top-[34.8vw]  w-[59.7vw] h-[3.0vw] rounded-full'}>
+                  <Image src={'/images/formul.svg'} layout={'fill'}></Image>
               </div>
 
               <motion.div  className={'w-[32vw] h-[22vw] left-[50vw] top-[11vw] absolute inline-block'}>
@@ -753,6 +757,29 @@ const Home: NextPage = () => {
               {/*    <h2 className={'text-white text-center uppercase text-[1.7vw] font-gilroy font-bold'}>BUY $TOKEN</h2>*/}
               {/*</div>*/}
           </div>
+
+
+          {/*SWIPER*/}
+
+          <motion.div  className={'w-[100vw] relative block h-[57vw] bg-cover bg-[]'} id={'calculator'}>
+              <div className={'w-[20vw] h-full absolute top-0 right-0'}>
+                  <Image src={'/images/swap_planet.png'} layout={'fill'}></Image>
+              </div>
+              <motion.div initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ duration: 1, delay:0.3, ease:'easeInOut'}}
+                          variants={{
+                              visible: { opacity: 1, scale:1 },
+                              hidden: { opacity: 0, scale:0.8 }
+                          }} className={'w-[100vw] z-50 absolute top-0 block h-[57vw]'}>
+                  <h2 className={'absolute top-[2vw] left-[28vw] inline-block text-white font-gilroy font-bold text-[5.1vw]'}>SWAP</h2>
+                  <div className={'absolute w-[41vw] top-[10vw] left-[28vw] h-[47.3vw]'}>
+                      <Swiper></Swiper>
+                  </div>
+              </motion.div>
+
+          </motion.div>
 
 
           {/*DAO*/}
