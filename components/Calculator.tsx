@@ -19,25 +19,25 @@ const Calculator = () => {
     const planet1={
         planetName:'X-3121',
         image:'/images/planets/1.png',
-        apyIncrease:80000,
+        apyIncrease:3,
         cost:0.5,
     };
     const planet2={
         planetName:'Y-8265',
         image:'/images/planets/2.png',
-        apyIncrease:120000,
+        apyIncrease:6,
         cost:1,
     };
     const planet3={
         planetName:'ZYX - 3512',
         image:'/images/planets/3.png',
-        apyIncrease:180000,
+        apyIncrease:9,
         cost:1.5,
     };
     const planet4={
         planetName:'UMY-1010',
         image:'/images/planets/4.png',
-        apyIncrease:250000,
+        apyIncrease:12,
         cost:2,
     }
 
@@ -47,7 +47,7 @@ const Calculator = () => {
 
     function changePlanet(planet:{ planetName:string, image:string, apyIncrease:number, cost:number }){
         setCurrentPlanet(planet);
-        setApy(1041035+planet.apyIncrease);
+        setApy(1041035+planet.apyIncrease*10000);
         // console.log('planet changed on'+currentPlanet.planetName+' with value '+currentPlanet.apyIncrease);
         // console.log(apy);
         // console.log('current planet is'+currentPlanet.planetName+' with value '+currentPlanet.apyIncrease);

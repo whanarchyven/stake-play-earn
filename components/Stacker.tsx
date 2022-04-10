@@ -6,28 +6,28 @@ const Stacker = () => {
     const x1 ={
         title:'x1',
         planetName:'X-3121',
-        revaAPR:75.5,
+        revaAPR:3,
         specify:'based',
         image:'/images/planets/1.png',
     }
     const x2 ={
         title:'x2',
         planetName:'Y-8265',
-        revaAPR:100.5,
+        revaAPR:6,
         specify:'premium',
         image:'/images/planets/2.png',
     }
     const x3 ={
         title:'x3',
         planetName:'ZYX - 3512',
-        revaAPR:125.5,
+        revaAPR:9,
         specify:'perfect',
         image:'/images/planets/3.png',
     }
     const x4 ={
         title:'x4',
         planetName:'UMY-1010',
-        revaAPR:145.2,
+        revaAPR:12,
         specify:'awesome',
         image:'/images/planets/4.png',
     }

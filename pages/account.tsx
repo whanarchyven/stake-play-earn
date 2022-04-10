@@ -242,16 +242,19 @@ const Home: NextPage = () => {
                           </div>
                       }
                   </div>
-                  <div className={'w-full cursor-pointer h-[4vw] flex justify-around relative '} onClick={()=>{setCurrentTab('swap')}}>
-                      <div className={'w-[3vw] relative inline-block h-[3vw]'}>
+                  <div className={'w-full h-[4vw] flex justify-around relative '} >
+                      <div className={'w-[3vw] cursor-pointer  relative inline-block h-[3vw]'}>
                           <Image src={'/images/account/twitter.svg'} layout={'fill'}></Image>
                       </div>
-                      <div className={'w-[3vw] relative inline-block h-[3vw]'}>
+                      <div className={'w-[3vw] cursor-pointer  relative inline-block h-[3vw]'}>
                           <Image src={'/images/account/discord.svg'} layout={'fill'}></Image>
                       </div>
-                      <div className={'w-[3vw] relative inline-block h-[3vw]'}>
+                      <div className={'w-[3vw] cursor-pointer  relative inline-block h-[3vw]'}>
                           <Image src={'/images/account/telegram.svg'} layout={'fill'}></Image>
                       </div>
+                  </div>
+                  <div className={'w-full cursor-pointer h-[4vw] relative '}>
+                      <a href={'/'} className={'text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium'}>← Main page</a>
                   </div>
 
               </div>
