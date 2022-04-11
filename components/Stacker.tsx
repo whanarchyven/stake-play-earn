@@ -3,36 +3,43 @@ import NeonButton from "./NeonButton";
 import Image from "next/image";
 import {ConnectMM} from "./ConnectMM";
 const Stacker = () => {
+    const x0 ={
+        title:'x0',
+        planetName:'None',
+        revaAPR:5,
+        specify:'without',
+        image:'/images/planets/0.png',
+    }
     const x1 ={
         title:'x1',
         planetName:'X-3121',
-        revaAPR:3,
+        revaAPR:8,
         specify:'based',
         image:'/images/planets/1.png',
     }
     const x2 ={
         title:'x2',
         planetName:'Y-8265',
-        revaAPR:6,
+        revaAPR:11,
         specify:'premium',
         image:'/images/planets/2.png',
     }
     const x3 ={
         title:'x3',
         planetName:'ZYX - 3512',
-        revaAPR:9,
+        revaAPR:14,
         specify:'perfect',
         image:'/images/planets/3.png',
     }
     const x4 ={
         title:'x4',
         planetName:'UMY-1010',
-        revaAPR:12,
+        revaAPR:17,
         specify:'awesome',
         image:'/images/planets/4.png',
     }
     const[stakeTab,setStakeTab]=useState('stake');
-    const [currentToken,setCurrenToken]=useState(x1)
+    const [currentToken,setCurrenToken]=useState(x0)
 
         return (
             <div className={'w-full h-full'}>
@@ -65,17 +72,27 @@ const Stacker = () => {
                             <p className={'text-white text-center block font-light text-[0.9vw] font-gilroy'}>Each poolavailble when buying different NFTs</p>
                         </div>
                         <div className={'rounded-l-[1vw] rounded-b-[0vw] rounded-r-[1vw] ro w-full relative stacker-unactive-token h-[8.5vw]'}>
-                            <div className={'cursor-pointer align-top rounded-l-[1vw] rounded-b-[0vw] w-[25%] inline-block h-[3vw]'} onClick={()=>{setCurrenToken(x1)}}>
-                                {currentToken.title=='x1'?
+                            <div className={'cursor-pointer align-top rounded-l-[1vw] rounded-b-[0vw] w-[20%] inline-block h-[3vw]'} onClick={()=>{setCurrenToken(x0)}}>
+                                {currentToken.title=='x0'?
                                     <div className={'w-full rounded-l-[1vw] rounded-b-[0vw] h-full flex stacker-active-token text-in-shape'}>
-                                        <p className={'text-white font-gilroy font-medium text-[0.8vw] inline-block'}>{x1.planetName}</p>
+                                        <p className={'text-white font-gilroy font-medium text-[0.8vw] inline-block'}>{x0.planetName}</p>
                                     </div>
                                     :
                                     <div className={'w-full rounded-l-[1vw] rounded-b-[0vw] h-full flex stacker-unactive-token text-in-shape'}>
+                                        <p className={'text-white font-gilroy font-medium text-[0.8vw] inline-block'}>{x0.planetName}</p>
+                                    </div>}
+                            </div>
+                            <div className={'cursor-pointer align-top rounded-l-[1vw] rounded-b-[0vw] w-[20%] inline-block h-[3vw]'} onClick={()=>{setCurrenToken(x1)}}>
+                                {currentToken.title=='x1'?
+                                    <div className={'w-full  h-full flex stacker-active-token text-in-shape'}>
+                                        <p className={'text-white font-gilroy font-medium text-[0.8vw] inline-block'}>{x1.planetName}</p>
+                                    </div>
+                                    :
+                                    <div className={'w-full  h-full flex stacker-unactive-token text-in-shape'}>
                                         <p className={'text-white font-gilroy font-medium text-[0.8vw] inline-block'}>{x1.planetName}</p>
                                     </div>}
                             </div>
-                            <div className={'cursor-pointer align-top w-[25%] inline-block h-[3vw]'} onClick={()=>{setCurrenToken(x2)}}>
+                            <div className={'cursor-pointer align-top w-[20%] inline-block h-[3vw]'} onClick={()=>{setCurrenToken(x2)}}>
                                 {currentToken.title=='x2'?
                                     <div className={'w-full h-full flex stacker-active-token text-in-shape'}>
                                         <p className={'text-white font-gilroy font-medium text-[0.8vw] inline-block'}>{x2.planetName}</p>
@@ -85,7 +102,7 @@ const Stacker = () => {
                                         <p className={'text-white font-gilroy font-medium text-[0.8vw] inline-block'}>{x2.planetName}</p>
                                     </div>}
                             </div>
-                            <div className={'cursor-pointer align-top w-[25%] inline-block h-[3vw]'} onClick={()=>{setCurrenToken(x3)}}>
+                            <div className={'cursor-pointer align-top w-[20%] inline-block h-[3vw]'} onClick={()=>{setCurrenToken(x3)}}>
                                 {currentToken.title=='x3'?
                                     <div className={'w-full h-full flex stacker-active-token text-in-shape'}>
                                         <p className={'text-white font-gilroy font-medium text-[0.8vw] inline-block'}>{x3.planetName}</p>
@@ -95,7 +112,7 @@ const Stacker = () => {
                                         <p className={'text-white font-gilroy font-medium text-[0.8vw] inline-block'}>{x3.planetName}</p>
                                     </div>}
                             </div>
-                            <div className={'cursor-pointer align-top w-[25%] rounded-b-[0vw] rounded-r-[1vw] inline-block h-[3vw]'} onClick={()=>{setCurrenToken(x4)}}>
+                            <div className={'cursor-pointer align-top w-[20%] rounded-b-[0vw] rounded-r-[1vw] inline-block h-[3vw]'} onClick={()=>{setCurrenToken(x4)}}>
                                 {currentToken.title=='x4'?
                                     <div className={'w-full h-full stacker-tabs-round flex stacker-active-token text-in-shape'}>
                                         <p className={'text-white font-gilroy font-medium text-[0.8vw] inline-block'}>{x4.planetName}</p>
