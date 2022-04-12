@@ -167,16 +167,19 @@ const Home: NextPage = () => {
               </div>
               <div className={'z-[9999] justify-between justify-items-center items-center w-[38.4vw] h-[2vw] fixed inline-flex left-[29.7vw] top-[1.1vw]'}>
                   <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#marketplace'}>nft marketplace</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#stacker'}>Stake</a>
                   <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#metaverse'}>metaverse</a>
                   <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#'}>swap</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#teaser'}>TEASER</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#stacker'}>m2e</a>
                   <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#dao'}>DAO</a>
               </div>
               <div className={'z-[9999] justify-between justify-items-center items-center w-[28vw] h-[2vw] fixed inline-flex left-[33.6vw] top-[3.1vw]'}>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#stacker'}>Stake</a>
+
                   <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#team'}>TEAM</a>
                   <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#roadmap'}>ROADMAP</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#teaser'}>TEASER</a>
                   <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#partners'}>PARTNERS</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#partners'}>DOCS</a>
               </div>
               <div className={'z-[9999] justify-items-center justify-center items-center fixed inline-flex left-[71.2vw] top-[1.2vw] w-[12.5vw] h-[3.4vw] rounded-full bg-purple'}>
                   <ConnectMM/>
@@ -293,7 +296,7 @@ const Home: NextPage = () => {
               <div className={'cursor-pointer z-[8000] left-[14.4vw] top-[40vw] w-[8.7vw] h-[2.3vw] absolute inline-block'}>
                   <Image src={'/images/googleplay.png'} layout={'fill'}></Image>
               </div>
-              <motion.h1 className={'tracking-[0.015em] absolute right-[11.5vw] text-[4.72vw] top-[24.8vw] text-right text-white font-gilroy font-black'} initial="hidden"
+              <motion.h1 className={'tracking-[0.015em] absolute right-[11.5vw] text-[4.72vw] top-[25.7vw] text-right text-white font-gilroy font-black'} initial="hidden"
                          whileInView={'visible'}
 
                          viewport={{once:true}}
@@ -302,7 +305,7 @@ const Home: NextPage = () => {
                              visible: { opacity: 1, x:0 },
                              hidden: { opacity: 0, x: 200 }
                          }}>STAKE PLAY EARN</motion.h1>
-              <motion.h2 className={'absolute right-[11.5vw] text-[2.2vw] top-[22.2vw] text-right text-white font-gilroy font-regular'} initial="hidden"
+              <motion.h2 className={'absolute right-[11.5vw] leading-[100%] text-right text-[2.2vw] top-[22.2vw] text-right text-white font-gilroy font-regular'} initial="hidden"
                   whileInView={'visible'}
 
                   viewport={{once:true}}
@@ -310,7 +313,7 @@ const Home: NextPage = () => {
                   variants={{
                       visible: { opacity: 1, y:0 },
                       hidden: { opacity: 0, y: 50 }
-                  }}>First DeFi & Metaverse platform</motion.h2>
+                  }}>First DeFi & Metaverse platform, <br/>with move-2-earn</motion.h2>
               <a href={'#stacker'}><motion.div className={'cursor-pointer absolute inline-block left-[48vw] top-[33.4vw] w-[14.5vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
                    whileInView={'visible'}
 
@@ -375,7 +378,7 @@ const Home: NextPage = () => {
                        visible: { opacity: 1, y:0 },
                        hidden: { opacity: 0, y: -50 }
                    }}>
-                  <NeonButton title={'Play-2-Earn'}></NeonButton>
+                  <NeonButton title={'Move-2-Earn'}></NeonButton>
               </motion.div></a>
               <div className={'cursor-pointer w-[2.3vw] h-[2.3vw] bottom-[15.4vw] left-[14.45vw] absolute inline-block'}>
                   <Image src={'/images/twitter.svg'} layout={'fill'}></Image>
@@ -518,7 +521,7 @@ const Home: NextPage = () => {
                   </div>
                   <p className={'w-[8vw] absolute inline-block top-[50vw] text-[1.6vw] w-[31.2vw] left-[40vw] text-white font-gilroy font-medium'}>from all BNB collected on Pinksale presale will be distributed in $BNB Rewards pool</p>
                   {/*<button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[34vw] text-[1.5vw] bg-purple text-white rounded-full font-gilroy font-bold'}>BUY $TOKEN</button>*/}
-                  <button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[51vw] text-[1.5vw] bg-blue text-white rounded-full font-gilroy font-bold'}>LEARN MORE</button>
+                  <a href={'#bnb'}><button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[51vw] text-[1.5vw] bg-blue text-white rounded-full font-gilroy font-bold'}>LEARN MORE</button></a>
               </motion.div>
 
           </motion.div>
@@ -543,7 +546,7 @@ const Home: NextPage = () => {
                              variants={{
                                  visible: { opacity: 1,},
                                  hidden: { opacity: 0.6, }
-                             }} className={'text-white inline-block absolute text-center text-[2.3vw] font-gilroy font-medium'}>$BNB distribution offer closing Pinksale presale</motion.h2>
+                             }} className={'text-white inline-block absolute text-center text-[2.3vw] font-gilroy font-medium'}>$BNB distribution after closing Pinksale presale</motion.h2>
               </motion.div>
               <motion.h2 initial="hidden"
                          whileInView={'visible'}

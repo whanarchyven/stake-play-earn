@@ -2,7 +2,7 @@ import React from 'react';
 import Image from "next/image";
 const LoadingScreen = () => {
     return (
-        <div className={'w-full h-[100vh] bg-[#000]'}>
+        <div className={'overflow-hidden w-full h-[70vw] bg-[#000]'}>
             <div className={'w-[70vw] h-[70vw] absolute inline-block top-[-10vw] left-[15vw]'}>
                 <Image src={'/images/loading.png'} layout={'fill'}></Image>
             </div>

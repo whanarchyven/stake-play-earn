@@ -56,7 +56,7 @@ const Calculator = () => {
 
 
     return (
-        <div className={'w-[inherit] h-[57vw]'}>
+        <div className={'w-[inherit] h-[50vw]'}>
             <h2 className={'left-[23.7vw] top-[1.4vw] uppercase text-[3.49vw] absolute inline-block font-black text-white font-gilroy'}>Calculator</h2>
             <p className={'left-[24vw] top-[5vw] text-[2.06vw] absolute inline-block font-regular text-white font-gilroy'}>Estimate your returns</p>
             <p className={'left-[32.6vw] top-[9.9vw] text-[1.75vw] absolute inline-block font-regular text-white font-gilroy'}>Current APY</p>
@@ -91,26 +91,26 @@ const Calculator = () => {
             <div className={'left-[24vw] z-50 top-[25vw] w-[52vw] absolute inline-block'}>
                 <input type={"range"} min={10} max={365} value={days} onChange={event =>{if(event.target.value!=''){setDays(parseFloat(event.target.value))}}} ></input>
             </div>
-            <div className={'left-[21vw] top-[25vw] w-[57vw] h-[22vw] absolute inline-block] '}>
-                <div className={'justify-around flex absolute bottom-0 w-full h-[80%]'}>
-                    <div className={'w-[20%] h-full relative'}>
-                        <PlanetCard planet={planet1} selectedPlanet={currentPlanet} changePlanet={changePlanet} ></PlanetCard>
-                    </div>
-                    <div className={'w-[20%] h-full relative'}>
-                        <PlanetCard planet={planet2} selectedPlanet={currentPlanet} changePlanet={changePlanet}></PlanetCard>
-                    </div>
-                    <div className={'w-[20%] h-full relative'}>
-                        <PlanetCard planet={planet3} selectedPlanet={currentPlanet} changePlanet={changePlanet}></PlanetCard>
-                    </div>
-                    <div className={'w-[20%] h-full relative'}>
-                        <PlanetCard planet={planet4} selectedPlanet={currentPlanet} changePlanet={changePlanet}></PlanetCard>
-                    </div>
-                </div>
+            {/*<div className={'left-[21vw] top-[25vw] w-[57vw] h-[22vw] absolute inline-block] '}>*/}
+            {/*    <div className={'justify-around flex absolute bottom-0 w-full h-[80%]'}>*/}
+            {/*        <div className={'w-[20%] h-full relative'}>*/}
+            {/*            <PlanetCard planet={planet1} selectedPlanet={currentPlanet} changePlanet={changePlanet} ></PlanetCard>*/}
+            {/*        </div>*/}
+            {/*        <div className={'w-[20%] h-full relative'}>*/}
+            {/*            <PlanetCard planet={planet2} selectedPlanet={currentPlanet} changePlanet={changePlanet}></PlanetCard>*/}
+            {/*        </div>*/}
+            {/*        <div className={'w-[20%] h-full relative'}>*/}
+            {/*            <PlanetCard planet={planet3} selectedPlanet={currentPlanet} changePlanet={changePlanet}></PlanetCard>*/}
+            {/*        </div>*/}
+            {/*        <div className={'w-[20%] h-full relative'}>*/}
+            {/*            <PlanetCard planet={planet4} selectedPlanet={currentPlanet} changePlanet={changePlanet}></PlanetCard>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
 
 
 
-            </div>
-            <div className={'absolute calculator-result rounded-[1vw] inline-block w-[51vw] h-[8vw] bottom-[0vw] left-[24vw]'}>
+            {/*</div>*/}
+            <div className={'absolute calculator-result rounded-[1vw] inline-block w-[51vw] h-[8vw] top-[30vw] left-[24vw]'}>
                 <p className={'left-[3%] top-[10%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>Your initial investment</p>
                 {/*<p className={'left-[3%] top-[28%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>Current wealth</p>*/}
                 <p className={'left-[3%] top-[48%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>Token rewards estimation</p>

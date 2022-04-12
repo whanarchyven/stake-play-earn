@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   React.useEffect(() =>{
     setTimeout(() => setLoading(false), 4500);
   })
-  return <>
+  return <div className={'bg-[#000]'}>
     {!loading ? (
         <React.Fragment>
           <Component {...pageProps} />
@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     ) : (
         <LoadingScreen />
     )}
-  </>
+  </div>
 }
 
 export default MyApp
