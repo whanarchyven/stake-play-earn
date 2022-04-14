@@ -2,7 +2,7 @@ import React, {useRef} from 'react';
 import Image from "next/image";
 
 
-const Swiper = () => {
+const Swaper = () => {
     const inp1 = React.useRef<HTMLSelectElement>(null);
     const inp2 = React.useRef<HTMLSelectElement>(null);
     return (
@@ -121,4 +121,4 @@ const Swiper = () => {
     );
 };
 
-export default Swiper;
+export default Swaper;

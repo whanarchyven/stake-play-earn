@@ -3,7 +3,7 @@ import Calculator from "./Calculator";
 import PlanetCardMarketplace from "./PlanetCardMarketplace";
 import Dashboard from "./Dashboard";
 import Account from "./Account";
-import Swiper from "./Swiper";
+import Swaper from "./Swaper";
 
 interface AccountContentItems{
     currentTab:string;
@@ -66,7 +66,7 @@ const AccountContent = ({currentTab}:AccountContentItems) => {
               <div className={'w-[75%] ml-[25%] z-[9999] h-[20vw]'}>
                   <h2 className={'absolute top-[2vw] left-[28vw] inline-block text-white font-gilroy font-bold text-[5.1vw]'}>SWAP</h2>
                   <div className={'absolute w-[41vw] top-[10vw] left-[28vw] h-[47.3vw]'}>
-                      <Swiper></Swiper>
+                      <Swaper></Swaper>
                   </div>
               </div>
 

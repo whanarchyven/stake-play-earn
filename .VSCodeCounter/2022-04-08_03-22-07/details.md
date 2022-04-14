@@ -24,7 +24,7 @@ Total : 15 files,  1008 codes, 4 comments, 79 blanks, all 1091 lines
 | [components/PlanetCardMarketplace.tsx](/components/PlanetCardMarketplace.tsx) | TypeScript React | 43 | 0 | 6 | 49 |
 | [components/PlanetCardOld.tsx](/components/PlanetCardOld.tsx) | TypeScript React | 35 | 0 | 5 | 40 |
 | [components/Stacker.tsx](/components/Stacker.tsx) | TypeScript React | 222 | 0 | 8 | 230 |
-| [components/Swiper.tsx](/components/Swiper.tsx) | TypeScript React | 118 | 0 | 6 | 124 |
+| [components/Swaper.tsx](/components/Swiper.tsx) | TypeScript React | 118 | 0 | 6 | 124 |
 | [components/mm.js](/components/mm.js) | JavaScript | 1 | 0 | 0 | 1 |
 
 [summary](results.md) / details / [diff summary](diff.md) / [diff details](diff-details.md)

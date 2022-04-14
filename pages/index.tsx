@@ -16,10 +16,10 @@ import styled from 'styled-components';
 import Stacker from "../components/Stacker";
 import PlanetCard from "../components/PlanetCard";
 import PlanetCardMarketplace from "../components/PlanetCardMarketplace";
-import Swiper from "../components/Swiper";
-
-
-
+import Swaper from "../components/Swaper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
+import "swiper/css";
 const Parallax = styled.div<{xPosition: string, yPosition:string}>`
   left: ${props => props.xPosition};
   top: ${props => props.yPosition};
@@ -1046,6 +1046,44 @@ const Home: NextPage = () => {
 
 
 
+          {/*MOVE-2-EARN*/}
+
+          <div className={'w-[100vw] relative block  h-[55vw] bg-cover bg-[]'} id={'marketplace'}>
+              <p className={'absolute top-[2vw] w-[45vw] left-[38vw] inline-block text-white font-gilroy uppercase font-black text-[6vw]'}>Move 2 earn</p>
+              <p className={'absolute top-[17vw] w-[45vw] left-[38vw] inline-block text-white font-gilroy uppercase font-medium text-[3vw]'}>Move 2 earn $OMD, lvl up, and be healthy</p>
+              <Swiper
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
+                  speed={400}
+                  effect={'fade'}
+                  modules={[Autoplay,]}
+              className={'w-[25vw] justify-center items-center inline-flex h-[47vw] absolute left-[10vw] top-0 '}>
+                  <SwiperSlide><div className={'w-[93%] ml-[4%] mt-[4%] absolute h-[95%]'}>
+                      <Image src={'/images/move1.png'} layout={'fill'}></Image>
+                  </div></SwiperSlide>
+                  <SwiperSlide><div className={'w-[93%] ml-[4%] mt-[4%] absolute h-[95%]'}>
+                      <Image src={'/images/move2.png'} layout={'fill'}></Image>
+                  </div></SwiperSlide>
+                  <SwiperSlide><div className={'w-[93%] ml-[4%] mt-[4%] absolute h-[95%]'}>
+                      <Image src={'/images/move3.png'} layout={'fill'}></Image>
+                  </div></SwiperSlide>
+                  <SwiperSlide><div className={'w-[93%] ml-[4%] mt-[4%] absolute h-[95%]'}>
+                      <Image src={'/images/move4.png'} layout={'fill'}></Image>
+                  </div></SwiperSlide>
+                  {/*<div className={'w-full z-[99] absolute h-full'}>*/}
+                  {/*    <Image src={'/images/move_base.png'} layout={'fill'}></Image>*/}
+                  {/*</div>*/}
+              </Swiper>
+              <div className={'border-[1.35vw] border-[#000] w-[25.05vw] z-[99] justify-center items-center inline-flex h-[47vw] absolute left-[10vw] top-0 '}>
+              </div>
+              <div className={' w-[25vw] z-[99] justify-center items-center inline-flex h-[47vw] absolute left-[10vw] top-0 '}>
+                  <Image src={'/images/move_base.png'} layout={'fill'}></Image>
+              </div>
+          </div>
+
+
           {/*MARKETPLACE*/}
 
 
@@ -1292,7 +1330,7 @@ const Home: NextPage = () => {
                           }} className={'w-[100vw] z-50 absolute top-0 block h-[57vw]'}>
                   <h2 className={'absolute top-[2vw] left-[28vw] inline-block text-white font-gilroy font-bold text-[5.1vw]'}>SWAP</h2>
                   <div className={'absolute w-[41vw] top-[10vw] left-[28vw] h-[47.3vw]'}>
-                      <Swiper></Swiper>
+                      <Swaper></Swaper>
                   </div>
                   <div className={'backdrop-blur-sm absolute w-[41vw] top-[10vw] left-[28vw] h-[47.3vw] z-[999]'}></div>
               </motion.div>
