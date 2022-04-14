@@ -184,9 +184,9 @@ const Home: NextPage = () => {
               <div className={'z-[9999] justify-items-center justify-center items-center fixed inline-flex left-[71.2vw] top-[1.2vw] w-[12.5vw] h-[3.4vw] rounded-full bg-purple'}>
                   <ConnectMM/>
               </div>
-              <div className={'font-bold text-white z-[9999] justify-items-center justify-center items-center fixed font-gilroy text-[1.3vw] inline-flex right-[5vw] top-[1.2vw] w-[10vw] h-[3.4vw] rounded-full bg-blue'}>
-                  <a href={'/account'}>APP</a>
-              </div>
+              {/*<div className={'font-bold text-white z-[9999] justify-items-center justify-center items-center fixed font-gilroy text-[1.3vw] inline-flex right-[5vw] top-[1.2vw] w-[10vw] h-[3.4vw] rounded-full bg-blue'}>*/}
+              {/*    <a href={'/account'}>APP</a>*/}
+              {/*</div>*/}
           </motion.div>
 
 
@@ -304,7 +304,7 @@ const Home: NextPage = () => {
                          variants={{
                              visible: { opacity: 1, x:0 },
                              hidden: { opacity: 0, x: 200 }
-                         }}>STAKE PLAY EARN</motion.h1>
+                         }}>MOVE PLAY EARN</motion.h1>
               <motion.h2 className={'absolute right-[11.5vw] leading-[100%] text-right text-[2.2vw] top-[22.2vw] text-right text-white font-gilroy font-regular'} initial="hidden"
                   whileInView={'visible'}
 
@@ -508,13 +508,14 @@ const Home: NextPage = () => {
                   <Image src={'/images/stakemoon.png'} layout={'fill'}></Image>
               </div>
               <motion.div className={'w-[100vw] z-50 absolute top-0 block h-[57vw]'}>
-                  <h2 className={'w-[60%] mx-[20%] text-center text-[3.45vw] text-white font-gilroy font-semibold leading-[100%] mt-[3vw] uppercase'}><strong>Stake your $token</strong><br/>to earn $bnb</h2>
+                  <h2 className={'w-[60%] mx-[20%] text-center text-[3.45vw] text-white font-gilroy font-semibold leading-[100%] mt-[3vw] uppercase'}><strong>Stake your NFT</strong><br/>to earn BNB</h2>
                   <div className={'justify-center absolute w-[32.3vw] h-[36vw] flex top-[4vw] left-[34vw] top-[13.6vw]'}>
                       <div className={'neon-border border-4 rounded-[1vw] w-full h-full absolute'}></div>
                       <div className={'border-white border-2 rounded-[1vw] w-[99.7%] h-[99.7%] absolute'}></div>
                       <div className={'w-[98%] mt-[6%] h-[98%] absolute'}>
                           <Stacker></Stacker>
                       </div>
+                      <div className={'rounded-[1vw] backdrop-blur-sm absolute top-0 w-[98%] h-[98%] mt-[1%] blur-sm h-full z-[999]'}></div>
                   </div>
                   <div className={'w-[9vw] h-[6vw] top-[50vw] left-[30vw] absolute inline-block'}>
                       <Image src={'/images/30procents.svg'} layout={'fill'}></Image>
@@ -634,7 +635,162 @@ const Home: NextPage = () => {
                         variants={{
                             visible: { opacity: 1, x:0 },
                             hidden: { opacity: 0, x:-50 }
-                        }} className={'leading-[111%] font-medium uppercase text-white top-[27.4vw] left-[60.5vw] inline-block absolute text-right w-[15vw] text-[1.8vw] font-gilroy '}>$BNB staking rewards pool</motion.p>
+                        }} className={'leading-[111%] font-medium uppercase text-white top-[27.4vw] left-[60.5vw] inline-block absolute text-right w-[15vw] text-[1.8vw] font-gilroy '}>initial foundation of !MDAO in $BNB</motion.p>
+
+          </div>
+
+
+          {/*DISTRIBUTION*/}
+
+          <div className={'w-[100vw] relative block h-[70vw] bg-cover bg-[]'} id={'distribution'}>
+
+
+              <motion.div initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"spring",duration: 1.5, delay:0.3, bounce:0.6 ,}}
+                          variants={{
+                              visible: { opacity: 1, scale:1 },
+                              hidden: { opacity: 0, scale:0.8 }
+                          }} className={'left-[20vw] top-[7vw] w-[59.9vw] text-in-shape h-[6vw] absolute inline-flex '}>
+                  <div className={'w-full h-full neon-border border-[2px] rounded-full'}></div>
+                  <motion.h2 initial="hidden"
+                             whileInView={'visible'}
+                             viewport={{once:true}}
+                             transition={{ duration: 1, repeat:Infinity, repeatType:"reverse",ease:'easeInOut'}}
+                             variants={{
+                                 visible: { opacity: 1,},
+                                 hidden: { opacity: 0.6, }
+                             }} className={'text-white inline-block absolute text-center text-[2.3vw] leading-[110%] font-gilroy font-medium'}>Distribution of income for holders of NFT. (20% of all income of Found 1MDAO)</motion.h2>
+              </motion.div>
+              <motion.h2 initial="hidden"
+                         whileInView={'visible'}
+                         viewport={{once:true}}
+                         transition={{ type:"spring",duration: 1.5, delay:0.3, bounce:0.6 ,}}
+                         variants={{
+                             visible: { opacity: 1, y:0 },
+                             hidden: { opacity: 0, y:-100 }
+                         }} className={'text-white font-gilroy font-black absolute inline-block uppercase left-[40vw] top-[15.8vw] text-[3.37vw]'}>distribution</motion.h2>
+              <motion.div initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"spring",duration: 1.5, delay:0.9, bounce:0.6 ,}}
+                          variants={{
+                              visible: { opacity: 1, x:0 },
+                              hidden: { opacity: 0, x:50 }
+                          }} className={'w-[19vw] left-[19vw] top-[18vw] h-[5vw] absolute inline-block'}>
+                  <Image src={'/images/dist_left.svg'} layout={'fill'}></Image>
+              </motion.div>
+              <motion.div initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"spring",duration: 1.5, delay:1.3, bounce:0.6 ,}}
+                          variants={{
+                              visible: { opacity: 1, y:0 },
+                              hidden: { opacity: 0, y:-50 }
+                          }} className={'w-[1.5vw] left-[42vw] top-[20vw] h-[10vw] absolute inline-block'}>
+                  <Image src={'/images/dist_bott.svg'} layout={'fill'}></Image>
+              </motion.div>
+
+              <motion.div initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"spring",duration: 1.5, delay:1.3, bounce:0.6 ,}}
+                          variants={{
+                              visible: { opacity: 1, y:0 },
+                              hidden: { opacity: 0, y:-50 }
+                          }} className={'w-[1.5vw] left-[62vw] top-[20vw] h-[10vw] absolute inline-block'}>
+                  <Image src={'/images/dist_bott.svg'} layout={'fill'}></Image>
+              </motion.div>
+
+              <motion.div initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"spring",duration: 1.5, delay:1.7, bounce:0.6 ,}}
+                          variants={{
+                              visible: { opacity: 1, x:0 },
+                              hidden: { opacity: 0, x:-50 }
+                          }} className={'w-[19vw] left-[64vw] top-[18vw] h-[6vw] absolute inline-block'}>
+                  <Image src={'/images/dist_right.svg'} layout={'fill'}></Image>
+              </motion.div>
+              <motion.p initial="hidden"
+                        whileInView={'visible'}
+                        viewport={{once:true}}
+                        transition={{ type:"spring",duration: 1.5, delay:0.9, bounce:0.6 ,}}
+                        variants={{
+                            visible: { opacity: 1, x:0 },
+                            hidden: { opacity: 0, x:50 }
+                        }} className={'font-semibold text-semiblue top-[22vw] left-[17vw] inline-block absolute text-center text-[3.8vw] font-gilroy '}>2%</motion.p>
+              <motion.p initial="hidden"
+                        whileInView={'visible'}
+                        viewport={{once:true}}
+                        transition={{ type:"spring",duration: 1.5, delay:1.3, bounce:0.6 ,}}
+                        variants={{
+                            visible: { opacity: 1, y:0 },
+                            hidden: { opacity: 0, y:-50 }
+                        }} className={'font-semibold text-semiblue top-[29vw] left-[40.6vw] inline-block absolute text-center text-[3.8vw] font-gilroy '}>4%</motion.p>
+
+
+              <motion.p initial="hidden"
+                        whileInView={'visible'}
+                        viewport={{once:true}}
+                        transition={{ type:"spring",duration: 1.5, delay:1.3, bounce:0.6 ,}}
+                        variants={{
+                            visible: { opacity: 1, y:0 },
+                            hidden: { opacity: 0, y:-50 }
+                        }} className={'font-semibold text-semiblue top-[29vw] left-[60.6vw] inline-block absolute text-center text-[3.8vw] font-gilroy '}>6%</motion.p>
+
+
+              <motion.p initial="hidden"
+                        whileInView={'visible'}
+                        viewport={{once:true}}
+                        transition={{ type:"spring",duration: 1.5, delay:1.7, bounce:0.6 ,}}
+                        variants={{
+                            visible: { opacity: 1, x:0 },
+                            hidden: { opacity: 0, x:-50 }
+                        }} className={'font-semibold text-semiblue top-[23vw] left-[80vw] inline-block absolute text-center text-[3.8vw] font-gilroy '}>8%</motion.p>
+
+              <motion.p initial="hidden"
+                        whileInView={'visible'}
+                        viewport={{once:true}}
+                        transition={{ type:"spring",duration: 1.5, delay:0.9, bounce:0.6 ,}}
+                        variants={{
+                            visible: { opacity: 1, x:0 },
+                            hidden: { opacity: 0, x:50 }
+                        }} className={'font-normal text-white top-[26.4vw] left-[15vw] inline-block absolute leading-[130%] text-center text-[2.1vw] font-gilroy '}>for Bronze <br/> NFS’s <br/> holders</motion.p>
+              <motion.p initial="hidden"
+                        whileInView={'visible'}
+                        viewport={{once:true}}
+                        transition={{ type:"spring",duration: 1.5, delay:1.3, bounce:0.6 ,}}
+                        variants={{
+                            visible: { opacity: 1, y:0 },
+                            hidden: { opacity: 0, y:-50 }
+                        }} className={'font-normal text-white top-[34vw] left-[39vw] inline-block leading-[130%] absolute text-center text-[2.1vw] font-gilroy '}>for Silver <br/> NFS’s <br/> holders</motion.p>
+
+              <motion.p initial="hidden"
+                        whileInView={'visible'}
+                        viewport={{once:true}}
+                        transition={{ type:"spring",duration: 1.5, delay:1.3, bounce:0.6 ,}}
+                        variants={{
+                            visible: { opacity: 1, y:0 },
+                            hidden: { opacity: 0, y:-50 }
+                        }} className={'font-normal text-white top-[34vw] left-[59vw] inline-block leading-[130%] absolute text-center text-[2.1vw] font-gilroy '}>for Gold <br/> NFS’s <br/> holders</motion.p>
+
+
+              <motion.p initial="hidden"
+                        whileInView={'visible'}
+                        viewport={{once:true}}
+                        transition={{ type:"spring",duration: 1.5, delay:1.7, bounce:0.6 ,}}
+                        variants={{
+                            visible: { opacity: 1, x:0 },
+                            hidden: { opacity: 0, x:-50 }
+                        }} className={'leading-[111%] font-normal text-white top-[28.4vw] left-[74vw] inline-block absolute text-center w-[15vw] text-[2.1vw] font-gilroy '}>for Platinum <br/> NFS’s <br/> holders</motion.p>
+
+
+              <div className={'w-[87vw] bottom-0 left-[8vw] h-[26vw] absolute'}>
+                  <Image src={'/images/dist_cards.svg'} layout={'fill'}></Image>
+              </div>
+
 
           </div>
 
@@ -644,232 +800,230 @@ const Home: NextPage = () => {
 
 
           <div className={'w-[100vw] relative block  h-[71.6vw] bg-cover bg-[]'} id={'marketplace'}>
-              <h2 className={'absolute top-[6vw] left-[29vw] inline-block text-white font-gilroy font-bold text-[5.1vw]'}>NFT MARKETPLACE</h2>
+              <h2 className={'absolute top-[6vw] w-full text-center inline-block text-white font-gilroy uppercase font-bold text-[5.1vw]'}>NFT’s Founders limited collection</h2>
               <p className={'absolute top-[15vw] left-[32vw] inline-block text-white font-gilroy font-medium uppercase text-[2vw]'}>NFT Boosters for <strong>$BNB</strong> Rewards pool</p>
               <div className={'left-[12vw] top-[20vw] w-[79vw] h-[37vw] absolute inline-block] neon-border rounded-[2vw] border-4 '}></div>
               <div className={'left-[12vw] top-[20vw] w-[79vw] h-[30vw] absolute inline-block] '}>
                   <div className={'justify-around top-[3vw] flex absolute bottom-0 w-full h-[70%]'}>
                       <div className={'w-[20%] h-full relative'}>
-                          <PlanetCardMarketplace cost={0.5} planetName={'X-3121'} image={'/images/planets/1.png'} apyIncrease={3} ></PlanetCardMarketplace>
+                          <PlanetCardMarketplace category={'bronze'} quantity={200} cost={0.5} planetName={'X-3121'} image={'/images/planets/1.png'} apyIncrease={0.01} ></PlanetCardMarketplace>
                           <button className={' w-[75%] mx-[12.5%] mt-[4vw] h-[3.5vw] text-[1.8vw] bg-blue text-white rounded-full font-gilroy font-bold'}>BUY</button>
                       </div>
                       <div className={'w-[20%] h-full relative'}>
-                          <PlanetCardMarketplace cost={1} planetName={'Y-8265'} image={'/images/planets/2.png'} apyIncrease={6}></PlanetCardMarketplace>
+                          <PlanetCardMarketplace category={'silver'} quantity={100} cost={1} planetName={'Y-8265'} image={'/images/planets/2.png'} apyIncrease={0.04}></PlanetCardMarketplace>
                           <button className={' w-[75%] mx-[12.5%] mt-[4vw] h-[3.5vw] text-[1.8vw] bg-blue text-white rounded-full font-gilroy font-bold'}>BUY</button>
                       </div>
                       <div className={'w-[20%] h-full relative'}>
-                          <PlanetCardMarketplace cost={1.5} planetName={'Zyx-3512'} image={'/images/planets/3.png'} apyIncrease={9}></PlanetCardMarketplace>
+                          <PlanetCardMarketplace category={'gold'} quantity={50} cost={1.5} planetName={'Zyx-3512'} image={'/images/planets/3.png'} apyIncrease={0.12}></PlanetCardMarketplace>
                           <button className={' w-[75%] mx-[12.5%] mt-[4vw] h-[3.5vw] text-[1.8vw] bg-blue text-white rounded-full font-gilroy font-bold'}>BUY</button>
                       </div>
                       <div className={'w-[20%] h-full relative'}>
-                          <PlanetCardMarketplace cost={2} planetName={'UMY-1010'} image={'/images/planets/4.png'} apyIncrease={12}></PlanetCardMarketplace>
+                          <PlanetCardMarketplace category={'platinum'} quantity={20} cost={2} planetName={'UMY-1010'} image={'/images/planets/4.png'} apyIncrease={0.4}></PlanetCardMarketplace>
                           <button className={' w-[75%] mx-[12.5%] mt-[4vw] h-[3.5vw] text-[1.8vw] bg-blue text-white rounded-full font-gilroy font-bold'}>BUY</button>
                       </div>
                   </div>
-
-
-
               </div>
+              <div className={'backdrop-blur-sm left-[12vw] top-[20vw] w-[79vw] h-[37vw] absolute inline-block]'}></div>
           </div>
 
 
 
           {/*METAVERSE*/}
 
-          <div className={'w-[100vw] relative block  h-[69.4vw] bg-cover bg-[]'} id={'metaverse'}>
-              <motion.div
-                  initial="hidden"
-                  animate={'visible'}
-                  transition={{ type:"tween",duration: 4, repeat:Infinity, repeatType:'reverse'}}
-                  variants={{
-                      visible: { opacity: 1, scale:1 },
-                      hidden: { opacity: 1, scale:0.9 }
-                  }}
-                  className={'w-[55vw] right-[-3vw] top-[11vw] rounded-full bg-[#000] h-[55vw] absolute inline-block'}>
-                  <Image src={'/images/planet2.png'} layout={'fill'}></Image>
-              </motion.div>
-              <motion.h2 initial="hidden"
-                         whileInView={'visible'}
-                         viewport={{once:true}}
-                         transition={{ type:"spring",duration: 2.5, delay:0.3, bounce:0.6 ,}}
-                         variants={{
-                             visible: { opacity: 1, scale:1 },
-                             hidden: { opacity: 0, scale:0.1 }
-                         }} className={'tracking-[0.03em] text-white font-gilroy font-black absolute inline-block uppercase left-[22.2vw] top-[7vw] text-[5.9vw]'}>METAVERSE</motion.h2>
-              <motion.div initial="hidden"
-                         whileInView={'visible'}
-                         viewport={{once:true}}
-                         transition={{ type:"tween",duration: 2.5, delay:0.0 ,}}
-                         variants={{
-                             visible: { opacity: 1, scale:1 },
-                             hidden: { opacity: 0, scale:0.1 }
-                         }} className={'justify-center justify-items-center items-center absolute inline-flex left-[58.5vw] top-[3.2vw] w-[28.6vw] h-[28.6vw]'}>
-                  {/*<Image src={'/images/1.png'} layout={'fill'}></Image>*/}
-                  <div className={'w-[95%] absolute h-[95%]'}>
-                      <video
-                          id="background-video"
-                          loop
-                          autoPlay
-                          muted
-                          style={{
-                              position: "relative",
-                              width: "inherit",
-                              height: "inherit",
-                              left: 0,
-                              top: 0,
-                              backgroundSize:"cover",
-                              borderRadius:'100%',
-                          }} className={'relative w-[100vw] h-[58vw]'}
-                      >
-                          <source src={'/images/metaverse/metaverse1.mp4'} type="video/mp4" />
-                          Your browser does not support the video tag.
-                      </video>
-                  </div>
-                  <div className={'w-full absolute h-full'}>
-                      <Image src={'/images/metaverse/1.svg'} layout={'fill'}></Image>
-                  </div>
-                  <div className={'w-[9vw] h-[9vw] top-0 left-[1vw] absolute'}>
-                      <Image src={'/images/metaverse/num1.svg'} layout={'fill'}></Image>
-                  </div>
-                  <p className={'text-white inline-block absolute text-center w-[65%] mt-[14vw] leading-[100%] text-[2vw] font-gilroy font-regular'}>Create your own character</p>
-              </motion.div>
-              <motion.div initial="hidden"
-                         whileInView={'visible'}
-                         viewport={{once:true}}
-                         transition={{ type:"tween",duration: 2.5, delay:0.0 ,}}
-                         variants={{
-                             visible: { opacity: 1, scale:1 },
-                             hidden: { opacity: 0, scale:0.1 }
-                         }} className={'absolute inline-block left-[-3vw] top-[15.2vw] w-[33vw] h-[33vw]'}>
-                  {/*<Image src={'/images/2.png'} layout={'fill'}></Image>*/}
-                  <div className={'w-[95%] left-[3%] absolute h-[95%]'}>
-                      <video
-                          id="background-video"
-                          loop
-                          autoPlay
-                          muted
-                          style={{
-                              position: "relative",
-                              width: "inherit",
-                              height: "inherit",
-                              left: 0,
-                              top: 0,
-                              backgroundSize:"cover",
-                              borderRadius:'100%',
-                          }} className={'relative w-[100vw] h-[58vw]'}
-                      >
-                          <source src={'/images/metaverse/metaverse2.mp4'} type="video/mp4" />
-                          Your browser does not support the video tag.
-                      </video>
-                  </div>
-                  <div className={'w-full absolute h-full'}>
-                      <Image src={'/images/metaverse/2.svg'} layout={'fill'}></Image>
-                  </div>
-                  <div className={'w-[9vw] h-[9vw] top-[-2vw] left-[3vw] absolute'}>
-                      <Image src={'/images/metaverse/num2.svg'} layout={'fill'}></Image>
-                  </div>
-                  <p className={'text-white inline-block absolute text-center w-[65%] mx-[17.5%] mt-[22vw] leading-[100%] text-[1.8vw] font-gilroy font-regular'}>Investigate space with friends & create alliance</p>
-              </motion.div>
-              <motion.div initial="hidden"
-                         whileInView={'visible'}
-                         viewport={{once:true}}
-                         transition={{ type:"tween",duration: 2.5, delay:0.0 ,}}
-                         variants={{
-                             visible: { opacity: 1, scale:1 },
-                             hidden: { opacity: 0, scale:0.1 }
-                         }} className={'absolute inline-block left-[34.4vw] top-[24.5vw] w-[31vw] h-[32vw]'}>
-                  {/*<Image src={'/images/3.png'} layout={'fill'}></Image>*/}
-                  <div className={'w-[95%] left-[3%] top-[3%] absolute h-[95%]'}>
-                      <video
-                          id="background-video"
-                          loop
-                          autoPlay
-                          muted
-                          style={{
-                              position: "relative",
-                              width: "inherit",
-                              height: "inherit",
-                              left: 0,
-                              top: 0,
-                              backgroundSize:"cover",
-                              borderRadius:'100%',
-                          }} className={'relative w-[100vw] h-[58vw]'}
-                      >
-                          <source src={'/images/metaverse/metaverse3.mp4'} type="video/mp4" />
-                          Your browser does not support the video tag.
-                      </video>
-                  </div>
-                  <div className={'w-full absolute h-full'}>
-                      <Image src={'/images/metaverse/3.svg'} layout={'fill'}></Image>
-                  </div>
-                  <div className={'w-[9vw] h-[9vw] top-[-2.5vw] left-[4vw] absolute'}>
-                      <Image src={'/images/metaverse/num3.svg'} layout={'fill'}></Image>
-                  </div>
-                  <p className={'text-white inline-block absolute text-center w-[70%] mx-[15%] mt-[20.5vw] leading-[100%] text-[1.8vw] font-gilroy font-regular'}>Develope your space base, strenthen defences, get unique resourses</p>
-              </motion.div>
-              <motion.div initial="hidden"
-                         whileInView={'visible'}
-                         viewport={{once:true}}
-                         transition={{ type:"tween",duration: 2.5, delay:0.0 ,}}
-                         variants={{
-                             visible: { opacity: 1, scale:1 },
-                             hidden: { opacity: 0, scale:0.1 }
-                         }} className={'absolute inline-block right-0 top-[32vw] w-[33.5vw] h-[37.5vw]'}>
-                  {/*<Image src={'/images/4.png'} layout={'fill'}></Image>*/}
-                  <div className={'w-[95%] left-[3%] top-[6%] absolute h-[93%]'}>
-                      <video
-                          id="background-video"
-                          loop
-                          autoPlay
-                          muted
-                          style={{
-                              position: "relative",
-                              width: "inherit",
-                              height: "inherit",
-                              left: 0,
-                              top: 0,
-                              backgroundSize:"cover",
-                              borderRadius:'100%',
-                          }} className={'relative w-[100vw] h-[58vw]'}
-                      >
-                          <source src={'/images/metaverse/metaverse4.mp4'} type="video/mp4" />
-                          Your browser does not support the video tag.
-                      </video>
-                  </div>
-                  <div className={'w-full absolute h-full'}>
-                      <Image src={'/images/metaverse/4.svg'} layout={'fill'}></Image>
-                  </div>
-                  <div className={'w-[9vw] h-[9vw] top-[24.5vw] left-[-2vw] absolute'}>
-                      <Image src={'/images/metaverse/num4.svg'} layout={'fill'}></Image>
-                  </div>
-                  <p className={'text-white inline-block absolute text-center w-[70%] mx-[15%] mt-[24.0vw] leading-[100%] text-[1.8vw] font-gilroy font-regular'}>Develope your space base, strenthen defences, get unique resourses</p>
-              </motion.div>
-              <motion.div initial="hidden"
-                          whileInView={'visible'}
-                          viewport={{once:true}}
-                          transition={{ type:"spring",duration: 2.5, delay:0.3, bounce:0.6 ,}}
-                          variants={{
-                              visible: { opacity: 1, y:0 },
-                              hidden: { opacity: 0, y:100 }
-                          }} className={'cursor-pointer left-[16.4vw] top-[55.5vw] w-[28vw] text-in-shape h-[9vw] absolute inline-flex '}>
-                  <div className={'w-full h-full neon-border border-[5px] inline-block rounded-full'}></div>
-                  <div className={'offer-gradient w-[90%] rounded-full h-[75%] p-[2vw] inline-block absolute'}></div>
-                  <h2 className={'text-white inline-block absolute text-center text-[3.2vw] font-gilroy font-regular'}><strong>PLAY</strong> DEMO</h2>
-              </motion.div>
-          </div>
+          {/*<div className={'w-[100vw] relative block  h-[69.4vw] bg-cover bg-[]'} id={'metaverse'}>*/}
+          {/*    <motion.div*/}
+          {/*        initial="hidden"*/}
+          {/*        animate={'visible'}*/}
+          {/*        transition={{ type:"tween",duration: 4, repeat:Infinity, repeatType:'reverse'}}*/}
+          {/*        variants={{*/}
+          {/*            visible: { opacity: 1, scale:1 },*/}
+          {/*            hidden: { opacity: 1, scale:0.9 }*/}
+          {/*        }}*/}
+          {/*        className={'w-[55vw] right-[-3vw] top-[11vw] rounded-full bg-[#000] h-[55vw] absolute inline-block'}>*/}
+          {/*        <Image src={'/images/planet2.png'} layout={'fill'}></Image>*/}
+          {/*    </motion.div>*/}
+          {/*    <motion.h2 initial="hidden"*/}
+          {/*               whileInView={'visible'}*/}
+          {/*               viewport={{once:true}}*/}
+          {/*               transition={{ type:"spring",duration: 2.5, delay:0.3, bounce:0.6 ,}}*/}
+          {/*               variants={{*/}
+          {/*                   visible: { opacity: 1, scale:1 },*/}
+          {/*                   hidden: { opacity: 0, scale:0.1 }*/}
+          {/*               }} className={'tracking-[0.03em] text-white font-gilroy font-black absolute inline-block uppercase left-[22.2vw] top-[7vw] text-[5.9vw]'}>METAVERSE</motion.h2>*/}
+          {/*    <motion.div initial="hidden"*/}
+          {/*               whileInView={'visible'}*/}
+          {/*               viewport={{once:true}}*/}
+          {/*               transition={{ type:"tween",duration: 2.5, delay:0.0 ,}}*/}
+          {/*               variants={{*/}
+          {/*                   visible: { opacity: 1, scale:1 },*/}
+          {/*                   hidden: { opacity: 0, scale:1 }*/}
+          {/*               }} className={'justify-center justify-items-center items-center absolute inline-flex left-[58.5vw] top-[3.2vw] w-[28.6vw] h-[28.6vw]'}>*/}
+          {/*        /!*<Image src={'/images/1.png'} layout={'fill'}></Image>*!/*/}
+          {/*        <div className={'w-[95%] absolute h-[95%]'}>*/}
+          {/*            <video*/}
+          {/*                id="background-video"*/}
+          {/*                loop*/}
+          {/*                autoPlay*/}
+          {/*                muted*/}
+          {/*                style={{*/}
+          {/*                    position: "relative",*/}
+          {/*                    width: "inherit",*/}
+          {/*                    height: "inherit",*/}
+          {/*                    left: 0,*/}
+          {/*                    top: 0,*/}
+          {/*                    backgroundSize:"cover",*/}
+          {/*                    borderRadius:'100%',*/}
+          {/*                }} className={'relative w-[100vw] h-[58vw]'}*/}
+          {/*            >*/}
+          {/*                <source src={'/images/metaverse/metaverse1.mp4'} type="video/mp4" />*/}
+          {/*                Your browser does not support the video tag.*/}
+          {/*            </video>*/}
+          {/*        </div>*/}
+          {/*        <div className={'w-full absolute h-full'}>*/}
+          {/*            <Image src={'/images/metaverse/1.svg'} layout={'fill'}></Image>*/}
+          {/*        </div>*/}
+          {/*        <div className={'w-[9vw] h-[9vw] top-0 left-[1vw] absolute'}>*/}
+          {/*            <Image src={'/images/metaverse/num1.svg'} layout={'fill'}></Image>*/}
+          {/*        </div>*/}
+          {/*        <p className={'text-white inline-block absolute text-center w-[65%] mt-[14vw] leading-[100%] text-[2vw] font-gilroy font-regular'}>Create your own character</p>*/}
+          {/*    </motion.div>*/}
+          {/*    <motion.div initial="hidden"*/}
+          {/*               whileInView={'visible'}*/}
+          {/*               viewport={{once:true}}*/}
+          {/*               transition={{ type:"tween",duration: 2.5, delay:0.0 ,}}*/}
+          {/*               variants={{*/}
+          {/*                   visible: { opacity: 1, scale:1 },*/}
+          {/*                   hidden: { opacity: 0, scale:1 }*/}
+          {/*               }} className={'absolute inline-block left-[-3vw] top-[15.2vw] w-[33vw] h-[33vw]'}>*/}
+          {/*        /!*<Image src={'/images/2.png'} layout={'fill'}></Image>*!/*/}
+          {/*        <div className={'w-[95%] left-[3%] absolute h-[95%]'}>*/}
+          {/*            <video*/}
+          {/*                id="background-video"*/}
+          {/*                loop*/}
+          {/*                autoPlay*/}
+          {/*                muted*/}
+          {/*                style={{*/}
+          {/*                    position: "relative",*/}
+          {/*                    width: "inherit",*/}
+          {/*                    height: "inherit",*/}
+          {/*                    left: 0,*/}
+          {/*                    top: 0,*/}
+          {/*                    backgroundSize:"cover",*/}
+          {/*                    borderRadius:'100%',*/}
+          {/*                }} className={'relative w-[100vw] h-[58vw]'}*/}
+          {/*            >*/}
+          {/*                <source src={'/images/metaverse/metaverse2.mp4'} type="video/mp4" />*/}
+          {/*                Your browser does not support the video tag.*/}
+          {/*            </video>*/}
+          {/*        </div>*/}
+          {/*        <div className={'w-full absolute h-full'}>*/}
+          {/*            <Image src={'/images/metaverse/2.svg'} layout={'fill'}></Image>*/}
+          {/*        </div>*/}
+          {/*        <div className={'w-[9vw] h-[9vw] top-[-2vw] left-[3vw] absolute'}>*/}
+          {/*            <Image src={'/images/metaverse/num2.svg'} layout={'fill'}></Image>*/}
+          {/*        </div>*/}
+          {/*        <p className={'text-white inline-block absolute text-center w-[65%] mx-[17.5%] mt-[22vw] leading-[100%] text-[1.8vw] font-gilroy font-regular'}>Investigate space with friends & create alliance</p>*/}
+          {/*    </motion.div>*/}
+          {/*    <motion.div initial="hidden"*/}
+          {/*               whileInView={'visible'}*/}
+          {/*               viewport={{once:true}}*/}
+          {/*               transition={{ type:"tween",duration: 2.5, delay:0.0 ,}}*/}
+          {/*               variants={{*/}
+          {/*                   visible: { opacity: 1, scale:1 },*/}
+          {/*                   hidden: { opacity: 0, scale:1 }*/}
+          {/*               }} className={'absolute inline-block left-[34.4vw] top-[24.5vw] w-[31vw] h-[32vw]'}>*/}
+          {/*        /!*<Image src={'/images/3.png'} layout={'fill'}></Image>*!/*/}
+          {/*        <div className={'w-[95%] left-[3%] top-[3%] absolute h-[95%]'}>*/}
+          {/*            <video*/}
+          {/*                id="background-video"*/}
+          {/*                loop*/}
+          {/*                autoPlay*/}
+          {/*                muted*/}
+          {/*                style={{*/}
+          {/*                    position: "relative",*/}
+          {/*                    width: "inherit",*/}
+          {/*                    height: "inherit",*/}
+          {/*                    left: 0,*/}
+          {/*                    top: 0,*/}
+          {/*                    backgroundSize:"cover",*/}
+          {/*                    borderRadius:'100%',*/}
+          {/*                }} className={'relative w-[100vw] h-[58vw]'}*/}
+          {/*            >*/}
+          {/*                <source src={'/images/metaverse/metaverse3.mp4'} type="video/mp4" />*/}
+          {/*                Your browser does not support the video tag.*/}
+          {/*            </video>*/}
+          {/*        </div>*/}
+          {/*        <div className={'w-full absolute h-full'}>*/}
+          {/*            <Image src={'/images/metaverse/3.svg'} layout={'fill'}></Image>*/}
+          {/*        </div>*/}
+          {/*        <div className={'w-[9vw] h-[9vw] top-[-2.5vw] left-[4vw] absolute'}>*/}
+          {/*            <Image src={'/images/metaverse/num3.svg'} layout={'fill'}></Image>*/}
+          {/*        </div>*/}
+          {/*        <p className={'text-white inline-block absolute text-center w-[70%] mx-[15%] mt-[20.5vw] leading-[100%] text-[1.8vw] font-gilroy font-regular'}>Develope your space base, strenthen defences, get unique resourses</p>*/}
+          {/*    </motion.div>*/}
+          {/*    <motion.div initial="hidden"*/}
+          {/*               whileInView={'visible'}*/}
+          {/*               viewport={{once:true}}*/}
+          {/*               transition={{ type:"tween",duration: 2.5, delay:0.0 ,}}*/}
+          {/*               variants={{*/}
+          {/*                   visible: { opacity: 1, scale:1 },*/}
+          {/*                   hidden: { opacity: 0, scale:1 }*/}
+          {/*               }} className={'absolute inline-block right-0 top-[32vw] w-[33.5vw] h-[37.5vw]'}>*/}
+          {/*        /!*<Image src={'/images/4.png'} layout={'fill'}></Image>*!/*/}
+          {/*        <div className={'w-[95%] left-[3%] top-[6%] absolute h-[93%]'}>*/}
+          {/*            <video*/}
+          {/*                id="background-video"*/}
+          {/*                loop*/}
+          {/*                autoPlay*/}
+          {/*                muted*/}
+          {/*                style={{*/}
+          {/*                    position: "relative",*/}
+          {/*                    width: "inherit",*/}
+          {/*                    height: "inherit",*/}
+          {/*                    left: 0,*/}
+          {/*                    top: 0,*/}
+          {/*                    backgroundSize:"cover",*/}
+          {/*                    borderRadius:'100%',*/}
+          {/*                }} className={'relative w-[100vw] h-[58vw]'}*/}
+          {/*            >*/}
+          {/*                <source src={'/images/metaverse/metaverse4.mp4'} type="video/mp4" />*/}
+          {/*                Your browser does not support the video tag.*/}
+          {/*            </video>*/}
+          {/*        </div>*/}
+          {/*        <div className={'w-full absolute h-full'}>*/}
+          {/*            <Image src={'/images/metaverse/4.svg'} layout={'fill'}></Image>*/}
+          {/*        </div>*/}
+          {/*        <div className={'w-[9vw] h-[9vw] top-[24.5vw] left-[-2vw] absolute'}>*/}
+          {/*            <Image src={'/images/metaverse/num4.svg'} layout={'fill'}></Image>*/}
+          {/*        </div>*/}
+          {/*        <p className={'text-white inline-block absolute text-center w-[70%] mx-[15%] mt-[24.0vw] leading-[100%] text-[1.8vw] font-gilroy font-regular'}>Develope your space base, strenthen defences, get unique resourses</p>*/}
+          {/*    </motion.div>*/}
+          {/*    <motion.div initial="hidden"*/}
+          {/*                whileInView={'visible'}*/}
+          {/*                viewport={{once:true}}*/}
+          {/*                transition={{ type:"spring",duration: 2.5, delay:0.3, bounce:0.6 ,}}*/}
+          {/*                variants={{*/}
+          {/*                    visible: { opacity: 1, y:0 },*/}
+          {/*                    hidden: { opacity: 0, y:100 }*/}
+          {/*                }} className={'cursor-pointer left-[16.4vw] top-[55.5vw] w-[28vw] text-in-shape h-[9vw] absolute inline-flex '}>*/}
+          {/*        <div className={'w-full h-full neon-border border-[5px] inline-block rounded-full'}></div>*/}
+          {/*        <div className={'offer-gradient w-[90%] rounded-full h-[75%] p-[2vw] inline-block absolute'}></div>*/}
+          {/*        <h2 className={'text-white inline-block absolute text-center text-[3.2vw] font-gilroy font-regular'}><strong>PLAY</strong> DEMO</h2>*/}
+          {/*    </motion.div>*/}
+          {/*</div>*/}
 
 
           {/*TEASER*/}
 
-          <div className={'w-[100vw] relative block h-[60.5vw] bg-[]]'} id={'teaser'}>
-              <iframe className={'inline-block absolute left-[14vw] w-[72vw] h-[37vw] top-[7vw]'} width="949" height="534" src="https://www.youtube.com/embed/0Eo1c2grmq8"
-                      title="YouTube video player" frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen></iframe>
-              {/*<div className={'justify-items-center justify-center items-center absolute inline-flex left-[39.67vw] top-[47.7vw] w-[20.8vw] h-[5.5vw] rounded-full bg-purple'}>*/}
-              {/*    <h2 className={'text-white text-center uppercase text-[1.7vw] font-gilroy font-bold'}>BUY $TOKEN</h2>*/}
-              {/*</div>*/}
-          </div>
+          {/*<div className={'w-[100vw] relative block h-[60.5vw] bg-[]]'} id={'teaser'}>*/}
+          {/*    <iframe className={'inline-block absolute left-[14vw] w-[72vw] h-[37vw] top-[7vw]'} width="949" height="534" src="https://www.youtube.com/embed/0Eo1c2grmq8"*/}
+          {/*            title="YouTube video player" frameBorder="0"*/}
+          {/*            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"*/}
+          {/*            allowFullScreen></iframe>*/}
+          {/*    /!*<div className={'justify-items-center justify-center items-center absolute inline-flex left-[39.67vw] top-[47.7vw] w-[20.8vw] h-[5.5vw] rounded-full bg-purple'}>*!/*/}
+          {/*    /!*    <h2 className={'text-white text-center uppercase text-[1.7vw] font-gilroy font-bold'}>BUY $TOKEN</h2>*!/*/}
+          {/*    /!*</div>*!/*/}
+          {/*</div>*/}
 
 
           {/*SWIPER*/}
@@ -890,6 +1044,7 @@ const Home: NextPage = () => {
                   <div className={'absolute w-[41vw] top-[10vw] left-[28vw] h-[47.3vw]'}>
                       <Swiper></Swiper>
                   </div>
+                  <div className={'backdrop-blur-sm absolute w-[41vw] top-[10vw] left-[28vw] h-[47.3vw] z-[999]'}></div>
               </motion.div>
 
           </motion.div>
@@ -897,204 +1052,196 @@ const Home: NextPage = () => {
 
           {/*DAO*/}
 
-          <div className={'w-[100vw] relative block h-[58vw] bg-cover bg-[]'} id={'dao'}>
+          <div className={'w-[100vw] relative blur-sm block h-[58vw] bg-cover bg-[]'} id={'dao'}>
               <div className={'top-[1vw] left-[6vw] w-[53vw] h-[53vw] absolute inline-block'}>
                   <Image src={'/images/galactic3.png'} layout={'fill'}></Image>
               </div>
-              <div className={'w-[49vw] h-[25.45vw] absolute inline-block top-[12.2vw] left-[28vw]'}>
-                  <Image src={'/images/daovectors.svg'} layout={'fill'}></Image>
+              <div className={'w-[50.23vw] h-[23.4vw] absolute inline-block top-[19vw] left-[31vw]'}>
+                  <Image src={'/images/dao_vectors_temp.svg'} layout={'fill'}></Image>
               </div>
-              <motion.p initial="hidden"
+
+              <motion.div initial="hidden"
                           whileInView={'visible'}
                           viewport={{once:true}}
-                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
+                          transition={{ duration: 1, delay:0.3, ease:'easeInOut'}}
                           variants={{
                               visible: { opacity: 1, scale:1 },
-                              hidden: { opacity: 0, scale:0.1 }
-                          }} className={'absolute inline-block text-white left-[32vw] top-[11vw] font-gilroy font-semibold text-[3vw]'}>Investors</motion.p>
-              <motion.p initial="hidden"
+                              hidden: { opacity: 0, scale:0.8 }
+                          }} className={'absolute w-[18.5vw] h-[11.2vw] p-[1vw] top-[11vw] left-[22vw] dashboard-shape rounded-[1vw]'}>
+                  <p className={'text-white font-gilroy font-bold text-[2.3vw]'}>Strategy</p>
+                  <ul className={'list-disc ext-white font-gilroy font-bold'}>
+                      <li className={'list-disc text-white font-gilroy font-medium text-[1.7vw] ml-[3vw]'}>play-to-earn</li>
+                      <li className={'list-disc text-white font-gilroy font-medium text-[1.7vw] ml-[3vw]'}>move-to-earn</li>
+                  </ul>
+              </motion.div>
+
+
+              <motion.div initial="hidden"
                           whileInView={'visible'}
                           viewport={{once:true}}
-                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
+                          transition={{ duration: 1, delay:0.3, ease:'easeInOut'}}
                           variants={{
                               visible: { opacity: 1, scale:1 },
-                              hidden: { opacity: 0, scale:0.1 }
-                          }} className={'absolute inline-block text-white left-[17.5vw] top-[17vw] font-gilroy font-semibold text-[2.6vw]'}>Engineering</motion.p>
-              <motion.p initial="hidden"
+                              hidden: { opacity: 0, scale:0.8 }
+                          }} className={'absolute w-[18.5vw] h-[13.2vw] p-[1vw] top-[30vw] left-[70.6vw] dashboard-shape rounded-[1vw]'}>
+                  <p className={'text-white font-gilroy font-bold text-[2vw]'}>Passive income</p>
+                  <ul className={'list-disc ext-white font-gilroy font-bold'}>
+                      <li className={'list-disc text-white font-gilroy font-medium text-[1.7vw] leading-[115%] ml-[2vw]'}>rebase long term strategy</li>
+                      <li className={'list-disc text-white font-gilroy font-medium text-[1.7vw] leading-[115%] ml-[2vw]'}>NFT staking</li>
+                  </ul>
+              </motion.div>
+
+              <motion.div initial="hidden"
                           whileInView={'visible'}
                           viewport={{once:true}}
-                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
+                          transition={{ duration: 1, delay:0.3, ease:'easeInOut'}}
                           variants={{
                               visible: { opacity: 1, scale:1 },
-                              hidden: { opacity: 0, scale:0.1 }
-                          }} className={'absolute inline-block text-white left-[24.2vw] top-[29.5vw] font-gilroy font-semibold text-[2.6vw]'}>Management</motion.p>
-              <motion.p initial="hidden"
+                              hidden: { opacity: 0, scale:0.8 }
+                          }} className={'absolute w-[18.5vw] h-[13.2vw] p-[1vw] top-[6.4vw] left-[63.5vw] dashboard-shape rounded-[1vw]'}>
+                  <p className={'text-white font-gilroy font-bold text-[2vw] leading-[130%]'}>Distribution of 1MDAO foundation earnings</p>
+              </motion.div>
+
+              <motion.div initial="hidden"
                           whileInView={'visible'}
                           viewport={{once:true}}
-                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
+                          transition={{ duration: 1, delay:0.3, ease:'easeInOut'}}
                           variants={{
                               visible: { opacity: 1, scale:1 },
-                              hidden: { opacity: 0, scale:0.1 }
-                          }} className={'absolute inline-block text-white left-[49.4vw] top-[16.4vw] font-gilroy font-semibold text-[2.55vw]'}>Contractors</motion.p>
-              <motion.p initial="hidden"
+                              hidden: { opacity: 0, scale:0.8 }
+                          }} className={'absolute w-[18.5vw] h-[6.5vw] p-[1vw] top-[31vw] left-[34.5vw] dashboard-shape rounded-[1vw]'}>
+                  <p className={'text-white font-gilroy font-bold text-[2.7vw] text-center leading-[150%]'}>Marketing</p>
+              </motion.div>
+
+              <motion.div initial="hidden"
                           whileInView={'visible'}
                           viewport={{once:true}}
-                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
+                          transition={{ duration: 1, delay:0.3, ease:'easeInOut'}}
                           variants={{
                               visible: { opacity: 1, scale:1 },
-                              hidden: { opacity: 0, scale:0.1 }
-                          }} className={'absolute inline-block text-white left-[53.5vw] top-[28.8vw] font-gilroy font-semibold text-[2.55vw]'}>Community</motion.p>
-              <motion.p initial="hidden"
+                              hidden: { opacity: 0, scale:0.8 }
+                          }} className={'absolute w-[18vw] h-[7.5vw] p-[1.7vw] top-[42vw] left-[27vw] dashboard-shape rounded-[1vw]'}>
+                  <ul className={'list-disc ext-white font-gilroy font-bold'}>
+                      <li className={'list-disc text-white font-gilroy font-medium text-[1.7vw] leading-[115%] ml-[2vw]'}>cooperation</li>
+                      <li className={'list-disc text-white font-gilroy font-medium text-[1.7vw] leading-[115%] ml-[2vw]'}>collaboration</li>
+                  </ul>
+              </motion.div>
+
+              <motion.div initial="hidden"
                           whileInView={'visible'}
                           viewport={{once:true}}
-                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
+                          transition={{ duration: 1, delay:0.3, ease:'easeInOut'}}
                           variants={{
                               visible: { opacity: 1, scale:1 },
-                              hidden: { opacity: 0, scale:0.1 }
-                          }} className={'absolute inline-block text-white left-[66vw] top-[9vw] font-gilroy font-normal text-[2.55vw]'}>DEV</motion.p>
-              <motion.p initial="hidden"
-                          whileInView={'visible'}
-                          viewport={{once:true}}
-                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
-                          variants={{
-                              visible: { opacity: 1, scale:1 },
-                              hidden: { opacity: 0, scale:0.1 }
-                          }} className={'absolute inline-block text-white left-[68.6vw] top-[16.1vw] font-gilroy font-normal text-[2.55vw]'}>Research</motion.p>
-              <motion.p initial="hidden"
-                          whileInView={'visible'}
-                          viewport={{once:true}}
-                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
-                          variants={{
-                              visible: { opacity: 1, scale:1 },
-                              hidden: { opacity: 0, scale:0.1 }
-                          }} className={'absolute inline-block text-white left-[71vw] top-[22vw] font-gilroy font-normal text-[2.55vw]'}>Vote</motion.p>
-              <motion.p initial="hidden"
-                          whileInView={'visible'}
-                          viewport={{once:true}}
-                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
-                          variants={{
-                              visible: { opacity: 1, scale:1 },
-                              hidden: { opacity: 0, scale:0.1 }
-                          }} className={'absolute inline-block text-white left-[73vw] top-[33vw] font-gilroy font-normal text-center leading-[100%] w-[12vw] text-[2.55vw]'}>Liquidity providers</motion.p>
-              <motion.p initial="hidden"
-                          whileInView={'visible'}
-                          viewport={{once:true}}
-                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
-                          variants={{
-                              visible: { opacity: 1, scale:1 },
-                              hidden: { opacity: 0, scale:0.1 }
-                          }} className={'absolute inline-block text-white left-[34.5vw] top-[36.3vw] font-gilroy font-normal text-center leading-[100%] w-[16vw] text-[2.55vw]'}>Initial cooperation</motion.p>
-              <motion.p initial="hidden"
-                          whileInView={'visible'}
-                          viewport={{once:true}}
-                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
-                          variants={{
-                              visible: { opacity: 1, scale:1 },
-                              hidden: { opacity: 0, scale:0.1 }
-                          }} className={'absolute inline-block text-white left-[60vw] top-[37vw] font-gilroy font-normal text-[2.55vw]'}>Gamers</motion.p>
-              <motion.p initial="hidden"
-                          whileInView={'visible'}
-                          viewport={{once:true}}
-                          transition={{ type:"tween",duration: 1.5, delay:0.0 ,}}
-                          variants={{
-                              visible: { opacity: 1, scale:1 },
-                              hidden: { opacity: 0, scale:0.1 }
-                          }} className={'absolute inline-block text-white left-[19vw] top-[36.5vw] font-gilroy font-normal text-[2.55vw]'}>Marketing</motion.p>
-              <div className={'animate-ping absolute inline-block text-white left-[36vw] top-[21vw] text-[3.5vw] font-gilroy font-bold w-[12vw] h-[5.5vw] dao-gradient text-in-shape flex rounded-full'}></div>
-              <div className={'absolute inline-block text-white left-[36vw] top-[21vw] text-[3.5vw] font-gilroy font-bold w-[12vw] h-[5.5vw] dao-gradient text-in-shape flex rounded-full'}>DAO</div>
+                              hidden: { opacity: 0, scale:0.8 }
+                          }} className={'absolute w-[18vw] h-[7.5vw] p-[1.7vw] top-[42vw] left-[47vw] dashboard-shape rounded-[1vw]'}>
+                  <ul className={'list-disc ext-white font-gilroy font-bold'}>
+                      <li className={'list-disc text-white font-gilroy font-medium text-[1.7vw] leading-[222%] ml-[2vw]'}>promotion</li>
+                  </ul>
+              </motion.div>
+
+
+
+
+
+
+              {/*<div className={'animate-ping absolute inline-block text-white left-[47.2vw] top-[21vw] text-[3.5vw] font-gilroy font-bold w-[18.3vw] h-[6.2vw] dao-gradient text-in-shape flex rounded-[1.5vw]'}></div>*/}
+              <div className={'absolute inline-block text-white left-[47.2vw] top-[21vw] text-[5vw] font-gilroy font-bold w-[18.3vw] h-[6.2vw] dashboard-shape text-in-shape flex rounded-[1.5vw]'}>DAO</div>
           </div>
+
+
 
 
 
           {/*TEAM*/}
 
-          <div className={'w-[100vw] relative block h-[71.6vw] bg-cover bg-[]'} id={'team'}>
-              <motion.div
-                  initial="hidden"
-                  whileInView={'visible'}
-                  viewport={{once:true}}
-                  transition={{ duration: 30, repeat:Infinity, repeatType:'loop', ease:'linear'}}
-                  variants={{
-                      visible: { opacity: 1, rotate:0 },
-                      hidden: { opacity: 1, rotate: -360 }
-                  }}
-                  className={'w-[60vw] h-[60vw] top-[9vw] left-[-9vw] absolute'}>
-                  <Image src={'/images/galactic2.png'} layout={'fill'}></Image>
-              </motion.div>
-              <h2 className={'tracking-[0.03em] text-white font-gilroy font-black absolute inline-block uppercase right-[9.2vw] top-[6vw] text-[5.9vw]'}>TEAM</h2>
+          {/*<div className={'w-[100vw] relative block h-[71.6vw] bg-cover bg-[]'} id={'team'}>*/}
+          {/*    <motion.div*/}
+          {/*        initial="hidden"*/}
+          {/*        whileInView={'visible'}*/}
+          {/*        viewport={{once:true}}*/}
+          {/*        transition={{ duration: 30, repeat:Infinity, repeatType:'loop', ease:'linear'}}*/}
+          {/*        variants={{*/}
+          {/*            visible: { opacity: 1, rotate:0 },*/}
+          {/*            hidden: { opacity: 1, rotate: -360 }*/}
+          {/*        }}*/}
+          {/*        className={'w-[60vw] h-[60vw] top-[9vw] left-[-9vw] absolute'}>*/}
+          {/*        <Image src={'/images/galactic2.png'} layout={'fill'}></Image>*/}
+          {/*    </motion.div>*/}
+          {/*    <h2 className={'tracking-[0.03em] text-white font-gilroy font-black absolute inline-block uppercase right-[9.2vw] top-[6vw] text-[5.9vw]'}>TEAM</h2>*/}
 
-              <div className={'w-[15.5vw] h-[21vw] left-[38.7vw] top-[18.6vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>
-                  <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>
-                      <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>
-                      <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>
-                          <Image src={'/images/fufel1.png'} layout={'fill'}></Image>
-                      </div>
-                  </div>
-                  <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>
-                  <p className={'text-white inline-block absolute text-center top-[13.7vw] text-[1.5vw] font-gilroy font-regular'}>CEO</p>
-                  <div className={'w-[9vw] h-[4vw] absolute top-[16vw]'}>
-                      <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>
-                  </div>
-              </div>
+          {/*    <div className={'w-[15.5vw] h-[21vw] left-[38.7vw] top-[18.6vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>*/}
+          {/*        <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>*/}
+          {/*            <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>*/}
+          {/*            <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>*/}
+          {/*                <Image src={'/images/fufel1.png'} layout={'fill'}></Image>*/}
+          {/*            </div>*/}
+          {/*        </div>*/}
+          {/*        <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>*/}
+          {/*        <p className={'text-white inline-block absolute text-center top-[13.7vw] text-[1.5vw] font-gilroy font-regular'}>CEO</p>*/}
+          {/*        <div className={'w-[9vw] h-[4vw] absolute top-[16vw]'}>*/}
+          {/*            <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>*/}
+          {/*        </div>*/}
+          {/*    </div>*/}
 
-              <div className={'w-[15.5vw] h-[21vw] left-[58vw] top-[18.6vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>
-                  <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>
-                      <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>
-                      <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>
-                          <Image src={'/images/fufel2.png'} layout={'fill'}></Image>
-                      </div>
-                  </div>
-                  <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>
-                  <p className={'text-white inline-block absolute text-center top-[13.7vw] text-[1.5vw] font-gilroy font-regular'}>CEO</p>
-                  <div className={'w-[9vw] h-[4vw] absolute top-[16vw]'}>
-                      <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>
-                  </div>
-              </div>
-
-
-              <div className={'w-[15.5vw] h-[21vw] left-[77vw] top-[18.6vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>
-                  <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>
-                      <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>
-                      <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>
-                          <Image src={'/images/fufel3.png'} layout={'fill'}></Image>
-                      </div>
-                  </div>
-                  <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>
-                  <p className={'text-white inline-block absolute text-center top-[13.7vw] text-[1.5vw] font-gilroy font-regular'}>CEO</p>
-                  <div className={'w-[9vw] h-[4vw] absolute top-[16vw]'}>
-                      <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>
-                  </div>
-              </div>
-
-              <div className={'w-[15.5vw] h-[21vw] left-[58vw] top-[43vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>
-                  <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>
-                      <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>
-                      <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>
-                          <Image src={'/images/fufel4.png'} layout={'fill'}></Image>
-                      </div>
-                  </div>
-                  <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>
-                  <p className={'text-white inline-block absolute text-center top-[13.7vw] text-[1.5vw] font-gilroy font-regular'}>CEO</p>
-                  <div className={'w-[9vw] h-[4vw] absolute top-[16vw]'}>
-                      <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>
-                  </div>
-              </div>
+          {/*    <div className={'w-[15.5vw] h-[21vw] left-[58vw] top-[18.6vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>*/}
+          {/*        <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>*/}
+          {/*            <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>*/}
+          {/*            <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>*/}
+          {/*                <Image src={'/images/fufel2.png'} layout={'fill'}></Image>*/}
+          {/*            </div>*/}
+          {/*        </div>*/}
+          {/*        <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>*/}
+          {/*        <p className={'text-white inline-block absolute text-center top-[13.7vw] text-[1.5vw] font-gilroy font-regular'}>CEO</p>*/}
+          {/*        <div className={'w-[9vw] h-[4vw] absolute top-[16vw]'}>*/}
+          {/*            <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>*/}
+          {/*        </div>*/}
+          {/*    </div>*/}
 
 
-              <div className={'w-[15.5vw] h-[21vw] left-[77vw] top-[43vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>
-                  <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>
-                      <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>
-                      <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>
-                          <Image src={'/images/fufel5.png'} layout={'fill'}></Image>
-                      </div>
-                  </div>
-                  <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>
-                  <p className={'text-white inline-block absolute text-center top-[13.7vw] text-[1.5vw] font-gilroy font-regular'}>CEO</p>
-                  <div className={'w-[9vw] h-[4vw] absolute top-[16vw]'}>
-                      <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>
-                  </div>
-              </div>
-          </div>
+          {/*    <div className={'w-[15.5vw] h-[21vw] left-[77vw] top-[18.6vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>*/}
+          {/*        <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>*/}
+          {/*            <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>*/}
+          {/*            <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>*/}
+          {/*                <Image src={'/images/fufel3.png'} layout={'fill'}></Image>*/}
+          {/*            </div>*/}
+          {/*        </div>*/}
+          {/*        <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>*/}
+          {/*        <p className={'text-white inline-block absolute text-center top-[13.7vw] text-[1.5vw] font-gilroy font-regular'}>CEO</p>*/}
+          {/*        <div className={'w-[9vw] h-[4vw] absolute top-[16vw]'}>*/}
+          {/*            <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>*/}
+          {/*        </div>*/}
+          {/*    </div>*/}
+
+          {/*    <div className={'w-[15.5vw] h-[21vw] left-[58vw] top-[43vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>*/}
+          {/*        <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>*/}
+          {/*            <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>*/}
+          {/*            <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>*/}
+          {/*                <Image src={'/images/fufel4.png'} layout={'fill'}></Image>*/}
+          {/*            </div>*/}
+          {/*        </div>*/}
+          {/*        <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>*/}
+          {/*        <p className={'text-white inline-block absolute text-center top-[13.7vw] text-[1.5vw] font-gilroy font-regular'}>CEO</p>*/}
+          {/*        <div className={'w-[9vw] h-[4vw] absolute top-[16vw]'}>*/}
+          {/*            <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>*/}
+          {/*        </div>*/}
+          {/*    </div>*/}
+
+
+          {/*    <div className={'w-[15.5vw] h-[21vw] left-[77vw] top-[43vw] absolute justify-center  inline-flex border-white border-2 rounded-[2vw]'}>*/}
+          {/*        <div className={'absolute top-[-3vw] w-[13.4vw] h-[13.4vw] justify-center justify-items-center items-center flex'}>*/}
+          {/*            <div className={'absolute w-[11.9vw] h-[11.9vw] rounded-full border-[1.5vw] neon-border'}></div>*/}
+          {/*            <div className={'absolute w-[10.4vw] h-[10.4vw] rounded-full'}>*/}
+          {/*                <Image src={'/images/fufel5.png'} layout={'fill'}></Image>*/}
+          {/*            </div>*/}
+          {/*        </div>*/}
+          {/*        <p className={'text-white inline-block absolute text-center top-[10vw] text-[3vw] font-gilroy font-regular'}>Name</p>*/}
+          {/*        <p className={'text-white inline-block absolute text-center top-[13.7vw] text-[1.5vw] font-gilroy font-regular'}>CEO</p>*/}
+          {/*        <div className={'w-[9vw] h-[4vw] absolute top-[16vw]'}>*/}
+          {/*            <Image src={'/images/linkedin.svg'} layout={'fill'}></Image>*/}
+          {/*        </div>*/}
+          {/*    </div>*/}
+          {/*</div>*/}
 
 
           {/*ROADMAP*/}
@@ -1234,14 +1381,14 @@ const Home: NextPage = () => {
 
           {/*PARTNERS*/}
 
-          <div className={'w-[100vw] relative block h-[58vw] bg-cover bg-[]'} id={'partners'}>
-              <motion.h2 className={'text-white font-gilroy font-black absolute inline-block left-[17vw] top-[38vw] text-[5.7vw]'}>PARTNERS</motion.h2>
-              <div className={'w-[67.5vw] absolute inline-block left-[16.3vw] top-[8.6vw] h-[26.7vw] bg-[#AF52D0] opacity-[0.22]'}>
-              </div>
-              <div className={'w-[55vw] left-[-3vw] bottom-[-3vw] h-[41vw] absolute inline-block'}>
-                  <Image src={'/images/partners_planet.png'} layout={'fill'}></Image>
-              </div>
-          </div>
+          {/*<div className={'w-[100vw] relative block h-[58vw] bg-cover bg-[]'} id={'partners'}>*/}
+          {/*    <motion.h2 className={'text-white font-gilroy font-black absolute inline-block left-[17vw] top-[38vw] text-[5.7vw]'}>PARTNERS</motion.h2>*/}
+          {/*    <div className={'w-[67.5vw] absolute inline-block left-[16.3vw] top-[8.6vw] h-[26.7vw] bg-[#AF52D0] opacity-[0.22]'}>*/}
+          {/*    </div>*/}
+          {/*    <div className={'w-[55vw] left-[-3vw] bottom-[-3vw] h-[41vw] absolute inline-block'}>*/}
+          {/*        <Image src={'/images/partners_planet.png'} layout={'fill'}></Image>*/}
+          {/*    </div>*/}
+          {/*</div>*/}
       {/*    initial="hidden"*/}
       {/*    whileInView={'visible'}*/}
       {/*    viewport={{once:true}}*/}

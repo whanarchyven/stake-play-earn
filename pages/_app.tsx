@@ -6,7 +6,7 @@ import LoadingScreen from "../components/LoadingScreen";
 function MyApp({ Component, pageProps }: AppProps) {
   const [loading, setLoading] = React.useState(false);
   React.useEffect(() => {
-    setLoading(true);
+    setLoading(false);
   }, []);
   React.useEffect(() =>{
     setTimeout(() => setLoading(false), 4500);
