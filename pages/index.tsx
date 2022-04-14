@@ -153,7 +153,7 @@ const Home: NextPage = () => {
 
 
           {/*MENU*/}
-          BUY $TOKEN
+          BUY $OMD
 
           <motion.div initial="hidden"
                       animate={'visible'}
@@ -304,7 +304,7 @@ const Home: NextPage = () => {
                          variants={{
                              visible: { opacity: 1, x:0 },
                              hidden: { opacity: 0, x: 200 }
-                         }}>MOVE PLAY EARN</motion.h1>
+                         }}>STAKE MOVE PLAY EARN</motion.h1>
               <motion.h2 className={'absolute right-[11.5vw] leading-[100%] text-right text-[2.2vw] top-[22.2vw] text-right text-white font-gilroy font-regular'} initial="hidden"
                   whileInView={'visible'}
 
@@ -323,7 +323,7 @@ const Home: NextPage = () => {
                        visible: { opacity: 1, y:0 },
                        hidden: { opacity: 0, y: -50 }
                    }}>
-                  <NeonButton title={'Stake $Token'}></NeonButton>
+                  <NeonButton title={'Stake $OMD'}></NeonButton>
               </motion.div></a>
               <a href={'#metaverse'}><motion.div className={'cursor-pointer absolute inline-block left-[64vw] top-[33.4vw] w-[12.4vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
                    whileInView={'visible'}
@@ -451,7 +451,7 @@ const Home: NextPage = () => {
               {/*</div>*/}
 
               {/*<div className={'cursor-pointer bg-purple w-[16.7vw] h-[4.5vw] left-[32vw] top-[40.9vw] rounded-full text-in-shape absolute inline-flex'}>*/}
-              {/*    <p className={'text-white font-gilroy font-semibold text-[1.7vw]'}>BUY $TOKEN</p>*/}
+              {/*    <p className={'text-white font-gilroy font-semibold text-[1.7vw]'}>BUY $OMD</p>*/}
               {/*</div>*/}
 
               <a href={'#calculator'}><motion.div initial="hidden"
@@ -521,7 +521,7 @@ const Home: NextPage = () => {
                       <Image src={'/images/30procents.svg'} layout={'fill'}></Image>
                   </div>
                   <p className={'w-[8vw] absolute inline-block top-[50vw] text-[1.6vw] w-[31.2vw] left-[40vw] text-white font-gilroy font-medium'}>from all BNB collected on Pinksale presale will be distributed in $BNB Rewards pool</p>
-                  {/*<button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[34vw] text-[1.5vw] bg-purple text-white rounded-full font-gilroy font-bold'}>BUY $TOKEN</button>*/}
+                  {/*<button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[34vw] text-[1.5vw] bg-purple text-white rounded-full font-gilroy font-bold'}>BUY $OMD</button>*/}
                   <a href={'#bnb'}><button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[51vw] text-[1.5vw] bg-blue text-white rounded-full font-gilroy font-bold'}>LEARN MORE</button></a>
               </motion.div>
 
@@ -1021,7 +1021,7 @@ const Home: NextPage = () => {
           {/*            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"*/}
           {/*            allowFullScreen></iframe>*/}
           {/*    /!*<div className={'justify-items-center justify-center items-center absolute inline-flex left-[39.67vw] top-[47.7vw] w-[20.8vw] h-[5.5vw] rounded-full bg-purple'}>*!/*/}
-          {/*    /!*    <h2 className={'text-white text-center uppercase text-[1.7vw] font-gilroy font-bold'}>BUY $TOKEN</h2>*!/*/}
+          {/*    /!*    <h2 className={'text-white text-center uppercase text-[1.7vw] font-gilroy font-bold'}>BUY $OMD</h2>*!/*/}
           {/*    /!*</div>*!/*/}
           {/*</div>*/}
 
