@@ -165,21 +165,21 @@ const Home: NextPage = () => {
               <div className={'z-[9999] cursor-pointer fixed inline-flex left-[14vw] top-[-1vw] w-[14vw] h-[7vw]'}>
                   <Image src={'/images/logodao.svg'} layout={'fill'}></Image>
               </div>
-              <div className={'z-[9999] justify-between justify-items-center items-center w-[38.4vw] h-[2vw] fixed inline-flex left-[29.7vw] top-[1.1vw]'}>
+              <div className={'z-[9999] justify-between justify-items-center items-center w-[28.4vw] h-[2vw] fixed inline-flex left-[29.7vw] top-[1.1vw]'}>
                   <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#marketplace'}>nft marketplace</a>
                   <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#stacker'}>Stake</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#metaverse'}>metaverse</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#'}>swap</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#stacker'}>m2e</a>
+                  {/*<a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#metaverse'}>metaverse</a>*/}
+                  {/*<a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#'}>swap</a>*/}
+                  {/*<a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#stacker'}>m2e</a>*/}
                   <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#dao'}>DAO</a>
               </div>
-              <div className={'z-[9999] justify-between justify-items-center items-center w-[28vw] h-[2vw] fixed inline-flex left-[33.6vw] top-[3.1vw]'}>
+              <div className={'z-[9999] justify-between justify-items-center items-center w-[18vw] h-[2vw] fixed inline-flex left-[33.6vw] top-[3.1vw]'}>
 
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#team'}>TEAM</a>
+                  {/*<a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#team'}>TEAM</a>*/}
                   <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#roadmap'}>ROADMAP</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#teaser'}>TEASER</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#partners'}>PARTNERS</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#partners'}>DOCS</a>
+                  {/*<a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#teaser'}>TEASER</a>*/}
+                  {/*<a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#partners'}>PARTNERS</a>*/}
+                  {/*<a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#partners'}>DOCS</a>*/}
               </div>
               <div className={'z-[9999] justify-items-center justify-center items-center fixed inline-flex left-[71.2vw] top-[1.2vw] w-[12.5vw] h-[3.4vw] rounded-full bg-purple'}>
                   <ConnectMM/>
@@ -314,27 +314,38 @@ const Home: NextPage = () => {
                       visible: { opacity: 1, y:0 },
                       hidden: { opacity: 0, y: 50 }
                   }}>First DeFi & Metaverse platform, <br/>with move-2-earn</motion.h2>
-              <a href={'#stacker'}><motion.div className={'cursor-pointer absolute inline-block left-[48vw] top-[33.4vw] w-[14.5vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
-                   whileInView={'visible'}
+              {/*<a href={'#stacker'}><motion.div className={'cursor-pointer absolute inline-block left-[48vw] top-[33.4vw] w-[14.5vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"*/}
+              {/*     whileInView={'visible'}*/}
 
-                   viewport={{once:true}}
-                   transition={{ type:"spring",duration: 1.4, bounce:0.6 , delay:1.6,}}
-                   variants={{
-                       visible: { opacity: 1, y:0 },
-                       hidden: { opacity: 0, y: -50 }
-                   }}>
-                  <NeonButton title={'Stake $OMD'}></NeonButton>
-              </motion.div></a>
-              <a href={'#metaverse'}><motion.div className={'cursor-pointer absolute inline-block left-[64vw] top-[33.4vw] w-[12.4vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
-                   whileInView={'visible'}
+              {/*     viewport={{once:true}}*/}
+              {/*     transition={{ type:"spring",duration: 1.4, bounce:0.6 , delay:1.6,}}*/}
+              {/*     variants={{*/}
+              {/*         visible: { opacity: 1, y:0 },*/}
+              {/*         hidden: { opacity: 0, y: -50 }*/}
+              {/*     }}>*/}
+              {/*    <NeonButton title={'Stake $OMD'}></NeonButton>*/}
+              {/*</motion.div></a>*/}
+              {/*<a href={'#metaverse'}><motion.div className={'cursor-pointer absolute inline-block left-[64vw] top-[33.4vw] w-[12.4vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"*/}
+              {/*     whileInView={'visible'}*/}
 
-                   viewport={{once:true}}
-                   transition={{ type:"spring",duration: 1.4, bounce:0.6 , delay:1.4,}}
-                   variants={{
-                       visible: { opacity: 1, y:0 },
-                       hidden: { opacity: 0, y: -50 }
-                   }}>
-                  <NeonButton title={'Metaverse'}></NeonButton>
+              {/*     viewport={{once:true}}*/}
+              {/*     transition={{ type:"spring",duration: 1.4, bounce:0.6 , delay:1.4,}}*/}
+              {/*     variants={{*/}
+              {/*         visible: { opacity: 1, y:0 },*/}
+              {/*         hidden: { opacity: 0, y: -50 }*/}
+              {/*     }}>*/}
+              {/*    <NeonButton title={'Metaverse'}></NeonButton>*/}
+              {/*</motion.div></a>*/}
+              <a href={'#dao'}><motion.div className={'cursor-pointer absolute inline-block left-[64vw] top-[33.4vw] w-[12.4vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
+                                                 whileInView={'visible'}
+
+                                                 viewport={{once:true}}
+                                                 transition={{ type:"spring",duration: 1.4, bounce:0.6 , delay:1.4,}}
+                                                 variants={{
+                                                     visible: { opacity: 1, y:0 },
+                                                     hidden: { opacity: 0, y: -50 }
+                                                 }}>
+                  <NeonButton title={'DAO'}></NeonButton>
               </motion.div></a>
               <a href={'#marketplace'}><motion.div className={'cursor-pointer absolute inline-block left-[78.2vw] top-[33.4vw] w-[8.2vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
                    whileInView={'visible'}
@@ -347,48 +358,48 @@ const Home: NextPage = () => {
                    }}>
                   <NeonButton title={'NFT'}></NeonButton>
               </motion.div></a>
-              <motion.div className={'cursor-pointer absolute inline-block left-[50.7vw] top-[38.6vw] w-[8.2vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
-                   whileInView={'visible'}
+              {/*<motion.div className={'cursor-pointer absolute inline-block left-[50.7vw] top-[38.6vw] w-[8.2vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"*/}
+              {/*     whileInView={'visible'}*/}
 
-                   viewport={{once:true}}
-                   transition={{ type:"spring",duration: 1.4, bounce:0.6 , delay:1.8,}}
-                   variants={{
-                       visible: { opacity: 1, y:0 },
-                       hidden: { opacity: 0, y: -50 }
-                   }}>
-                  <NeonButton title={'DEX'}></NeonButton>
-              </motion.div>
-              <a href={'#dao'}><motion.div className={'cursor-pointer absolute inline-block left-[61.1vw] top-[38.6vw] w-[8vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
-                   whileInView={'visible'}
+              {/*     viewport={{once:true}}*/}
+              {/*     transition={{ type:"spring",duration: 1.4, bounce:0.6 , delay:1.8,}}*/}
+              {/*     variants={{*/}
+              {/*         visible: { opacity: 1, y:0 },*/}
+              {/*         hidden: { opacity: 0, y: -50 }*/}
+              {/*     }}>*/}
+              {/*    <NeonButton title={'DEX'}></NeonButton>*/}
+              {/*</motion.div>*/}
+              {/*<a href={'#dao'}><motion.div className={'cursor-pointer absolute inline-block left-[61.1vw] top-[38.6vw] w-[8vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"*/}
+              {/*     whileInView={'visible'}*/}
 
-                   viewport={{once:true}}
-                   transition={{ type:"spring",duration: 1.4, bounce:0.6 , delay:2,}}
-                   variants={{
-                       visible: { opacity: 1, y:0 },
-                       hidden: { opacity: 0, y: -50 }
-                   }}>
-                  <NeonButton title={'DAO'}></NeonButton>
-              </motion.div></a>
-              <a href={'#teaser'}><motion.div className={'cursor-pointer absolute inline-block left-[71.5vw] top-[38.6vw] w-[13.5vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
-                   whileInView={'visible'}
+              {/*     viewport={{once:true}}*/}
+              {/*     transition={{ type:"spring",duration: 1.4, bounce:0.6 , delay:2,}}*/}
+              {/*     variants={{*/}
+              {/*         visible: { opacity: 1, y:0 },*/}
+              {/*         hidden: { opacity: 0, y: -50 }*/}
+              {/*     }}>*/}
+              {/*    <NeonButton title={'DAO'}></NeonButton>*/}
+              {/*</motion.div></a>*/}
+              {/*<a href={'#teaser'}><motion.div className={'cursor-pointer absolute inline-block left-[71.5vw] top-[38.6vw] w-[13.5vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"*/}
+              {/*     whileInView={'visible'}*/}
 
-                   viewport={{once:true}}
-                   transition={{ type:"spring",duration: 1.4, bounce:0.6 , delay:2.2,}}
-                   variants={{
-                       visible: { opacity: 1, y:0 },
-                       hidden: { opacity: 0, y: -50 }
-                   }}>
-                  <NeonButton title={'Move-2-Earn'}></NeonButton>
-              </motion.div></a>
-              <div className={'cursor-pointer w-[2.3vw] h-[2.3vw] bottom-[15.4vw] left-[14.45vw] absolute inline-block'}>
+              {/*     viewport={{once:true}}*/}
+              {/*     transition={{ type:"spring",duration: 1.4, bounce:0.6 , delay:2.2,}}*/}
+              {/*     variants={{*/}
+              {/*         visible: { opacity: 1, y:0 },*/}
+              {/*         hidden: { opacity: 0, y: -50 }*/}
+              {/*     }}>*/}
+              {/*    <NeonButton title={'Move-2-Earn'}></NeonButton>*/}
+              {/*</motion.div></a>*/}
+              <a href={'https://twitter.com/1MillionDAO'}><div className={'cursor-pointer w-[2.3vw] h-[2.3vw] bottom-[15.4vw] left-[14.45vw] absolute inline-block'}>
                   <Image src={'/images/twitter.svg'} layout={'fill'}></Image>
-              </div>
-              <div className={'cursor-pointer w-[2.3vw] h-[2.5vw] bottom-[15.4vw] left-[17.45vw] absolute inline-block'}>
+              </div></a>
+              <a href={'https://discord.gg/3b3SbG4N'}><div className={'cursor-pointer w-[2.3vw] h-[2.5vw] bottom-[15.4vw] left-[17.45vw] absolute inline-block'}>
                   <Image src={'/images/discord.svg'} layout={'fill'}></Image>
-              </div>
-              <div className={'cursor-pointer w-[2.3vw] h-[2.3vw] bottom-[15.4vw] left-[20.5vw] absolute inline-block'}>
+              </div></a>
+              <a href={'https://t.me/one_mln_dao'}><div className={'cursor-pointer w-[2.3vw] h-[2.3vw] bottom-[15.4vw] left-[20.5vw] absolute inline-block'}>
                   <Image src={'/images/telegram.svg'} layout={'fill'}></Image>
-              </div>
+              </div></a>
           </div>
 
 
@@ -430,7 +441,7 @@ const Home: NextPage = () => {
                          variants={{
                              visible: { opacity: 1, y:0 },
                              hidden: { opacity: 0, y:100 }
-                         }}  className={'absolute left-[25vw] text-[2.2vw] top-[20.5vw] text-right text-white font-gilroy font-regular'}>Fixed Staking APY</motion.h2>
+                         }}  className={'absolute left-[25vw] text-[2.2vw] top-[20.5vw] text-right text-white font-gilroy font-regular'}>Fixed APY</motion.h2>
 
 
 
@@ -635,7 +646,7 @@ const Home: NextPage = () => {
                         variants={{
                             visible: { opacity: 1, x:0 },
                             hidden: { opacity: 0, x:-50 }
-                        }} className={'leading-[111%] font-medium uppercase text-white top-[27.4vw] left-[60.5vw] inline-block absolute text-right w-[15vw] text-[1.8vw] font-gilroy '}>initial foundation of !MDAO in $BNB</motion.p>
+                        }} className={'leading-[111%] font-medium uppercase text-white top-[27.4vw] left-[60.5vw] inline-block absolute text-right w-[15vw] text-[1.8vw] font-gilroy '}>initial foundation of 1MDAO in $BNB</motion.p>
 
           </div>
 
