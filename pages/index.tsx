@@ -391,13 +391,13 @@ const Home: NextPage = () => {
                    }}>
                   <NeonButton title={'Move-2-Earn'}></NeonButton>
               </motion.div></a>
-              <a href={'https://twitter.com/1MillionDAO'}><div className={'cursor-pointer w-[2.3vw] h-[2.3vw] bottom-[15.4vw] left-[14.45vw] absolute inline-block'}>
+              <a target={'_blank'} rel={'noreferrer'} href={'https://twitter.com/1MillionDAO'}><div className={'cursor-pointer w-[2.3vw] h-[2.3vw] bottom-[15.4vw] left-[14.45vw] absolute inline-block'}>
                   <Image src={'/images/twitter.svg'} layout={'fill'}></Image>
               </div></a>
-              <a href={'https://discord.gg/3b3SbG4N'}><div className={'cursor-pointer w-[2.3vw] h-[2.5vw] bottom-[15.4vw] left-[17.45vw] absolute inline-block'}>
+              <a target={'_blank'} rel={'noreferrer'} href={'https://discord.gg/3b3SbG4N'}><div className={'cursor-pointer w-[2.3vw] h-[2.5vw] bottom-[15.4vw] left-[17.45vw] absolute inline-block'}>
                   <Image src={'/images/discord.svg'} layout={'fill'}></Image>
               </div></a>
-              <a href={'https://t.me/one_mln_dao'}><div className={'cursor-pointer w-[2.3vw] h-[2.3vw] bottom-[15.4vw] left-[20.5vw] absolute inline-block'}>
+              <a target={'_blank'} rel={'noreferrer'} href={'https://t.me/one_mln_dao'}><div className={'cursor-pointer w-[2.3vw] h-[2.3vw] bottom-[15.4vw] left-[20.5vw] absolute inline-block'}>
                   <Image src={'/images/telegram.svg'} layout={'fill'}></Image>
               </div></a>
           </div>
