@@ -243,13 +243,13 @@ const Home: NextPage = () => {
                       }
                   </div>
                   <div className={'w-full h-[4vw] flex justify-around relative '} >
-                      <a target={'_blank'} href={'https://twitter.com/1MillionDAO'}><div className={'w-[3vw] cursor-pointer  relative inline-block h-[3vw]'}>
+                      <a target={'_blank'} rel={'noreferrer'} href={'https://twitter.com/1MillionDAO'}><div className={'w-[3vw] cursor-pointer  relative inline-block h-[3vw]'}>
                           <Image src={'/images/account/twitter.svg'} layout={'fill'}></Image>
                       </div></a>
-                      <a target={'_blank'} href={'https://discord.gg/3b3SbG4N'}><div className={'w-[3vw] cursor-pointer  relative inline-block h-[3vw]'}>
+                      <a target={'_blank'} rel={'noreferrer'} href={'https://discord.gg/3b3SbG4N'}><div className={'w-[3vw] cursor-pointer  relative inline-block h-[3vw]'}>
                           <Image src={'/images/account/discord.svg'} layout={'fill'}></Image>
                       </div></a>
-                      <a target={'_blank'} href={'https://t.me/one_mln_dao'}><div className={'w-[3vw] cursor-pointer  relative inline-block h-[3vw]'}>
+                      <a target={'_blank'} rel={'noreferrer'} href={'https://t.me/one_mln_dao'}><div className={'w-[3vw] cursor-pointer  relative inline-block h-[3vw]'}>
                           <Image src={'/images/account/telegram.svg'} layout={'fill'}></Image>
                       </div></a>
                   </div>
