@@ -336,7 +336,7 @@ const Home: NextPage = () => {
               {/*     }}>*/}
               {/*    <NeonButton title={'Metaverse'}></NeonButton>*/}
               {/*</motion.div></a>*/}
-              <a href={'#dao'}><motion.div className={'cursor-pointer absolute inline-block left-[64vw] top-[33.4vw] w-[12.4vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
+              <a href={'#swiper'}><motion.div className={'cursor-pointer absolute inline-block left-[64vw] top-[33.4vw] w-[12.4vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
                                                  whileInView={'visible'}
 
                                                  viewport={{once:true}}
@@ -345,7 +345,7 @@ const Home: NextPage = () => {
                                                      visible: { opacity: 1, y:0 },
                                                      hidden: { opacity: 0, y: -50 }
                                                  }}>
-                  <NeonButton title={'DAO'}></NeonButton>
+                  <NeonButton title={'DEX'}></NeonButton>
               </motion.div></a>
               <a href={'#marketplace'}><motion.div className={'cursor-pointer absolute inline-block left-[78.2vw] top-[33.4vw] w-[8.2vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
                    whileInView={'visible'}
@@ -519,7 +519,7 @@ const Home: NextPage = () => {
                   <Image src={'/images/stakemoon.png'} layout={'fill'}></Image>
               </div>
               <motion.div className={'w-[100vw] z-50 absolute top-0 block h-[57vw]'}>
-                  <h2 className={'w-[60%] mx-[20%] text-center text-[3.45vw] text-white font-gilroy font-semibold leading-[100%] mt-[3vw] uppercase'}><strong>Stake your NFT</strong><br/>to earn BNB</h2>
+                  <h2 className={'w-[60%] mx-[20%] text-center text-[3.45vw] text-white font-gilroy font-semibold leading-[100%] mt-[3vw] uppercase'}><strong>Stake your NFT</strong><br/></h2>
                   <div className={'justify-center absolute w-[32.3vw] h-[36vw] flex top-[4vw] left-[34vw] top-[13.6vw]'}>
                       <div className={'neon-border border-4 rounded-[1vw] w-full h-full absolute'}></div>
                       <div className={'border-white border-2 rounded-[1vw] w-[99.7%] h-[99.7%] absolute'}></div>
@@ -528,12 +528,12 @@ const Home: NextPage = () => {
                       </div>
                       <div className={'rounded-[1vw] backdrop-blur-sm absolute top-0 w-[98%] h-[98%] mt-[1%] blur-sm h-full z-[999]'}></div>
                   </div>
-                  <div className={'w-[9vw] h-[6vw] top-[50vw] left-[30vw] absolute inline-block'}>
-                      <Image src={'/images/30procents.svg'} layout={'fill'}></Image>
-                  </div>
-                  <p className={'w-[8vw] absolute inline-block top-[50vw] text-[1.6vw] w-[31.2vw] left-[40vw] text-white font-gilroy font-medium'}>from all BNB collected on Pinksale presale will be distributed in $BNB Rewards pool</p>
-                  {/*<button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[34vw] text-[1.5vw] bg-purple text-white rounded-full font-gilroy font-bold'}>BUY $OMD</button>*/}
-                  <a href={'#bnb'}><button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[51vw] text-[1.5vw] bg-blue text-white rounded-full font-gilroy font-bold'}>LEARN MORE</button></a>
+                  {/*<div className={'w-[9vw] h-[6vw] top-[50vw] left-[30vw] absolute inline-block'}>*/}
+                  {/*    <Image src={'/images/30procents.svg'} layout={'fill'}></Image>*/}
+                  {/*</div>*/}
+                  {/*<p className={'w-[8vw] absolute inline-block top-[50vw] text-[1.6vw] w-[31.2vw] left-[40vw] text-white font-gilroy font-medium'}>from all BNB collected on Pinksale presale will be distributed in $BNB Rewards pool</p>*/}
+                  {/*/!*<button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[34vw] text-[1.5vw] bg-purple text-white rounded-full font-gilroy font-bold'}>BUY $OMD</button>*!/*/}
+                  {/*<a href={'#bnb'}><button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[51vw] text-[1.5vw] bg-blue text-white rounded-full font-gilroy font-bold'}>LEARN MORE</button></a>*/}
               </motion.div>
 
           </motion.div>
@@ -732,7 +732,7 @@ const Home: NextPage = () => {
                         variants={{
                             visible: { opacity: 1, x:0 },
                             hidden: { opacity: 0, x:50 }
-                        }} className={'font-normal text-white top-[26.4vw] left-[17vw] inline-block absolute leading-[130%] text-left text-[2.1vw] w-[22vw]  font-gilroy '}>of all returns will be distributed among $1MDAO holders</motion.p>
+                        }} className={'font-normal text-white top-[26.4vw] left-[17vw] inline-block absolute leading-[130%] text-left text-[2.1vw] w-[22vw]  font-gilroy '}>of all returns will be distributed among $OMD holders</motion.p>
 
 
               <motion.p initial="hidden"
@@ -771,7 +771,7 @@ const Home: NextPage = () => {
                       <Image src={'/images/dit2.svg'} layout={'fill'}></Image>
                   </div>
                   <div className={'justify-center items-center w-[70%] h-full align-top inline-flex relative'}>
-                      <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>Holders of tokens $1MDAO have voice for staking/treading and 80% of all incomes will be distributed to all $1MDAO holders.</p>
+                      <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>Holders of tokens $OMD have voice for staking/treading and 80% of all incomes will be distributed to all $OMD holders.</p>
                   </div>
               </motion.div>
               <motion.div initial="hidden"
@@ -786,7 +786,7 @@ const Home: NextPage = () => {
                       <Image src={'/images/dit3.svg'} layout={'fill'}></Image>
                   </div>
                   <div className={'justify-center items-center w-[70%] h-full align-top inline-flex relative'}>
-                      <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>Holders of NFT don’t have voices, but they can qualify for distribution of 20% from all incomes? In case if they stake their NFT</p>
+                      <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>Holders of NFT don’t have voices, but they can qualify for distribution of 20% from all incomes. In case if they stake their NFT</p>
                   </div>
               </motion.div>
           </div>
@@ -814,7 +814,7 @@ const Home: NextPage = () => {
                              variants={{
                                  visible: { opacity: 1,},
                                  hidden: { opacity: 0.6, }
-                             }} className={'text-white inline-block absolute text-center text-[2.3vw] leading-[110%] font-gilroy font-medium'}>Distribution of income for holders of NFT. (20% of all income of Found 1MDAO)</motion.h2>
+                             }} className={'text-white inline-block absolute text-center text-[2.3vw] leading-[110%] font-gilroy font-medium'}>Distribution of income for holders of NFT. (20% of all income of Fund 1MDAO)</motion.h2>
               </motion.div>
               <motion.h2 initial="hidden"
                          whileInView={'visible'}
@@ -965,7 +965,7 @@ const Home: NextPage = () => {
                         variants={{
                             visible: { opacity: 1, y:0 },
                             hidden: { opacity: 0, y:-50 }
-                        }} className={'absolute top-[12.9vw] left-0 w-full text-center inline-block leading-[110%] text-white font-gilroy uppercase font-medium text-[1.92vw]'}>We create NFT collection whose holders can claim 20% off all incomes of <br/> found 1MDAO. This is a limited collection, and after sale you can buy them <br/> just  from other holders.</motion.p>
+                        }} className={'absolute top-[12.9vw] left-0 w-full text-center inline-block leading-[110%] text-white font-gilroy uppercase font-medium text-[1.92vw]'}>We create NFT collection whose holders can claim 20% off all incomes of <br/> fund 1MDAO. This is a limited collection, and after sale you can buy them <br/> just  from other holders.</motion.p>
               <motion.div initial="hidden"
                         whileInView={'visible'}
                         viewport={{once:true}}
@@ -1054,7 +1054,7 @@ const Home: NextPage = () => {
 
           <div className={'w-[100vw] relative block  h-[71.6vw] bg-cover bg-[]'} id={'marketplace'}>
               <h2 className={'absolute top-[6vw] w-full text-center inline-block text-white font-gilroy uppercase font-bold text-[5.1vw]'}>NFT’s Founders limited collection</h2>
-              <p className={'absolute top-[15vw] left-[32vw] inline-block text-white font-gilroy font-medium uppercase text-[2vw]'}>NFT Boosters for <strong>$BNB</strong> Rewards pool</p>
+              <p className={'absolute top-[15vw] left-[32vw] inline-block text-white font-gilroy font-medium uppercase text-[2vw]'}></p>
               <div className={'left-[12vw] top-[20vw] w-[79vw] h-[37vw] absolute inline-block] neon-border rounded-[2vw] border-4 '}></div>
               <div className={'left-[12vw] top-[20vw] w-[79vw] h-[30vw] absolute inline-block] '}>
                   <div className={'justify-around top-[3vw] flex absolute bottom-0 w-full h-[70%]'}>
@@ -1702,10 +1702,10 @@ const Home: NextPage = () => {
 
               <p className={'absolute inline-block top-[4.2vw] left-[39vw] text-[1.2vw] text-white font-gilroy font-[400]'}>MENU</p>
 
-              <a className={'absolute inline-block top-[7.7vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Home</a>
+              <a href={'#intro'} className={'absolute inline-block top-[7.7vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Home</a>
               <a className={'absolute inline-block top-[9.9vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Our Ecosystem</a>
-              <a className={'absolute inline-block top-[12.1vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Roadmap</a>
-              <a className={'absolute inline-block top-[14.3vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Contact</a>
+              <a href={'#roadmap'} className={'absolute inline-block top-[12.1vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Roadmap</a>
+              <a className={'absolute inline-block top-[14.3vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Contract</a>
               <a className={'absolute inline-block top-[16.5vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Whitepaper</a>
 
 

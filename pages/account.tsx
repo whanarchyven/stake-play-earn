@@ -114,7 +114,6 @@ const Home: NextPage = () => {
                       detectRetina: true,
                   }}
                   className={'w-full z-[1] h-full'} />
-
               <div className={'flex-wrap h-[100vh] bg-cover bg-[url("../public/images/account/account_tabs.png")] top-0 fixed z-[9999] w-[25%] inline-flex justify-center justify-items-center align-top p-[3vw]'}>
                   <div className={'w-full cursor-pointer h-[4vw] block relative '} onClick={()=>{setCurrentTab('dashboard')}}>
                       {currentTab=='dashboard'?
@@ -256,14 +255,11 @@ const Home: NextPage = () => {
                   <div className={'w-full cursor-pointer h-[4vw] relative '}>
                       <a href={'/'} className={'text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium'}>← Main page</a>
                   </div>
-
               </div>
               <div className={'h-full w-[100%] z-[999] overflow-y-visible inline-flex justify-center align-top p-[3vw]'}>
                   <AccountContent currentTab={currentTab}></AccountContent>
               </div>
-
           </div>
-
       </main>
 
       <footer className={styles.footer}>
