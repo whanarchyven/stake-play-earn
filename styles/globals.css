@@ -93,6 +93,33 @@
         border: none;
         outline: none;
     }
+    .nav-item-hover{
+        text-shadow:
+                -0   -2px 3px #D43FEC,
+                0   -2px 3px #D43FEC,
+                -0    2px 3px #D43FEC,
+                0    2px 3px #D43FEC,
+                -2px -0   3px #D43FEC,
+                2px -0   3px #D43FEC,
+                -2px  0   3px #D43FEC,
+                2px  0   3px #D43FEC,
+                -1px -2px 3px #D43FEC,
+                1px -2px 3px #D43FEC,
+                -1px  2px 3px #D43FEC,
+                1px  2px 3px #D43FEC,
+                -2px -1px 3px #D43FEC,
+                2px -1px 3px #D43FEC,
+                -2px  1px 3px #D43FEC,
+                2px  1px 3px #D43FEC,
+                -2px -2px 3px #D43FEC,
+                2px -2px 3px #D43FEC,
+                -2px  2px 3px #D43FEC,
+                2px  2px 3px #D43FEC,
+                -2px -2px 3px #D43FEC,
+                2px -2px 3px #D43FEC,
+                -2px  2px 3px #D43FEC,
+                2px  2px 3px #D43FEC;
+    }
 }
 
 @font-face {

@@ -24,7 +24,6 @@ const Parallax = styled.div<{xPosition: string, yPosition:string}>`
   left: ${props => props.xPosition};
   top: ${props => props.yPosition};
 `
-
 const Home: NextPage = () => {
     const [apyValue,setApyValue]=useState(0);
     const [apyDuration,setApyDuration]=useState(1500);
@@ -166,20 +165,20 @@ const Home: NextPage = () => {
                   <Image src={'/images/logodao.svg'} layout={'fill'}></Image>
               </div>
               <div className={'z-[9999] justify-between justify-items-center items-center w-[38.4vw] h-[2vw] fixed inline-flex left-[29.7vw] top-[1.1vw]'}>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#marketplace'}>nft marketplace</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#stacker'}>Stake</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#metaverse'}>metaverse</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#'}>swap</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#stacker'}>m2e</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#dao'}>DAO</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#marketplace'}>nft marketplace</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#stacker'}>Stake</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#metaverse'}>metaverse</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#swiper'}>swap</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#moveearn'}>m2e</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#dao'}>DAO</a>
               </div>
               <div className={'z-[9999] justify-between justify-items-center items-center w-[28vw] h-[2vw] fixed inline-flex left-[33.6vw] top-[3.1vw]'}>
 
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#team'}>TEAM</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#roadmap'}>ROADMAP</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#teaser'}>TEASER</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#partners'}>PARTNERS</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular'} href={'#partners'}>DOCS</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#team'}>TEAM</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#roadmap'}>ROADMAP</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#teaser'}>TEASER</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#partners'}>PARTNERS</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#partners'}>DOCS</a>
               </div>
               <div className={'z-[9999] justify-items-center justify-center items-center fixed inline-flex left-[71.2vw] top-[1.2vw] w-[12.5vw] h-[3.4vw] rounded-full bg-purple'}>
                   <ConnectMM/>
@@ -651,6 +650,147 @@ const Home: NextPage = () => {
           </div>
 
 
+          {/*SECOND DISTRIBUTION*/}
+
+          <div className={'w-[100vw] relative block  h-[73vw] bg-cover bg-[]'} id={'dsgnyt'}>
+
+
+
+              <motion.div initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"spring",duration: 1.5, delay:0.3, bounce:0.6 ,}}
+                          variants={{
+                              visible: { opacity: 1, scale:1 },
+                              hidden: { opacity: 0, scale:0.8 }
+                          }} className={'left-[20vw] top-[7vw] w-[59.9vw] text-in-shape h-[6vw] absolute inline-flex '}>
+                  <div className={'w-full h-full neon-border border-[2px] rounded-full'}></div>
+                  <motion.h2 initial="hidden"
+                             whileInView={'visible'}
+                             viewport={{once:true}}
+                             transition={{ duration: 1, repeat:Infinity, repeatType:"reverse",ease:'easeInOut'}}
+                             variants={{
+                                 visible: { opacity: 1,},
+                                 hidden: { opacity: 0.6, }
+                             }} className={'text-white inline-block absolute text-center text-[2.3vw] leading-[110%] font-gilroy font-medium'}>Distribution of 1MDAO foundation earnings </motion.h2>
+              </motion.div>
+              <motion.h2 initial="hidden"
+                         whileInView={'visible'}
+                         viewport={{once:true}}
+                         transition={{ type:"spring",duration: 1.5, delay:0.3, bounce:0.6 ,}}
+                         variants={{
+                             visible: { opacity: 1, y:0 },
+                             hidden: { opacity: 0, y:-100 }
+                         }} className={'text-white font-gilroy font-black absolute inline-block uppercase left-[40vw] top-[15.8vw] text-[3.37vw]'}>distribution</motion.h2>
+              <motion.div initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"spring",duration: 1.5, delay:0.9, bounce:0.6 ,}}
+                          variants={{
+                              visible: { opacity: 1, x:0 },
+                              hidden: { opacity: 0, x:50 }
+                          }} className={'w-[19vw] left-[19vw] top-[18vw] h-[5vw] absolute inline-block'}>
+                  <Image src={'/images/dist_left.svg'} layout={'fill'}></Image>
+              </motion.div>
+
+
+              <motion.div initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"spring",duration: 1.5, delay:1.7, bounce:0.6 ,}}
+                          variants={{
+                              visible: { opacity: 1, x:0 },
+                              hidden: { opacity: 0, x:-50 }
+                          }} className={'w-[19vw] left-[64vw] top-[18vw] h-[6vw] absolute inline-block'}>
+                  <Image src={'/images/dist_right.svg'} layout={'fill'}></Image>
+              </motion.div>
+              <motion.p initial="hidden"
+                        whileInView={'visible'}
+                        viewport={{once:true}}
+                        transition={{ type:"spring",duration: 1.5, delay:0.9, bounce:0.6 ,}}
+                        variants={{
+                            visible: { opacity: 1, x:0 },
+                            hidden: { opacity: 0, x:50 }
+                        }} className={'font-semibold text-semiblue top-[22vw] left-[17vw] inline-block absolute text-center text-[3.8vw] font-gilroy '}>80%</motion.p>
+
+
+              <motion.p initial="hidden"
+                        whileInView={'visible'}
+                        viewport={{once:true}}
+                        transition={{ type:"spring",duration: 1.5, delay:1.7, bounce:0.6 ,}}
+                        variants={{
+                            visible: { opacity: 1, x:0 },
+                            hidden: { opacity: 0, x:-50 }
+                        }} className={'font-semibold text-semiblue top-[23vw] left-[80vw] inline-block absolute text-center text-[3.8vw] font-gilroy '}>20%</motion.p>
+
+              <motion.p initial="hidden"
+                        whileInView={'visible'}
+                        viewport={{once:true}}
+                        transition={{ type:"spring",duration: 1.5, delay:0.9, bounce:0.6 ,}}
+                        variants={{
+                            visible: { opacity: 1, x:0 },
+                            hidden: { opacity: 0, x:50 }
+                        }} className={'font-normal text-white top-[26.4vw] left-[17vw] inline-block absolute leading-[130%] text-left text-[2.1vw] w-[22vw]  font-gilroy '}>of all returns will be distributed among $1MDAO holders</motion.p>
+
+
+              <motion.p initial="hidden"
+                        whileInView={'visible'}
+                        viewport={{once:true}}
+                        transition={{ type:"spring",duration: 1.5, delay:1.7, bounce:0.6 ,}}
+                        variants={{
+                            visible: { opacity: 1, x:0 },
+                            hidden: { opacity: 0, x:-50 }
+                        }} className={'leading-[111%] font-normal text-white top-[28.4vw] right-[13vw]  inline-block absolute text-center w-[30vw] text-[2.1vw] font-gilroy '}>of all returns will be distributed among holders of staked NFT of “Founders collection”</motion.p>
+
+              <motion.div initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"spring",duration: 1.5, delay:0.3, bounce:0.6 ,}}
+                          variants={{
+                              visible: { opacity: 1, x:0 },
+                              hidden: { opacity: 0, x:-50 }
+                          }} className={'w-[25.5vw] h-[23.5vw] rounded-[1vw] absolute left-[9vw] top-[42.6vw]  dashboard-shape'}>
+                  <div className={'h-[30%] mt-[32%] align-top relative  inline-block w-[20%]'}>
+                      <Image src={'/images/dit1.svg'} layout={'fill'}></Image>
+                  </div>
+                  <div className={'justify-center items-center w-[70%] h-full align-top inline-flex relative'}>
+                      <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>Original bank 1MDAO of 30% from all collected $BNB on presale.</p>
+                  </div>
+              </motion.div>
+              <motion.div initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"spring",duration: 1.5, delay:0.6, bounce:0.6 ,}}
+                          variants={{
+                              visible: { opacity: 1, x:0 },
+                              hidden: { opacity: 0, x:-50 }
+                          }} className={'w-[25.5vw] h-[23.5vw] rounded-[1vw] absolute left-[37.4vw] top-[42.6vw]  dashboard-shape'}>
+                  <div className={'h-[30%] mt-[32%] align-top relative  inline-block w-[20%]'}>
+                      <Image src={'/images/dit2.svg'} layout={'fill'}></Image>
+                  </div>
+                  <div className={'justify-center items-center w-[70%] h-full align-top inline-flex relative'}>
+                      <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>Holders of tokens $1MDAO have voice for staking/treading and 80% of all incomes will be distributed to all $1MDAO holders.</p>
+                  </div>
+              </motion.div>
+              <motion.div initial="hidden"
+                          whileInView={'visible'}
+                          viewport={{once:true}}
+                          transition={{ type:"spring",duration: 1.5, delay:0.9, bounce:0.6 ,}}
+                          variants={{
+                              visible: { opacity: 1, x:0 },
+                              hidden: { opacity: 0, x:-50 }
+                          }} className={'w-[25.5vw] h-[23.5vw] rounded-[1vw] absolute left-[66vw] top-[42.6vw]  dashboard-shape'}>
+                  <div className={'h-[30%] mt-[32%] align-top relative  inline-block w-[20%]'}>
+                      <Image src={'/images/dit3.svg'} layout={'fill'}></Image>
+                  </div>
+                  <div className={'justify-center items-center w-[70%] h-full align-top inline-flex relative'}>
+                      <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>Holders of NFT don’t have voices, but they can qualify for distribution of 20% from all incomes? In case if they stake their NFT</p>
+                  </div>
+              </motion.div>
+          </div>
+
+
+
           {/*DISTRIBUTION*/}
 
           <div className={'w-[100vw] relative block h-[70vw] bg-cover bg-[]'} id={'distribution'}>
@@ -804,144 +944,7 @@ const Home: NextPage = () => {
           </div>
 
 
-          {/*SECOND DISTRIBUTION*/}
 
-          <div className={'w-[100vw] relative block  h-[73vw] bg-cover bg-[]'} id={'dsgnyt'}>
-
-
-
-              <motion.div initial="hidden"
-                          whileInView={'visible'}
-                          viewport={{once:true}}
-                          transition={{ type:"spring",duration: 1.5, delay:0.3, bounce:0.6 ,}}
-                          variants={{
-                              visible: { opacity: 1, scale:1 },
-                              hidden: { opacity: 0, scale:0.8 }
-                          }} className={'left-[20vw] top-[7vw] w-[59.9vw] text-in-shape h-[6vw] absolute inline-flex '}>
-                  <div className={'w-full h-full neon-border border-[2px] rounded-full'}></div>
-                  <motion.h2 initial="hidden"
-                             whileInView={'visible'}
-                             viewport={{once:true}}
-                             transition={{ duration: 1, repeat:Infinity, repeatType:"reverse",ease:'easeInOut'}}
-                             variants={{
-                                 visible: { opacity: 1,},
-                                 hidden: { opacity: 0.6, }
-                             }} className={'text-white inline-block absolute text-center text-[2.3vw] leading-[110%] font-gilroy font-medium'}>Distribution of 1MDAO foundation earnings </motion.h2>
-              </motion.div>
-              <motion.h2 initial="hidden"
-                         whileInView={'visible'}
-                         viewport={{once:true}}
-                         transition={{ type:"spring",duration: 1.5, delay:0.3, bounce:0.6 ,}}
-                         variants={{
-                             visible: { opacity: 1, y:0 },
-                             hidden: { opacity: 0, y:-100 }
-                         }} className={'text-white font-gilroy font-black absolute inline-block uppercase left-[40vw] top-[15.8vw] text-[3.37vw]'}>distribution</motion.h2>
-              <motion.div initial="hidden"
-                          whileInView={'visible'}
-                          viewport={{once:true}}
-                          transition={{ type:"spring",duration: 1.5, delay:0.9, bounce:0.6 ,}}
-                          variants={{
-                              visible: { opacity: 1, x:0 },
-                              hidden: { opacity: 0, x:50 }
-                          }} className={'w-[19vw] left-[19vw] top-[18vw] h-[5vw] absolute inline-block'}>
-                  <Image src={'/images/dist_left.svg'} layout={'fill'}></Image>
-              </motion.div>
-
-
-              <motion.div initial="hidden"
-                          whileInView={'visible'}
-                          viewport={{once:true}}
-                          transition={{ type:"spring",duration: 1.5, delay:1.7, bounce:0.6 ,}}
-                          variants={{
-                              visible: { opacity: 1, x:0 },
-                              hidden: { opacity: 0, x:-50 }
-                          }} className={'w-[19vw] left-[64vw] top-[18vw] h-[6vw] absolute inline-block'}>
-                  <Image src={'/images/dist_right.svg'} layout={'fill'}></Image>
-              </motion.div>
-              <motion.p initial="hidden"
-                        whileInView={'visible'}
-                        viewport={{once:true}}
-                        transition={{ type:"spring",duration: 1.5, delay:0.9, bounce:0.6 ,}}
-                        variants={{
-                            visible: { opacity: 1, x:0 },
-                            hidden: { opacity: 0, x:50 }
-                        }} className={'font-semibold text-semiblue top-[22vw] left-[17vw] inline-block absolute text-center text-[3.8vw] font-gilroy '}>80%</motion.p>
-
-
-              <motion.p initial="hidden"
-                        whileInView={'visible'}
-                        viewport={{once:true}}
-                        transition={{ type:"spring",duration: 1.5, delay:1.7, bounce:0.6 ,}}
-                        variants={{
-                            visible: { opacity: 1, x:0 },
-                            hidden: { opacity: 0, x:-50 }
-                        }} className={'font-semibold text-semiblue top-[23vw] left-[80vw] inline-block absolute text-center text-[3.8vw] font-gilroy '}>20%</motion.p>
-
-              <motion.p initial="hidden"
-                        whileInView={'visible'}
-                        viewport={{once:true}}
-                        transition={{ type:"spring",duration: 1.5, delay:0.9, bounce:0.6 ,}}
-                        variants={{
-                            visible: { opacity: 1, x:0 },
-                            hidden: { opacity: 0, x:50 }
-                        }} className={'font-normal text-white top-[26.4vw] left-[17vw] inline-block absolute leading-[130%] text-left text-[2.1vw] w-[22vw]  font-gilroy '}>of all returns will be distributed among $1MDAO holders</motion.p>
-
-
-              <motion.p initial="hidden"
-                        whileInView={'visible'}
-                        viewport={{once:true}}
-                        transition={{ type:"spring",duration: 1.5, delay:1.7, bounce:0.6 ,}}
-                        variants={{
-                            visible: { opacity: 1, x:0 },
-                            hidden: { opacity: 0, x:-50 }
-                        }} className={'leading-[111%] font-normal text-white top-[28.4vw] right-[13vw]  inline-block absolute text-center w-[30vw] text-[2.1vw] font-gilroy '}>of all returns will be distributed among holders of staked NFT of “Founders collection”</motion.p>
-
-              <motion.div initial="hidden"
-                        whileInView={'visible'}
-                        viewport={{once:true}}
-                        transition={{ type:"spring",duration: 1.5, delay:0.3, bounce:0.6 ,}}
-                        variants={{
-                            visible: { opacity: 1, x:0 },
-                            hidden: { opacity: 0, x:-50 }
-                        }} className={'w-[25.5vw] h-[23.5vw] rounded-[1vw] absolute left-[9vw] top-[42.6vw]  dashboard-shape'}>
-                  <div className={'h-[30%] mt-[32%] align-top relative  inline-block w-[20%]'}>
-                      <Image src={'/images/dit1.svg'} layout={'fill'}></Image>
-                  </div>
-                  <div className={'justify-center items-center w-[70%] h-full align-top inline-flex relative'}>
-                      <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>Original bank 1MDAO of 30% from all collected $BNB on presale.</p>
-                  </div>
-              </motion.div>
-              <motion.div initial="hidden"
-                        whileInView={'visible'}
-                        viewport={{once:true}}
-                        transition={{ type:"spring",duration: 1.5, delay:0.6, bounce:0.6 ,}}
-                        variants={{
-                            visible: { opacity: 1, x:0 },
-                            hidden: { opacity: 0, x:-50 }
-                        }} className={'w-[25.5vw] h-[23.5vw] rounded-[1vw] absolute left-[37.4vw] top-[42.6vw]  dashboard-shape'}>
-                  <div className={'h-[30%] mt-[32%] align-top relative  inline-block w-[20%]'}>
-                      <Image src={'/images/dit2.svg'} layout={'fill'}></Image>
-                  </div>
-                  <div className={'justify-center items-center w-[70%] h-full align-top inline-flex relative'}>
-                      <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>Holders of tokens $1MDAO have voice for staking/treading and 80% of all incomes will be distributed to all $1MDAO holders.</p>
-                  </div>
-              </motion.div>
-              <motion.div initial="hidden"
-                        whileInView={'visible'}
-                        viewport={{once:true}}
-                        transition={{ type:"spring",duration: 1.5, delay:0.9, bounce:0.6 ,}}
-                        variants={{
-                            visible: { opacity: 1, x:0 },
-                            hidden: { opacity: 0, x:-50 }
-                        }} className={'w-[25.5vw] h-[23.5vw] rounded-[1vw] absolute left-[66vw] top-[42.6vw]  dashboard-shape'}>
-                  <div className={'h-[30%] mt-[32%] align-top relative  inline-block w-[20%]'}>
-                      <Image src={'/images/dit3.svg'} layout={'fill'}></Image>
-                  </div>
-                  <div className={'justify-center items-center w-[70%] h-full align-top inline-flex relative'}>
-                      <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>Holders of NFT don’t have voices, but they can qualify for distribution of 20% from all incomes? In case if they stake their NFT</p>
-                  </div>
-              </motion.div>
-          </div>
 
           {/*NFT FOUNDERS COLLECTION*/}
 
@@ -970,7 +973,7 @@ const Home: NextPage = () => {
                             visible: { opacity: 1, x:0 },
                             hidden: { opacity: 0, x:-50 }
                         }} className={'w-[13vw] h-[5vw] absolute left-[16vw] top-[22.8vw]'}>
-                  <Image src={'/images/bronze.svg'} layout={'fill'}></Image>
+                  <Image src={'/images/bronze.png'} layout={'fill'}></Image>
               </motion.div>
               <motion.div initial="hidden"
                         whileInView={'visible'}
@@ -980,7 +983,7 @@ const Home: NextPage = () => {
                             visible: { opacity: 1, x:0 },
                             hidden: { opacity: 0, x:-50 }
                         }} className={'w-[11vw] h-[5vw] absolute left-[35.4vw] top-[22.8vw]'}>
-                  <Image src={'/images/silver.svg'} layout={'fill'}></Image>
+                  <Image src={'/images/silver.png'} layout={'fill'}></Image>
               </motion.div>
               <motion.div initial="hidden"
                         whileInView={'visible'}
@@ -990,7 +993,7 @@ const Home: NextPage = () => {
                             visible: { opacity: 1, x:0 },
                             hidden: { opacity: 0, x:-50 }
                         }} className={'w-[9.8vw] h-[5vw] absolute left-[54.5vw] top-[22.8vw]'}>
-                  <Image src={'/images/gold.svg'} layout={'fill'}></Image>
+                  <Image src={'/images/gold.png'} layout={'fill'}></Image>
               </motion.div>
               <motion.div initial="hidden"
                         whileInView={'visible'}
@@ -1000,7 +1003,7 @@ const Home: NextPage = () => {
                             visible: { opacity: 1, x:0 },
                             hidden: { opacity: 0, x:-50 }
                         }} className={'w-[16.8vw] h-[5vw] absolute left-[69.7vw] top-[22.8vw]'}>
-                  <Image src={'/images/platinum.svg'} layout={'fill'}></Image>
+                  <Image src={'/images/platinum.png'} layout={'fill'}></Image>
               </motion.div>
               <motion.div initial="hidden"
                         whileInView={'visible'}
@@ -1316,7 +1319,7 @@ const Home: NextPage = () => {
 
           {/*SWIPER*/}
 
-          <motion.div  className={'w-[100vw] relative block h-[57vw] bg-cover bg-[]'} id={'calculator'}>
+          <motion.div  className={'w-[100vw] relative block h-[57vw] bg-cover bg-[]'} id={'swiper'}>
               <div className={'w-[20vw] h-full absolute top-0 right-0'}>
                   <Image src={'/images/swap_planet.png'} layout={'fill'}></Image>
               </div>
@@ -1340,7 +1343,7 @@ const Home: NextPage = () => {
 
           {/*DAO*/}
 
-          <div className={'w-[100vw] relative blur-sm block h-[58vw] bg-cover bg-[]'} id={'dao'}>
+          <div className={'w-[100vw] relative block h-[58vw] bg-cover bg-[]'} id={'dao'}>
               <div className={'top-[1vw] left-[6vw] w-[53vw] h-[53vw] absolute inline-block'}>
                   <Image src={'/images/galactic3.png'} layout={'fill'}></Image>
               </div>
