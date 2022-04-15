@@ -1562,13 +1562,13 @@ const Home: NextPage = () => {
               </div>
               <div className={'justify-between justify-items-center flex-nowrap w-[71vw] h-[75vw] absolute inline-flex left-[14.5vw] top-[24vw]'}>
                   <motion.div initial="hidden"
-                         whileInView={'visible'}
-                         viewport={{once:true}}
-                         transition={{ type:"tween",duration: 1, delay:0.6 ,}}
-                         variants={{
-                             visible: { opacity: 1, x:0 },
-                             hidden: { opacity: 0, x:-100 }
-                         }} className={'w-[30%] h-full inline-block flex roadmap-card rounded-[1vw] text-in-roadmap-card p-[3%]'}>
+                              whileInView={'visible'}
+                              viewport={{once:true}}
+                              transition={{ type:"tween",duration: 1, delay:0.6 ,}}
+                              variants={{
+                                  visible: { opacity: 1, x:0 },
+                                  hidden: { opacity: 0, x:-100 }
+                              }} className={'w-[30%] h-full inline-block flex roadmap-card rounded-[1vw] text-in-roadmap-card p-[3%]'}>
                       <div className={'w-[13vw] h-[4.4vw] top-[-2.5vw] rounded-[1vw] flex text-in-shape bg-purple absolute'}>
                           <p className={'leading-[89%]  text-[2vw] text-white font-gilroy font-bold'}>1H’2022</p>
                       </div>
@@ -1594,7 +1594,7 @@ const Home: NextPage = () => {
                           Launching the protocol<br/><br/>
                           Dex Launch<br/><br/>
                           Articles in cryptomagazines<br/><br/>
-                          Results of autostaking APY rates<br/><br/>
+                          M2E alpha algorithm testing<br/><br/>
                           Boost APR NFTs sale<br/><br/>
                           P2E game beta launch<br/><br/>
                           Dextools marketing ads<br/><br/>
@@ -1602,6 +1602,7 @@ const Home: NextPage = () => {
                           Coinmarketcap list and rate<br/><br/>
                           CoinGecko list and rate<br/><br/>
                           ASP app<br/><br/>
+                          M2E launch<br/><br/>
                           DAO pool opening<br/><br/>
                           DAO voting system<br/><br/>
                           Collaboration laboratory
@@ -1609,18 +1610,18 @@ const Home: NextPage = () => {
                       </p>
                   </motion.div>
                   <motion.div initial="hidden"
-                         whileInView={'visible'}
-                         viewport={{once:true}}
-                         transition={{ type:"tween",duration: 1, delay:0.9 ,}}
-                         variants={{
-                             visible: { opacity: 1, x:0 },
-                             hidden: { opacity: 0, x:-100 }
-                         }} className={'w-[30%] h-[90%] inline-block flex roadmap-card rounded-[1vw] text-in-roadmap-card p-[3%]'}>
+                              whileInView={'visible'}
+                              viewport={{once:true}}
+                              transition={{ type:"tween",duration: 1, delay:0.9 ,}}
+                              variants={{
+                                  visible: { opacity: 1, x:0 },
+                                  hidden: { opacity: 0, x:-100 }
+                              }} className={'w-[30%] h-[90%] inline-block flex roadmap-card rounded-[1vw] text-in-roadmap-card p-[3%]'}>
                       <div className={'w-[13vw] h-[4.4vw] top-[-2.5vw] rounded-[1vw] flex text-in-shape bg-semiblue absolute'}>
                           <p className={'leading-[89%]  text-[2vw] text-white font-gilroy font-bold'}>2H’2022</p>
                       </div>
                       <p className={'leading-[89%] mt-[1.5vw] text-[1.545vw] text-white font-gilroy font-normal'}>ASP app in appStore<br/><br/>
-                          first wave of DAO rewards<br/><br/>
+                          First wave of DAO, M2E rewards<br/><br/>
                           NFT marketplace<br/><br/>
                           official P2E game opening<br/><br/>
                           Collaboration with guilds<br/><br/>
@@ -1639,13 +1640,13 @@ const Home: NextPage = () => {
                       </p>
                   </motion.div>
                   <motion.div initial="hidden"
-                         whileInView={'visible'}
-                         viewport={{once:true}}
-                         transition={{ type:"tween",duration: 1, delay:1.2 ,}}
-                         variants={{
-                             visible: { opacity: 1, x:0 },
-                             hidden: { opacity: 0, x:-100 }
-                         }} className={'w-[30%] h-[85%] inline-block flex roadmap-card rounded-[1vw] text-in-roadmap-card p-[3%]'}>
+                              whileInView={'visible'}
+                              viewport={{once:true}}
+                              transition={{ type:"tween",duration: 1, delay:1.2 ,}}
+                              variants={{
+                                  visible: { opacity: 1, x:0 },
+                                  hidden: { opacity: 0, x:-100 }
+                              }} className={'w-[30%] h-[85%] inline-block flex roadmap-card rounded-[1vw] text-in-roadmap-card p-[3%]'}>
                       <div className={'w-[17vw] h-[4.4vw] top-[-2.5vw] rounded-[1vw] flex text-in-shape bg-blue absolute'}>
                           <p className={'leading-[89%]  text-[2vw] text-white font-gilroy uppercase font-bold'}>2023 pipeline</p>
                       </div>

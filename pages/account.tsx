@@ -200,27 +200,27 @@ const Home: NextPage = () => {
                           </div>
                       }
                   </div>
-                  <div className={'w-full cursor-pointer h-[4vw] block relative '} onClick={()=>{setCurrentTab('docs')}}>
-                      {currentTab=='docs'?
-                          <div className={'w-full h-full'}>
-                              <div className={'account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
-                                  Docs
-                              </div>
-                              <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
-                                  <Image src={'/images/account/docs_active.svg'} layout={'fill'}></Image>
-                              </div>
-                          </div>
-                          :
-                          <div className={'w-full h-full'}>
-                              <div className={'w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
-                                  Docs
-                              </div>
-                              <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
-                                  <Image src={'/images/account/docs.svg'} layout={'fill'}></Image>
-                              </div>
-                          </div>
-                      }
-                  </div>
+                  {/*<div className={'w-full cursor-pointer h-[4vw] block relative '} onClick={()=>{setCurrentTab('docs')}}>*/}
+                  {/*    {currentTab=='docs'?*/}
+                  {/*        <div className={'w-full h-full'}>*/}
+                  {/*            <div className={'account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>*/}
+                  {/*                Docs*/}
+                  {/*            </div>*/}
+                  {/*            <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>*/}
+                  {/*                <Image src={'/images/account/docs_active.svg'} layout={'fill'}></Image>*/}
+                  {/*            </div>*/}
+                  {/*        </div>*/}
+                  {/*        :*/}
+                  {/*        <div className={'w-full h-full'}>*/}
+                  {/*            <div className={'w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>*/}
+                  {/*                Docs*/}
+                  {/*            </div>*/}
+                  {/*            <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>*/}
+                  {/*                <Image src={'/images/account/docs.svg'} layout={'fill'}></Image>*/}
+                  {/*            </div>*/}
+                  {/*        </div>*/}
+                  {/*    }*/}
+                  {/*</div>*/}
                   <div className={'w-full cursor-pointer h-[4vw] block relative '} onClick={()=>{setCurrentTab('marketplace')}}>
                       {currentTab=='marketplace'?
                           <div className={'w-full h-full'}>
@@ -243,15 +243,15 @@ const Home: NextPage = () => {
                       }
                   </div>
                   <div className={'w-full h-[4vw] flex justify-around relative '} >
-                      <div className={'w-[3vw] cursor-pointer  relative inline-block h-[3vw]'}>
+                      <a target={'_blank'} href={'https://twitter.com/1MillionDAO'}><div className={'w-[3vw] cursor-pointer  relative inline-block h-[3vw]'}>
                           <Image src={'/images/account/twitter.svg'} layout={'fill'}></Image>
-                      </div>
-                      <div className={'w-[3vw] cursor-pointer  relative inline-block h-[3vw]'}>
+                      </div></a>
+                      <a target={'_blank'} href={'https://discord.gg/3b3SbG4N'}><div className={'w-[3vw] cursor-pointer  relative inline-block h-[3vw]'}>
                           <Image src={'/images/account/discord.svg'} layout={'fill'}></Image>
-                      </div>
-                      <div className={'w-[3vw] cursor-pointer  relative inline-block h-[3vw]'}>
+                      </div></a>
+                      <a target={'_blank'} href={'https://t.me/one_mln_dao'}><div className={'w-[3vw] cursor-pointer  relative inline-block h-[3vw]'}>
                           <Image src={'/images/account/telegram.svg'} layout={'fill'}></Image>
-                      </div>
+                      </div></a>
                   </div>
                   <div className={'w-full cursor-pointer h-[4vw] relative '}>
                       <a href={'/'} className={'text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium'}>← Main page</a>

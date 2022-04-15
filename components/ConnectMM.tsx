@@ -29,5 +29,5 @@ export const ConnectMM = ()=>{
 
     },[])
     const buttonText = connected?mmAddrFormatted:loading?"Loading...":(!error?"Connect wallet":"Error");
-    return <h2 className={'text-white text-center uppercase text-[1.1vw] font-gilroy font-bold cursor-pointer hover:opacity-70'} onClick={()=>{!mmAddr&&connectMM()}}>{buttonText}</h2>
+    return <h2 className={'text-white text-center uppercase text-[inherit] font-gilroy font-bold cursor-pointer hover:opacity-70'} onClick={()=>{!mmAddr&&connectMM()}}>{buttonText}</h2>
 }

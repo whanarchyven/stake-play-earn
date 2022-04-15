@@ -171,7 +171,7 @@ const Stacker = () => {
                                     <Image src={currentToken.image} layout={'fill'}></Image>
                                 </div>
                                 <p className={'text-white font-gilroy font-semibold absolute left-[5vw] text-[1vw] top-[2.3vw] uppercase'}>{currentToken.planetName}</p>
-                                <p className={'text-white font-gilroy font-light absolute left-[5vw] text-[0.8vw] top-[3.8vw]'}>Token</p>
+                                <p className={'text-white font-gilroy font-light absolute left-[5vw] text-[0.8vw] top-[3.8vw]'}>$OMD</p>
                             </div>
                             <div className={' w-[65%] h-full p-[0.8vw] rounded-r-[1vw] relative inline-block align-top stacker-unactive-token'}>
                                 <p className={'absolute font-gilroy text-white left-[0.8vw] text-[0.8vw] font-light'}>Get token</p>

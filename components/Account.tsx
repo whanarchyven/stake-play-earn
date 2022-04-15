@@ -16,8 +16,10 @@ const Account = () => {
                 <div className={'absolute w-full h-full border-[#fff] rounded-[1vw] border-2'}></div>
                 <div className={'absolute w-full h-full account-shape rounded-[1vw] py-[2vw] px-[3vw]'}>
                     <p className={'text-left text-[2vw] font-normal font-gilroy text-white'}>Total Earned</p>
-                    <p className={'text-left text-[4vw] font-bold font-gilroy text-white'}>CONNECT WALLET</p>
-                    <p className={'text-left text-[2vw] font-normal font-gilroy text-white'}>{totalEarned} $TOKEN</p>
+                    <div className={'text-left w-[35vw] text-[4vw] font-bold font-gilroy text-white'}><ConnectMM></ConnectMM></div>
+
+                    {/*<p className={'text-left text-[2vw] font-normal font-gilroy text-white'}>{totalEarned} $TOKEN</p>*/}
+                    <p className={'text-left text-[2vw] font-normal font-gilroy text-white'}>- $OMD</p>
                 </div>
             </div>
 
@@ -26,12 +28,13 @@ const Account = () => {
                 <div className={'items-center align-middle w-[45%] mt-[3%] h-[32%] flex flex-wrap justify-center'}>
                     <p className={'h-fit w-full text-left text-[2vw] font-light font-gilroy text-white'}>APY</p>
                     <p className={'h-fit w-full text-left text-[3vw] font-bold font-gilroy text-white'}>{apy}%</p>
-                    <p className={'h-fit w-full text-left text-[1.4vw] font-light font-gilroy text-white'}>Daily ROI 2.301279%</p>
+                    <p className={'h-fit w-full text-left text-[1.4vw] font-light font-gilroy text-white'}>Daily ROI -</p>
                 </div>
                 <div className={'items-center align-middle w-[45%] mt-[3%] h-[32%] flex flex-wrap justify-center'}>
                     <p className={'h-fit w-full text-left text-[2vw] font-light font-gilroy text-white'}>Your Balance</p>
-                    <p className={'h-fit w-full text-left text-[3vw] font-bold font-gilroy text-white'}>${balance*currency}</p>
-                    <p className={'h-fit w-full text-left text-[1.4vw] font-light font-gilroy text-white'}>{balance} $TOKEN</p>
+                    {/*<p className={'h-fit w-full text-left text-[3vw] font-bold font-gilroy text-white'}>${balance*currency}</p>*/}
+                    <p className={'h-fit w-full text-left text-[3vw] font-bold font-gilroy text-white'}>-</p>
+                    <p className={'h-fit w-full text-left text-[1.4vw] font-light font-gilroy text-white'}>{balance} $OMD</p>
                 </div>
             </div>
 
@@ -43,8 +46,9 @@ const Account = () => {
                 </div>
                 <div className={'items-center align-middle w-[45%] mt-[3%] h-[32%] flex flex-wrap justify-center'}>
                     <p className={'h-fit w-full text-left text-[2vw] font-light font-gilroy text-white'}>Your earnings/Daily</p>
-                    <p className={'h-fit w-full text-left text-[3vw] font-bold font-gilroy text-white'}>${balance*currency*dailyEarnings}</p>
-                    <p className={'h-fit w-full text-left text-[1.4vw] font-light font-gilroy text-white'}>{balance*dailyEarnings} $TOKEN</p>
+                    {/*<p className={'h-fit w-full text-left text-[3vw] font-bold font-gilroy text-white'}>${balance*currency*dailyEarnings}</p>*/}
+                    <p className={'h-fit w-full text-left text-[3vw] font-bold font-gilroy text-white'}>-</p>
+                    <p className={'h-fit w-full text-left text-[1.4vw] font-light font-gilroy text-white'}>- $OMD</p>
                 </div>
             </div>
             <div className={'stacker-unactive-token justify-between flex-wrap w-[80%] mt-[4vw] h-[28vw] rounded-[1vw] px-[2vw] flex'}>
@@ -57,12 +61,12 @@ const Account = () => {
                     <p className={'h-fit w-full text-left mt-[1.7vw] text-[1.3vw] font-light font-gilroy text-white'}>ROI (30-Day-Rate) USD</p>
                 </div>
                 <div className={'items-center align-middle w-[45%] mt-[3%] h-[32%] flex flex-wrap justify-center'}>
-                    <p className={'h-fit w-full text-right mt-[1.7vw] text-[1.3vw] font-medium font-gilroy text-white'}>${currency}</p>
-                    <p className={'h-fit w-full text-right mt-[1.7vw] text-[1.3vw] font-medium font-gilroy text-white'}>{balance*dailyEarnings/24} $TOKEN</p>
-                    <p className={'h-fit w-full text-right mt-[1.7vw] text-[1.3vw] font-medium font-gilroy text-white'}>${balance*dailyEarnings*currency/24}</p>
-                    <p className={'h-fit w-full text-right mt-[1.7vw] text-[1.3vw] font-medium font-gilroy text-white'}>${balance*dailyEarnings/24}</p>
-                    <p className={'h-fit w-full text-right mt-[1.7vw] text-[1.3vw] font-medium font-gilroy text-white'}>{balance*dailyEarnings*30} $TOKEN</p>
-                    <p className={'h-fit w-full text-right mt-[1.7vw] text-[1.3vw] font-medium font-gilroy text-white'}>{balance*dailyEarnings*30*currency}</p>
+                    <p className={'h-fit w-full text-right mt-[1.7vw] text-[1.3vw] font-medium font-gilroy text-white'}>-</p>
+                    <p className={'h-fit w-full text-right mt-[1.7vw] text-[1.3vw] font-medium font-gilroy text-white'}>- $OMD</p>
+                    <p className={'h-fit w-full text-right mt-[1.7vw] text-[1.3vw] font-medium font-gilroy text-white'}>-</p>
+                    <p className={'h-fit w-full text-right mt-[1.7vw] text-[1.3vw] font-medium font-gilroy text-white'}>-</p>
+                    <p className={'h-fit w-full text-right mt-[1.7vw] text-[1.3vw] font-medium font-gilroy text-white'}>- $OMD</p>
+                    <p className={'h-fit w-full text-right mt-[1.7vw] text-[1.3vw] font-medium font-gilroy text-white'}>-</p>
                 </div>
             </div>
 

@@ -161,14 +161,14 @@ const Home: NextPage = () => {
                           visible: { opacity: 1, y:0 },
                           hidden: { opacity: 0, y:-200 }
                       }} className={'z-[9999] w-full fixed top-0 left-0 menu-bg h-[6vw]'}>
-              <div className={'z-[9999] cursor-pointer fixed inline-flex left-[14vw] top-[-1vw] w-[14vw] h-[7vw]'}>
+              <a href={'#intro'}><div className={'z-[9999] cursor-pointer fixed inline-flex left-[14vw] top-[-1vw] w-[14vw] h-[7vw]'}>
                   <Image src={'/images/logodao.svg'} layout={'fill'}></Image>
-              </div>
+              </div></a>
               <div className={'z-[9999] justify-between justify-items-center items-center w-[38.4vw] h-[2vw] fixed inline-flex left-[29.7vw] top-[1.1vw]'}>
                   <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#marketplace'}>nft marketplace</a>
                   <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#stacker'}>Stake</a>
                   <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#metaverse'}>metaverse</a>
-                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#swiper'}>swap</a>
+                  <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#swiper'}>DEX</a>
                   <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#moveearn'}>m2e</a>
                   <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#dao'}>DAO</a>
               </div>
@@ -357,7 +357,7 @@ const Home: NextPage = () => {
                    }}>
                   <NeonButton title={'NFT'}></NeonButton>
               </motion.div></a>
-              <motion.div className={'cursor-pointer absolute inline-block left-[50.7vw] top-[38.6vw] w-[8.2vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
+              <a href={'#swiper'}><motion.div className={'cursor-pointer absolute inline-block left-[50.7vw] top-[38.6vw] w-[8.2vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
                    whileInView={'visible'}
 
                    viewport={{once:true}}
@@ -367,7 +367,7 @@ const Home: NextPage = () => {
                        hidden: { opacity: 0, y: -50 }
                    }}>
                   <NeonButton title={'DEX'}></NeonButton>
-              </motion.div>
+              </motion.div></a>
               <a href={'#dao'}><motion.div className={'cursor-pointer absolute inline-block left-[61.1vw] top-[38.6vw] w-[8vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
                    whileInView={'visible'}
 
@@ -390,13 +390,13 @@ const Home: NextPage = () => {
                    }}>
                   <NeonButton title={'Move-2-Earn'}></NeonButton>
               </motion.div></a>
-              <a href={'https://twitter.com/1MillionDAO'}><div className={'cursor-pointer w-[2.3vw] h-[2.3vw] bottom-[15.4vw] left-[14.45vw] absolute inline-block'}>
+              <a target={'_blank'} href={'https://twitter.com/1MillionDAO'}><div className={'cursor-pointer w-[2.3vw] h-[2.3vw] bottom-[15.4vw] left-[14.45vw] absolute inline-block'}>
                   <Image src={'/images/twitter.svg'} layout={'fill'}></Image>
               </div></a>
-              <a href={'https://discord.gg/3b3SbG4N'}><div className={'cursor-pointer w-[2.3vw] h-[2.5vw] bottom-[15.4vw] left-[17.45vw] absolute inline-block'}>
+              <a target={'_blank'} href={'https://discord.gg/3b3SbG4N'}><div className={'cursor-pointer w-[2.3vw] h-[2.5vw] bottom-[15.4vw] left-[17.45vw] absolute inline-block'}>
                   <Image src={'/images/discord.svg'} layout={'fill'}></Image>
               </div></a>
-              <a href={'https://t.me/one_mln_dao'}><div className={'cursor-pointer w-[2.3vw] h-[2.3vw] bottom-[15.4vw] left-[20.5vw] absolute inline-block'}>
+              <a target={'_blank'} href={'https://t.me/one_mln_dao'}><div className={'cursor-pointer w-[2.3vw] h-[2.3vw] bottom-[15.4vw] left-[20.5vw] absolute inline-block'}>
                   <Image src={'/images/telegram.svg'} layout={'fill'}></Image>
               </div></a>
           </div>
@@ -518,7 +518,7 @@ const Home: NextPage = () => {
                   <Image src={'/images/stakemoon.png'} layout={'fill'}></Image>
               </div>
               <motion.div className={'w-[100vw] z-50 absolute top-0 block h-[57vw]'}>
-                  <h2 className={'w-[60%] mx-[20%] text-center text-[3.45vw] text-white font-gilroy font-semibold leading-[100%] mt-[3vw] uppercase'}><strong>Stake your NFT</strong><br/>to earn BNB</h2>
+                  <h2 className={'w-[60%] mx-[20%] text-center text-[3.45vw] text-white font-gilroy font-semibold leading-[100%] mt-[3vw] uppercase'}><strong>Stake your NFT</strong></h2>
                   <div className={'justify-center absolute w-[32.3vw] h-[36vw] flex top-[4vw] left-[34vw] top-[13.6vw]'}>
                       <div className={'neon-border border-4 rounded-[1vw] w-full h-full absolute'}></div>
                       <div className={'border-white border-2 rounded-[1vw] w-[99.7%] h-[99.7%] absolute'}></div>
@@ -527,12 +527,12 @@ const Home: NextPage = () => {
                       </div>
 
                   </div>
-                  <div className={'w-[9vw] h-[6vw] top-[50vw] left-[30vw] absolute inline-block'}>
-                      <Image src={'/images/30procents.svg'} layout={'fill'}></Image>
-                  </div>
-                  <p className={'w-[8vw] absolute inline-block top-[50vw] text-[1.6vw] w-[31.2vw] left-[40vw] text-white font-gilroy font-medium'}>from all BNB collected on Pinksale presale will be distributed in $BNB Rewards pool</p>
-                  {/*<button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[34vw] text-[1.5vw] bg-purple text-white rounded-full font-gilroy font-bold'}>BUY $OMD</button>*/}
-                  <a href={'#bnb'}><button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[51vw] text-[1.5vw] bg-blue text-white rounded-full font-gilroy font-bold'}>LEARN MORE</button></a>
+                  {/*<div className={'w-[9vw] h-[6vw] top-[50vw] left-[30vw] absolute inline-block'}>*/}
+                  {/*    <Image src={'/images/30procents.svg'} layout={'fill'}></Image>*/}
+                  {/*</div>*/}
+                  {/*<p className={'w-[8vw] absolute inline-block top-[50vw] text-[1.6vw] w-[31.2vw] left-[40vw] text-white font-gilroy font-medium'}>from all BNB collected on Pinksale presale will be distributed in $BNB Rewards pool</p>*/}
+                  {/*/!*<button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[34vw] text-[1.5vw] bg-purple text-white rounded-full font-gilroy font-bold'}>BUY $OMD</button>*!/*/}
+                  {/*<a href={'#bnb'}><button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[51vw] text-[1.5vw] bg-blue text-white rounded-full font-gilroy font-bold'}>LEARN MORE</button></a>*/}
               </motion.div>
 
           </motion.div>
@@ -655,7 +655,6 @@ const Home: NextPage = () => {
           <div className={'w-[100vw] relative block  h-[73vw] bg-cover bg-[]'} id={'dsgnyt'}>
 
 
-
               <motion.div initial="hidden"
                           whileInView={'visible'}
                           viewport={{once:true}}
@@ -730,7 +729,7 @@ const Home: NextPage = () => {
                         variants={{
                             visible: { opacity: 1, x:0 },
                             hidden: { opacity: 0, x:50 }
-                        }} className={'font-normal text-white top-[26.4vw] left-[17vw] inline-block absolute leading-[130%] text-left text-[2.1vw] w-[22vw]  font-gilroy '}>of all returns will be distributed among $1MDAO holders</motion.p>
+                        }} className={'font-normal text-white top-[26.4vw] left-[17vw] inline-block absolute leading-[130%] text-left text-[2.1vw] w-[22vw]  font-gilroy '}>of all returns will be distributed among $OMD holders</motion.p>
 
 
               <motion.p initial="hidden"
@@ -741,7 +740,7 @@ const Home: NextPage = () => {
                             visible: { opacity: 1, x:0 },
                             hidden: { opacity: 0, x:-50 }
                         }} className={'leading-[111%] font-normal text-white top-[28.4vw] right-[13vw]  inline-block absolute text-center w-[30vw] text-[2.1vw] font-gilroy '}>of all returns will be distributed among holders of staked NFT of “Founders collection”</motion.p>
-
+Found
               <motion.div initial="hidden"
                           whileInView={'visible'}
                           viewport={{once:true}}
@@ -769,7 +768,7 @@ const Home: NextPage = () => {
                       <Image src={'/images/dit2.svg'} layout={'fill'}></Image>
                   </div>
                   <div className={'justify-center items-center w-[70%] h-full align-top inline-flex relative'}>
-                      <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>Holders of tokens $1MDAO have voice for staking/treading and 80% of all incomes will be distributed to all $1MDAO holders.</p>
+                      <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>Holders of tokens $OMD have voice for staking/treading and 80% of all incomes will be distributed to all $OMD holders.</p>
                   </div>
               </motion.div>
               <motion.div initial="hidden"
@@ -788,7 +787,6 @@ const Home: NextPage = () => {
                   </div>
               </motion.div>
           </div>
-
 
 
           {/*DISTRIBUTION*/}
@@ -812,7 +810,7 @@ const Home: NextPage = () => {
                              variants={{
                                  visible: { opacity: 1,},
                                  hidden: { opacity: 0.6, }
-                             }} className={'text-white inline-block absolute text-center text-[2.3vw] leading-[110%] font-gilroy font-medium'}>Distribution of income for holders of NFT. (20% of all income of Found 1MDAO)</motion.h2>
+                             }} className={'text-white inline-block absolute text-center text-[2.3vw] leading-[110%] font-gilroy font-medium'}>Distribution of income for holders of NFT. (20% of all income of Fund 1MDAO)</motion.h2>
               </motion.div>
               <motion.h2 initial="hidden"
                          whileInView={'visible'}
@@ -964,7 +962,7 @@ const Home: NextPage = () => {
                         variants={{
                             visible: { opacity: 1, y:0 },
                             hidden: { opacity: 0, y:-50 }
-                        }} className={'absolute top-[12.9vw] left-0 w-full text-center inline-block leading-[110%] text-white font-gilroy uppercase font-medium text-[1.92vw]'}>We create NFT collection whose holders can claim 20% off all incomes of <br/> found 1MDAO. This is a limited collection, and after sale you can buy them <br/> just  from other holders.</motion.p>
+                        }} className={'absolute top-[12.9vw] left-0 w-full text-center inline-block leading-[110%] text-white font-gilroy uppercase font-medium text-[1.92vw]'}>We create NFT collection whose holders can claim 20% off all incomes of <br/> fund 1MDAO. This is a limited collection, and after sale you can buy them <br/> just  from other holders.</motion.p>
               <motion.div initial="hidden"
                         whileInView={'visible'}
                         viewport={{once:true}}
@@ -973,7 +971,7 @@ const Home: NextPage = () => {
                             visible: { opacity: 1, x:0 },
                             hidden: { opacity: 0, x:-50 }
                         }} className={'w-[13vw] h-[5vw] absolute left-[16vw] top-[22.8vw]'}>
-                  <Image src={'/images/bronze.png'} layout={'fill'}></Image>
+                  <Image src={'/images/bronze.svg'} layout={'fill'}></Image>
               </motion.div>
               <motion.div initial="hidden"
                         whileInView={'visible'}
@@ -983,7 +981,7 @@ const Home: NextPage = () => {
                             visible: { opacity: 1, x:0 },
                             hidden: { opacity: 0, x:-50 }
                         }} className={'w-[11vw] h-[5vw] absolute left-[35.4vw] top-[22.8vw]'}>
-                  <Image src={'/images/silver.png'} layout={'fill'}></Image>
+                  <Image src={'/images/silver.svg'} layout={'fill'}></Image>
               </motion.div>
               <motion.div initial="hidden"
                         whileInView={'visible'}
@@ -993,7 +991,7 @@ const Home: NextPage = () => {
                             visible: { opacity: 1, x:0 },
                             hidden: { opacity: 0, x:-50 }
                         }} className={'w-[9.8vw] h-[5vw] absolute left-[54.5vw] top-[22.8vw]'}>
-                  <Image src={'/images/gold.png'} layout={'fill'}></Image>
+                  <Image src={'/images/gold.svg'} layout={'fill'}></Image>
               </motion.div>
               <motion.div initial="hidden"
                         whileInView={'visible'}
@@ -1003,7 +1001,7 @@ const Home: NextPage = () => {
                             visible: { opacity: 1, x:0 },
                             hidden: { opacity: 0, x:-50 }
                         }} className={'w-[16.8vw] h-[5vw] absolute left-[69.7vw] top-[22.8vw]'}>
-                  <Image src={'/images/platinum.png'} layout={'fill'}></Image>
+                  <Image src={'/images/platinum.svg'} layout={'fill'}></Image>
               </motion.div>
               <motion.div initial="hidden"
                         whileInView={'visible'}
@@ -1048,13 +1046,12 @@ const Home: NextPage = () => {
           </div>
 
 
-
           {/*MARKETPLACE*/}
 
 
           <div className={'w-[100vw] relative block  h-[71.6vw] bg-cover bg-[]'} id={'marketplace'}>
               <h2 className={'absolute top-[6vw] w-full text-center inline-block text-white font-gilroy uppercase font-bold text-[5.1vw]'}>NFT’s Founders limited collection</h2>
-              <p className={'absolute top-[15vw] left-[32vw] inline-block text-white font-gilroy font-medium uppercase text-[2vw]'}>NFT Boosters for <strong>$BNB</strong> Rewards pool</p>
+              <p className={'absolute top-[15vw] left-[32vw] inline-block text-white font-gilroy font-medium uppercase text-[2vw]'}></p>
               <div className={'left-[12vw] top-[20vw] w-[79vw] h-[37vw] absolute inline-block] neon-border rounded-[2vw] border-4 '}></div>
               <div className={'left-[12vw] top-[20vw] w-[79vw] h-[30vw] absolute inline-block] '}>
                   <div className={'justify-around top-[3vw] flex absolute bottom-0 w-full h-[70%]'}>
@@ -1343,7 +1340,7 @@ const Home: NextPage = () => {
                               visible: { opacity: 1, scale:1 },
                               hidden: { opacity: 0, scale:0.8 }
                           }} className={'w-[100vw] z-50 absolute top-0 block h-[57vw]'}>
-                  <h2 className={'absolute top-[2vw] left-[28vw] inline-block text-white font-gilroy font-bold text-[5.1vw]'}>SWAP</h2>
+                  <h2 className={'absolute top-[2vw] left-[28vw] inline-block text-white font-gilroy font-bold text-[5.1vw]'}>DEX</h2>
                   <div className={'absolute w-[41vw] top-[10vw] left-[28vw] h-[47.3vw]'}>
                       <Swaper></Swaper>
                   </div>
@@ -1604,7 +1601,7 @@ const Home: NextPage = () => {
                           Launching the protocol<br/><br/>
                           Dex Launch<br/><br/>
                           Articles in cryptomagazines<br/><br/>
-                          Results of autostaking APY rates<br/><br/>
+                          M2E alpha algorithm testing<br/><br/>
                           Boost APR NFTs sale<br/><br/>
                           P2E game beta launch<br/><br/>
                           Dextools marketing ads<br/><br/>
@@ -1612,6 +1609,7 @@ const Home: NextPage = () => {
                           Coinmarketcap list and rate<br/><br/>
                           CoinGecko list and rate<br/><br/>
                           ASP app<br/><br/>
+                          M2E launch<br/><br/>
                           DAO pool opening<br/><br/>
                           DAO voting system<br/><br/>
                           Collaboration laboratory
@@ -1630,7 +1628,7 @@ const Home: NextPage = () => {
                           <p className={'leading-[89%]  text-[2vw] text-white font-gilroy font-bold'}>2H’2022</p>
                       </div>
                       <p className={'leading-[89%] mt-[1.5vw] text-[1.545vw] text-white font-gilroy font-normal'}>ASP app in appStore<br/><br/>
-                          first wave of DAO rewards<br/><br/>
+                          First wave of DAO, M2E rewards<br/><br/>
                           NFT marketplace<br/><br/>
                           official P2E game opening<br/><br/>
                           Collaboration with guilds<br/><br/>

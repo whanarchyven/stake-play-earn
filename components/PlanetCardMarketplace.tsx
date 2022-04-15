@@ -37,7 +37,7 @@ const PlanetCardMarketplace = ({planetName, image, apyIncrease,cost, quantity, c
                     {/*    </div>*/}
                     {/*</div>*/}
                     <div className={'w-full top-[1vw] h-[4vw] absolute'}>
-                        <Image src={'/images/'+category+'.png'} layout={'fill'}></Image>
+                        <Image src={'/images/'+category+'.svg'} layout={'fill'}></Image>
                     </div>
                     <p className={'w-full top-[5vw] absolute text-center text-white font-gilroy font-bold text-[1.7vw]'}>{quantity}/{quantity} NFT</p>
                     <div className={' justify-items-center items-center justify-align-center w-full h-[2.5vw] top-[7vw] rounded-full absolute inline-flex offer-gradient'}>
