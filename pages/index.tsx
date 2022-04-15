@@ -1049,45 +1049,6 @@ const Home: NextPage = () => {
           </div>
 
 
-
-          {/*MOVE-2-EARN*/}
-
-          <div className={'w-[100vw] relative block  h-[55vw] bg-cover bg-[]'} id={'moveearn'}>
-              <p className={'absolute top-[2vw] w-[45vw] left-[38vw] inline-block text-white font-gilroy uppercase font-black text-[6vw]'}>Move 2 earn</p>
-              <p className={'absolute top-[17vw] w-[45vw] left-[38vw] inline-block text-white font-gilroy uppercase font-medium text-[3vw]'}>Move 2 earn $OMD, lvl up, and be healthy</p>
-              <Swiper
-                  autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                  }}
-                  speed={400}
-                  effect={'fade'}
-                  modules={[Autoplay,]}
-              className={'w-[25vw] justify-center items-center inline-flex h-[47vw] absolute left-[10vw] top-0 '}>
-                  <SwiperSlide><div className={'w-[93%] ml-[4%] mt-[4%] absolute h-[95%]'}>
-                      <Image src={'/images/move1.png'} layout={'fill'}></Image>
-                  </div></SwiperSlide>
-                  <SwiperSlide><div className={'w-[93%] ml-[4%] mt-[4%] absolute h-[95%]'}>
-                      <Image src={'/images/move2.png'} layout={'fill'}></Image>
-                  </div></SwiperSlide>
-                  <SwiperSlide><div className={'w-[93%] ml-[4%] mt-[4%] absolute h-[95%]'}>
-                      <Image src={'/images/move3.png'} layout={'fill'}></Image>
-                  </div></SwiperSlide>
-                  <SwiperSlide><div className={'w-[93%] ml-[4%] mt-[4%] absolute h-[95%]'}>
-                      <Image src={'/images/move4.png'} layout={'fill'}></Image>
-                  </div></SwiperSlide>
-                  {/*<div className={'w-full z-[99] absolute h-full'}>*/}
-                  {/*    <Image src={'/images/move_base.png'} layout={'fill'}></Image>*/}
-                  {/*</div>*/}
-              </Swiper>
-              <div className={'border-[1.35vw] border-[#000] w-[25.05vw] z-[99] justify-center items-center inline-flex h-[47vw] absolute left-[10vw] top-0 '}>
-              </div>
-              <div className={' w-[25vw] z-[99] justify-center items-center inline-flex h-[47vw] absolute left-[10vw] top-0 '}>
-                  <Image src={'/images/move_base.png'} layout={'fill'}></Image>
-              </div>
-          </div>
-
-
           {/*MARKETPLACE*/}
 
 
@@ -1117,6 +1078,46 @@ const Home: NextPage = () => {
               </div>
               <div className={'backdrop-blur-sm left-[12vw] top-[20vw] w-[79vw] h-[37vw] absolute inline-block]'}></div>
           </div>
+
+
+
+          {/*MOVE-2-EARN*/}
+
+          <div className={'w-[100vw] relative block  h-[55vw] bg-cover bg-[]'} id={'moveearn'}>
+              <p className={'absolute top-[2vw] w-[45vw] left-[38vw] inline-block text-white font-gilroy uppercase font-black text-[6vw]'}>Move 2 earn</p>
+              <p className={'absolute top-[17vw] w-[45vw] left-[38vw] inline-block text-white font-gilroy uppercase font-medium text-[3vw]'}>Move 2 earn $OMD, lvl up, and be healthy</p>
+              <Swiper
+                  autoplay={{
+                      delay: 2500,
+                      disableOnInteraction: false,
+                  }}
+                  speed={400}
+                  effect={'fade'}
+                  modules={[Autoplay,]}
+                  className={'w-[25vw] justify-center items-center inline-flex h-[47vw] absolute left-[10vw] top-0 '}>
+                  <SwiperSlide><div className={'w-[93%] ml-[4%] mt-[4%] absolute h-[95%]'}>
+                      <Image src={'/images/move1.png'} layout={'fill'}></Image>
+                  </div></SwiperSlide>
+                  <SwiperSlide><div className={'w-[93%] ml-[4%] mt-[4%] absolute h-[95%]'}>
+                      <Image src={'/images/move2.png'} layout={'fill'}></Image>
+                  </div></SwiperSlide>
+                  <SwiperSlide><div className={'w-[93%] ml-[4%] mt-[4%] absolute h-[95%]'}>
+                      <Image src={'/images/move3.png'} layout={'fill'}></Image>
+                  </div></SwiperSlide>
+                  <SwiperSlide><div className={'w-[93%] ml-[4%] mt-[4%] absolute h-[95%]'}>
+                      <Image src={'/images/move4.png'} layout={'fill'}></Image>
+                  </div></SwiperSlide>
+                  {/*<div className={'w-full z-[99] absolute h-full'}>*/}
+                  {/*    <Image src={'/images/move_base.png'} layout={'fill'}></Image>*/}
+                  {/*</div>*/}
+              </Swiper>
+              <div className={'border-[1.35vw] border-[#000] w-[25.05vw] z-[99] justify-center items-center inline-flex h-[47vw] absolute left-[10vw] top-0 '}>
+              </div>
+              <div className={' w-[25vw] z-[99] justify-center items-center inline-flex h-[47vw] absolute left-[10vw] top-0 '}>
+                  <Image src={'/images/move_base.png'} layout={'fill'}></Image>
+              </div>
+          </div>
+
 
 
 

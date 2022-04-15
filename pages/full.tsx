@@ -1049,44 +1049,6 @@ const Home: NextPage = () => {
 
 
 
-          {/*MOVE-2-EARN*/}
-
-          <div className={'w-[100vw] relative block  h-[55vw] bg-cover bg-[]'} id={'moveearn'}>
-              <p className={'absolute top-[2vw] w-[45vw] left-[38vw] inline-block text-white font-gilroy uppercase font-black text-[6vw]'}>Move 2 earn</p>
-              <p className={'absolute top-[17vw] w-[45vw] left-[38vw] inline-block text-white font-gilroy uppercase font-medium text-[3vw]'}>Move 2 earn $OMD, lvl up, and be healthy</p>
-              <Swiper
-                  autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                  }}
-                  speed={400}
-                  effect={'fade'}
-                  modules={[Autoplay,]}
-              className={'w-[25vw] justify-center items-center inline-flex h-[47vw] absolute left-[10vw] top-0 '}>
-                  <SwiperSlide><div className={'w-[93%] ml-[4%] mt-[4%] absolute h-[95%]'}>
-                      <Image src={'/images/move1.png'} layout={'fill'}></Image>
-                  </div></SwiperSlide>
-                  <SwiperSlide><div className={'w-[93%] ml-[4%] mt-[4%] absolute h-[95%]'}>
-                      <Image src={'/images/move2.png'} layout={'fill'}></Image>
-                  </div></SwiperSlide>
-                  <SwiperSlide><div className={'w-[93%] ml-[4%] mt-[4%] absolute h-[95%]'}>
-                      <Image src={'/images/move3.png'} layout={'fill'}></Image>
-                  </div></SwiperSlide>
-                  <SwiperSlide><div className={'w-[93%] ml-[4%] mt-[4%] absolute h-[95%]'}>
-                      <Image src={'/images/move4.png'} layout={'fill'}></Image>
-                  </div></SwiperSlide>
-                  {/*<div className={'w-full z-[99] absolute h-full'}>*/}
-                  {/*    <Image src={'/images/move_base.png'} layout={'fill'}></Image>*/}
-                  {/*</div>*/}
-              </Swiper>
-              <div className={'border-[1.35vw] border-[#000] w-[25.05vw] z-[99] justify-center items-center inline-flex h-[47vw] absolute left-[10vw] top-0 '}>
-              </div>
-              <div className={' w-[25vw] z-[99] justify-center items-center inline-flex h-[47vw] absolute left-[10vw] top-0 '}>
-                  <Image src={'/images/move_base.png'} layout={'fill'}></Image>
-              </div>
-          </div>
-
-
           {/*MARKETPLACE*/}
 
 
@@ -1115,6 +1077,44 @@ const Home: NextPage = () => {
                   </div>
               </div>
 
+          </div>
+
+
+          {/*MOVE-2-EARN*/}
+
+          <div className={'w-[100vw] relative block  h-[55vw] bg-cover bg-[]'} id={'moveearn'}>
+              <p className={'absolute top-[2vw] w-[45vw] left-[38vw] inline-block text-white font-gilroy uppercase font-black text-[6vw]'}>Move 2 earn</p>
+              <p className={'absolute top-[17vw] w-[45vw] left-[38vw] inline-block text-white font-gilroy uppercase font-medium text-[3vw]'}>Move 2 earn $OMD, lvl up, and be healthy</p>
+              <Swiper
+                  autoplay={{
+                      delay: 2500,
+                      disableOnInteraction: false,
+                  }}
+                  speed={400}
+                  effect={'fade'}
+                  modules={[Autoplay,]}
+                  className={'w-[25vw] justify-center items-center inline-flex h-[47vw] absolute left-[10vw] top-0 '}>
+                  <SwiperSlide><div className={'w-[93%] ml-[4%] mt-[4%] absolute h-[95%]'}>
+                      <Image src={'/images/move1.png'} layout={'fill'}></Image>
+                  </div></SwiperSlide>
+                  <SwiperSlide><div className={'w-[93%] ml-[4%] mt-[4%] absolute h-[95%]'}>
+                      <Image src={'/images/move2.png'} layout={'fill'}></Image>
+                  </div></SwiperSlide>
+                  <SwiperSlide><div className={'w-[93%] ml-[4%] mt-[4%] absolute h-[95%]'}>
+                      <Image src={'/images/move3.png'} layout={'fill'}></Image>
+                  </div></SwiperSlide>
+                  <SwiperSlide><div className={'w-[93%] ml-[4%] mt-[4%] absolute h-[95%]'}>
+                      <Image src={'/images/move4.png'} layout={'fill'}></Image>
+                  </div></SwiperSlide>
+                  {/*<div className={'w-full z-[99] absolute h-full'}>*/}
+                  {/*    <Image src={'/images/move_base.png'} layout={'fill'}></Image>*/}
+                  {/*</div>*/}
+              </Swiper>
+              <div className={'border-[1.35vw] border-[#000] w-[25.05vw] z-[99] justify-center items-center inline-flex h-[47vw] absolute left-[10vw] top-0 '}>
+              </div>
+              <div className={' w-[25vw] z-[99] justify-center items-center inline-flex h-[47vw] absolute left-[10vw] top-0 '}>
+                  <Image src={'/images/move_base.png'} layout={'fill'}></Image>
+              </div>
           </div>
 
 
@@ -1151,6 +1151,9 @@ const Home: NextPage = () => {
                          }} className={'justify-center justify-items-center items-center absolute inline-flex left-[58.5vw] top-[3.2vw] w-[28.6vw] h-[28.6vw]'}>
                   {/*<Image src={'/images/1.png'} layout={'fill'}></Image>*/}
                   <div className={'w-[95%] absolute h-[95%]'}>
+                      <div className={'w-[95%] absolute h-[95%]'}>
+                          <Image src={'/images/metaverse/met1.png'} layout={'fill'}></Image>
+                      </div>
                       <video
                           id="background-video"
                           loop
@@ -1164,7 +1167,7 @@ const Home: NextPage = () => {
                               top: 0,
                               backgroundSize:"cover",
                               borderRadius:'100%',
-                          }} className={'relative w-[100vw] h-[58vw]'}
+                          }} className={'relative hidden sm:inline-block w-[100vw] h-[58vw]'}
                       >
                           <source src={'/images/metaverse/metaverse1.mp4'} type="video/mp4" />
                           Your browser does not support the video tag.
@@ -1188,6 +1191,9 @@ const Home: NextPage = () => {
                          }} className={'absolute inline-block left-[-3vw] top-[15.2vw] w-[33vw] h-[33vw]'}>
                   {/*<Image src={'/images/2.png'} layout={'fill'}></Image>*/}
                   <div className={'w-[95%] left-[3%] absolute h-[95%]'}>
+                      <div className={'w-[95%] absolute h-[95%]'}>
+                          <Image src={'/images/metaverse/met2.png'} layout={'fill'}></Image>
+                      </div>
                       <video
                           id="background-video"
                           loop
@@ -1201,7 +1207,7 @@ const Home: NextPage = () => {
                               top: 0,
                               backgroundSize:"cover",
                               borderRadius:'100%',
-                          }} className={'relative w-[100vw] h-[58vw]'}
+                          }} className={'relative hidden sm:inline-block w-[100vw] h-[58vw]'}
                       >
                           <source src={'/images/metaverse/metaverse2.mp4'} type="video/mp4" />
                           Your browser does not support the video tag.
@@ -1225,6 +1231,9 @@ const Home: NextPage = () => {
                          }} className={'absolute inline-block left-[34.4vw] top-[24.5vw] w-[31vw] h-[32vw]'}>
                   {/*<Image src={'/images/3.png'} layout={'fill'}></Image>*/}
                   <div className={'w-[95%] left-[3%] top-[3%] absolute h-[95%]'}>
+                      <div className={'w-[95%] absolute h-[95%]'}>
+                          <Image src={'/images/metaverse/met3.png'} layout={'fill'}></Image>
+                      </div>
                       <video
                           id="background-video"
                           loop
@@ -1238,7 +1247,7 @@ const Home: NextPage = () => {
                               top: 0,
                               backgroundSize:"cover",
                               borderRadius:'100%',
-                          }} className={'relative w-[100vw] h-[58vw]'}
+                          }} className={'relative hidden sm:inline-block w-[100vw] h-[58vw]'}
                       >
                           <source src={'/images/metaverse/metaverse3.mp4'} type="video/mp4" />
                           Your browser does not support the video tag.
@@ -1262,6 +1271,9 @@ const Home: NextPage = () => {
                          }} className={'absolute inline-block right-0 top-[32vw] w-[33.5vw] h-[37.5vw]'}>
                   {/*<Image src={'/images/4.png'} layout={'fill'}></Image>*/}
                   <div className={'w-[95%] left-[3%] top-[6%] absolute h-[93%]'}>
+                      <div className={'w-[95%] absolute h-[95%]'}>
+                          <Image src={'/images/metaverse/met4.png'} layout={'fill'}></Image>
+                      </div>
                       <video
                           id="background-video"
                           loop
@@ -1275,7 +1287,7 @@ const Home: NextPage = () => {
                               top: 0,
                               backgroundSize:"cover",
                               borderRadius:'100%',
-                          }} className={'relative w-[100vw] h-[58vw]'}
+                          }} className={'relative hidden sm:inline-block w-[100vw] h-[58vw]'}
                       >
                           <source src={'/images/metaverse/metaverse4.mp4'} type="video/mp4" />
                           Your browser does not support the video tag.
@@ -1296,7 +1308,7 @@ const Home: NextPage = () => {
                           variants={{
                               visible: { opacity: 1, y:0 },
                               hidden: { opacity: 0, y:100 }
-                          }} className={'cursor-pointer left-[16.4vw] top-[55.5vw] w-[28vw] text-in-shape h-[9vw] absolute inline-flex '}>
+                          }} className={'cursor-pointer left-[16.4vw] top-[55.5vw] w-[28vw] text-in-shape h-[9vw] absolute sm:inline-flex hidden '}>
                   <div className={'w-full h-full neon-border border-[5px] inline-block rounded-full'}></div>
                   <div className={'offer-gradient w-[90%] rounded-full h-[75%] p-[2vw] inline-block absolute'}></div>
                   <h2 className={'text-white inline-block absolute text-center text-[3.2vw] font-gilroy font-regular'}><strong>PLAY</strong> DEMO</h2>
