@@ -162,9 +162,9 @@ const Home: NextPage = () => {
                           visible: { opacity: 1, y:0 },
                           hidden: { opacity: 0, y:-200 }
                       }} className={'z-[9999] w-full fixed top-0 left-0 menu-bg h-[6vw]'}>
-              <div className={'z-[9999] cursor-pointer fixed inline-flex left-[14vw] top-[-1vw] w-[14vw] h-[7vw]'}>
+              <a href={'#intro'}><div className={'z-[9999] cursor-pointer fixed inline-flex left-[14vw] top-[-1vw] w-[14vw] h-[7vw]'}>
                   <Image src={'/images/logodao.svg'} layout={'fill'}></Image>
-              </div>
+              </div></a>
               <div className={'z-[9999] justify-between justify-items-center items-center w-[28.4vw] h-[2vw] fixed inline-flex left-[29.7vw] top-[1.1vw]'}>
                   <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#marketplace'}>nft marketplace</a>
                   <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#stacker'}>Stake</a>
@@ -1703,7 +1703,7 @@ const Home: NextPage = () => {
               <p className={'absolute inline-block top-[4.2vw] left-[39vw] text-[1.2vw] text-white font-gilroy font-[400]'}>MENU</p>
 
               <a href={'#intro'} className={'absolute inline-block top-[7.7vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Home</a>
-              <a className={'absolute inline-block top-[9.9vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Our Ecosystem</a>
+              <a href={'/account'} className={'absolute inline-block top-[9.9vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Our Ecosystem</a>
               <a href={'#roadmap'} className={'absolute inline-block top-[12.1vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Roadmap</a>
               <a className={'absolute inline-block top-[14.3vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Contract</a>
               <a className={'absolute inline-block top-[16.5vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Whitepaper</a>
@@ -1711,9 +1711,9 @@ const Home: NextPage = () => {
 
               <p className={'absolute inline-block top-[4.2vw] left-[54vw] text-[1.2vw] text-white font-gilroy font-[400]'}>FOLLOW US</p>
 
-              <a className={'absolute inline-block top-[7.7vw] left-[54vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Telegram</a>
-              <a className={'absolute inline-block top-[9.9vw] left-[54vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Discord</a>
-              <a className={'absolute inline-block top-[12.1vw] left-[54vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Twitter</a>
+              <a href={'https://t.me/one_mln_dao'} target={'_blank'} className={'absolute inline-block top-[7.7vw] left-[54vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Telegram</a>
+              <a href={'https://discord.gg/3b3SbG4N'} target={'_blank'} className={'absolute inline-block top-[9.9vw] left-[54vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Discord</a>
+              <a href={'https://twitter.com/1MillionDAO'} target={'_blank'} className={'absolute inline-block top-[12.1vw] left-[54vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Twitter</a>
 
 
 
