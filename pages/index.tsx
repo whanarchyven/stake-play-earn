@@ -401,7 +401,6 @@ const Home: NextPage = () => {
                     </div></a>
                 </div>
 
-
                 {/*STACKING*/}
 
                 <div className={'w-[100vw] relative block h-[52.5vw] bg-cover bg-[]'} id={'release'} >
@@ -1718,9 +1717,9 @@ const Home: NextPage = () => {
 
                     <p className={'absolute inline-block top-[4.2vw] left-[54vw] text-[1.2vw] text-white font-gilroy font-[400]'}>FOLLOW US</p>
 
-                    <a href={'https://t.me/one_mln_dao'} target={'_blank'} className={'absolute inline-block top-[7.7vw] left-[54vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Telegram</a>
-                    <a href={'https://discord.gg/3b3SbG4N'} target={'_blank'} className={'absolute inline-block top-[9.9vw] left-[54vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Discord</a>
-                    <a href={'https://twitter.com/1MillionDAO'} target={'_blank'} className={'absolute inline-block top-[12.1vw] left-[54vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Twitter</a>
+                    <a href={'https://t.me/one_mln_dao'} target={'_blank'} rel={'noreferrer'} className={'absolute inline-block top-[7.7vw] left-[54vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Telegram</a>
+                    <a href={'https://discord.gg/3b3SbG4N'} target={'_blank'} rel={'noreferrer'} className={'absolute inline-block top-[9.9vw] left-[54vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Discord</a>
+                    <a href={'https://twitter.com/1MillionDAO'} target={'_blank'} rel={'noreferrer'} className={'absolute inline-block top-[12.1vw] left-[54vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Twitter</a>
 
 
 
