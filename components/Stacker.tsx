@@ -179,7 +179,7 @@ const Stacker = () => {
                                 <p className={'absolute font-gilroy text-white right-[0.8vw] mt-[8%] text-[1.3vw] font-light'}>0.000</p>
                                 <p className={'absolute font-gilroy text-white right-[0.8vw] mt-[17%] text-[0.8vw] font-light'}>$0.000</p>
                             </div>
-                            <div className={'w-full h-[3.5vw] mt-[7%] rounded-[1vw] flex text-in-shape bg-[#606ac6]'}>
+                            <div className={'w-full h-[3.5vw] mt-[7%] text-[1.4vw] rounded-[1vw] flex text-in-shape bg-[#606ac6]'}>
                                 <ConnectMM></ConnectMM>
                             </div>
                         </div>
