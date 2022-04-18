@@ -1088,7 +1088,7 @@ const Home: NextPage = () => {
                 <div className={'w-[100vw] relative block  h-[55vw] bg-cover bg-[]'} id={'moveearn'}>
                     <p className={'absolute top-[2vw] w-[45vw] left-[38vw] inline-block text-white font-gilroy uppercase font-black text-[6vw]'}>Move 2 earn</p>
                     <p className={'absolute top-[17vw] w-[45vw] left-[38vw] inline-block text-white font-gilroy uppercase font-medium text-[3vw]'}>EARN $GMD, Upgrade endurance for more rewards
-                        STAY HEALTHY
+                        <br/><br/>STAY HEALTHY
                     </p>
                     <Swiper
                         autoplay={{
