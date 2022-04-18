@@ -1409,7 +1409,7 @@ const Home: NextPage = () => {
                                     visible: { opacity: 1, scale:1 },
                                     hidden: { opacity: 0, scale:0.8 }
                                 }} className={'absolute w-[18.5vw] h-[13.2vw] p-[1vw] top-[6.4vw] left-[63.5vw] dashboard-shape rounded-[1vw]'}>
-                        <p className={'text-white font-gilroy font-bold text-[1.8vw] leading-[130%]'}>Distribution of 1MDAO foundation profit distribution to 1MDAO members</p>
+                        <p className={'text-white font-gilroy font-bold text-[1.8vw] leading-[130%]'}>Distribution of 1MDAO foundation profit to 1MDAO members</p>
                     </motion.div>
 
                     <motion.div initial="hidden"
