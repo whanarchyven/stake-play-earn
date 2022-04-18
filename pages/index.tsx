@@ -511,32 +511,6 @@ const Home: NextPage = () => {
                 </motion.div>
 
 
-                {/*STACKER*/}
-
-                <motion.div  className={'w-[100vw] relative block h-[64.65vw] bg-[]'} id={'stacker'}>
-                    <div className={'w-[56vw] right-[-6vw] top-[8vw] h-[56vw] absolute inline-block'}>
-                        <Image src={'/images/stakemoon.png'} layout={'fill'}></Image>
-                    </div>
-                    <motion.div className={'w-[100vw] z-50 absolute top-0 block h-[57vw]'}>
-                        <h2 className={'w-[60%] mx-[20%] text-center text-[3.45vw] text-white font-gilroy font-semibold leading-[100%] mt-[3vw] uppercase'}><strong>Stake your NFT</strong></h2>
-                        <div className={'justify-center absolute w-[32.3vw] h-[25vw] flex top-[4vw] left-[34vw] top-[13.6vw]'}>
-                            <div className={'neon-border border-4 rounded-[1vw] w-full h-full absolute'}></div>
-                            <div className={'border-white border-2 rounded-[1vw] w-[99.7%] h-[99.7%] absolute'}></div>
-                            <div className={'w-[98%] mt-[6%] h-[98%] absolute'}>
-                                <Stacker></Stacker>
-                            </div>
-
-                        </div>
-                        {/*<div className={'w-[9vw] h-[6vw] top-[50vw] left-[30vw] absolute inline-block'}>*/}
-                        {/*    <Image src={'/images/30procents.svg'} layout={'fill'}></Image>*/}
-                        {/*</div>*/}
-                        {/*<p className={'w-[8vw] absolute inline-block top-[50vw] text-[1.6vw] w-[31.2vw] left-[40vw] text-white font-gilroy font-medium'}>from all BNB collected on Pinksale presale will be distributed in $BNB Rewards pool</p>*/}
-                        {/*/!*<button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[34vw] text-[1.5vw] bg-purple text-white rounded-full font-gilroy font-bold'}>BUY $OMD</button>*!/*/}
-                        {/*<a href={'#bnb'}><button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[51vw] text-[1.5vw] bg-blue text-white rounded-full font-gilroy font-bold'}>LEARN MORE</button></a>*/}
-                    </motion.div>
-
-                </motion.div>
-
 
                 {/*BNB*/}
 
@@ -739,7 +713,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, x:0 },
                                   hidden: { opacity: 0, x:-50 }
-                              }} className={'leading-[111%] font-normal text-white top-[28.4vw] right-[13vw]  inline-block absolute text-center w-[30vw] text-[2.1vw] font-gilroy '}>of all incomes will be distributed among holders of staked NFTS of “Founders collection”</motion.p>
+                              }} className={'leading-[111%] font-normal text-white top-[28.4vw] right-[13vw]  inline-block absolute text-center w-[30vw] text-[2.1vw] font-gilroy '}>of all incomes will be distributed among holders of staked NFTs “Founders collection”</motion.p>
                     Found
                     <motion.div initial="hidden"
                                 whileInView={'visible'}
@@ -768,7 +742,7 @@ const Home: NextPage = () => {
                             <Image src={'/images/dit2.svg'} layout={'fill'}></Image>
                         </div>
                         <div className={'justify-center items-center w-[70%] h-full align-top inline-flex relative'}>
-                            <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>Holders of tokens $OMD have voice for staking/treading and 80% of all incomes will be distributed to all $OMD holders.</p>
+                            <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>Holders of tokens $OMD have voices for staking/treading and 80% of all incomes will be distributed to all $OMD holders.</p>
                         </div>
                     </motion.div>
                     <motion.div initial="hidden"
@@ -783,7 +757,7 @@ const Home: NextPage = () => {
                             <Image src={'/images/dit3.svg'} layout={'fill'}></Image>
                         </div>
                         <div className={'justify-center items-center w-[70%] h-full align-top inline-flex relative'}>
-                            <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>20% of all returns will be distributed among those who have staked the NFT Founders Collection</p>
+                            <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>20% of all returns will be distributed among those who have staked the NFTs Founders Collection</p>
                         </div>
                     </motion.div>
                 </div>
@@ -906,7 +880,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, x:0 },
                                   hidden: { opacity: 0, x:50 }
-                              }} className={'font-normal text-white top-[26.4vw] left-[15vw] inline-block absolute leading-[130%] text-center text-[2.1vw] font-gilroy '}>for Bronze <br/> NFT’s <br/> holders</motion.p>
+                              }} className={'font-normal text-white top-[26.4vw] left-[15vw] inline-block absolute leading-[130%] text-center text-[2.1vw] font-gilroy '}>for Bronze <br/> NFTs <br/> holders</motion.p>
                     <motion.p initial="hidden"
                               whileInView={'visible'}
                               viewport={{once:true}}
@@ -914,7 +888,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, y:0 },
                                   hidden: { opacity: 0, y:-50 }
-                              }} className={'font-normal text-white top-[34vw] left-[39vw] inline-block leading-[130%] absolute text-center text-[2.1vw] font-gilroy '}>for Silver <br/> NFT’s <br/> holders</motion.p>
+                              }} className={'font-normal text-white top-[34vw] left-[39vw] inline-block leading-[130%] absolute text-center text-[2.1vw] font-gilroy '}>for Silver <br/> NFTs <br/> holders</motion.p>
 
                     <motion.p initial="hidden"
                               whileInView={'visible'}
@@ -923,7 +897,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, y:0 },
                                   hidden: { opacity: 0, y:-50 }
-                              }} className={'font-normal text-white top-[34vw] left-[59vw] inline-block leading-[130%] absolute text-center text-[2.1vw] font-gilroy '}>for Gold <br/> NFT’s <br/> holders</motion.p>
+                              }} className={'font-normal text-white top-[34vw] left-[59vw] inline-block leading-[130%] absolute text-center text-[2.1vw] font-gilroy '}>for Gold <br/> NFTs <br/> holders</motion.p>
 
 
                     <motion.p initial="hidden"
@@ -933,7 +907,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, x:0 },
                                   hidden: { opacity: 0, x:-50 }
-                              }} className={'leading-[111%] font-normal text-white top-[28.4vw] left-[74vw] inline-block absolute text-center w-[15vw] text-[2.1vw] font-gilroy '}>for Platinum <br/> NFT’s <br/> holders</motion.p>
+                              }} className={'leading-[111%] font-normal text-white top-[28.4vw] left-[74vw] inline-block absolute text-center w-[15vw] text-[2.1vw] font-gilroy '}>for Platinum <br/> NFTs <br/> holders</motion.p>
 
 
                     <div className={'w-[87vw] bottom-0 left-[8vw] h-[26vw] absolute'}>
@@ -1077,6 +1051,34 @@ const Home: NextPage = () => {
                 </div>
 
 
+                {/*STACKER*/}
+
+                <motion.div  className={'w-[100vw] relative block h-[64.65vw] bg-[]'} id={'stacker'}>
+                    <div className={'w-[56vw] right-[-6vw] top-[8vw] h-[56vw] absolute inline-block'}>
+                        <Image src={'/images/stakemoon.png'} layout={'fill'}></Image>
+                    </div>
+                    <motion.div className={'w-[100vw] z-50 absolute top-0 block h-[57vw]'}>
+                        <h2 className={'w-[60%] mx-[20%] text-center text-[3.45vw] text-white font-gilroy font-semibold leading-[100%] mt-[3vw] uppercase'}><strong>Stake your NFT</strong></h2>
+                        <div className={'justify-center absolute w-[32.3vw] h-[25vw] flex top-[4vw] left-[34vw] top-[13.6vw]'}>
+                            <div className={'neon-border border-4 rounded-[1vw] w-full h-full absolute'}></div>
+                            <div className={'border-white border-2 rounded-[1vw] w-[99.7%] h-[99.7%] absolute'}></div>
+                            <div className={'w-[98%] mt-[6%] h-[98%] absolute'}>
+                                <Stacker></Stacker>
+                            </div>
+
+                        </div>
+                        {/*<div className={'w-[9vw] h-[6vw] top-[50vw] left-[30vw] absolute inline-block'}>*/}
+                        {/*    <Image src={'/images/30procents.svg'} layout={'fill'}></Image>*/}
+                        {/*</div>*/}
+                        {/*<p className={'w-[8vw] absolute inline-block top-[50vw] text-[1.6vw] w-[31.2vw] left-[40vw] text-white font-gilroy font-medium'}>from all BNB collected on Pinksale presale will be distributed in $BNB Rewards pool</p>*/}
+                        {/*/!*<button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[34vw] text-[1.5vw] bg-purple text-white rounded-full font-gilroy font-bold'}>BUY $OMD</button>*!/*/}
+                        {/*<a href={'#bnb'}><button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[51vw] text-[1.5vw] bg-blue text-white rounded-full font-gilroy font-bold'}>LEARN MORE</button></a>*/}
+                    </motion.div>
+
+                </motion.div>
+
+
+
                 {/*MOVE-2-EARN*/}
 
                 <div className={'w-[100vw] relative block  h-[55vw] bg-cover bg-[]'} id={'moveearn'}>
@@ -1087,6 +1089,7 @@ const Home: NextPage = () => {
                             delay: 2500,
                             disableOnInteraction: false,
                         }}
+                        loop={true}
                         speed={400}
                         effect={'fade'}
                         modules={[Autoplay,]}
@@ -1256,7 +1259,7 @@ const Home: NextPage = () => {
                         <div className={'w-[9vw] h-[9vw] top-[-2.5vw] left-[4vw] absolute'}>
                             <Image src={'/images/metaverse/num3.svg'} layout={'fill'}></Image>
                         </div>
-                        <p className={'text-white inline-block absolute text-center w-[70%] mx-[15%] mt-[20.5vw] leading-[100%] text-[1.8vw] font-gilroy font-regular'}>Develope your space base, strenthen defences, get unique resourses</p>
+                        <p className={'text-white inline-block absolute text-center w-[70%] mx-[15%] mt-[20.5vw] leading-[100%] text-[1.8vw] font-gilroy font-regular'}>Develop your space base and strengthen your defense</p>
                     </motion.div>
                     <motion.div initial="hidden"
                                 whileInView={'visible'}
@@ -1296,7 +1299,7 @@ const Home: NextPage = () => {
                         <div className={'w-[9vw] h-[9vw] top-[24.5vw] left-[-2vw] absolute'}>
                             <Image src={'/images/metaverse/num4.svg'} layout={'fill'}></Image>
                         </div>
-                        <p className={'text-white inline-block absolute text-center w-[70%] mx-[15%] mt-[24.0vw] leading-[100%] text-[1.8vw] font-gilroy font-regular'}>Develope your space base, strenthen defences, get unique resourses</p>
+                        <p className={'text-white inline-block absolute text-center w-[70%] mx-[15%] mt-[24.0vw] leading-[100%] text-[1.8vw] font-gilroy font-regular'}>Get unique resources</p>
                     </motion.div>
                     {/*<motion.div initial="hidden"*/}
                     {/*            whileInView={'visible'}*/}
@@ -1593,7 +1596,7 @@ const Home: NextPage = () => {
                                 <span className={'text-[#F3ACFF] font-semibold'}>contract deploy</span><br/><br/>
                                 <span className={'text-[#F3ACFF] font-semibold'}>Seed round</span><br/><br/>
                                 <span className={'text-[#F3ACFF] font-semibold'}>KOL management</span><br/><br/>
-                                Coinscope audit<br/><br/>
+                                Contract audited<br/><br/>
                                 KYC by Pinksale<br/><br/>
                                 Presale on Pinksale<br/><br/>
                                 10 Voice AMA<br/><br/>
@@ -1602,7 +1605,7 @@ const Home: NextPage = () => {
                                 Dex Launch<br/><br/>
                                 Articles in cryptomagazines<br/><br/>
                                 M2E alpha algorithm testing<br/><br/>
-                                Boost APR NFTs sale<br/><br/>
+                                NFTs sale<br/><br/>
                                 P2E game beta launch<br/><br/>
                                 Dextools marketing ads<br/><br/>
                                 Coinsniper rating top 5<br/><br/>

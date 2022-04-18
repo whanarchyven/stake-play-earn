@@ -39,7 +39,7 @@ const Stacker = () => {
         image:'/images/planets/4.png',
     }
     const[stakeTab,setStakeTab]=useState('stake');
-    const [currentToken,setCurrenToken]=useState(x0)
+    const [currentToken,setCurrenToken]=useState(x1)
 
         return (
             <div className={'w-full h-full'}>
