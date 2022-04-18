@@ -727,7 +727,8 @@ const Home: NextPage = () => {
                             <Image src={'/images/dit1.svg'} layout={'fill'}></Image>
                         </div>
                         <div className={'justify-center items-center w-[70%] h-full align-top inline-flex relative'}>
-                            <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>Original bank 1MDAO of 30% from all collected $BNB on presale.</p>
+                            <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>At listing 1MDAO Bank will accumulate 30% of all collected BNB on presale
+                            </p>
                         </div>
                     </motion.div>
                     <motion.div initial="hidden"
@@ -742,7 +743,8 @@ const Home: NextPage = () => {
                             <Image src={'/images/dit2.svg'} layout={'fill'}></Image>
                         </div>
                         <div className={'justify-center items-center w-[70%] h-full align-top inline-flex relative'}>
-                            <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>Holders of tokens $OMD have voices for staking/treading and 80% of all incomes will be distributed to all $OMD holders.</p>
+                            <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>$OMD Holders will have a vote opportunity for staking and trading distribution pools. 80% of project profit will be distributed to $OMD holders
+                            </p>
                         </div>
                     </motion.div>
                     <motion.div initial="hidden"
@@ -757,7 +759,7 @@ const Home: NextPage = () => {
                             <Image src={'/images/dit3.svg'} layout={'fill'}></Image>
                         </div>
                         <div className={'justify-center items-center w-[70%] h-full align-top inline-flex relative'}>
-                            <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>20% of all returns will be distributed among those who have staked the NFTs Founders Collection</p>
+                            <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>20% of profit will be distributed among the NFT holders of Founder Collection</p>
                         </div>
                     </motion.div>
                 </div>
@@ -784,7 +786,8 @@ const Home: NextPage = () => {
                                    variants={{
                                        visible: { opacity: 1,},
                                        hidden: { opacity: 0.6, }
-                                   }} className={'text-white inline-block absolute text-center text-[2.3vw] leading-[110%] font-gilroy font-medium'}>Distribution of income for holders of NFT. (20% of all income of Fund 1MDAO)</motion.h2>
+                                   }} className={'text-white inline-block absolute text-center text-[2.3vw] leading-[110%] font-gilroy font-medium'}>Profit Distribution for NFT holders of Founder Collection (20% of all profit of 1MDAO Fund)
+                        </motion.h2>
                     </motion.div>
                     <motion.h2 initial="hidden"
                                whileInView={'visible'}
@@ -936,7 +939,8 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, y:0 },
                                   hidden: { opacity: 0, y:-50 }
-                              }} className={'absolute top-[12.9vw] left-0 w-full text-center inline-block leading-[110%] text-white font-gilroy uppercase font-medium text-[1.92vw]'}>We create NFT collection whose holders can claim 20% off all incomes of <br/> fund 1MDAO. This is a limited collection, and after sale you can buy them <br/> just  from other holders.</motion.p>
+                              }} className={'absolute top-[12.9vw] left-0 w-full text-center inline-block leading-[110%] text-white font-gilroy uppercase font-medium text-[1.92vw]'}>The Founders NFT limited Collection is created for early investors, that will have 20% of all profit 1MDAO Fund. After the sale owners will have an option to sell it on marketplace.
+                    </motion.p>
                     <motion.div initial="hidden"
                                 whileInView={'visible'}
                                 viewport={{once:true}}
@@ -985,7 +989,7 @@ const Home: NextPage = () => {
                                     visible: { opacity: 1, x:0 },
                                     hidden: { opacity: 0, x:-50 }
                                 }} className={'w-[13vw] h-[5vw] absolute left-[16vw] top-[26.8vw]'}>
-                        <p className={'w-full text-white font-semibold text-center font-gilroy text-[2.3vw] uppercase'}>200 NFTS</p>
+                        <p className={'w-full text-white font-semibold text-center font-gilroy text-[2.3vw] uppercase'}>200 NFT</p>
                     </motion.div>
                     <motion.div initial="hidden"
                                 whileInView={'visible'}
@@ -995,7 +999,7 @@ const Home: NextPage = () => {
                                     visible: { opacity: 1, x:0 },
                                     hidden: { opacity: 0, x:-50 }
                                 }} className={'w-[11vw] h-[5vw] absolute left-[35.4vw] top-[26.8vw]'}>
-                        <p className={'w-full text-white font-semibold text-center font-gilroy text-[2.3vw] uppercase'}>100 NFTS</p>
+                        <p className={'w-full text-white font-semibold text-center font-gilroy text-[2.3vw] uppercase'}>100 NFT</p>
                     </motion.div>
                     <motion.div initial="hidden"
                                 whileInView={'visible'}
@@ -1005,7 +1009,7 @@ const Home: NextPage = () => {
                                     visible: { opacity: 1, x:0 },
                                     hidden: { opacity: 0, x:-50 }
                                 }} className={'w-[9.8vw] h-[5vw] absolute left-[54.5vw] top-[26.8vw]'}>
-                        <p className={'w-full text-white font-semibold text-center font-gilroy text-[2.3vw] uppercase'}>50 NFTS</p>
+                        <p className={'w-full text-white font-semibold text-center font-gilroy text-[2.3vw] uppercase'}>50 NFT</p>
                     </motion.div>
                     <motion.div initial="hidden"
                                 whileInView={'visible'}
@@ -1015,7 +1019,7 @@ const Home: NextPage = () => {
                                     visible: { opacity: 1, x:0 },
                                     hidden: { opacity: 0, x:-50 }
                                 }} className={'w-[16.8vw] h-[5vw] absolute left-[69.7vw] top-[26.8vw]'}>
-                        <p className={'w-full text-white font-semibold text-center font-gilroy text-[2.3vw] uppercase'}>20 NFTS</p>
+                        <p className={'w-full text-white font-semibold text-center font-gilroy text-[2.3vw] uppercase'}>20 NFT</p>
                     </motion.div>
                 </div>
 
@@ -1024,7 +1028,7 @@ const Home: NextPage = () => {
 
 
                 <div className={'w-[100vw] relative block  h-[71.6vw] bg-cover bg-[]'} id={'marketplace'}>
-                    <h2 className={'absolute top-[6vw] w-full text-center inline-block text-white font-gilroy uppercase font-bold text-[5.1vw]'}>NFT’s Founders limited collection</h2>
+                    <h2 className={'absolute top-[6vw] w-full text-center inline-block text-white font-gilroy uppercase font-bold text-[5.1vw]'}>FOUNDERS LIMITED COLLECTION</h2>
                     <p className={'absolute top-[15vw] left-[32vw] inline-block text-white font-gilroy font-medium uppercase text-[2vw]'}></p>
                     <div className={'left-[12vw] top-[20vw] w-[79vw] h-[37vw] absolute inline-block] neon-border rounded-[2vw] border-4 '}></div>
                     <div className={'left-[12vw] top-[20vw] w-[79vw] h-[30vw] absolute inline-block] '}>
@@ -1083,7 +1087,9 @@ const Home: NextPage = () => {
 
                 <div className={'w-[100vw] relative block  h-[55vw] bg-cover bg-[]'} id={'moveearn'}>
                     <p className={'absolute top-[2vw] w-[45vw] left-[38vw] inline-block text-white font-gilroy uppercase font-black text-[6vw]'}>Move 2 earn</p>
-                    <p className={'absolute top-[17vw] w-[45vw] left-[38vw] inline-block text-white font-gilroy uppercase font-medium text-[3vw]'}>Move 2 earn $OMD, lvl up, and be healthy</p>
+                    <p className={'absolute top-[17vw] w-[45vw] left-[38vw] inline-block text-white font-gilroy uppercase font-medium text-[3vw]'}>EARN $GMD, Upgrade endurance for more rewards
+                        STAY HEALTHY
+                    </p>
                     <Swiper
                         autoplay={{
                             delay: 2500,
@@ -1299,7 +1305,8 @@ const Home: NextPage = () => {
                         <div className={'w-[9vw] h-[9vw] top-[24.5vw] left-[-2vw] absolute'}>
                             <Image src={'/images/metaverse/num4.svg'} layout={'fill'}></Image>
                         </div>
-                        <p className={'text-white inline-block absolute text-center w-[70%] mx-[15%] mt-[24.0vw] leading-[100%] text-[1.8vw] font-gilroy font-regular'}>Get unique resources</p>
+                        <p className={'text-white inline-block absolute text-center w-[70%] mx-[15%] mt-[24.0vw] leading-[100%] text-[1.8vw] font-gilroy font-regular'}>Get unique resources and trade it on marketplace for profit
+                        </p>
                     </motion.div>
                     {/*<motion.div initial="hidden"*/}
                     {/*            whileInView={'visible'}*/}
@@ -1402,7 +1409,7 @@ const Home: NextPage = () => {
                                     visible: { opacity: 1, scale:1 },
                                     hidden: { opacity: 0, scale:0.8 }
                                 }} className={'absolute w-[18.5vw] h-[13.2vw] p-[1vw] top-[6.4vw] left-[63.5vw] dashboard-shape rounded-[1vw]'}>
-                        <p className={'text-white font-gilroy font-bold text-[2vw] leading-[130%]'}>Distribution of 1MDAO foundation earnings</p>
+                        <p className={'text-white font-gilroy font-bold text-[1.8vw] leading-[130%]'}>Distribution of 1MDAO foundation profit distribution to 1MDAO members</p>
                     </motion.div>
 
                     <motion.div initial="hidden"
