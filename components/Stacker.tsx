@@ -48,19 +48,19 @@ const Stacker = () => {
     const checkTokenAmount=()=>{
         if(currentToken.title=='x1' && currentTokenQuantity>=200){
             setCurrentTokenQualiry(200);
-            console.log('x1')
+
         }
         else if (currentToken.title=='x2' && currentTokenQuantity>=100){
             setCurrentTokenQualiry(100);
-            console.log('x2')
+
         }
         else if (currentToken.title=='x3' && currentTokenQuantity>=50){
             setCurrentTokenQualiry(50);
-            console.log('x3')
+
         }
         else if (currentToken.title=='x4' && currentTokenQuantity>=20){
             setCurrentTokenQualiry(20);
-            console.log('x4')
+
         }
     }
 
@@ -146,7 +146,7 @@ const Stacker = () => {
                             </div>
                             <div className={'w-full absolute top-[3vw] h-[5vw]'}>
                                 <div className={'w-[50%] inline-block align-top my-[3%] h-full'}>
-                                    <p className={'text-white  font-semibold font-gilroy text-[1.5vw] text-center'}>{parseFloat(currentToken.revaAPR*currentTokenQuantity).toFixed(2)} %</p>
+                                    <p className={'text-white  font-semibold font-gilroy text-[1.5vw] text-center'}>{(currentToken.revaAPR*currentTokenQuantity).toFixed(2)} %</p>
                                     <p className={'text-white font-light text-[1vw] font-gilroy text-center'}>OF ALL INCOME</p>
                                 </div>
                                 <div className={'w-[50%] inline-block align-top my-[3%] h-full'}>
