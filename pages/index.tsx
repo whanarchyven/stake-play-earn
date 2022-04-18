@@ -323,7 +323,7 @@ const Home: NextPage = () => {
                                                          visible: { opacity: 1, y:0 },
                                                          hidden: { opacity: 0, y: -50 }
                                                      }}>
-                        <NeonButton title={'Stake $OMD'}></NeonButton>
+                        <NeonButton title={'Stake'}></NeonButton>
                     </motion.div></a>
                     <a href={'#metaverse'}><motion.div className={'cursor-pointer absolute inline-block left-[64vw] top-[33.4vw] w-[12.4vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
                                                        whileInView={'visible'}
@@ -444,16 +444,16 @@ const Home: NextPage = () => {
 
 
 
-                    <motion.div initial="hidden"
-                                whileInView={'visible'}
-                                viewport={{once:true}}
-                                transition={{ type:"spring",duration: 1, delay:0.3, bounce:0.6 ,}}
-                                variants={{
-                                    visible: { opacity: 1, y:0 },
-                                    hidden: { opacity: 0, y:100 }
-                                }} className={'cursor-pointer w-[9.1vw] h-[3.7vw] left-[21.7vw] top-[25.6vw] rounded-full text-in-shape absolute inline-flex offer-purple'}>
-                        <p className={'text-white font-gilroy font-semibold text-[1.7vw]'}>AUDIT</p>
-                    </motion.div>
+                    {/*<motion.div initial="hidden"*/}
+                    {/*            whileInView={'visible'}*/}
+                    {/*            viewport={{once:true}}*/}
+                    {/*            transition={{ type:"spring",duration: 1, delay:0.3, bounce:0.6 ,}}*/}
+                    {/*            variants={{*/}
+                    {/*                visible: { opacity: 1, y:0 },*/}
+                    {/*                hidden: { opacity: 0, y:100 }*/}
+                    {/*            }} className={'cursor-pointer w-[9.1vw] h-[3.7vw] left-[21.7vw] top-[25.6vw] rounded-full text-in-shape absolute inline-flex offer-purple'}>*/}
+                    {/*    <p className={'text-white font-gilroy font-semibold text-[1.7vw]'}>AUDIT</p>*/}
+                    {/*</motion.div>*/}
 
 
                     {/*<div className={'cursor-pointer offer-gradient w-[15.5vw] h-[3.7vw] left-[31.5vw] top-[25.6vw] rounded-full text-in-shape absolute inline-flex'}>*/}
@@ -519,7 +519,7 @@ const Home: NextPage = () => {
                     </div>
                     <motion.div className={'w-[100vw] z-50 absolute top-0 block h-[57vw]'}>
                         <h2 className={'w-[60%] mx-[20%] text-center text-[3.45vw] text-white font-gilroy font-semibold leading-[100%] mt-[3vw] uppercase'}><strong>Stake your NFT</strong></h2>
-                        <div className={'justify-center absolute w-[32.3vw] h-[36vw] flex top-[4vw] left-[34vw] top-[13.6vw]'}>
+                        <div className={'justify-center absolute w-[32.3vw] h-[25vw] flex top-[4vw] left-[34vw] top-[13.6vw]'}>
                             <div className={'neon-border border-4 rounded-[1vw] w-full h-full absolute'}></div>
                             <div className={'border-white border-2 rounded-[1vw] w-[99.7%] h-[99.7%] absolute'}></div>
                             <div className={'w-[98%] mt-[6%] h-[98%] absolute'}>
@@ -637,7 +637,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, y:0 },
                                   hidden: { opacity: 0, y:-50 }
-                              }} className={'font-medium uppercase text-white top-[31.4vw] left-[45.6vw] inline-block absolute text-center text-[2.1vw] font-gilroy '}>team%</motion.p>
+                              }} className={'font-medium uppercase text-white top-[31.4vw] left-[45.6vw] inline-block absolute text-center text-[2.1vw] font-gilroy '}>team</motion.p>
                     <motion.p initial="hidden"
                               whileInView={'visible'}
                               viewport={{once:true}}
@@ -729,7 +729,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, x:0 },
                                   hidden: { opacity: 0, x:50 }
-                              }} className={'font-normal text-white top-[26.4vw] left-[17vw] inline-block absolute leading-[130%] text-left text-[2.1vw] w-[22vw]  font-gilroy '}>of all returns will be distributed among $OMD holders</motion.p>
+                              }} className={'font-normal text-white top-[26.4vw] left-[17vw] inline-block absolute leading-[130%] text-left text-[2.1vw] w-[22vw]  font-gilroy '}>of all incomes will be distributed among $OMD holders</motion.p>
 
 
                     <motion.p initial="hidden"
@@ -739,7 +739,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, x:0 },
                                   hidden: { opacity: 0, x:-50 }
-                              }} className={'leading-[111%] font-normal text-white top-[28.4vw] right-[13vw]  inline-block absolute text-center w-[30vw] text-[2.1vw] font-gilroy '}>of all returns will be distributed among holders of staked NFT of “Founders collection”</motion.p>
+                              }} className={'leading-[111%] font-normal text-white top-[28.4vw] right-[13vw]  inline-block absolute text-center w-[30vw] text-[2.1vw] font-gilroy '}>of all incomes will be distributed among holders of staked NFTS of “Founders collection”</motion.p>
                     Found
                     <motion.div initial="hidden"
                                 whileInView={'visible'}
@@ -783,7 +783,7 @@ const Home: NextPage = () => {
                             <Image src={'/images/dit3.svg'} layout={'fill'}></Image>
                         </div>
                         <div className={'justify-center items-center w-[70%] h-full align-top inline-flex relative'}>
-                            <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>Holders of NFT don’t have voices, but they can qualify for distribution of 20% from all incomes? In case if they stake their NFT</p>
+                            <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>20% of all returns will be distributed among those who have staked the NFT Founders Collection</p>
                         </div>
                     </motion.div>
                 </div>
@@ -906,7 +906,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, x:0 },
                                   hidden: { opacity: 0, x:50 }
-                              }} className={'font-normal text-white top-[26.4vw] left-[15vw] inline-block absolute leading-[130%] text-center text-[2.1vw] font-gilroy '}>for Bronze <br/> NFS’s <br/> holders</motion.p>
+                              }} className={'font-normal text-white top-[26.4vw] left-[15vw] inline-block absolute leading-[130%] text-center text-[2.1vw] font-gilroy '}>for Bronze <br/> NFT’s <br/> holders</motion.p>
                     <motion.p initial="hidden"
                               whileInView={'visible'}
                               viewport={{once:true}}
@@ -914,7 +914,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, y:0 },
                                   hidden: { opacity: 0, y:-50 }
-                              }} className={'font-normal text-white top-[34vw] left-[39vw] inline-block leading-[130%] absolute text-center text-[2.1vw] font-gilroy '}>for Silver <br/> NFS’s <br/> holders</motion.p>
+                              }} className={'font-normal text-white top-[34vw] left-[39vw] inline-block leading-[130%] absolute text-center text-[2.1vw] font-gilroy '}>for Silver <br/> NFT’s <br/> holders</motion.p>
 
                     <motion.p initial="hidden"
                               whileInView={'visible'}
@@ -923,7 +923,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, y:0 },
                                   hidden: { opacity: 0, y:-50 }
-                              }} className={'font-normal text-white top-[34vw] left-[59vw] inline-block leading-[130%] absolute text-center text-[2.1vw] font-gilroy '}>for Gold <br/> NFS’s <br/> holders</motion.p>
+                              }} className={'font-normal text-white top-[34vw] left-[59vw] inline-block leading-[130%] absolute text-center text-[2.1vw] font-gilroy '}>for Gold <br/> NFT’s <br/> holders</motion.p>
 
 
                     <motion.p initial="hidden"
@@ -933,7 +933,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, x:0 },
                                   hidden: { opacity: 0, x:-50 }
-                              }} className={'leading-[111%] font-normal text-white top-[28.4vw] left-[74vw] inline-block absolute text-center w-[15vw] text-[2.1vw] font-gilroy '}>for Platinum <br/> NFS’s <br/> holders</motion.p>
+                              }} className={'leading-[111%] font-normal text-white top-[28.4vw] left-[74vw] inline-block absolute text-center w-[15vw] text-[2.1vw] font-gilroy '}>for Platinum <br/> NFT’s <br/> holders</motion.p>
 
 
                     <div className={'w-[87vw] bottom-0 left-[8vw] h-[26vw] absolute'}>

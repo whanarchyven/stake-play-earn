@@ -6,35 +6,35 @@ const Stacker = () => {
     const x0 ={
         title:'x0',
         planetName:'None',
-        revaAPR:5,
+        revaAPR:0,
         specify:'without',
         image:'/images/planets/0.png',
     }
     const x1 ={
         title:'x1',
         planetName:'X-3121',
-        revaAPR:8,
+        revaAPR:0.01,
         specify:'based',
         image:'/images/planets/1.png',
     }
     const x2 ={
         title:'x2',
         planetName:'Y-8265',
-        revaAPR:11,
+        revaAPR:0.04,
         specify:'premium',
         image:'/images/planets/2.png',
     }
     const x3 ={
         title:'x3',
         planetName:'ZYX - 3512',
-        revaAPR:14,
+        revaAPR:0.12,
         specify:'perfect',
         image:'/images/planets/3.png',
     }
     const x4 ={
         title:'x4',
         planetName:'UMY-1010',
-        revaAPR:17,
+        revaAPR:0.4,
         specify:'awesome',
         image:'/images/planets/4.png',
     }
@@ -69,30 +69,29 @@ const Stacker = () => {
                     <div className={'w-[90%]  mx-[5%]'}>
                         <div className={'w-full my-[1vw] text-in-shape'}>
                             <p className={'text-white text-center block font-semibold text-[1vw] uppercase font-gilroy'}> Select your boost power</p>
-                            <p className={'text-white text-center block font-light text-[0.9vw] font-gilroy'}>Each poolavailble when buying different NFTs</p>
+                            {/*<p className={'text-white text-center block font-light text-[0.9vw] font-gilroy'}>Each poolavailble when buying different NFTs</p>*/}
                         </div>
-                        <div className={'rounded-l-[1vw] rounded-b-[0vw] rounded-r-[1vw] ro w-full relative stacker-unactive-token h-[8.5vw]'}>
-                            <div className={'cursor-pointer align-top rounded-l-[1vw] rounded-b-[0vw] w-[20%] inline-block h-[3vw]'} onClick={()=>{setCurrenToken(x0)}}>
-                                {currentToken.title=='x0'?
-                                    <div className={'w-full rounded-l-[1vw] rounded-b-[0vw] h-full flex stacker-active-token text-in-shape'}>
-                                        <p className={'text-white font-gilroy font-medium text-[0.8vw] inline-block'}>{x0.planetName}</p>
-                                    </div>
-                                    :
-                                    <div className={'w-full rounded-l-[1vw] rounded-b-[0vw] h-full flex stacker-unactive-token text-in-shape'}>
-                                        <p className={'text-white font-gilroy font-medium text-[0.8vw] inline-block'}>{x0.planetName}</p>
-                                    </div>}
-                            </div>
-                            <div className={'cursor-pointer align-top rounded-l-[1vw] rounded-b-[0vw] w-[20%] inline-block h-[3vw]'} onClick={()=>{setCurrenToken(x1)}}>
+                        <div className={'rounded-l-[1vw] rounded-b-[0vw] rounded-r-[1vw] w-full relative stacker-unactive-token h-[8.5vw]'}>
+                            {/*<div className={'cursor-pointer align-top rounded-l-[1vw] rounded-b-[0vw] w-[20%] inline-block h-[3vw]'} onClick={()=>{setCurrenToken(x0)}}>*/}
+                            {/*    {currentToken.title=='x0'?*/}
+                            {/*        <div className={'w-full rounded-l-[1vw] rounded-b-[0vw] h-full flex stacker-active-token text-in-shape'}>*/}
+                            {/*            <p className={'text-white font-gilroy font-medium text-[0.8vw] inline-block'}>{x0.planetName}</p>*/}
+                            {/*        </div>*/}
+                            {/*        :*/}
+                            {/*        <div className={'w-full rounded-l-[1vw] rounded-b-[0vw] h-full flex stacker-unactive-token text-in-shape'}>*/}
+                            {/*            <p className={'text-white font-gilroy font-medium text-[0.8vw] inline-block'}>{x0.planetName}</p>*/}
+                            {/*</div>*/}
+                            <div className={'cursor-pointer align-top rounded-l-[1vw] rounded-b-[0vw] w-[25%] inline-block h-[3vw]'} onClick={()=>{setCurrenToken(x1)}}>
                                 {currentToken.title=='x1'?
-                                    <div className={'w-full  h-full flex stacker-active-token text-in-shape'}>
+                                    <div className={'w-full rounded-l-[1vw] rounded-b-[0vw]  h-full flex stacker-active-token text-in-shape'}>
                                         <p className={'text-white font-gilroy font-medium text-[0.8vw] inline-block'}>{x1.planetName}</p>
                                     </div>
                                     :
-                                    <div className={'w-full  h-full flex stacker-unactive-token text-in-shape'}>
+                                    <div className={'w-full rounded-l-[1vw] rounded-b-[0vw]  h-full flex stacker-unactive-token text-in-shape'}>
                                         <p className={'text-white font-gilroy font-medium text-[0.8vw] inline-block'}>{x1.planetName}</p>
                                     </div>}
                             </div>
-                            <div className={'cursor-pointer align-top w-[20%] inline-block h-[3vw]'} onClick={()=>{setCurrenToken(x2)}}>
+                            <div className={'cursor-pointer align-top w-[25%] inline-block h-[3vw]'} onClick={()=>{setCurrenToken(x2)}}>
                                 {currentToken.title=='x2'?
                                     <div className={'w-full h-full flex stacker-active-token text-in-shape'}>
                                         <p className={'text-white font-gilroy font-medium text-[0.8vw] inline-block'}>{x2.planetName}</p>
@@ -102,7 +101,7 @@ const Stacker = () => {
                                         <p className={'text-white font-gilroy font-medium text-[0.8vw] inline-block'}>{x2.planetName}</p>
                                     </div>}
                             </div>
-                            <div className={'cursor-pointer align-top w-[20%] inline-block h-[3vw]'} onClick={()=>{setCurrenToken(x3)}}>
+                            <div className={'cursor-pointer align-top w-[25%] inline-block h-[3vw]'} onClick={()=>{setCurrenToken(x3)}}>
                                 {currentToken.title=='x3'?
                                     <div className={'w-full h-full flex stacker-active-token text-in-shape'}>
                                         <p className={'text-white font-gilroy font-medium text-[0.8vw] inline-block'}>{x3.planetName}</p>
@@ -112,7 +111,7 @@ const Stacker = () => {
                                         <p className={'text-white font-gilroy font-medium text-[0.8vw] inline-block'}>{x3.planetName}</p>
                                     </div>}
                             </div>
-                            <div className={'cursor-pointer align-top w-[20%] rounded-b-[0vw] rounded-r-[1vw] inline-block h-[3vw]'} onClick={()=>{setCurrenToken(x4)}}>
+                            <div className={'cursor-pointer align-top w-[25%] rounded-b-[0vw] rounded-r-[1vw] inline-block h-[3vw]'} onClick={()=>{setCurrenToken(x4)}}>
                                 {currentToken.title=='x4'?
                                     <div className={'w-full h-full stacker-tabs-round flex stacker-active-token text-in-shape'}>
                                         <p className={'text-white font-gilroy font-medium text-[0.8vw] inline-block'}>{x4.planetName}</p>
@@ -122,12 +121,12 @@ const Stacker = () => {
                                         <p className={'text-white font-gilroy font-medium text-[0.8vw] inline-block'}>{x4.planetName}</p>
                                     </div>}
                             </div>
-                            <div className={'w-full h-[5vw]'}>
-                                <div className={'w-[25%] inline-block align-top my-[3%] h-full'}>
+                            <div className={'w-full absolute top-[3vw] h-[5vw]'}>
+                                <div className={'w-[50%] inline-block align-top my-[3%] h-full'}>
                                     <p className={'text-white  font-semibold font-gilroy text-[1.5vw] text-center'}>{currentToken.revaAPR} %</p>
-                                    <p className={'text-white font-light text-[1vw] font-gilroy text-center'}>REVA APR</p>
+                                    <p className={'text-white font-light text-[1vw] font-gilroy text-center'}>OF ALL INCOME</p>
                                 </div>
-                                <div className={'w-[25%] inline-block align-top my-[3%] h-full'}>
+                                <div className={'w-[50%] inline-block align-top my-[3%] h-full'}>
                                     <a href={'#marketplace'}><div className={'cursor-pointer w-[90%] mx-[5%] mt-[7%] h-[3vw] relative flex items-center justify-items-center justify-center rounded-[1vw]'}>
                                         <div className={'z-[4] w-[99%] absolute flex h-[99%] rounded-[inherit] border-white border-solid border-[1px] m-[1%]'}></div>
                                         <p className={'z-[3] my-auto absolute flex text-[1vw] filter-none text-white font-gilroy font-bold'}>BUY NFT</p>
@@ -137,51 +136,54 @@ const Stacker = () => {
                                         </div>
                                     </div></a>
                                 </div>
-                                <div className={'w-[25%] inline-block align-top my-[3%] h-full'}>
-                                    <p className={'uppercase text-white mt-[7%] font-semibold font-gilroy text-[1.2vw] text-center'}>{currentToken.specify}</p>
-                                    <p className={'text-white text-[0.7vw] font-light font-gilroy text-center'}>POWER SHARE</p>
-                                </div>
-                                <div className={'w-[25%] inline-block align-top my-[3%] h-full'}>
-                                    <p className={'uppercase text-white mt-[7%] font-semibold font-gilroy text-[1.2vw] text-center'}>0</p>
-                                    <p className={'text-white text-[0.7vw] font-light font-gilroy text-center'}>TOTAL REVA STAKE</p>
-                                </div>
+                                {/*<div className={'w-[25%] inline-block align-top my-[3%] h-full'}>*/}
+                                {/*    <p className={'uppercase text-white mt-[7%] font-semibold font-gilroy text-[1.2vw] text-center'}>{currentToken.specify}</p>*/}
+                                {/*    <p className={'text-white text-[0.7vw] font-light font-gilroy text-center'}>POWER SHARE</p>*/}
+                                {/*</div>*/}
+                                {/*<div className={'w-[25%] inline-block align-top my-[3%] h-full'}>*/}
+                                {/*    <p className={'uppercase text-white mt-[7%] font-semibold font-gilroy text-[1.2vw] text-center'}>0</p>*/}
+                                {/*    <p className={'text-white text-[0.7vw] font-light font-gilroy text-center'}>TOTAL REVA STAKE</p>*/}
+                                {/*</div>*/}
                             </div>
                         </div>
-                        <div className={'w-full  mt-[7%] relative'}>
-                            <p className={'absolute w-[60%] inline-block left-0 uppercase text-white font-semibold font-gilroy text-[1vw]'}>Choose amount to stake</p>
-                            <div className={'absolute inline-block w-[40%] right-0'}>
-                                <div className={'w-[0.8vw] absolute left-0 top-[0.12vw] h-[0.8vw] inline-block'}>
-                                    <Image src={'/images/infoapr.svg'} layout={'fill'}></Image>
-                                </div>
-                                <p className={'text-white font-gilroy left-[1.5vw] inline-block font-light top-0 absolute text-[0.7vw]'}>AUTO COMP</p>
-                                <div className={'w-[4vw] rounded-full stacker-radio h-[1vw] left-[6.2vw] absolute inline-block'}>
-                                    <div className={'w-[50%] inline-block align-top h-full stacker-radio rounded-full'}>
-                                        <p className={'w-full text-center text-white mt-[4%] text-[0.5vw]'}>APR</p>
-                                    </div>
-                                    <div className={'w-[50%] inline-block align-top h-full rounded-full'}>
-                                        <p className={'w-full text-center text-white mt-[4%] text-[0.5vw]'}>APY</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={'mt-[13%] w-full h-[7vw] rounded-[1vw] stacker-unactive-token relative'}>
-                            <div className={'h-full inline-block align-top w-[35%] p-[0.8vw]'}>
-                                <p className={'text-white font-gilroy font-light text-[0.8vw]'}>Stake Token</p>
-                                <div className={'w-[3.5vw] absolute mt-[2%] h-[3.5vw]'}>
-                                    <Image src={currentToken.image} layout={'fill'}></Image>
-                                </div>
-                                <p className={'text-white font-gilroy font-semibold absolute left-[5vw] text-[1vw] top-[2.3vw] uppercase'}>{currentToken.planetName}</p>
-                                <p className={'text-white font-gilroy font-light absolute left-[5vw] text-[0.8vw] top-[3.8vw]'}>$OMD</p>
-                            </div>
-                            <div className={' w-[65%] h-full p-[0.8vw] rounded-r-[1vw] relative inline-block align-top stacker-unactive-token'}>
-                                <p className={'absolute font-gilroy text-white left-[0.8vw] text-[0.8vw] font-light'}>Get token</p>
-                                <p className={'absolute font-gilroy text-white right-[0.8vw] text-[0.6vw] font-light'}>Balance: 0.000</p>
-                                <p className={'absolute font-gilroy text-white right-[0.8vw] mt-[8%] text-[1.3vw] font-light'}>0.000</p>
-                                <p className={'absolute font-gilroy text-white right-[0.8vw] mt-[17%] text-[0.8vw] font-light'}>$0.000</p>
-                            </div>
-                            <div className={'w-full h-[3.5vw] mt-[7%] text-[1.4vw] rounded-[1vw] flex text-in-shape bg-[#606ac6]'}>
-                                <ConnectMM></ConnectMM>
-                            </div>
+                        {/*<div className={'w-full  mt-[7%] relative'}>*/}
+                        {/*    <p className={'absolute w-[60%] inline-block left-0 uppercase text-white font-semibold font-gilroy text-[1vw]'}>Choose amount to stake</p>*/}
+                        {/*    <div className={'absolute inline-block w-[40%] right-0'}>*/}
+                        {/*        <div className={'w-[0.8vw] absolute left-0 top-[0.12vw] h-[0.8vw] inline-block'}>*/}
+                        {/*            <Image src={'/images/infoapr.svg'} layout={'fill'}></Image>*/}
+                        {/*        </div>*/}
+                        {/*        <p className={'text-white font-gilroy left-[1.5vw] inline-block font-light top-0 absolute text-[0.7vw]'}>AUTO COMP</p>*/}
+                        {/*        <div className={'w-[4vw] rounded-full stacker-radio h-[1vw] left-[6.2vw] absolute inline-block'}>*/}
+                        {/*            <div className={'w-[50%] inline-block align-top h-full stacker-radio rounded-full'}>*/}
+                        {/*                <p className={'w-full text-center text-white mt-[4%] text-[0.5vw]'}>APR</p>*/}
+                        {/*            </div>*/}
+                        {/*            <div className={'w-[50%] inline-block align-top h-full rounded-full'}>*/}
+                        {/*                <p className={'w-full text-center text-white mt-[4%] text-[0.5vw]'}>APY</p>*/}
+                        {/*            </div>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className={'mt-[13%] w-full h-[7vw] rounded-[1vw] stacker-unactive-token relative'}>*/}
+                        {/*    /!*<div className={'h-full inline-block align-top w-[35%] p-[0.8vw]'}>*!/*/}
+                        {/*    /!*    <p className={'text-white font-gilroy font-light text-[0.8vw]'}>Stake Token</p>*!/*/}
+                        {/*    /!*    <div className={'w-[3.5vw] absolute mt-[2%] h-[3.5vw]'}>*!/*/}
+                        {/*    /!*        <Image src={currentToken.image} layout={'fill'}></Image>*!/*/}
+                        {/*    /!*    </div>*!/*/}
+                        {/*    /!*    <p className={'text-white font-gilroy font-semibold absolute left-[5vw] text-[1vw] top-[2.3vw] uppercase'}>{currentToken.planetName}</p>*!/*/}
+                        {/*    /!*    <p className={'text-white font-gilroy font-light absolute left-[5vw] text-[0.8vw] top-[3.8vw]'}>$OMD</p>*!/*/}
+                        {/*    /!*</div>*!/*/}
+                        {/*    /!*<div className={' w-[65%] h-full p-[0.8vw] rounded-r-[1vw] relative inline-block align-top stacker-unactive-token'}>*!/*/}
+                        {/*    /!*    <p className={'absolute font-gilroy text-white left-[0.8vw] text-[0.8vw] font-light'}>Get token</p>*!/*/}
+                        {/*    /!*    <p className={'absolute font-gilroy text-white right-[0.8vw] text-[0.6vw] font-light'}>Balance: 0.000</p>*!/*/}
+                        {/*    /!*    <p className={'absolute font-gilroy text-white right-[0.8vw] mt-[8%] text-[1.3vw] font-light'}>0.000</p>*!/*/}
+                        {/*    /!*    <p className={'absolute font-gilroy text-white right-[0.8vw] mt-[17%] text-[0.8vw] font-light'}>$0.000</p>*!/*/}
+                        {/*    /!*</div>*!/*/}
+                        {/*    /!*<div className={'w-full h-[3.5vw] mt-[7%] text-[1.4vw] rounded-[1vw] flex text-in-shape bg-[#606ac6]'}>*!/*/}
+                        {/*    /!*    <ConnectMM></ConnectMM>*!/*/}
+                        {/*    /!*</div>*!/*/}
+                        {/*</div>*/}
+                        <div className={'w-full h-[3.5vw] mt-[7%] text-[1.4vw] rounded-[1vw] flex text-in-shape bg-[#606ac6]'}>
+                            <ConnectMM></ConnectMM>
                         </div>
 
                     </div>

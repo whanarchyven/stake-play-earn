@@ -62,7 +62,7 @@ const Calculator = () => {
             <p className={'left-[32.6vw] top-[9.9vw] text-[1.75vw] absolute inline-block font-regular text-white font-gilroy'}>Current APY</p>
             <p className={'left-[48.2vw] top-[9.9vw] text-[1.75vw] absolute inline-block font-regular text-white font-gilroy'}>Your Token Balance</p>
             <p className={'left-[32.3vw] top-[11.7vw] text-[2.23vw] absolute inline-block font-bold text-white font-gilroy'}>{apy}%</p>
-            <p className={'left-[51.7vw] top-[11.7vw] text-[2.23vw] absolute inline-block font-regular text-white font-gilroy'}><strong>{tokenBalance}</strong> TOKEN</p>
+            <p className={'left-[51.7vw] top-[11.7vw] text-[2.23vw] absolute inline-block font-regular text-white font-gilroy'}><strong>{tokenBalance}</strong> $OMD</p>
 
             <p className={'left-[24vw] top-[16.7vw] text-[1.1vw] absolute inline-block font-regular text-white font-gilroy'} >Token amount</p>
             <div className={'absolute inline-block left-[24vw] top-[18.5vw]  w-[25vw] h-[3.2vw] rounded-full'}>
@@ -116,9 +116,9 @@ const Calculator = () => {
                 <p className={'left-[3%] top-[48%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>Token rewards estimation</p>
                 {/*<p className={'left-[3%] top-[68%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>Potential return</p>*/}
 
-                <p className={'right-[3%] text-right top-[10%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>{tokenAmount} Token</p>
+                <p className={'right-[3%] text-right top-[10%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>{tokenAmount} $OMD</p>
                 {/*<p className={'right-[3%] text-right top-[28%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>${tokenAmount*147.06}</p>*/}
-                <p className={'right-[3%] text-right top-[48%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>{tokenAmount*(((1+0.00000088)**(days*28800)))*(apy/1041035)} Token</p>
+                <p className={'right-[3%] text-right top-[48%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>{tokenAmount*(((1+0.00000088)**(days*28800)))*(apy/1041035)} $OMD</p>
 
                 {/*<p className={'right-[3%] text-right top-[68%] text-[1vw] absolute inline-block font-regular text-white font-gilroy'}>${tokenAmount * ((1 + 0.00000079)** (days * 28800)) * 147.06}</p>*/}
             </div>
