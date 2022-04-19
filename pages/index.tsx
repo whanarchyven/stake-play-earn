@@ -170,16 +170,17 @@ const Home: NextPage = () => {
                         <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#metaverse'}>metaverse</a>
                         {/*<a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#swiper'}>DEX</a>*/}
                         <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#moveearn'}>m2e</a>
-                        <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#roadmap'}>ROADMAP</a>
-                        <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#dao'}>DAO</a>
+
                     </div>
                     <div className={'z-[9999] justify-between justify-items-center items-center w-[28vw] h-[2vw] fixed inline-flex left-[33.6vw] top-[3.1vw]'}>
 
                         {/*<a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#team'}>TEAM</a>*/}
 
                         {/*<a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#teaser'}>TEASER</a>*/}
-                        {/*<a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#partners'}>PARTNERS</a>*/}
-                        {/*<a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#partners'}>DOCS</a>*/}
+                        <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#roadmap'}>ROADMAP</a>
+                        <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#dao'}>DAO</a>
+                        <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#partners'}>PARTNERS</a>
+                        <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'https://admin-176.gitbook.io/1-million-dao/about-1-million-dao/what-is-a-rebase-token'}>DOCS</a>
                     </div>
                     <div className={'z-[9999] justify-items-center justify-center items-center fixed inline-flex left-[71.2vw] text-[1vw] top-[1.2vw] w-[12.5vw] h-[3.4vw] rounded-full bg-purple'}>
                         <ConnectMM/>
@@ -713,7 +714,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, x:0 },
                                   hidden: { opacity: 0, x:-50 }
-                              }} className={'leading-[111%] font-normal text-white top-[28.4vw] right-[13vw]  inline-block absolute text-center w-[30vw] text-[2.1vw] font-gilroy '}>of all incomes will be distributed among holders of staked NFTs “Founders collection”</motion.p>
+                              }} className={'leading-[111%] font-normal text-white top-[28.4vw] right-[13vw]  inline-block absolute text-right w-[30vw] text-[2.1vw] font-gilroy '}>of all incomes will be distributed among holders of staked NFTs “Founders collection”</motion.p>
                     Found
                     <motion.div initial="hidden"
                                 whileInView={'visible'}
@@ -1034,19 +1035,19 @@ const Home: NextPage = () => {
                     <div className={'left-[12vw] top-[20vw] w-[79vw] h-[30vw] absolute inline-block] '}>
                         <div className={'justify-around top-[3vw] flex absolute bottom-0 w-full h-[70%]'}>
                             <div className={'w-[20%] h-full relative'}>
-                                <PlanetCardMarketplace category={'bronze'} quantity={200} cost={0.5} planetName={'X-3121'} image={'/images/planets/1.png'} apyIncrease={0.01} ></PlanetCardMarketplace>
+                                <PlanetCardMarketplace category={'bronze'} quantity={200} cost={0.4} planetName={'X-3121'} image={'/images/planets/1.png'} apyIncrease={0.01} ></PlanetCardMarketplace>
                                 <button className={'cursor-auto w-[75%] mx-[12.5%] mt-[4vw] h-[3.5vw] text-[1.8vw] bg-[#C4C4C4] text-white rounded-full font-gilroy font-bold'}>SOON</button>
                             </div>
                             <div className={'w-[20%] h-full relative'}>
-                                <PlanetCardMarketplace category={'silver'} quantity={100} cost={1} planetName={'Y-8265'} image={'/images/planets/2.png'} apyIncrease={0.04}></PlanetCardMarketplace>
+                                <PlanetCardMarketplace category={'silver'} quantity={100} cost={0.8} planetName={'Y-8265'} image={'/images/planets/2.png'} apyIncrease={0.04}></PlanetCardMarketplace>
                                 <button className={'cursor-auto w-[75%] mx-[12.5%] mt-[4vw] h-[3.5vw] text-[1.8vw] bg-[#C4C4C4] text-white rounded-full font-gilroy font-bold'}>SOON</button>
                             </div>
                             <div className={'w-[20%] h-full relative'}>
-                                <PlanetCardMarketplace category={'gold'} quantity={50} cost={1.5} planetName={'Zyx-3512'} image={'/images/planets/3.png'} apyIncrease={0.12}></PlanetCardMarketplace>
+                                <PlanetCardMarketplace category={'gold'} quantity={50} cost={2.4} planetName={'Zyx-3512'} image={'/images/planets/3.png'} apyIncrease={0.12}></PlanetCardMarketplace>
                                 <button className={'cursor-auto w-[75%] mx-[12.5%] mt-[4vw] h-[3.5vw] text-[1.8vw] bg-[#C4C4C4] text-white rounded-full font-gilroy font-bold'}>SOON</button>
                             </div>
                             <div className={'w-[20%] h-full relative'}>
-                                <PlanetCardMarketplace category={'platinum'} quantity={20} cost={2} planetName={'UMY-1010'} image={'/images/planets/4.png'} apyIncrease={0.4}></PlanetCardMarketplace>
+                                <PlanetCardMarketplace category={'platinum'} quantity={20} cost={10} planetName={'UMY-1010'} image={'/images/planets/4.png'} apyIncrease={0.4}></PlanetCardMarketplace>
                                 <button className={'cursor-auto w-[75%] mx-[12.5%] mt-[4vw] h-[3.5vw] text-[1.8vw] bg-[#C4C4C4] text-white rounded-full font-gilroy font-bold'}>SOON</button>
                             </div>
                         </div>
@@ -1692,23 +1693,39 @@ const Home: NextPage = () => {
 
                 {/*PARTNERS*/}
 
-                {/*<div className={'w-[100vw] relative block h-[58vw] bg-cover bg-[]'} id={'partners'}>*/}
-                {/*    <motion.h2 className={'text-white font-gilroy font-black absolute inline-block left-[17vw] top-[38vw] text-[5.7vw]'}>PARTNERS</motion.h2>*/}
-                {/*    <div className={'w-[67.5vw] absolute inline-block left-[16.3vw] top-[8.6vw] h-[26.7vw] bg-[#AF52D0] opacity-[0.22]'}>*/}
-                {/*    </div>*/}
-                {/*    <div className={'w-[55vw] left-[-3vw] bottom-[-3vw] h-[41vw] absolute inline-block'}>*/}
-                {/*        <Image src={'/images/partners_planet.png'} layout={'fill'}></Image>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
-                {/*    initial="hidden"*/}
-                {/*    whileInView={'visible'}*/}
-                {/*    viewport={{once:true}}*/}
-                {/*    transition={{ type:"tween",duration: 1, delay:0.3 ,}}*/}
-                {/*    variants={{*/}
-                {/*    visible: { opacity: 1, scale:1 },*/}
-                {/*    hidden: { opacity: 0, scale:0.5 }*/}
-                {/*}}*/}
+                <div className={'w-[100vw] relative block h-[58vw] bg-cover bg-[]'} id={'partners'}>
+                    <div className={'w-[55vw] left-[-3vw] bottom-[-3vw] h-[41vw] absolute inline-block'}>
+                        <Image src={'/images/partners_planet.png'} layout={'fill'}></Image>
+                    </div>
+                    <div className={'w-[80vw] absolute inline-flex justify-around flex-wrap left-[10vw] top-[0] h-full bg-[#AF52D0] opacity-[0.22]'}>
 
+                    </div>
+                    <motion.h2 className={'text-white font-gilroy font-black absolute inline-block left-[18vw] top-[39vw] text-[5.7vw]'}>PARTNERS</motion.h2>
+                    <div className={'w-[67.5vw] absolute inline-flex justify-around flex-wrap left-[16.3vw] top-[0] h-[33.7vw]'}>
+                        <a href={'https://coinmarketcap.com/'} className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw] bg-[#ffffff]'}><div className={''}>
+                            <Image src={'/images/coinmarket.png'} layout={'fill'}></Image>
+                        </div></a>
+                        <a href={'https://www.pinksale.finance/'} className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw] bg-[#ffffff]'}><div className={''}>
+                            <Image src={'/images/pinksale.png'} layout={'fill'}></Image>
+                        </div></a>
+                        <a href={'https://www.yahoo.com/'} className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw] bg-[#ffffff]'}><div className={''}>
+                            <Image src={'/images/Yahoo.png'} layout={'fill'}></Image>
+                        </div></a>
+                        <a href={'https://www.binance.com'} className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw] bg-[#ffffff]'}><div className={''}>
+                            <Image src={'/images/binance.png'} layout={'fill'}></Image>
+                        </div></a>
+                        <a href={'https://www.bloomberg.com/'} className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw] bg-[#ffffff]'}><div className={''}>
+                            <Image src={'/images/bloomberg.png'} layout={'fill'}></Image>
+                        </div></a>
+                        <a href={'https://pancakeswap.finance/'} className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw] bg-[#ffffff]'}><div className={''}>
+                            <Image src={'/images/pancake.png'} layout={'fill'}></Image>
+                        </div></a>
+                        <a href={'https://crypto.com'} className={'w-[32%]  relative h-[16vw] ml-[67%] my-[1vw] rounded-[1vw] bg-[#ffffff]'}><div className={''}>
+                            <Image src={'/images/cryptocom.png'} layout={'fill'}></Image>
+                        </div></a>
+                    </div>
+
+                </div>
             </main>
 
             <footer className={styles.footer}>
@@ -1723,7 +1740,7 @@ const Home: NextPage = () => {
                     <a className={'absolute inline-block top-[9.9vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Our Ecosystem</a>
                     <a href={'#roadmap'} className={'absolute inline-block top-[12.1vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Roadmap</a>
                     <a className={'absolute inline-block top-[14.3vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Contract</a>
-                    {/*<a className={'absolute inline-block top-[16.5vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Whitepaper</a>*/}
+                    <a className={'absolute inline-block top-[16.5vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'} href={'https://admin-176.gitbook.io/1-million-dao/about-1-million-dao/what-is-a-rebase-token'}>Whitepaper</a>
 
 
                     <p className={'absolute inline-block top-[4.2vw] left-[54vw] text-[1.2vw] text-white font-gilroy font-[400]'}>FOLLOW US</p>
