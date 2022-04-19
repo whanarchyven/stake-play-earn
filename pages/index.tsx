@@ -1701,29 +1701,40 @@ const Home: NextPage = () => {
 
                     </div>
                     <motion.h2 className={'text-white font-gilroy font-black absolute inline-block left-[18vw] top-[39vw] text-[5.7vw]'}>PARTNERS</motion.h2>
-                    <div className={'w-[67.5vw] absolute inline-flex justify-around flex-wrap left-[16.3vw] top-[0] h-[33.7vw]'}>
-                        <a href={'https://coinmarketcap.com/'} className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw]'}><div className={''}>
-                            <Image src={'/images/coinmarket.png'} layout={'fill'}></Image>
-                        </div></a>
-                        <a href={'https://www.pinksale.finance/'} className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw]'}><div className={''}>
-                            <Image src={'/images/pinksale.png'} layout={'fill'}></Image>
-                        </div></a>
-                        <a href={'https://www.yahoo.com/'} className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw]'}><div className={''}>
-                            <Image src={'/images/Yahoo.png'} layout={'fill'}></Image>
-                        </div></a>
-                        <a href={'https://www.binance.com'} className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw]'}><div className={''}>
-                            <Image src={'/images/binance.png'} layout={'fill'}></Image>
-                        </div></a>
-                        <a href={'https://www.bloomberg.com/'} className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw]'}><div className={''}>
-                            <Image src={'/images/bloomberg.png'} layout={'fill'}></Image>
-                        </div></a>
-                        <a href={'https://pancakeswap.finance/'} className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw]'}><div className={''}>
-                            <Image src={'/images/pancake.png'} layout={'fill'}></Image>
-                        </div></a>
-                        <a href={'https://crypto.com'} className={'w-[32%]  relative h-[16vw] ml-[67%] my-[1vw] rounded-[1vw]'}><div className={''}>
-                            <Image src={'/images/cryptocom.png'} layout={'fill'}></Image>
-                        </div></a>
-                    </div>
+                    <Swiper className={'w-[67.5vw] absolute inline-flex justify-around flex-wrap left-[16.3vw] top-[10vw] h-[18vw]'}
+                            autoplay={{
+                                delay: 3000,
+                                disableOnInteraction: false,
+                            }}
+                            slidesPerView={3}
+                            slidesPerGroup={3}
+                            spaceBetween={30}
+                            loop={true}
+                            speed={1100}
+                            effect={'fade'}
+                            modules={[Autoplay,]}>
+                            <SwiperSlide className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw]'}><a href={'https://coinmarketcap.com/'}><div className={''}>
+                                <Image src={'/images/coinmarket.png'} layout={'fill'}></Image>
+                            </div></a></SwiperSlide>
+                            <SwiperSlide className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw]'}><a href={'https://www.pinksale.finance/'}><div className={''}>
+                                <Image src={'/images/pinksale.png'} layout={'fill'}></Image>
+                            </div></a></SwiperSlide>
+                            <SwiperSlide className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw]'}><a href={'https://www.yahoo.com/'}><div className={''}>
+                                <Image src={'/images/Yahoo.png'} layout={'fill'}></Image>
+                            </div></a></SwiperSlide>
+                            <SwiperSlide className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw]'}><a href={'https://www.binance.com'}><div className={''}>
+                                <Image src={'/images/binance.png'} layout={'fill'}></Image>
+                            </div></a></SwiperSlide>
+                            <SwiperSlide className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw]'}><a href={'https://www.bloomberg.com/'}><div className={''}>
+                                <Image src={'/images/bloomberg.png'} layout={'fill'}></Image>
+                            </div></a></SwiperSlide>
+                            <SwiperSlide className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw]'}><a href={'https://pancakeswap.finance/'}><div className={''}>
+                                <Image src={'/images/pancake.png'} layout={'fill'}></Image>
+                            </div></a></SwiperSlide>
+                            <SwiperSlide className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw]'} ><a href={'https://crypto.com'}><div className={''}>
+                                <Image src={'/images/cryptocom.png'} layout={'fill'}></Image>
+                            </div></a></SwiperSlide>
+                    </Swiper>
 
                 </div>
             </main>
