@@ -179,7 +179,7 @@ const Home: NextPage = () => {
                         {/*<a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#teaser'}>TEASER</a>*/}
                         <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#roadmap'}>ROADMAP</a>
                         <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#dao'}>DAO</a>
-                        <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#partners'}>PARTNERS</a>
+                        {/*<a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#partners'}>PARTNERS</a>*/}
                         <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'https://admin-176.gitbook.io/1-million-dao/about-1-million-dao/what-is-a-rebase-token'}>DOCS</a>
                     </div>
                     <div className={'z-[9999] justify-items-center justify-center items-center fixed inline-flex left-[71.2vw] text-[1vw] top-[1.2vw] w-[12.5vw] h-[3.4vw] rounded-full bg-purple'}>
@@ -1033,21 +1033,21 @@ const Home: NextPage = () => {
                     <p className={'absolute top-[15vw] left-[32vw] inline-block text-white font-gilroy font-medium uppercase text-[2vw]'}></p>
                     <div className={'left-[12vw] top-[20vw] w-[79vw] h-[37vw] absolute inline-block] neon-border rounded-[2vw] border-4 '}></div>
                     <div className={'left-[12vw] top-[20vw] w-[79vw] h-[30vw] absolute inline-block] '}>
-                        <div className={'justify-around top-[3vw] flex absolute bottom-0 w-full h-[70%]'}>
+                        <div className={'justify-around top-[3vw] flex absolute bottom-0 w-full h-[80.3%]'}>
                             <div className={'w-[20%] h-full relative'}>
-                                <PlanetCardMarketplace category={'bronze'} quantity={200} cost={0.4} planetName={'X-3121'} image={'/images/planets/1.png'} apyIncrease={0.01} ></PlanetCardMarketplace>
+                                <PlanetCardMarketplace category={'bronze'} quantity={200} cost={0.4} planetName={'Jupiter'} image={'/images/planets/1.png'} apyIncrease={0.01} ></PlanetCardMarketplace>
                                 <button className={'cursor-auto w-[75%] mx-[12.5%] mt-[4vw] h-[3.5vw] text-[1.8vw] bg-[#C4C4C4] text-white rounded-full font-gilroy font-bold'}>SOON</button>
                             </div>
                             <div className={'w-[20%] h-full relative'}>
-                                <PlanetCardMarketplace category={'silver'} quantity={100} cost={0.8} planetName={'Y-8265'} image={'/images/planets/2.png'} apyIncrease={0.04}></PlanetCardMarketplace>
+                                <PlanetCardMarketplace category={'silver'} quantity={100} cost={0.8} planetName={'Neptun'} image={'/images/planets/2.png'} apyIncrease={0.04}></PlanetCardMarketplace>
                                 <button className={'cursor-auto w-[75%] mx-[12.5%] mt-[4vw] h-[3.5vw] text-[1.8vw] bg-[#C4C4C4] text-white rounded-full font-gilroy font-bold'}>SOON</button>
                             </div>
                             <div className={'w-[20%] h-full relative'}>
-                                <PlanetCardMarketplace category={'gold'} quantity={50} cost={2.4} planetName={'Zyx-3512'} image={'/images/planets/3.png'} apyIncrease={0.12}></PlanetCardMarketplace>
+                                <PlanetCardMarketplace category={'gold'} quantity={50} cost={2.4} planetName={'Mars'} image={'/images/planets/3.png'} apyIncrease={0.12}></PlanetCardMarketplace>
                                 <button className={'cursor-auto w-[75%] mx-[12.5%] mt-[4vw] h-[3.5vw] text-[1.8vw] bg-[#C4C4C4] text-white rounded-full font-gilroy font-bold'}>SOON</button>
                             </div>
                             <div className={'w-[20%] h-full relative'}>
-                                <PlanetCardMarketplace category={'platinum'} quantity={20} cost={10} planetName={'UMY-1010'} image={'/images/planets/4.png'} apyIncrease={0.4}></PlanetCardMarketplace>
+                                <PlanetCardMarketplace category={'platinum'} quantity={20} cost={10} planetName={'Pluto'} image={'/images/planets/4.png'} apyIncrease={0.4}></PlanetCardMarketplace>
                                 <button className={'cursor-auto w-[75%] mx-[12.5%] mt-[4vw] h-[3.5vw] text-[1.8vw] bg-[#C4C4C4] text-white rounded-full font-gilroy font-bold'}>SOON</button>
                             </div>
                         </div>
@@ -1691,50 +1691,47 @@ const Home: NextPage = () => {
                 </div>
 
 
-                {/*PARTNERS*/}
+                {/*/!*PARTNERS*!/*/}
 
                 <div className={'w-[100vw] relative block h-[58vw] bg-cover bg-[]'} id={'partners'}>
-                    <div className={'w-[55vw] left-[-3vw] bottom-[-3vw] h-[41vw] absolute inline-block'}>
+                    <div className={'w-[57vw] left-[-3vw] top-[22vw] h-[41vw] absolute inline-block'}>
                         <Image src={'/images/partners_planet.png'} layout={'fill'}></Image>
                     </div>
-                    <div className={'w-[80vw] absolute inline-flex justify-around flex-wrap left-[10vw] top-[0] h-full bg-[#AF52D0] opacity-[0.22]'}>
+                    <a href={'https://www.binance.com/ru'}><div className={'w-[14.3vw] h-[8.9vw] absolute left-[14.4vw] rounded-[0.5vw] top-[9vw] partner-shape inline-flex justify-center align-center items-center'}>
+                        <div className={'relative w-[8vw] h-[6vw]'}>
+                            <Image src={'/images/binance.png'} layout={'fill'}></Image>
+                        </div>
+                    </div></a>
+                    <a href={'https://pancakeswap.finance/'}><div className={'w-[24.5vw] h-[8.9vw] absolute left-[34vw] rounded-[0.5vw] top-[9vw] partner-shape inline-flex justify-center align-center items-center'}>
+                        <div className={'relative w-[20vw] h-[4vw]'}>
+                            <Image src={'/images/pancake.png'} layout={'fill'}></Image>
+                        </div>
+                    </div></a>
+                    <a href={'https://www.pinksale.finance/'}><div className={'w-[24.5vw] h-[8.9vw] absolute left-[61.4vw] rounded-[0.5vw] top-[9vw] partner-shape inline-flex justify-center align-center items-center'}>
+                        <div className={'relative w-[20vw] h-[8vw]'}>
+                            <Image src={'/images/pinksale.png'} layout={'fill'}></Image>
+                        </div>
+                    </div></a>
+                    <a href={'https://coinmarketcap.com/'}><div className={'w-[29vw] h-[8.2vw] absolute left-[14.4vw] rounded-[0.5vw] top-[20.6vw] partner-shape inline-flex justify-center align-center items-center'}>
+                        <div className={'relative w-[26vw] h-[5vw]'}>
+                            <Image src={'/images/coinmarket.png'} layout={'fill'}></Image>
+                        </div>
+                    </div></a>
 
-                    </div>
-                    <motion.h2 className={'text-white font-gilroy font-black absolute inline-block left-[18vw] top-[39vw] text-[5.7vw]'}>PARTNERS</motion.h2>
-                    <Swiper className={'w-[67.5vw] absolute inline-flex justify-around flex-wrap left-[16.3vw] top-[10vw] h-[18vw]'}
-                            autoplay={{
-                                delay: 3000,
-                                disableOnInteraction: false,
-                            }}
-                            slidesPerView={3}
-                            slidesPerGroup={3}
-                            spaceBetween={30}
-                            loop={true}
-                            speed={1100}
-                            effect={'fade'}
-                            modules={[Autoplay,]}>
-                            <SwiperSlide className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw]'}><a href={'https://coinmarketcap.com/'}><div className={''}>
-                                <Image src={'/images/coinmarket.png'} layout={'fill'}></Image>
-                            </div></a></SwiperSlide>
-                            <SwiperSlide className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw]'}><a href={'https://www.pinksale.finance/'}><div className={''}>
-                                <Image src={'/images/pinksale.png'} layout={'fill'}></Image>
-                            </div></a></SwiperSlide>
-                            <SwiperSlide className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw]'}><a href={'https://www.yahoo.com/'}><div className={''}>
-                                <Image src={'/images/Yahoo.png'} layout={'fill'}></Image>
-                            </div></a></SwiperSlide>
-                            <SwiperSlide className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw]'}><a href={'https://www.binance.com'}><div className={''}>
-                                <Image src={'/images/binance.png'} layout={'fill'}></Image>
-                            </div></a></SwiperSlide>
-                            <SwiperSlide className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw]'}><a href={'https://www.bloomberg.com/'}><div className={''}>
-                                <Image src={'/images/bloomberg.png'} layout={'fill'}></Image>
-                            </div></a></SwiperSlide>
-                            <SwiperSlide className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw]'}><a href={'https://pancakeswap.finance/'}><div className={''}>
-                                <Image src={'/images/pancake.png'} layout={'fill'}></Image>
-                            </div></a></SwiperSlide>
-                            <SwiperSlide className={'w-[32%] relative h-[16vw] my-[1vw] rounded-[1vw]'} ><a href={'https://crypto.com'}><div className={''}>
-                                <Image src={'/images/cryptocom.png'} layout={'fill'}></Image>
-                            </div></a></SwiperSlide>
-                    </Swiper>
+                    <a href={'https://www.bloomberg.com/'}><div className={'w-[11vw] h-[8.2vw] absolute left-[49vw] rounded-[0.5vw] top-[20.6vw] partner-shape inline-flex justify-center align-center items-center'}>
+                        <div className={'relative w-[7vw] h-[7vw]'}>
+                            <Image src={'/images/bloomberg.png'} layout={'fill'}></Image>
+                        </div>
+                    </div></a>
+
+                    <a href={'https://www.yahoo.com/'}><div className={'w-[11vw] h-[8.2vw] absolute left-[66vw] rounded-[0.5vw] top-[20.6vw] partner-shape inline-flex justify-center align-center items-center'}>
+                        <div className={'relative w-[8vw] h-[5vw]'}>
+                            <Image src={'/images/yahoo.png'} layout={'fill'}></Image>
+                        </div>
+                    </div></a>
+
+                    <motion.h2 className={'text-white font-gilroy font-black absolute inline-block left-[14vw] top-[33vw] text-[5.7vw]'}>PARTNERS</motion.h2>
+
 
                 </div>
             </main>

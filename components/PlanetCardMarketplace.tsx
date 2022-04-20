@@ -16,8 +16,8 @@ interface propsTestComponent {
 
 const PlanetCardMarketplace = ({planetName, image, apyIncrease,cost, quantity, category}: propsTestComponent) => {
     return (
-        <div className={'inline-flex justify-center justify-items-center w-full h-full bg-[rgba(125,26,186,0.35)] rounded-[1vw]'}>
-            <p className={'top-[-7%] text-[2.4vw] absolute inline-block font-bold text-white font-gilroy'}>{planetName}</p>
+        <div className={'bg-cover inline-flex justify-center justify-items-center w-full h-full bg-[url(../public/images/planets/bg.png)] rounded-[1vw]'}>
+            <p className={'top-[2%] text-[2.4vw] absolute inline-block font-bold text-white uppercase font-gilroy'}>{planetName}</p>
             <motion.div animate={{ y: [0, -10, 0] }}
                         transition={{ type:"spring",duration: 2, repeat:Infinity, repeatType:'reverse', repeatDelay:2, bounce:0.8 ,}}
                         className={' absolute inline-block top-[17%] w-[7.7vw] h-[7.7vw]'}>
@@ -44,7 +44,7 @@ const PlanetCardMarketplace = ({planetName, image, apyIncrease,cost, quantity, c
                         <h2 className={'animate-pulse w-full text-center text-white font-gilroy font-regular text-[1vw]'}>{apyIncrease}% of total income</h2>
                     </div>
                 </div>
-                <h2 className={'animate-pulse mt-[10vw] font-bold w-full text-center text-white font-gilroy font-regular text-[2vw]'}>{cost} BNB</h2>
+                <h2 className={'animate-pulse mt-[8vw] font-bold w-full text-center text-white font-gilroy font-regular text-[2vw]'}>{cost} BNB</h2>
             </div>
 
 
