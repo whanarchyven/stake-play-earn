@@ -444,7 +444,6 @@ const Home: NextPage = () => {
                                }}  className={'absolute left-[25vw] text-[2.2vw] top-[20.5vw] text-right text-white font-gilroy font-regular'}>Fixed APY</motion.h2>
 
 
-
                     {/*<motion.div initial="hidden"*/}
                     {/*            whileInView={'visible'}*/}
                     {/*            viewport={{once:true}}*/}
@@ -475,6 +474,19 @@ const Home: NextPage = () => {
                                                         }} className={'cursor-pointer bg-blue w-[17.1vw] h-[4.5vw] left-[51.2vw] top-[40.9vw] rounded-full text-in-shape absolute inline-flex'}>
                         <p className={'text-white font-gilroy font-semibold text-[1.7vw]'}>CALCULATOR</p>
                     </motion.div></a>
+
+
+                    <a href={'https://admin-176.gitbook.io/1-million-dao/about-1-million-dao/how-does-the-autostake-feature-work'}><motion.div initial="hidden"
+                                                        whileInView={'visible'}
+                                                        viewport={{once:true}}
+                                                        transition={{ type:"spring",duration: 1.5, delay:0.3, bounce:0.6 ,}}
+                                                        variants={{
+                                                            visible: { opacity: 1, y:0 },
+                                                            hidden: { opacity: 0, y:100 }
+                                                        }} className={'cursor-pointer swiper-background w-[17.1vw] h-[4.5vw] left-[31.2vw] top-[40.9vw] rounded-full text-in-shape absolute inline-flex'}>
+                        <p className={'text-white font-gilroy font-semibold text-[1.7vw]'}>LEARN MORE</p>
+                    </motion.div></a>
+
 
                     <div className={'absolute inline-block rotate-180 left-[20.2vw] top-[34.3vw]  w-[59.7vw] h-[4.3vw] rounded-full'}>
                         <div className={'w-[inherit] h-[inherit] relative flex items-center justify-items-center justify-center rounded-[inherit]'}>
@@ -621,6 +633,18 @@ const Home: NextPage = () => {
                                   visible: { opacity: 1, x:0 },
                                   hidden: { opacity: 0, x:-50 }
                               }} className={'leading-[111%] font-medium uppercase text-white top-[27.4vw] left-[60.5vw] inline-block absolute text-right w-[15vw] text-[1.8vw] font-gilroy '}>initial foundation of 1MDAO in $BNB</motion.p>
+
+                    <a href={'https://admin-176.gitbook.io/1-million-dao/about-1-million-dao/auto-liquidity-engine'}>
+                        <motion.div initial="hidden"
+                                    whileInView={'visible'}
+                                    viewport={{once:true}}
+                                    transition={{ type:"spring",duration: 1.5, delay:0.3, bounce:0.6 ,}}
+                                    variants={{
+                                        visible: { opacity: 1, y:0 },
+                                        hidden: { opacity: 0, y:100 }
+                                    }} className={'cursor-pointer swiper-background w-[17.1vw] h-[4.5vw] left-[41.2vw] top-[37vw] rounded-full text-in-shape absolute inline-flex'}>
+                        <p className={'text-white font-gilroy font-semibold text-[1.7vw]'}>LEARN MORE</p>
+                    </motion.div></a>
 
                 </div>
 
@@ -1022,8 +1046,20 @@ const Home: NextPage = () => {
                                 }} className={'w-[16.8vw] h-[5vw] absolute left-[69.7vw] top-[26.8vw]'}>
                         <p className={'w-full text-white font-semibold text-center font-gilroy text-[2.3vw] uppercase'}>20 NFT</p>
                     </motion.div>
-                </div>
 
+                    <a href={'https://admin-176.gitbook.io/1-million-dao/ecosystem-1-million-dao/nft-tokens'}>
+                        <motion.div initial="hidden"
+                                    whileInView={'visible'}
+                                    viewport={{once:true}}
+                                    transition={{ type:"spring",duration: 1.5, delay:0.3, bounce:0.6 ,}}
+                                    variants={{
+                                        visible: { opacity: 1, y:0 },
+                                        hidden: { opacity: 0, y:100 }
+                                    }} className={'cursor-pointer swiper-background w-[17.1vw] h-[4.5vw] left-[41.2vw] top-[37vw] rounded-full text-in-shape absolute inline-flex'}>
+                            <p className={'text-white font-gilroy font-semibold text-[1.7vw]'}>LEARN MORE</p>
+                        </motion.div></a>
+
+                </div>
 
                 {/*MARKETPLACE*/}
 
@@ -1077,7 +1113,6 @@ const Home: NextPage = () => {
                         {/*</div>*/}
                         {/*<p className={'w-[8vw] absolute inline-block top-[50vw] text-[1.6vw] w-[31.2vw] left-[40vw] text-white font-gilroy font-medium'}>from all BNB collected on Pinksale presale will be distributed in $BNB Rewards pool</p>*/}
                         {/*/!*<button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[34vw] text-[1.5vw] bg-purple text-white rounded-full font-gilroy font-bold'}>BUY $OMD</button>*!/*/}
-                        {/*<a href={'#bnb'}><button className={'absolute w-[14.7vw] h-[4vw] top-[57vw] left-[51vw] text-[1.5vw] bg-blue text-white rounded-full font-gilroy font-bold'}>LEARN MORE</button></a>*/}
                     </motion.div>
 
                 </motion.div>
@@ -1122,6 +1157,17 @@ const Home: NextPage = () => {
                     <div className={' w-[25vw] z-[99] justify-center items-center inline-flex h-[47vw] absolute left-[10vw] top-0 '}>
                         <Image src={'/images/move_base.png'} layout={'fill'}></Image>
                     </div>
+                    <a href={'https://admin-176.gitbook.io/1-million-dao/ecosystem-1-million-dao/move-to-earn'}>
+                        <motion.div initial="hidden"
+                                    whileInView={'visible'}
+                                    viewport={{once:true}}
+                                    transition={{ type:"spring",duration: 1.5, delay:0.3, bounce:0.6 ,}}
+                                    variants={{
+                                        visible: { opacity: 1, y:0 },
+                                        hidden: { opacity: 0, y:100 }
+                                    }} className={'cursor-pointer swiper-background w-[17.1vw] h-[4.5vw] left-[62vw] top-[35vw] rounded-full text-in-shape absolute inline-flex'}>
+                            <p className={'text-white font-gilroy font-semibold text-[1.7vw]'}>LEARN MORE</p>
+                        </motion.div></a>
                 </div>
 
 
@@ -1367,7 +1413,7 @@ const Home: NextPage = () => {
                     <div className={'top-[1vw] left-[6vw] w-[53vw] h-[53vw] absolute inline-block'}>
                         <Image src={'/images/galactic3.png'} layout={'fill'}></Image>
                     </div>
-                    <div className={'w-[50.23vw] h-[23.4vw] absolute inline-block top-[19vw] left-[31vw]'}>
+                    <div className={'w-[53.45vw] h-[13vw] absolute inline-block top-[19vw] left-[31vw]'}>
                         <Image src={'/images/dao_vectors_temp.svg'} layout={'fill'}></Image>
                     </div>
 
@@ -1420,44 +1466,58 @@ const Home: NextPage = () => {
                                 variants={{
                                     visible: { opacity: 1, scale:1 },
                                     hidden: { opacity: 0, scale:0.8 }
-                                }} className={'absolute w-[18.5vw] h-[6.5vw] p-[1vw] top-[31vw] left-[34.5vw] dashboard-shape rounded-[1vw]'}>
+                                }} className={'absolute w-[18.5vw] h-[14.5vw] p-[1vw] top-[31.7vw] left-[34.5vw] dashboard-shape rounded-[1vw]'}>
                         <p className={'text-white font-gilroy font-bold text-[2.7vw] text-center leading-[150%]'}>Marketing</p>
-                    </motion.div>
-
-                    <motion.div initial="hidden"
-                                whileInView={'visible'}
-                                viewport={{once:true}}
-                                transition={{ duration: 1, delay:0.3, ease:'easeInOut'}}
-                                variants={{
-                                    visible: { opacity: 1, scale:1 },
-                                    hidden: { opacity: 0, scale:0.8 }
-                                }} className={'absolute w-[18vw] h-[7.5vw] p-[1.7vw] top-[42vw] left-[27vw] dashboard-shape rounded-[1vw]'}>
                         <ul className={'list-disc ext-white font-gilroy font-bold'}>
-                            <li className={'list-disc text-white font-gilroy font-medium text-[1.7vw] leading-[115%] ml-[2vw]'}>cooperation</li>
-                            <li className={'list-disc text-white font-gilroy font-medium text-[1.7vw] leading-[115%] ml-[2vw]'}>collaboration</li>
+                            <li className={'list-disc text-white font-gilroy font-medium text-[1.9vw] leading-[115%] ml-[2vw]'}>cooperation</li>
+                            <li className={'list-disc text-white font-gilroy font-medium text-[1.9vw] leading-[115%] ml-[2vw]'}>collaboration</li>
+                            <li className={'list-disc text-white font-gilroy font-medium text-[1.9vw] leading-[115%] ml-[2vw]'}>promotion</li>
                         </ul>
                     </motion.div>
 
-                    <motion.div initial="hidden"
-                                whileInView={'visible'}
-                                viewport={{once:true}}
-                                transition={{ duration: 1, delay:0.3, ease:'easeInOut'}}
-                                variants={{
-                                    visible: { opacity: 1, scale:1 },
-                                    hidden: { opacity: 0, scale:0.8 }
-                                }} className={'absolute w-[18vw] h-[7.5vw] p-[1.7vw] top-[42vw] left-[47vw] dashboard-shape rounded-[1vw]'}>
-                        <ul className={'list-disc ext-white font-gilroy font-bold'}>
-                            <li className={'list-disc text-white font-gilroy font-medium text-[1.7vw] leading-[222%] ml-[2vw]'}>promotion</li>
-                        </ul>
-                    </motion.div>
+                    {/*<motion.div initial="hidden"*/}
+                    {/*            whileInView={'visible'}*/}
+                    {/*            viewport={{once:true}}*/}
+                    {/*            transition={{ duration: 1, delay:0.3, ease:'easeInOut'}}*/}
+                    {/*            variants={{*/}
+                    {/*                visible: { opacity: 1, scale:1 },*/}
+                    {/*                hidden: { opacity: 0, scale:0.8 }*/}
+                    {/*            }} className={'absolute w-[18vw] h-[7.5vw] p-[1.7vw] top-[42vw] left-[27vw] dashboard-shape rounded-[1vw]'}>*/}
+                    {/*    <ul className={'list-disc ext-white font-gilroy font-bold'}>*/}
+                    {/*        <li className={'list-disc text-white font-gilroy font-medium text-[1.7vw] leading-[115%] ml-[2vw]'}>cooperation</li>*/}
+                    {/*        <li className={'list-disc text-white font-gilroy font-medium text-[1.7vw] leading-[115%] ml-[2vw]'}>collaboration</li>*/}
+                    {/*    </ul>*/}
+                    {/*</motion.div>*/}
+
+                    {/*<motion.div initial="hidden"*/}
+                    {/*            whileInView={'visible'}*/}
+                    {/*            viewport={{once:true}}*/}
+                    {/*            transition={{ duration: 1, delay:0.3, ease:'easeInOut'}}*/}
+                    {/*            variants={{*/}
+                    {/*                visible: { opacity: 1, scale:1 },*/}
+                    {/*                hidden: { opacity: 0, scale:0.8 }*/}
+                    {/*            }} className={'absolute w-[18vw] h-[7.5vw] p-[1.7vw] top-[42vw] left-[47vw] dashboard-shape rounded-[1vw]'}>*/}
+                    {/*    <ul className={'list-disc ext-white font-gilroy font-bold'}>*/}
+                    {/*        <li className={'list-disc text-white font-gilroy font-medium text-[1.7vw] leading-[222%] ml-[2vw]'}>promotion</li>*/}
+                    {/*    </ul>*/}
+                    {/*</motion.div>*/}
 
 
-
-
+                    <a href={'https://admin-176.gitbook.io/1-million-dao/ecosystem-1-million-dao/dao'}>
+                        <motion.div initial="hidden"
+                                    whileInView={'visible'}
+                                    viewport={{once:true}}
+                                    transition={{ type:"spring",duration: 1.5, delay:0.3, bounce:0.6 ,}}
+                                    variants={{
+                                        visible: { opacity: 1, y:0 },
+                                        hidden: { opacity: 0, y:100 }
+                                    }} className={'cursor-pointer swiper-background w-[17.1vw] h-[4.5vw] left-[47vw] top-[49vw] rounded-full text-in-shape absolute inline-flex'}>
+                            <p className={'text-white font-gilroy font-semibold text-[1.7vw]'}>LEARN MORE</p>
+                        </motion.div></a>
 
 
                     {/*<div className={'animate-ping absolute inline-block text-white left-[47.2vw] top-[21vw] text-[3.5vw] font-gilroy font-bold w-[18.3vw] h-[6.2vw] dao-gradient text-in-shape flex rounded-[1.5vw]'}></div>*/}
-                    <div className={'absolute inline-block text-white left-[47.2vw] top-[21vw] text-[5vw] font-gilroy font-bold w-[18.3vw] h-[6.2vw] dashboard-shape text-in-shape flex rounded-[1.5vw]'}>DAO</div>
+                    <div className={'absolute inline-block text-white left-[47.2vw] top-[21vw] text-[5vw] font-gilroy font-bold w-[18.6vw] h-[6.2vw] dashboard-shape text-in-shape flex rounded-[1.5vw]'}>DAO</div>
                 </div>
 
 
