@@ -179,7 +179,7 @@ const Home: NextPage = () => {
                         {/*<a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#teaser'}>TEASER</a>*/}
                         <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#roadmap'}>ROADMAP</a>
                         <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#dao'}>DAO</a>
-                        {/*<a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#partners'}>PARTNERS</a>*/}
+                        <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'#partners'}>PARTNERS</a>
                         <a className={'cursor-pointer text-white text-center uppercase text-[1.2vw] font-gilroy font-regular hover:nav-item-hover'} href={'https://admin-176.gitbook.io/1-million-dao/about-1-million-dao/what-is-a-rebase-token'}>DOCS</a>
                     </div>
                     <div className={'z-[9999] justify-items-center justify-center items-center fixed inline-flex left-[71.2vw] text-[1vw] top-[1.2vw] w-[12.5vw] h-[3.4vw] rounded-full bg-purple'}>
@@ -288,7 +288,7 @@ const Home: NextPage = () => {
                         rebase function block per block
                     </p>
                     {/*<motion.div className={'absolute inline-block left-0 bottom-0'} ></motion.div>*/}
-                    <div className={'w-[28vw] h-[28vw] absolute inline-block bottom-[13vw] left-[16vw]'}>
+                    <div className={'w-[36vw] h-[36vw] absolute inline-block bottom-[8vw] left-[10vw]'}>
                         <Image src={'/images/phone.png'} layout={'fill'}></Image>
                     </div>
                     <div className={'cursor-pointer z-[8000] left-[14.4vw] top-[37vw] w-[8.7vw] h-[2.3vw] absolute inline-block'}>
