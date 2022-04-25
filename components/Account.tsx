@@ -34,7 +34,7 @@ const Account = () => {
                     <p className={'h-fit w-full text-left text-[2vw] font-light font-gilroy text-white'}>Your Balance</p>
                     {/*<p className={'h-fit w-full text-left text-[3vw] font-bold font-gilroy text-white'}>${balance*currency}</p>*/}
                     <p className={'h-fit w-full text-left text-[3vw] font-bold font-gilroy text-white'}>-</p>
-                    <p className={'h-fit w-full text-left text-[1.4vw] font-light font-gilroy text-white'}>{balance} $OMD</p>
+                    <p className={'h-fit w-full text-left text-[1.4vw] font-light font-gilroy text-white'}>- $OMD</p>
                 </div>
             </div>
 

@@ -44,7 +44,7 @@ const PlanetCardMarketplace = ({planetName, image, apyIncrease,cost, quantity, c
                         <h2 className={'animate-pulse w-full text-center text-white font-gilroy font-regular text-[1vw]'}>{apyIncrease}% of total income</h2>
                     </div>
                 </div>
-                <h2 className={'animate-pulse mt-[8vw] font-bold w-full text-center text-white font-gilroy font-regular text-[2vw]'}>{cost} BNB</h2>
+                <h2 className={'animate-pulse mt-[7.5vw] font-bold w-full text-center text-white font-gilroy font-regular text-[2vw]'}>{cost} BNB</h2>
             </div>
 
 
