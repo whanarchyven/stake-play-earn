@@ -444,16 +444,16 @@ const Home: NextPage = () => {
                                }}  className={'absolute left-[25vw] text-[2.2vw] top-[20.5vw] text-right text-white font-gilroy font-regular'}>Fixed APY</motion.h2>
 
 
-                    {/*<motion.div initial="hidden"*/}
-                    {/*            whileInView={'visible'}*/}
-                    {/*            viewport={{once:true}}*/}
-                    {/*            transition={{ type:"spring",duration: 1, delay:0.3, bounce:0.6 ,}}*/}
-                    {/*            variants={{*/}
-                    {/*                visible: { opacity: 1, y:0 },*/}
-                    {/*                hidden: { opacity: 0, y:100 }*/}
-                    {/*            }} className={'cursor-pointer w-[9.1vw] h-[3.7vw] left-[21.7vw] top-[25.6vw] rounded-full text-in-shape absolute inline-flex offer-purple'}>*/}
-                    {/*    <p className={'text-white font-gilroy font-semibold text-[1.7vw]'}>AUDIT</p>*/}
-                    {/*</motion.div>*/}
+                    <motion.div initial="hidden"
+                                whileInView={'visible'}
+                                viewport={{once:true}}
+                                transition={{ type:"spring",duration: 1, delay:0.3, bounce:0.6 ,}}
+                                variants={{
+                                    visible: { opacity: 1, y:0 },
+                                    hidden: { opacity: 0, y:100 }
+                                }} className={'cursor-pointer w-[9.1vw] h-[3.7vw] left-[21.7vw] top-[25.6vw] rounded-full text-in-shape absolute inline-flex offer-purple'}>
+                        <a href={'https://github.com/interfinetwork/smart-contract-audits/blob/audit-updates/1millionDAO_AuditReport_InterFi.pdf'} className={'text-white font-gilroy font-semibold text-[1.7vw]'}>AUDIT</a>
+                    </motion.div>
 
 
                     {/*<div className={'cursor-pointer offer-gradient w-[15.5vw] h-[3.7vw] left-[31.5vw] top-[25.6vw] rounded-full text-in-shape absolute inline-flex'}>*/}
@@ -1807,7 +1807,7 @@ const Home: NextPage = () => {
                     <a href={'#intro'} className={'absolute inline-block top-[7.7vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Home</a>
                     <a className={'absolute inline-block top-[9.9vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Our Ecosystem</a>
                     <a href={'#roadmap'} className={'absolute inline-block top-[12.1vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Roadmap</a>
-                    <a className={'absolute inline-block top-[14.3vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Contract</a>
+                    <a href={'https://bscscan.com/address/0xBeE207E5B42d0c7bFE7141bE4509B299689A6A5c'} className={'absolute inline-block top-[14.3vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Contract</a>
                     <a className={'absolute inline-block top-[16.5vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'} href={'https://admin-176.gitbook.io/1-million-dao/about-1-million-dao/what-is-a-rebase-token'}>Whitepaper</a>
 
 
