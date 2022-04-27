@@ -452,7 +452,7 @@ const Home: NextPage = () => {
                                     visible: { opacity: 1, y:0 },
                                     hidden: { opacity: 0, y:100 }
                                 }} className={'cursor-pointer w-[9.1vw] h-[3.7vw] left-[21.7vw] top-[25.6vw] rounded-full text-in-shape absolute inline-flex offer-purple'}>
-                        <a href={'https://github.com/interfinetwork/smart-contract-audits/blob/audit-updates/1millionDAO_AuditReport_InterFi.pdf'} className={'text-white font-gilroy font-semibold text-[1.7vw]'}>AUDIT</a>
+                        <a href={'https://github.com/interfinetwork/smart-contract-audits/blob/audit-updates/1millionDAO_AuditReport_InterFi.pdf'} target={'_blank'} rel={'noreferrer'} className={'text-white font-gilroy font-semibold text-[1.7vw]'}>AUDIT</a>
                     </motion.div>
 
 
@@ -1659,12 +1659,15 @@ const Home: NextPage = () => {
                             <div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[9.8vw] absolute inline-block'}>
                                 <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>
                             </div>
+                            <div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[12.8vw] absolute inline-block'}>
+                                <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>
+                            </div>
                             <p className={'leading-[89%] mt-[1.5vw] text-[1.545vw] text-white font-gilroy font-normal'}>
                                 <span className={'text-[#F3ACFF] font-semibold'}>Website development</span><br/>
                                 <span className={'text-[#F3ACFF] font-semibold'}>contract deploy</span><br/><br/>
                                 <span className={'text-[#F3ACFF] font-semibold'}>Seed round</span><br/><br/>
                                 <span className={'text-[#F3ACFF] font-semibold'}>KOL management</span><br/><br/>
-                                Contract audited<br/><br/>
+                                <span className={'text-[#F3ACFF] font-semibold'}>Contract audited</span><br/><br/>
                                 KYC by Pinksale<br/><br/>
                                 Presale on Pinksale<br/><br/>
                                 10 Voice AMA<br/><br/>
@@ -1807,7 +1810,7 @@ const Home: NextPage = () => {
                     <a href={'#intro'} className={'absolute inline-block top-[7.7vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Home</a>
                     <a className={'absolute inline-block top-[9.9vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Our Ecosystem</a>
                     <a href={'#roadmap'} className={'absolute inline-block top-[12.1vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Roadmap</a>
-                    <a href={'https://bscscan.com/address/0xBeE207E5B42d0c7bFE7141bE4509B299689A6A5c'} className={'absolute inline-block top-[14.3vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Contract</a>
+                    <a target={'_blank'} rel={'noreferrer'} href={'https://bscscan.com/address/0xBeE207E5B42d0c7bFE7141bE4509B299689A6A5c'} className={'absolute inline-block top-[14.3vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'}>Contract</a>
                     <a className={'absolute inline-block top-[16.5vw] left-[39vw] text-[1.1vw] text-white font-gilroy font-[400]'} href={'https://admin-176.gitbook.io/1-million-dao/about-1-million-dao/what-is-a-rebase-token'}>Whitepaper</a>
 
 
