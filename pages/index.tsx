@@ -29,6 +29,8 @@ const Home: NextPage = () => {
     const [apyDuration,setApyDuration]=useState(1500);
     const { ref, inView, entry, } = useInView();
 
+    const [openGame,setOpenGame]=useState(false);
+
     let spring = "spring" as const
 
     return (
@@ -1355,18 +1357,20 @@ const Home: NextPage = () => {
                         <p className={'text-white inline-block absolute text-center w-[70%] mx-[15%] mt-[24.0vw] leading-[100%] text-[1.8vw] font-gilroy font-regular'}>Get unique resources and trade it on marketplace for profit
                         </p>
                     </motion.div>
-                    {/*<motion.div initial="hidden"*/}
-                    {/*            whileInView={'visible'}*/}
-                    {/*            viewport={{once:true}}*/}
-                    {/*            transition={{ type:"spring",duration: 2.5, delay:0.3, bounce:0.6 ,}}*/}
-                    {/*            variants={{*/}
-                    {/*                visible: { opacity: 1, y:0 },*/}
-                    {/*                hidden: { opacity: 0, y:100 }*/}
-                    {/*            }} className={'cursor-pointer left-[16.4vw] top-[55.5vw] w-[28vw] text-in-shape h-[9vw] absolute sm:inline-flex hidden '}>*/}
-                    {/*    <div className={'w-full h-full neon-border border-[5px] inline-block rounded-full'}></div>*/}
-                    {/*    <div className={'offer-gradient w-[90%] rounded-full h-[75%] p-[2vw] inline-block absolute'}></div>*/}
-                    {/*    <h2 className={'text-white inline-block absolute text-center text-[3.2vw] font-gilroy font-regular'}><strong>PLAY</strong> DEMO</h2>*/}
-                    {/*</motion.div>*/}
+                    <motion.div initial="hidden"
+                                whileInView={'visible'}
+                                viewport={{once:true}}
+                                transition={{ type:"spring",duration: 2.5, delay:0.3, bounce:0.6 ,}}
+                                variants={{
+                                    visible: { opacity: 1, y:0 },
+                                    hidden: { opacity: 0, y:100 }
+                                }}
+                                onClick={()=>{setOpenGame(true)}}
+                                className={'cursor-pointer left-[16.4vw] top-[55.5vw] w-[28vw] text-in-shape h-[9vw] absolute sm:inline-flex hidden '}>
+                        <div className={'w-full h-full neon-border border-[5px] inline-block rounded-full'}></div>
+                        <div className={'offer-gradient w-[90%] rounded-full h-[75%] p-[2vw] inline-block absolute'}></div>
+                        <h2 className={'text-white inline-block absolute text-center text-[3.2vw] font-gilroy font-regular'}><strong>PLAY</strong> DEMO</h2>
+                    </motion.div>
                 </div>
 
 
@@ -1752,6 +1756,17 @@ const Home: NextPage = () => {
                     </div>
 
                 </div>
+
+
+                {/*GAME*/}
+
+                {openGame? <div className={'w-[100vw] absolute fixed h-[600px] sm:h-[100vh] top-0 z-[99999] left-0'} id={'game'}>
+                    <iframe className={'w-full fixed h-[100vh]'} src={'https://1milliondao.com/alien.html'}></iframe>
+                    <div className={'w-[5vw] h-[5vw] fixed right-[1vw] z-[99999] top-[1vw] cursor-pointer'} onClick={()=>{setOpenGame(!openGame)}}>
+                        <Image src={'/images/close_game.svg'} layout={'fill'}></Image>
+                    </div>
+                </div>: <div></div>}
+
 
 
                 {/*/!*PARTNERS*!/*/}
