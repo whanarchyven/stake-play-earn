@@ -1150,6 +1150,9 @@ const Home: NextPage = () => {
                         <SwiperSlide><div className={'w-[93%] ml-[4%] mt-[4%] absolute h-[95%]'}>
                             <Image src={'/images/move4.png'} layout={'fill'}></Image>
                         </div></SwiperSlide>
+                        <SwiperSlide><div className={'w-[93%] ml-[4%] mt-[4%] absolute h-[95%]'}>
+                            <Image src={'/images/move5.png'} layout={'fill'}></Image>
+                        </div></SwiperSlide>
                         {/*<div className={'w-full z-[99] absolute h-full'}>*/}
                         {/*    <Image src={'/images/move_base.png'} layout={'fill'}></Image>*/}
                         {/*</div>*/}
@@ -1760,12 +1763,12 @@ const Home: NextPage = () => {
 
                 {/*GAME*/}
 
-                {openGame? <div className={'w-[100vw] absolute fixed h-[600px] sm:h-[100vh] top-0 z-[99999] left-0'} id={'game'}>
-                    <iframe className={'w-full fixed h-[100vh]'} src={'https://1milliondao.com/alien.html'}></iframe>
-                    <div className={'w-[5vw] h-[5vw] fixed right-[1vw] z-[99999] top-[1vw] cursor-pointer'} onClick={()=>{setOpenGame(!openGame)}}>
-                        <Image src={'/images/close_game.svg'} layout={'fill'}></Image>
-                    </div>
-                </div>: <div></div>}
+                {/*{openGame? <div className={'w-[100vw] absolute fixed h-[600px] sm:h-[100vh] top-0 z-[99999] left-0'} id={'game'}>*/}
+                {/*    <iframe className={'w-full fixed h-[100vh]'} src={'https://1milliondao.com/alien.html'}></iframe>*/}
+                {/*    <div className={'w-[5vw] h-[5vw] fixed right-[1vw] z-[99999] top-[1vw] cursor-pointer'} onClick={()=>{setOpenGame(!openGame)}}>*/}
+                {/*        <Image src={'/images/close_game.svg'} layout={'fill'}></Image>*/}
+                {/*    </div>*/}
+                {/*</div>: <div></div>}*/}
 
 
 
