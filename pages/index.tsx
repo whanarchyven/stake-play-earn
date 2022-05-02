@@ -287,7 +287,7 @@ const Home: NextPage = () => {
                         <h2 className={'animate-pulse w-full text-center text-white font-gilroy font-extrabold text-[2.2vw]'}>1 041 035% APY</h2>
                     </div>
                     <p className={' animate-pulse text-left text-white font-gilroy font-normal text-[1.2vw] w-[22vw] h-[5.5vw] left-[41vw] top-[15vw] absolute inline-flex '}>
-                        rebase function block per block
+                        rebase function is each block
                     </p>
                     {/*<motion.div className={'absolute inline-block left-0 bottom-0'} ></motion.div>*/}
                     <div className={'w-[36vw] h-[36vw] absolute inline-block bottom-[8vw] left-[10vw]'}>
@@ -500,7 +500,7 @@ const Home: NextPage = () => {
                     </div>
                     <div className={'absolute inline-block left-[20.2vw] top-[34.8vw]  w-[59.7vw] h-[3.0vw] rounded-full'}>
                         {/*<Image src={'/images/formul.svg'} layout={'fill'}></Image>*/}
-                        <p className={'text-white font-gilroy text-center font-semibold text-[2vw]'}>block per block 0,000088%</p>
+                        <p className={'text-white font-gilroy text-center font-semibold text-[2vw]'}>0,000088% in each block</p>
                     </div>
 
                     <motion.div  className={'w-[32vw] h-[22vw] left-[50vw] top-[11vw] absolute inline-block'}>
@@ -546,7 +546,7 @@ const Home: NextPage = () => {
                                    variants={{
                                        visible: { opacity: 1,},
                                        hidden: { opacity: 0.6, }
-                                   }} className={'text-white inline-block absolute text-center text-[2.3vw] font-gilroy font-medium'}>$BNB distribution after closing Pinksale presale</motion.h2>
+                                   }} className={'text-white inline-block absolute text-center text-[2.3vw] font-gilroy font-medium'}>$BNB distribution after the end of PinkSale presale</motion.h2>
                     </motion.div>
                     <motion.h2 initial="hidden"
                                whileInView={'visible'}
@@ -730,7 +730,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, x:0 },
                                   hidden: { opacity: 0, x:50 }
-                              }} className={'font-normal text-white top-[26.4vw] left-[17vw] inline-block absolute leading-[130%] text-left text-[2.1vw] w-[22vw]  font-gilroy '}>of all incomes will be distributed among $OMD holders</motion.p>
+                              }} className={'font-normal text-white top-[26.4vw] left-[17vw] inline-block absolute leading-[130%] text-left text-[2.1vw] w-[22vw]  font-gilroy '}>of income will be distributed among the $OMD holders</motion.p>
 
 
                     <motion.p initial="hidden"
@@ -740,7 +740,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, x:0 },
                                   hidden: { opacity: 0, x:-50 }
-                              }} className={'leading-[111%] font-normal text-white top-[28.4vw] right-[13vw]  inline-block absolute text-right w-[30vw] text-[2.1vw] font-gilroy '}>of all incomes will be distributed among holders of staked NFTs “Founders collection”</motion.p>
+                              }} className={'leading-[111%] font-normal text-white top-[28.4vw] right-[13vw]  inline-block absolute text-right w-[30vw] text-[2.1vw] font-gilroy '}>of income will be distributed among the "Founders collection" NFT stakers</motion.p>
                     Found
                     <motion.div initial="hidden"
                                 whileInView={'visible'}
@@ -770,8 +770,7 @@ const Home: NextPage = () => {
                             <Image src={'/images/dit2.svg'} layout={'fill'}></Image>
                         </div>
                         <div className={'justify-center items-center w-[70%] h-full align-top inline-flex relative'}>
-                            <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>$OMD Holders will have a vote opportunity for staking and trading distribution pools. 80% of project profit will be distributed to $OMD holders
-                            </p>
+                            <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>Holders will vote for the ways of distribution of trading and staking pools</p>
                         </div>
                     </motion.div>
                     <motion.div initial="hidden"
@@ -786,7 +785,7 @@ const Home: NextPage = () => {
                             <Image src={'/images/dit3.svg'} layout={'fill'}></Image>
                         </div>
                         <div className={'justify-center items-center w-[70%] h-full align-top inline-flex relative'}>
-                            <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>20% of profit will be distributed among the NFT holders of Founder Collection</p>
+                            <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>20% of income will be distributed among the "Founders collection" NFT stakers</p>
                         </div>
                     </motion.div>
                 </div>
@@ -813,8 +812,8 @@ const Home: NextPage = () => {
                                    variants={{
                                        visible: { opacity: 1,},
                                        hidden: { opacity: 0.6, }
-                                   }} className={'text-white inline-block absolute text-center text-[2.3vw] leading-[110%] font-gilroy font-medium'}>Profit Distribution for NFT holders of Founder Collection (20% of all profit of 1MDAO Fund)
-                        </motion.h2>
+                                   }} className={'text-white inline-block absolute text-center text-[2.3vw] leading-[110%] font-gilroy font-medium'}>Profit Distribution to the "Founders collection" NFT holders
+                            (20% of 1MDAO Fund profit)</motion.h2>
                     </motion.div>
                     <motion.h2 initial="hidden"
                                whileInView={'visible'}
@@ -910,7 +909,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, x:0 },
                                   hidden: { opacity: 0, x:50 }
-                              }} className={'font-normal text-white top-[26.4vw] left-[15vw] inline-block absolute leading-[130%] text-center text-[2.1vw] font-gilroy '}>for Bronze <br/> NFTs <br/> holders</motion.p>
+                              }} className={'font-normal text-white top-[26.4vw] left-[15vw] inline-block absolute leading-[130%] text-center text-[2.1vw] font-gilroy '}> Bronze <br/> NFTs <br/> holders</motion.p>
                     <motion.p initial="hidden"
                               whileInView={'visible'}
                               viewport={{once:true}}
@@ -918,7 +917,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, y:0 },
                                   hidden: { opacity: 0, y:-50 }
-                              }} className={'font-normal text-white top-[34vw] left-[39vw] inline-block leading-[130%] absolute text-center text-[2.1vw] font-gilroy '}>for Silver <br/> NFTs <br/> holders</motion.p>
+                              }} className={'font-normal text-white top-[34vw] left-[39vw] inline-block leading-[130%] absolute text-center text-[2.1vw] font-gilroy '}> Silver <br/> NFTs <br/> holders</motion.p>
 
                     <motion.p initial="hidden"
                               whileInView={'visible'}
@@ -927,7 +926,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, y:0 },
                                   hidden: { opacity: 0, y:-50 }
-                              }} className={'font-normal text-white top-[34vw] left-[59vw] inline-block leading-[130%] absolute text-center text-[2.1vw] font-gilroy '}>for Gold <br/> NFTs <br/> holders</motion.p>
+                              }} className={'font-normal text-white top-[34vw] left-[59vw] inline-block leading-[130%] absolute text-center text-[2.1vw] font-gilroy '}> Gold <br/> NFTs <br/> holders</motion.p>
 
 
                     <motion.p initial="hidden"
@@ -937,7 +936,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, x:0 },
                                   hidden: { opacity: 0, x:-50 }
-                              }} className={'leading-[111%] font-normal text-white top-[28.4vw] left-[74vw] inline-block absolute text-center w-[15vw] text-[2.1vw] font-gilroy '}>for Platinum <br/> NFTs <br/> holders</motion.p>
+                              }} className={'leading-[111%] font-normal text-white top-[28.4vw] left-[74vw] inline-block absolute text-center w-[15vw] text-[2.1vw] font-gilroy '}> Platinum <br/> NFTs <br/> holders</motion.p>
 
 
                     <div className={'w-[87vw] bottom-0 left-[8vw] h-[26vw] absolute'}>
@@ -958,7 +957,7 @@ const Home: NextPage = () => {
                                variants={{
                                    visible: { opacity: 1, y:0 },
                                    hidden: { opacity: 0, y:-50 }
-                               }} className={'absolute top-[5.6vw] left-0 w-full text-center inline-block text-white font-gilroy uppercase font-black text-[4.95vw]'}>NFT Founders collection</motion.h2>
+                               }} className={'absolute top-[5.6vw] left-0 w-full text-center inline-block text-white font-gilroy uppercase font-black text-[4.95vw]'}>FOUNDERS COLLECTION NFT</motion.h2>
                     <motion.p initial="hidden"
                               whileInView={'visible'}
                               viewport={{once:true}}
@@ -966,8 +965,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, y:0 },
                                   hidden: { opacity: 0, y:-50 }
-                              }} className={'absolute top-[12.9vw] left-0 w-full text-center inline-block leading-[110%] text-white font-gilroy uppercase font-medium text-[1.92vw]'}>The Founders NFT limited Collection is created for early investors, that will have 20% of all profit 1MDAO Fund. After the sale owners will have an option to sell it on marketplace.
-                    </motion.p>
+                              }} className={'absolute top-[12.9vw] left-0 w-full text-center inline-block leading-[110%] text-white font-gilroy uppercase font-medium text-[1.92vw]'}>created for the early investors who will have 20% of 1MDAO fund profit. These NFTs can be sold on the marketplace.</motion.p>
                     <motion.div initial="hidden"
                                 whileInView={'visible'}
                                 viewport={{once:true}}
@@ -1277,7 +1275,7 @@ const Home: NextPage = () => {
                         <div className={'w-[9vw] h-[9vw] top-[-2vw] left-[3vw] absolute'}>
                             <Image src={'/images/metaverse/num2.svg'} layout={'fill'}></Image>
                         </div>
-                        <p className={'text-white inline-block absolute text-center w-[65%] mx-[17.5%] mt-[22vw] leading-[100%] text-[1.8vw] font-gilroy font-regular'}>Investigate space with friends & create alliance</p>
+                        <p className={'text-white inline-block absolute text-center w-[65%] mx-[17.5%] mt-[22vw] leading-[100%] text-[1.8vw] font-gilroy font-regular'}>Explore the space with your friends and create alliances</p>
                     </motion.div>
                     <motion.div initial="hidden"
                                 whileInView={'visible'}
@@ -1357,8 +1355,7 @@ const Home: NextPage = () => {
                         <div className={'w-[9vw] h-[9vw] top-[24.5vw] left-[-2vw] absolute'}>
                             <Image src={'/images/metaverse/num4.svg'} layout={'fill'}></Image>
                         </div>
-                        <p className={'text-white inline-block absolute text-center w-[70%] mx-[15%] mt-[24.0vw] leading-[100%] text-[1.8vw] font-gilroy font-regular'}>Get unique resources and trade it on marketplace for profit
-                        </p>
+                        <p className={'text-white inline-block absolute text-center w-[70%] mx-[15%] mt-[24.0vw] leading-[100%] text-[1.8vw] font-gilroy font-regular'}>Acquire unique resources and trade them on the marketplace for profit</p>
                     </motion.div>
                     <motion.div initial="hidden"
                                 whileInView={'visible'}
@@ -1671,16 +1668,16 @@ const Home: NextPage = () => {
                             </div>
                             <p className={'leading-[89%] mt-[1.5vw] text-[1.545vw] text-white font-gilroy font-normal'}>
                                 <span className={'text-[#F3ACFF] font-semibold'}>Website development</span><br/>
-                                <span className={'text-[#F3ACFF] font-semibold'}>contract deploy</span><br/><br/>
+                                <span className={'text-[#F3ACFF] font-semibold'}>contract deployment</span><br/><br/>
                                 <span className={'text-[#F3ACFF] font-semibold'}>Seed round</span><br/><br/>
                                 <span className={'text-[#F3ACFF] font-semibold'}>KOL management</span><br/><br/>
-                                <span className={'text-[#F3ACFF] font-semibold'}>Contract audited</span><br/><br/>
+                                <span className={'text-[#F3ACFF] font-semibold'}>Contract audit</span><br/><br/>
                                 KYC by Pinksale<br/><br/>
                                 Presale on Pinksale<br/><br/>
                                 10 Voice AMA<br/><br/>
                                 DEX marketing activities<br/><br/>
-                                Launching the protocol<br/><br/>
-                                Dex Launch<br/><br/>
+                                Protocol launch<br/><br/>
+                                DEX launch<br/><br/>
                                 Articles in cryptomagazines<br/><br/>
                                 M2E alpha algorithm testing<br/><br/>
                                 NFTs sale<br/><br/>
@@ -1719,7 +1716,7 @@ const Home: NextPage = () => {
                                 ASP app modification. News<br/><br/>
                                 Collaboration with space-gaming projects<br/><br/>
                                 IDO governance token sale<br/><br/>
-                                Collected 10 mln foundraise form Tier1-Tier2 partners<br/><br/>
+                                10 mln fundraise from Tier1-Tier2 partners<br/><br/>
                                 NFT Avatar sale<br/><br/>
                                 Social network opening<br/><br/>
                                 Networking online contest<br/><br/>
@@ -1739,9 +1736,9 @@ const Home: NextPage = () => {
                                 <p className={'leading-[89%]  text-[2vw] text-white font-gilroy uppercase font-bold'}>2023 pipeline</p>
                             </div>
                             <p className={'leading-[89%] mt-[1.5vw] text-[1.545vw] text-white font-gilroy font-normal'}>DEX optimisation protocol<br/><br/>
-                                ASP desktop crypted version<br/><br/>
+                                ASP desktop encrypted version<br/><br/>
                                 ASP wallet<br/><br/>
-                                Holland auction mechanics for NFT sale of the projects<br/><br/>
+                                Holland auction for NFT projects<br/><br/>
                                 Multichain launch<br/><br/>
                                 NFT mechanics for social network ASP<br/><br/>
                                 Multichain NFT marketplace<br/><br/>
@@ -1750,7 +1747,7 @@ const Home: NextPage = () => {
                                 GameFi liquidity pools<br/><br/>
                                 Network safety crypto protocol<br/><br/>
                                 OpenSea collaboration<br/><br/>
-                                Layer2 eth upgrade<br/><br/>
+                                Layer2 ETH upgrade<br/><br/>
                                 Offline ASP conference<br/><br/>
                                 Offline grants program and competition<br/><br/>
                                 800 mln Market Cap<br/><br/>
