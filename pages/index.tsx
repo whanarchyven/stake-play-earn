@@ -740,7 +740,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, x:0 },
                                   hidden: { opacity: 0, x:-50 }
-                              }} className={'leading-[111%] font-normal text-white top-[28.4vw] right-[13vw]  inline-block absolute text-right w-[30vw] text-[2.1vw] font-gilroy '}>of income will be distributed among the "Founders collection" NFT stakers</motion.p>
+                              }} className={'leading-[111%] font-normal text-white top-[28.4vw] right-[13vw]  inline-block absolute text-right w-[30vw] text-[2.1vw] font-gilroy '}>of income will be distributed among the `&#34;`Founders collection`&#34;` NFT stakers</motion.p>
                     Found
                     <motion.div initial="hidden"
                                 whileInView={'visible'}
@@ -785,7 +785,7 @@ const Home: NextPage = () => {
                             <Image src={'/images/dit3.svg'} layout={'fill'}></Image>
                         </div>
                         <div className={'justify-center items-center w-[70%] h-full align-top inline-flex relative'}>
-                            <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>20% of income will be distributed among the "Founders collection" NFT stakers</p>
+                            <p className={'font-normal text-white  inline-block absolute leading-[130%] text-left text-[2vw] font-gilroy'}>20% of income will be distributed among the `&#34;`Founders collection`&#34;` NFT stakers</p>
                         </div>
                     </motion.div>
                 </div>
@@ -812,7 +812,7 @@ const Home: NextPage = () => {
                                    variants={{
                                        visible: { opacity: 1,},
                                        hidden: { opacity: 0.6, }
-                                   }} className={'text-white inline-block absolute text-center text-[2.3vw] leading-[110%] font-gilroy font-medium'}>Profit Distribution to the "Founders collection" NFT holders
+                                   }} className={'text-white inline-block absolute text-center text-[2.3vw] leading-[110%] font-gilroy font-medium'}>Profit Distribution to the `&#34;`Founders collection`&#34;` NFT holders
                             (20% of 1MDAO Fund profit)</motion.h2>
                     </motion.div>
                     <motion.h2 initial="hidden"
