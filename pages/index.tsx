@@ -1621,9 +1621,9 @@ const Home: NextPage = () => {
 
                 {/*ROADMAP*/}
 
-                <div className={'w-[100vw] relative block h-[112vw] bg-cover bg-[]'} id={'roadmap'}>
+                <div className={'w-[100vw] relative block h-[122vw] bg-cover bg-[]'} id={'roadmap'}>
 
-                    <div className={'absolute inline-block rotate-180 left-[6vw] top-[6.5vw]  w-[88vw] h-[95.3vw] rounded-[4.5vw] rotate-180'}>
+                    <div className={'absolute inline-block rotate-180 left-[6vw] top-[6.5vw]  w-[88vw] h-[120vw] rounded-[4.5vw] rotate-180'}>
                         <div className={'w-[inherit] h-[inherit] relative flex items-center justify-items-center justify-center rounded-[inherit]'}>
                             <div className={'z-[4] w-[99.9%] absolute flex h-[99.9%] rounded-[inherit] border-white border-solid border-[1px] m-[0.1%]'}></div>
                             <div className={'relative inline-block flex justify-center justify-items-center blur-[1px] rounded-[inherit] h-full w-full'}>
@@ -1642,7 +1642,7 @@ const Home: NextPage = () => {
                     <div className={'w-[51vw] h-[20vw] absolute inline-block left-[19.5vw] top-[5.53vw]'}>
                         <Image src={'/images/roadmap_vectors.svg'} layout={'fill'}></Image>
                     </div>
-                    <div className={'justify-between justify-items-center flex-nowrap w-[71vw] h-[75vw] absolute inline-flex left-[14.5vw] top-[24vw]'}>
+                    <div className={'justify-between justify-items-center flex-nowrap w-[71vw] h-[95vw] absolute inline-flex left-[14.5vw] top-[24vw]'}>
                         <motion.div initial="hidden"
                                     whileInView={'visible'}
                                     viewport={{once:true}}
@@ -1652,45 +1652,56 @@ const Home: NextPage = () => {
                                         hidden: { opacity: 0, x:-100 }
                                     }} className={'w-[30%] h-full inline-block flex roadmap-card rounded-[1vw] text-in-roadmap-card p-[3%]'}>
                             <div className={'w-[13vw] h-[4.4vw] top-[-2.5vw] rounded-[1vw] flex text-in-shape bg-purple absolute'}>
-                                <p className={'leading-[89%]  text-[2vw] text-white font-gilroy font-bold'}>1H’2022</p>
+                                <p className={'leading-[89%]  text-[2vw] text-white font-gilroy text-center uppercase px-[2vw] font-bold'}>Roadmap Q2 2022</p>
                             </div>
-                            <div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[3.4vw] absolute inline-block'}>
-                                <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>
-                            </div>
-                            <div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[7vw] absolute inline-block'}>
-                                <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>
-                            </div>
-                            <div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[9.8vw] absolute inline-block'}>
-                                <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>
-                            </div>
-                            <div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[12.8vw] absolute inline-block'}>
-                                <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>
-                            </div>
-                            <p className={'leading-[89%] mt-[1.5vw] text-[1.545vw] text-white font-gilroy font-normal'}>
-                                <span className={'text-[#F3ACFF] font-semibold'}>Website development</span><br/>
-                                <span className={'text-[#F3ACFF] font-semibold'}>contract deployment</span><br/><br/>
-                                <span className={'text-[#F3ACFF] font-semibold'}>Seed round</span><br/><br/>
-                                <span className={'text-[#F3ACFF] font-semibold'}>KOL management</span><br/><br/>
-                                <span className={'text-[#F3ACFF] font-semibold'}>Contract audit</span><br/><br/>
-                                KYC by Pinksale<br/><br/>
-                                Presale on Pinksale<br/><br/>
+                            {/*<div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[3.4vw] absolute inline-block'}>*/}
+                            {/*    <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>*/}
+                            {/*</div>*/}
+                            {/*<div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[7vw] absolute inline-block'}>*/}
+                            {/*    <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>*/}
+                            {/*</div>*/}
+                            {/*<div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[9.8vw] absolute inline-block'}>*/}
+                            {/*    <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>*/}
+                            {/*</div>*/}
+                            {/*<div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[12.8vw] absolute inline-block'}>*/}
+                            {/*    <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>*/}
+                            {/*</div>*/}
+                            <p className={'leading-[89%] mt-[1.5vw] text-[1.5vw] text-white font-gilroy font-normal'}>
+                                {/*<span className={'text-[#F3ACFF] font-semibold'}>Website development</span><br/>*/}
+                                {/*<span className={'text-[#F3ACFF] font-semibold'}>contract deployment</span><br/><br/>*/}
+                                {/*<span className={'text-[#F3ACFF] font-semibold'}>Seed round</span><br/><br/>*/}
+                                {/*<span className={'text-[#F3ACFF] font-semibold'}>KOL management</span><br/><br/>*/}
+                                {/*<span className={'text-[#F3ACFF] font-semibold'}>Contract audit</span><br/><br/>*/}
+                                Team recruiting<br/><br/>
+                                Smart Contract Developmen<br/><br/>t
+                                Website development<br/><br/>
+                                contract deploy<br/><br/>
+                                P2E development<br/><br/>
+                                M2E development<br/><br/>
+                                Contract audited by interFi<br/><br/>
+                                KYC by Pinksale by Solidproof<br/><br/>
+                                Setup Fairlaunch on Pinksale<br/><br/>
+                                KOL management<br/><br/>
                                 10 Voice AMA<br/><br/>
-                                DEX marketing activities<br/><br/>
-                                Protocol launch<br/><br/>
-                                DEX launch<br/><br/>
-                                Articles in cryptomagazines<br/><br/>
-                                M2E alpha algorithm testing<br/><br/>
+                                Articles in <a className={'text-[#F3ACFF]'} href={'https://marketwatch.com'}>https://marketwatch.com</a><br/><br/>
+                                Articles in <a className={'text-[#F3ACFF]'} href={'https://finance.yahoo.com'}>https://finance.yahoo.com</a><br/><br/>
+                                Articles in <a className={'text-[#F3ACFF]'} href={'https://techbullion.com/'}></a> https://techbullion.com/<br/><br/>
+                                Articles in <a className={'text-[#F3ACFF]'} href={'https://thenewscrypto.com/'}></a>https://thenewscrypto.com/<br/><br/>
+                                10 community competition<br/><br/>
                                 NFTs sale<br/><br/>
-                                P2E game beta launch<br/><br/>
+                                P2E beta testing<br/><br/>
+                                Web APP launch<br/><br/>
+                                Pancakeswap listing<br/><br/>
                                 Dextools marketing ads<br/><br/>
-                                Coinsniper rating top 5<br/><br/>
+                                Coinsniper rating top 10<br/><br/>
                                 Coinmarketcap list and rate<br/><br/>
                                 CoinGecko list and rate<br/><br/>
-                                ASP app<br/><br/>
+                                IOS & Android APP launch<br/><br/>
                                 M2E launch<br/><br/>
-                                DAO pool opening<br/><br/>
+                                NFT marketplace<br/><br/>
+                                DAO pool in 7 days after DEX listing<br/><br/>
                                 DAO voting system<br/><br/>
-                                Collaboration laboratory
+                                Partnerships with 5 funds<br/><br/>
 
                             </p>
                         </motion.div>
@@ -1703,25 +1714,21 @@ const Home: NextPage = () => {
                                         hidden: { opacity: 0, x:-100 }
                                     }} className={'w-[30%] h-[90%] inline-block flex roadmap-card rounded-[1vw] text-in-roadmap-card p-[3%]'}>
                             <div className={'w-[13vw] h-[4.4vw] top-[-2.5vw] rounded-[1vw] flex text-in-shape bg-semiblue absolute'}>
-                                <p className={'leading-[89%]  text-[2vw] text-white font-gilroy font-bold'}>2H’2022</p>
+                                <p className={'leading-[89%]  text-[2vw] text-white font-gilroy text-center uppercase px-[2vw] font-bold'}>Roadmap Q3 2022</p>
                             </div>
                             <p className={'leading-[89%] mt-[1.5vw] text-[1.545vw] text-white font-gilroy font-normal'}>ASP app in appStore<br/><br/>
+                                DEX launch<br/><br/>
+                                CEX Listing<br/><br/>
                                 First wave of DAO, M2E rewards<br/><br/>
-                                NFT marketplace<br/><br/>
-                                official P2E game opening<br/><br/>
+                                Official P2E game opening<br/><br/>
                                 Collaboration with guilds<br/><br/>
                                 NFT artists contest<br/><br/>
                                 Certik Audit<br/><br/>
-                                ASP app modification. Chat<br/><br/>
-                                ASP app modification. News<br/><br/>
                                 Collaboration with space-gaming projects<br/><br/>
                                 IDO governance token sale<br/><br/>
-                                10 mln fundraise from Tier1-Tier2 partners<br/><br/>
-                                NFT Avatar sale<br/><br/>
-                                Social network opening<br/><br/>
-                                Networking online contest<br/><br/>
-                                Grant unicorn program<br/><br/>
-                                80 mln Market Cap<br/><br/>
+                                Collected 10 mln foundraise form Tier1-Tier2 partners<br/><br/>
+                                NFT Space Avatar sale<br/><br/>
+                                100 mln Market Cap<br/><br/>
                             </p>
                         </motion.div>
                         <motion.div initial="hidden"
@@ -1733,24 +1740,18 @@ const Home: NextPage = () => {
                                         hidden: { opacity: 0, x:-100 }
                                     }} className={'w-[30%] h-[85%] inline-block flex roadmap-card rounded-[1vw] text-in-roadmap-card p-[3%]'}>
                             <div className={'w-[17vw] h-[4.4vw] top-[-2.5vw] rounded-[1vw] flex text-in-shape bg-blue absolute'}>
-                                <p className={'leading-[89%]  text-[2vw] text-white font-gilroy uppercase font-bold'}>2023 pipeline</p>
+                                <p className={'leading-[89%]  text-[2vw] text-white font-gilroy text-center uppercase px-[2vw] font-bold'}>Roadmap<br/> Q4 2022</p>
                             </div>
                             <p className={'leading-[89%] mt-[1.5vw] text-[1.545vw] text-white font-gilroy font-normal'}>DEX optimisation protocol<br/><br/>
-                                ASP desktop encrypted version<br/><br/>
-                                ASP wallet<br/><br/>
-                                Holland auction for NFT projects<br/><br/>
+                                1 Million DAO wallet<br/><br/>
                                 Multichain launch<br/><br/>
-                                NFT mechanics for social network ASP<br/><br/>
                                 Multichain NFT marketplace<br/><br/>
-                                Bloomberg article<br/><br/>
-                                Charity program for African education<br/><br/>
                                 GameFi liquidity pools<br/><br/>
                                 Network safety crypto protocol<br/><br/>
                                 OpenSea collaboration<br/><br/>
-                                Layer2 ETH upgrade<br/><br/>
-                                Offline ASP conference<br/><br/>
+                                Layer2 eth upgrade<br/><br/>
                                 Offline grants program and competition<br/><br/>
-                                800 mln Market Cap<br/><br/>
+                                500 mln Market Cap<br/><br/>
                             </p>
                         </motion.div>
                     </div>
