@@ -593,7 +593,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, x:0 },
                                   hidden: { opacity: 0, x:50 }
-                              }} className={'font-semibold text-semiblue top-[22vw] left-[23.8vw] inline-block absolute text-center text-[3.8vw] font-gilroy '}>60%</motion.p>
+                              }} className={'font-semibold text-semiblue top-[22vw] left-[23.8vw] inline-block absolute text-center text-[3.8vw] font-gilroy '}>51%</motion.p>
                     <motion.p initial="hidden"
                               whileInView={'visible'}
                               viewport={{once:true}}
@@ -601,7 +601,7 @@ const Home: NextPage = () => {
                               variants={{
                                   visible: { opacity: 1, y:0 },
                                   hidden: { opacity: 0, y:-50 }
-                              }} className={'font-semibold text-semiblue top-[27vw] left-[45.6vw] inline-block absolute text-center text-[3.8vw] font-gilroy '}>10%</motion.p>
+                              }} className={'font-semibold text-semiblue top-[27vw] left-[45.6vw] inline-block absolute text-center text-[3.8vw] font-gilroy '}>19%</motion.p>
                     <motion.p initial="hidden"
                               whileInView={'visible'}
                               viewport={{once:true}}
