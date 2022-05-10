@@ -1369,7 +1369,7 @@ const Home: NextPage = () => {
                                 className={'cursor-pointer left-[16.4vw] top-[55.5vw] w-[28vw] text-in-shape h-[9vw] absolute sm:inline-flex hidden '}>
                         <div className={'w-full h-full neon-border border-[5px] inline-block rounded-full'}></div>
                         <div className={'offer-gradient w-[90%] rounded-full h-[75%] p-[2vw] inline-block absolute'}></div>
-                        <h2 className={'text-white inline-block absolute text-center text-[3.2vw] font-gilroy font-regular'}><strong>PLAY</strong> DEMO</h2>
+                        <a href={'/game.html'} className={'text-white inline-block absolute text-center text-[3.2vw] font-gilroy font-regular'}><strong>PLAY</strong> DEMO</a>
                     </motion.div>
                 </div>
 
@@ -1839,7 +1839,25 @@ const Home: NextPage = () => {
                         </div>
                     </div></a>
 
-                    <motion.h2 className={'text-white font-gilroy font-black absolute inline-block left-[14vw] top-[33vw] text-[5.7vw]'}>PARTNERS</motion.h2>
+                    <a href={'https://intefi.com/'}><div className={'w-[18vw] h-[8.2vw] absolute left-[14vw] rounded-[0.5vw] top-[30.6vw] partner-shape inline-flex justify-center align-center items-center'}>
+                        <div className={'relative w-[16vw] h-[5vw]'}>
+                            <Image src={'/images/intefi.png'} layout={'fill'}></Image>
+                        </div>
+                    </div></a>
+                    <a href={'https://solidproof.io/'}><div className={'w-[22vw] h-[8.2vw] absolute left-[36vw] rounded-[0.5vw] top-[30.6vw] partner-shape inline-flex justify-center align-center items-center'}>
+                        <div className={'relative w-[18vw] h-[5vw]'}>
+                            <Image src={'/images/solidproof.png'} layout={'fill'}></Image>
+                        </div>
+                    </div></a>
+
+                    <a href={''}><div className={'w-[8.2vw] h-[8.2vw] absolute left-[63vw] rounded-[0.5vw] top-[30.6vw] partner-shape inline-flex justify-center align-center items-center'}>
+                        <div className={'relative w-[6.5vw] h-[6.5vw] rounded-[2vw]'}>
+                            <Image src={'/images/vbm.PNG'} layout={'fill'}></Image>
+                        </div>
+                    </div></a>
+
+
+                    <motion.h2 className={'text-white font-gilroy font-black absolute inline-block left-[14vw] top-[43vw] text-[5.7vw]'}>PARTNERS</motion.h2>
 
 
                 </div>
