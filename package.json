@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@types/react-slick": "^0.23.8",
+    "@types/sqlite3": "^3.1.8",
     "@types/styled-components": "^5.1.24",
     "@types/swiper": "^6.0.0",
     "animated-number-react": "^0.1.2",
@@ -20,6 +21,8 @@
     "react-intersection-observer": "^8.33.1",
     "react-slick": "^0.28.1",
     "react-tsparticles": "^1.42.4",
+    "sqlite": "^4.1.1",
+    "sqlite3": "^5.0.8",
     "styled-components": "^5.3.5",
     "swiper": "^8.1.0"
   },

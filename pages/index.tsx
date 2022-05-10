@@ -1099,7 +1099,7 @@ const Home: NextPage = () => {
                         <Image src={'/images/stakemoon.png'} layout={'fill'}></Image>
                     </div>
                     <motion.div className={'w-[100vw] z-50 absolute top-0 block h-[57vw]'}>
-                        <h2 className={'w-[60%] mx-[20%] text-center text-[3.45vw] text-white font-gilroy font-semibold leading-[100%] mt-[3vw] uppercase'}><strong>Stake your NFT</strong></h2>
+                        <h2 className={'w-[60%] mx-[20%] text-center text-[3.45vw] text-white font-gilroy font-semibold leading-[100%] mt-[3vw] uppercase'}><strong>Stake your NFT<br/><span className={'font-medium text-[2vw]'}>to get rewards from  1MDAO Fund</span></strong></h2>
                         <div className={'justify-center absolute w-[32.3vw] h-[25vw] flex top-[4vw] left-[34vw] top-[13.6vw]'}>
                             <div className={'neon-border border-4 rounded-[1vw] w-full h-full absolute'}></div>
                             <div className={'border-white border-2 rounded-[1vw] w-[99.7%] h-[99.7%] absolute'}></div>
@@ -1654,9 +1654,39 @@ const Home: NextPage = () => {
                             <div className={'w-[13vw] h-[4.4vw] top-[-2.5vw] rounded-[1vw] flex text-in-shape bg-purple absolute'}>
                                 <p className={'leading-[89%]  text-[2vw] text-white font-gilroy text-center uppercase px-[2vw] font-bold'}>Roadmap Q2 2022</p>
                             </div>
-                            {/*<div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[3.4vw] absolute inline-block'}>*/}
-                            {/*    <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>*/}
-                            {/*</div>*/}
+                            <div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[3vw] absolute inline-block'}>
+                                <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>
+                            </div>
+                            <div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[6.2vw] absolute inline-block'}>
+                                <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>
+                            </div>
+                            <div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[9.9vw] absolute inline-block'}>
+                                <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>
+                            </div>
+                            <div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[12.8vw] absolute inline-block'}>
+                                <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>
+                            </div>
+                            <div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[15.5vw] absolute inline-block'}>
+                                <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>
+                            </div>
+                            <div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[18.3vw] absolute inline-block'}>
+                                <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>
+                            </div>
+                            <div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[21.1vw] absolute inline-block'}>
+                                <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>
+                            </div>
+                            <div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[24.3vw] absolute inline-block'}>
+                                <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>
+                            </div>
+                            <div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[28.5vw] absolute inline-block'}>
+                                <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>
+                            </div>
+                            <div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[32.2vw] absolute inline-block'}>
+                                <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>
+                            </div>
+                            <div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[35.0vw] absolute inline-block'}>
+                                <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>
+                            </div>
                             {/*<div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[7vw] absolute inline-block'}>*/}
                             {/*    <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>*/}
                             {/*</div>*/}
@@ -1666,23 +1696,23 @@ const Home: NextPage = () => {
                             {/*<div className={'w-[2.5vw] h-[2.5vw] left-[-1vw] top-[12.8vw] absolute inline-block'}>*/}
                             {/*    <Image src={'/images/roadmap_complete.svg'} layout={'fill'}></Image>*/}
                             {/*</div>*/}
-                            <p className={'leading-[89%] mt-[1.5vw] text-[1.5vw] text-white font-gilroy font-normal'}>
+                            <p className={'leading-[89%] mt-[1.5vw] ml-[2vw] text-[1.5vw] text-white font-gilroy font-normal'}>
                                 {/*<span className={'text-[#F3ACFF] font-semibold'}>Website development</span><br/>*/}
                                 {/*<span className={'text-[#F3ACFF] font-semibold'}>contract deployment</span><br/><br/>*/}
                                 {/*<span className={'text-[#F3ACFF] font-semibold'}>Seed round</span><br/><br/>*/}
                                 {/*<span className={'text-[#F3ACFF] font-semibold'}>KOL management</span><br/><br/>*/}
                                 {/*<span className={'text-[#F3ACFF] font-semibold'}>Contract audit</span><br/><br/>*/}
-                                Team recruiting<br/><br/>
-                                Smart Contract Developmen<br/><br/>t
-                                Website development<br/><br/>
-                                contract deploy<br/><br/>
-                                P2E development<br/><br/>
-                                M2E development<br/><br/>
-                                Contract audited by interFi<br/><br/>
-                                KYC by Pinksale by Solidproof<br/><br/>
-                                Setup Fairlaunch on Pinksale<br/><br/>
-                                KOL management<br/><br/>
-                                10 Voice AMA<br/><br/>
+                                <span className={'text-[#F3ACFF] font-semibold'}>Team recruiting<br/><br/></span>
+                                <span className={'text-[#F3ACFF] font-semibold'}>Smart Contract Development<br/><br/></span>
+                                <span className={'text-[#F3ACFF] font-semibold'}>Website development<br/><br/></span>
+                                <span className={'text-[#F3ACFF] font-semibold'}>contract deploy<br/><br/></span>
+                                <span className={'text-[#F3ACFF] font-semibold'}>P2E development<br/><br/></span>
+                                <span className={'text-[#F3ACFF] font-semibold'}>M2E development<br/><br/></span>
+                                <span className={'text-[#F3ACFF] font-semibold'}>Contract audited by interFi<br/><br/></span>
+                                <span className={'text-[#F3ACFF] font-semibold'}>KYC by Pinksale by Solidproof<br/><br/></span>
+                                <span className={'text-[#F3ACFF] font-semibold'}>Setup Fairlaunch on Pinksale<br/><br/></span>
+                                <span className={'text-[#F3ACFF] font-semibold'}>KOL management<br/><br/></span>
+                                <span className={'text-[#F3ACFF] font-semibold'}>10 Voice AMA<br/><br/></span>
                                 Articles in <a className={'text-[#F3ACFF]'} href={'https://marketwatch.com'}>https://marketwatch.com</a><br/><br/>
                                 Articles in <a className={'text-[#F3ACFF]'} href={'https://finance.yahoo.com'}>https://finance.yahoo.com</a><br/><br/>
                                 Articles in <a className={'text-[#F3ACFF]'} href={'https://techbullion.com/'}></a> https://techbullion.com/<br/><br/>

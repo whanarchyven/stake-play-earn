@@ -12,28 +12,28 @@ const Stacker = () => {
     }
     const x1 ={
         title:'x1',
-        planetName:'X-3121',
+        planetName:'JUPITER',
         revaAPR:0.01,
         specify:'based',
         image:'/images/planets/1.png',
     }
     const x2 ={
         title:'x2',
-        planetName:'Y-8265',
+        planetName:'NEPTUN',
         revaAPR:0.04,
         specify:'premium',
         image:'/images/planets/2.png',
     }
     const x3 ={
         title:'x3',
-        planetName:'ZYX - 3512',
+        planetName:'MARS',
         revaAPR:0.12,
         specify:'perfect',
         image:'/images/planets/3.png',
     }
     const x4 ={
         title:'x4',
-        planetName:'UMY-1010',
+        planetName:'PLUTO',
         revaAPR:0.4,
         specify:'awesome',
         image:'/images/planets/4.png',
@@ -91,7 +91,7 @@ const Stacker = () => {
                 {stakeTab=='stake'?
                     <div className={'w-[90%]  mx-[5%]'}>
                         <div className={'w-full my-[1vw] text-in-shape'}>
-                            <p className={'text-white text-center block font-semibold text-[1vw] uppercase font-gilroy'}> Select your boost power</p>
+                            <p className={'text-white text-center block font-semibold text-[1vw] uppercase font-gilroy'}> Select your NFT</p>
                             {/*<p className={'text-white text-center block font-light text-[0.9vw] font-gilroy'}>Each poolavailble when buying different NFTs</p>*/}
                         </div>
                         <div className={'rounded-l-[1vw] rounded-b-[0vw] rounded-r-[1vw] w-full relative stacker-unactive-token h-[8.5vw]'}>
@@ -145,25 +145,25 @@ const Stacker = () => {
                                     </div>}
                             </div>
                             <div className={'w-full absolute top-[3vw] h-[5vw]'}>
-                                <div className={'w-[50%] inline-block align-top my-[3%] h-full'}>
+                                <div className={'w-[100%] inline-block align-top my-[3%] h-full'}>
                                     <p className={'text-white  font-semibold font-gilroy text-[1.5vw] text-center'}>{(currentToken.revaAPR*currentTokenQuantity).toFixed(2)} %</p>
                                     <p className={'text-white font-light text-[1vw] font-gilroy text-center'}>OF ALL INCOME</p>
                                 </div>
-                                <div className={'w-[50%] inline-block align-top my-[3%] h-full'}>
-                                    <div className={'w-[90%] mx-[5%] mt-[7%] h-[3vw] relative flex items-center justify-items-center justify-center rounded-[1vw]'}>
-                                        <div className={'z-[4] w-[99%] absolute flex h-[99%] rounded-[inherit] border-white border-solid border-[1px] m-[1%]'}></div>
-                                        <p className={'z-[999] align-middle  my-auto absolute flex text-[1.8vw] filter-none text-white font-gilroy font-bold'}><a className={'select-none align-middle pr-[3vw] text-[2vw] cursor-pointer'} onClick={()=>{if(currentTokenQuantity>1) {
-                                            setCurrentTokenQualiry(currentTokenQuantity - 1);checkTokenAmount();
-                                        }}}> - </a> {currentTokenQuantity} <a className={'select-none align-middle pl-[3vw] text-[2vw] cursor-pointer'} onClick={()=>{
-                                            setCurrentTokenQualiry(currentTokenQuantity +1);checkTokenAmount();
-                                        }}>+ </a></p>
+                                {/*<div className={'w-[50%] inline-block align-top my-[3%] h-full'}>*/}
+                                {/*    <div className={'w-[90%] mx-[5%] mt-[7%] h-[3vw] relative flex items-center justify-items-center justify-center rounded-[1vw]'}>*/}
+                                {/*        <div className={'z-[4] w-[99%] absolute flex h-[99%] rounded-[inherit] border-white border-solid border-[1px] m-[1%]'}></div>*/}
+                                {/*        <p className={'z-[999] align-middle  my-auto absolute flex text-[1.8vw] filter-none text-white font-gilroy font-bold'}><a className={'select-none align-middle pr-[3vw] text-[2vw] cursor-pointer'} onClick={()=>{if(currentTokenQuantity>1) {*/}
+                                {/*            setCurrentTokenQualiry(currentTokenQuantity - 1);checkTokenAmount();*/}
+                                {/*        }}}> - </a> {currentTokenQuantity} <a className={'select-none align-middle pl-[3vw] text-[2vw] cursor-pointer'} onClick={()=>{*/}
+                                {/*            setCurrentTokenQualiry(currentTokenQuantity +1);checkTokenAmount();*/}
+                                {/*        }}>+ </a></p>*/}
 
-                                        <div className={'relative inline-block flex justify-center justify-items-center blur-[1px] rounded-[inherit] h-full w-full'}>
-                                            <div className={'opacity-[0.4] z-[2] absolute w-full h-full rounded-[inherit] '}></div>
-                                            <div className={'z-[1] absolute w-full h-full border-[3px] rounded-[inherit] neon-border'}></div>
-                                        </div>
-                                    </div>
-                                </div>
+                                {/*        <div className={'relative inline-block flex justify-center justify-items-center blur-[1px] rounded-[inherit] h-full w-full'}>*/}
+                                {/*            <div className={'opacity-[0.4] z-[2] absolute w-full h-full rounded-[inherit] '}></div>*/}
+                                {/*            <div className={'z-[1] absolute w-full h-full border-[3px] rounded-[inherit] neon-border'}></div>*/}
+                                {/*        </div>*/}
+                                {/*    </div>*/}
+                                {/*</div>*/}
                                 {/*<div className={'w-[25%] inline-block align-top my-[3%] h-full'}>*/}
                                 {/*    <p className={'uppercase text-white mt-[7%] font-semibold font-gilroy text-[1.2vw] text-center'}>{currentToken.specify}</p>*/}
                                 {/*    <p className={'text-white text-[0.7vw] font-light font-gilroy text-center'}>POWER SHARE</p>*/}
