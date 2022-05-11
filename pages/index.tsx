@@ -20,6 +20,7 @@ import Swaper from "../components/Swaper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/css";
+import {MintButton} from "../components/MintButton";
 const Parallax = styled.div<{xPosition: string, yPosition:string}>`
   left: ${props => props.xPosition};
   top: ${props => props.yPosition};
@@ -1072,15 +1073,15 @@ const Home: NextPage = () => {
                         <div className={'justify-around top-[3vw] flex absolute bottom-0 w-full h-[80.3%]'}>
                             <div className={'w-[20%] h-full relative'}>
                                 <PlanetCardMarketplace category={'bronze'} quantity={200} cost={0.4} planetName={'Jupiter'} image={'/images/planets/1.png'} apyIncrease={0.01} ></PlanetCardMarketplace>
-                                <button className={'cursor-auto w-[75%] mx-[12.5%] mt-[4vw] h-[3.5vw] text-[1.8vw] bg-[#C4C4C4] text-white rounded-full font-gilroy font-bold'}>SOON</button>
+                                <MintButton category={"bronze"}/>
                             </div>
                             <div className={'w-[20%] h-full relative'}>
                                 <PlanetCardMarketplace category={'silver'} quantity={100} cost={0.8} planetName={'Neptun'} image={'/images/planets/2.png'} apyIncrease={0.04}></PlanetCardMarketplace>
-                                <button className={'cursor-auto w-[75%] mx-[12.5%] mt-[4vw] h-[3.5vw] text-[1.8vw] bg-[#C4C4C4] text-white rounded-full font-gilroy font-bold'}>SOON</button>
+                                <MintButton category={"bronze"}/>
                             </div>
                             <div className={'w-[20%] h-full relative'}>
                                 <PlanetCardMarketplace category={'gold'} quantity={50} cost={2.4} planetName={'Mars'} image={'/images/planets/3.png'} apyIncrease={0.12}></PlanetCardMarketplace>
-                                <button className={'cursor-auto w-[75%] mx-[12.5%] mt-[4vw] h-[3.5vw] text-[1.8vw] bg-[#C4C4C4] text-white rounded-full font-gilroy font-bold'}>SOON</button>
+                                <MintButton category={"bronze"}/>
                             </div>
                             <div className={'w-[20%] h-full relative'}>
                                 <PlanetCardMarketplace category={'platinum'} quantity={20} cost={10} planetName={'Pluto'} image={'/images/planets/4.png'} apyIncrease={0.4}></PlanetCardMarketplace>

@@ -1,26 +1,45 @@
 import React, {useEffect, useState} from "react";
+
 // @ts-ignore
-import {enableMM,isConnected} from '/components/mm.js'
+import {enableMM,isConnected} from "./contract-controller"
 
 export const ConnectMM = ()=>{
+
+
     const [connected,setConnected]=useState(false)
     const [loading,setLoading]=useState(false);
     const [mmAddr,setMMAddr]=useState("")
     const [error,setError]=useState(false)
     const mmAddrFormatted = mmAddr?`WALLET 0x...${mmAddr.slice(-5)}`:""
+
+
     const connectMM = ()=>{
         console.log('connect mm');
         setLoading(true)
-        enableMM(-1244812374,
-            (addr:string)=>{
-                setLoading(false);
-                setConnected(true);
-                setMMAddr(addr);
-            },
-            ()=>{
-                setLoading(false);
-                setError(true);
-            })}
+        enableMM((state:"loading"|"success"|"error",address)=>{
+            (state==="loading")&&setLoading(true);
+            if (state==="success"){
+                setLoading(false)
+                setConnected(true)
+                setMMAddr(address)
+            }
+            if (state==="error"){
+                setLoading(false)
+                setError(true)
+            }
+        })
+        // enableMM(-1244812374,
+        //     (addr:string)=>{
+        //         setLoading(false);
+        //         setConnected(true);
+        //         setMMAddr(addr);
+        //     },
+        //     ()=>{
+        //         setLoading(false);
+        //         setError(true);
+        //     })
+    }
+
     useEffect(()=>{
         if (isConnected()){
             console.log('isConnected()',isConnected())

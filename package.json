@@ -25,7 +25,8 @@
     "sqlite": "^4.1.1",
     "sqlite3": "^5.0.8",
     "styled-components": "^5.3.5",
-    "swiper": "^8.1.0"
+    "swiper": "^8.1.0",
+    "web3": "^1.7.3"
   },
   "devDependencies": {
     "@types/node": "17.0.23",
