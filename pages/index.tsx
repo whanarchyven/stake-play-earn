@@ -1077,15 +1077,15 @@ const Home: NextPage = () => {
                             </div>
                             <div className={'w-[20%] h-full relative'}>
                                 <PlanetCardMarketplace category={'silver'} quantity={100} cost={0.8} planetName={'Neptun'} image={'/images/planets/2.png'} apyIncrease={0.04}></PlanetCardMarketplace>
-                                <MintButton category={"bronze"}/>
+                                <MintButton category={"silver"}/>
                             </div>
                             <div className={'w-[20%] h-full relative'}>
                                 <PlanetCardMarketplace category={'gold'} quantity={50} cost={2.4} planetName={'Mars'} image={'/images/planets/3.png'} apyIncrease={0.12}></PlanetCardMarketplace>
-                                <MintButton category={"bronze"}/>
+                                <MintButton category={"gold"}/>
                             </div>
                             <div className={'w-[20%] h-full relative'}>
                                 <PlanetCardMarketplace category={'platinum'} quantity={20} cost={10} planetName={'Pluto'} image={'/images/planets/4.png'} apyIncrease={0.4}></PlanetCardMarketplace>
-                                <button className={'cursor-auto w-[75%] mx-[12.5%] mt-[4vw] h-[3.5vw] text-[1.8vw] bg-[#C4C4C4] text-white rounded-full font-gilroy font-bold'}>SOON</button>
+                                <MintButton category={"platinum"}/>
                             </div>
                         </div>
                     </div>
