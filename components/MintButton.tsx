@@ -18,6 +18,8 @@ export const MintButton = ({category}:{category:string}) => {
     }
 
 
+
+
     return <button
         onClick={onClick}
         className={'cursor-pointer w-[75%] mx-[12.5%] mt-[4vw] h-[3.5vw] text-[1.8vw] bg-[#C4C4C4] text-white rounded-full font-gilroy font-bold'}>
