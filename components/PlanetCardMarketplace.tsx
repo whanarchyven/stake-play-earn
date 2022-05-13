@@ -1,8 +1,10 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Image from "next/image";
 import NeonButton from "./NeonButton";
 import {motion} from "framer-motion";
 import PlanetBuyButton from "./PlanetBuyButton";
+//@ts-ignore
+import {balanceOfAddress, totalSupplyOfCategory} from "./contract-controller";
 
 interface propsTestComponent {
     planetName:string;
@@ -15,6 +17,12 @@ interface propsTestComponent {
 
 
 const PlanetCardMarketplace = ({planetName, image, apyIncrease,cost, quantity, category}: propsTestComponent) => {
+    const [supply,setSupply]=useState(-1)
+    useEffect(()=>{
+        // console.log(balanceOfAddress().then(console.log))
+        console.log(totalSupplyOfCategory(category).then(d=>setSupply(d)))
+        // setSupply(totalSupplyOfCategory(category))
+    },[])
     return (
         <div className={'bg-cover inline-flex justify-center justify-items-center w-full h-full bg-[url(../public/images/planets/bg.png)] rounded-[1vw]'}>
             <p className={'top-[2%] text-[2.4vw] absolute inline-block font-bold text-white uppercase font-gilroy'}>{planetName}</p>
@@ -39,7 +47,7 @@ const PlanetCardMarketplace = ({planetName, image, apyIncrease,cost, quantity, c
                     <div className={'w-full top-[1vw] h-[4vw] absolute'}>
                         <Image src={'/images/'+category+'.svg'} layout={'fill'}></Image>
                     </div>
-                    <p className={'w-full top-[5vw] absolute text-center text-white font-gilroy font-bold text-[1.7vw]'}>{quantity}/{quantity} NFT</p>
+                    <p className={'w-full top-[5vw] absolute text-center text-white font-gilroy font-bold text-[1.7vw]'}>{supply}/{quantity} NFT</p>
                     <div className={' justify-items-center items-center justify-align-center w-full h-[2.5vw] top-[7vw] rounded-full absolute inline-flex offer-gradient'}>
                         <h2 className={'animate-pulse w-full text-center text-white font-gilroy font-regular text-[1vw]'}>{apyIncrease}% of total income</h2>
                     </div>

@@ -1,22 +1,22 @@
 import React, {useEffect, useState} from "react";
 //@ts-ignore
-import {enableMM,mintNFT} from "./contract-controller";
+import {enableMM,mintNFT,totalSupplyOfCategory,balanceOfAddress,totalSupply} from "./contract-controller";
 
 export const MintButton = ({category}:{category:string}) => {
 
     const [mintState,setMintState]=useState<"loading"|"error"|"success"|"none">("none")
-    const [supply,setSupply]=useState();
+    // const [supply,setSupply]=useState(-1);
     const onClick = ()=>{
         if (mintState==="none"){
            enableMM((state)=>{
                 if (state==="success"){
-
                     return mintNFT(category,setMintState)
                 }
                 //setMintState(state)
             })
         }
     }
+
 
     return <button
         onClick={onClick}
