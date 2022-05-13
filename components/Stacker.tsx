@@ -1,14 +1,23 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import NeonButton from "./NeonButton";
 import Image from "next/image";
 import {ConnectMM} from "./ConnectMM";
+//@ts-ignore
+import {balanceOfAddress, totalSupplyOfCategory} from "./contract-controller";
+
 const Stacker = () => {
+
+    const [balance,setBalance]=useState([-1,-1,-1,-1])
+    useEffect(()=>{
+        balanceOfAddress().then(d=>setBalance(d))
+    },[])
     const x0 ={
         title:'x0',
         planetName:'None',
         revaAPR:0,
         specify:'without',
         image:'/images/planets/0.png',
+        id:0,
     }
     const x1 ={
         title:'x1',
@@ -16,6 +25,7 @@ const Stacker = () => {
         revaAPR:0.01,
         specify:'based',
         image:'/images/planets/1.png',
+        id:0,
     }
     const x2 ={
         title:'x2',
@@ -23,6 +33,7 @@ const Stacker = () => {
         revaAPR:0.04,
         specify:'premium',
         image:'/images/planets/2.png',
+        id:1,
     }
     const x3 ={
         title:'x3',
@@ -30,6 +41,7 @@ const Stacker = () => {
         revaAPR:0.12,
         specify:'perfect',
         image:'/images/planets/3.png',
+        id:2,
     }
     const x4 ={
         title:'x4',
@@ -37,6 +49,7 @@ const Stacker = () => {
         revaAPR:0.4,
         specify:'awesome',
         image:'/images/planets/4.png',
+        id:3
     }
 
 
@@ -94,7 +107,7 @@ const Stacker = () => {
                             <p className={'text-white text-center block font-semibold text-[1vw] uppercase font-gilroy'}> Select your NFT</p>
                             {/*<p className={'text-white text-center block font-light text-[0.9vw] font-gilroy'}>Each poolavailble when buying different NFTs</p>*/}
                         </div>
-                        <div className={'rounded-l-[1vw] rounded-b-[0vw] rounded-r-[1vw] w-full relative stacker-unactive-token h-[8.5vw]'}>
+                        <div className={'rounded-l-[1vw] rounded-b-[0vw] rounded-r-[1vw] w-full relative stacker-unactive-token h-[11vw]'}>
                             {/*<div className={'cursor-pointer align-top rounded-l-[1vw] rounded-b-[0vw] w-[20%] inline-block h-[3vw]'} onClick={()=>{setCurrenToken(x0)}}>*/}
                             {/*    {currentToken.title=='x0'?*/}
                             {/*        <div className={'w-full rounded-l-[1vw] rounded-b-[0vw] h-full flex stacker-active-token text-in-shape'}>*/}
@@ -146,6 +159,7 @@ const Stacker = () => {
                             </div>
                             <div className={'w-full absolute top-[3vw] h-[5vw]'}>
                                 <div className={'w-[100%] inline-block align-top my-[3%] h-full'}>
+                                    {balance[currentToken.id]>=0&&<p className={'text-white  font-semibold font-gilroy text-[1.5vw] text-center'}>You Have: {balance[currentToken.id]}</p>}
                                     <p className={'text-white  font-semibold font-gilroy text-[1.5vw] text-center'}>{(currentToken.revaAPR*currentTokenQuantity).toFixed(2)} %</p>
                                     <p className={'text-white font-light text-[1vw] font-gilroy text-center'}>OF ALL INCOME</p>
                                 </div>
