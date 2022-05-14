@@ -9,5 +9,13 @@ module.exports =
         loader: 'akamai',
         path: '',
       },
+        async rewrites() {
+            return [
+                {
+                    source: '/api/players',
+                    destination: 'http://127.0.0.1:5500',
+                },
+            ]
+        },
 
   reactStrictMode: true,}
