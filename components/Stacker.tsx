@@ -8,10 +8,11 @@ import {balanceOfAddress, totalSupplyOfCategory} from "./contract-controller";
 const Stacker = () => {
 
     const [balance,setBalance]=useState([-1,-1,-1,-1])
-    const loadBalance = ()=>  balanceOfAddress().then(d=>setBalance(d))
+    const loadBalance = ()=>  balanceOfAddress&&balanceOfAddress()?.then(d=>setBalance(d))
     useEffect(()=>{
         loadBalance();
-        setInterval(loadBalance,10000)
+        const int = setInterval(loadBalance,10000)
+        return ()=>clearInterval(int);
     },[])
     const x0 ={
         title:'x0',
