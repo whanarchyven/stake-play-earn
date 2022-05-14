@@ -5,6 +5,9 @@ import Dashboard from "./Dashboard";
 import Account from "./Account";
 import Swaper from "./Swaper";
 import {MintButton} from "./MintButton";
+import NeonButton from "./NeonButton";
+import {motion} from "framer-motion";
+import Image from "next/image";
 
 interface AccountContentItems{
     currentTab:string;
@@ -74,6 +77,97 @@ const AccountContent = ({currentTab}:AccountContentItems) => {
           </div>
         );
     }
+    else if(currentTab=='play'){
+        return (
+            <div className={'w-[100vw] h-[100vh] z-[999]'}>
+                <h2 className={'absolute top-[6vw] left-[45vw] inline-block text-white font-gilroy font-bold text-[5.1vw]'}>PLAY-2-EARN</h2>
+                <div className={'w-[75%] ml-[25%] relative z-[9999] h-[20vw]'}>
+                    <div className={'absolute w-[22.5vw] top-[13vw] bg-[#000] h-[26.5vw] rounded-[1vw] border-[#D43FEC] border-[5px] left-[9.3vw]'}>
+                        <video
+                            id="background-video"
+                            loop
+                            autoPlay
+                            muted
+                            style={{
+                                position: "relative",
+                                width: "inherit",
+                                height: "100%",
+                                left: 0,
+                                top: 0,
+                                backgroundSize:"cover",
+                                borderRadius:'1vw',
+                            }} className={'relative hidden sm:inline-block w-[100vw] h-[58vw]'}
+                        >
+                            <source src={'/images/metaverse/metaverse1.mp4'} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <a href={'https://1milliondao.com/game.html'}><motion.div initial="hidden" whileInView={'visible'} viewport={{once:true}} transition={{ type:"spring",duration: 1.5, delay:0.3, bounce:0.6 ,}} variants={{visible: { opacity: 1, y:0 }, hidden: { opacity: 0, y:100 }}} className={'cursor-pointer swiper-background w-[17.1vw] h-[4.5vw] left-[12.0vw] top-[38.0vw] rounded-full text-in-shape absolute inline-flex'}>
+                        <p className={'text-white font-gilroy font-semibold text-[1.7vw]'}>PLAY GAME</p>
+                    </motion.div></a>
+
+
+
+                    className={'w-[75%] ml-[25%] relative z-[9999] h-[20vw]'}
+                    <div className={'absolute w-[22.5vw] top-[13vw] bg-[#000] h-[26.5vw] rounded-[1vw] border-[#D43FEC] border-[5px] left-[38.0vw]'}>
+                        <video
+                            id="background-video"
+                            loop
+                            autoPlay
+                            muted
+                            style={{
+                                position: "relative",
+                                width: "inherit",
+                                height: "100%",
+                                left: 0,
+                                top: 0,
+                                backgroundSize:"cover",
+                                borderRadius:'1vw',
+                            }} className={'relative hidden sm:inline-block w-[100vw] h-[58vw]'}
+                        >
+                            <source src={'/images/metaverse/minigame.MP4'} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <a href={'https://1milliondao.com/alien.html'}><motion.div initial="hidden" whileInView={'visible'} viewport={{once:true}} transition={{ type:"spring",duration: 1.5, delay:0.3, bounce:0.6 ,}} variants={{visible: { opacity: 1, y:0 }, hidden: { opacity: 0, y:100 }}} className={'cursor-pointer swiper-background w-[17.1vw] h-[4.5vw] left-[41.0vw] top-[38.0vw] rounded-full text-in-shape absolute inline-flex'}>
+                        <p className={'text-white font-gilroy font-semibold text-[1.7vw]'}>PLAY MINIGAME</p>
+                    </motion.div></a>
+
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+        );
+    }
+
+    else if(currentTab=='move'){
+        return (
+            <div className={'w-[100vw] h-[100vh] z-[999]'}>
+                <div className={'absolute right-[5vw] w-[50vw] h-[50vw]'}>
+                    <Image src={'/images/account/move_phones.png'} layout={'fill'}></Image>
+                </div>
+                <div className={'w-[32vw] top-[6.5vw] h-[8vw] absolute left-[34vw]'}>
+                    <Image src={'/images/account/move_vector.svg'} layout={'fill'}></Image>
+                </div>
+                <p className={'absolute left-[34vw] top-[20vw] text-white text-[2.55vw] leading-[100%] font-josefin'}>
+                    Available <strong>only<br/>on mobile!</strong>
+                </p>
+                <h2 className={'absolute top-[6vw] left-[35vw] inline-block text-white font-gilroy font-bold text-[4vw]'}>MOVE-2-EARN</h2>
+                <div className={'w-[75%] ml-[25%] z-[9999] h-[20vw]'}>
+                </div>
+
+            </div>
+        );
+    }
+
+
     return (
         <div className={'w-full h-full'}>
 
