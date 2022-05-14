@@ -241,6 +241,48 @@ const Home: NextPage = () => {
                           </div>
                       }
                   </div>
+                  <div className={'w-full cursor-pointer h-[4vw] block relative '} onClick={()=>{setCurrentTab('play')}}>
+                      {currentTab=='play'?
+                          <div className={'w-full h-full'}>
+                              <div className={'account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
+                                  Play-2-Earn
+                              </div>
+                              <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
+                                  <Image src={'/images/account/play_active.svg'} layout={'fill'}></Image>
+                              </div>
+                          </div>
+                          :
+                          <div className={'w-full h-full'}>
+                              <div className={'w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
+                                  Play-2-Earn
+                              </div>
+                              <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
+                                  <Image src={'/images/account/play.svg'} layout={'fill'}></Image>
+                              </div>
+                          </div>
+                      }
+                  </div>
+                  <div className={'w-full cursor-pointer h-[4vw] block relative '} onClick={()=>{setCurrentTab('move')}}>
+                      {currentTab=='move'?
+                          <div className={'w-full h-full'}>
+                              <div className={'account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
+                                  Move-2-Earn
+                              </div>
+                              <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
+                                  <Image src={'/images/account/move_active.svg'} layout={'fill'}></Image>
+                              </div>
+                          </div>
+                          :
+                          <div className={'w-full h-full'}>
+                              <div className={'w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
+                                  Move-2-Earn
+                              </div>
+                              <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
+                                  <Image src={'/images/account/move.svg'} layout={'fill'}></Image>
+                              </div>
+                          </div>
+                      }
+                  </div>
                   <div className={'w-full h-[4vw] flex justify-around relative '} >
                       <a target={'_blank'} rel={'noreferrer'} href={'https://twitter.com/1MillionDAO'}><div className={'w-[3vw] cursor-pointer  relative inline-block h-[3vw]'}>
                           <Image src={'/images/account/twitter.svg'} layout={'fill'}></Image>
