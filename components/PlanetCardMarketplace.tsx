@@ -18,10 +18,11 @@ interface propsTestComponent {
 
 const PlanetCardMarketplace = ({planetName, image, apyIncrease,cost, quantity, category}: propsTestComponent) => {
     const [supply,setSupply]=useState(-1)
-    const loadSupply = ()=> totalSupplyOfCategory(category).then(d=>setSupply(d));
+    const loadSupply = ()=> totalSupplyOfCategory&&totalSupplyOfCategory(category)?.then(d=>setSupply(d));
     useEffect(()=>{
-        loadSupply()
-       setInterval(loadSupply,10000)
+        loadSupply();
+       const int = setInterval(loadSupply,10000)
+        return ()=>clearInterval(int)
     },[])
     return (
         <div className={'bg-cover inline-flex justify-center justify-items-center w-full h-full bg-[url(../public/images/planets/bg.png)] rounded-[1vw]'}>
