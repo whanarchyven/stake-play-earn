@@ -13,7 +13,7 @@ module.exports =
             return [
                 {
                     source: '/api/players',
-                    destination: 'http://127.0.0.1:5500',
+                    destination: 'https://1milliondao.com',
                 },
             ]
         },
