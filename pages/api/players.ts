@@ -19,7 +19,7 @@ export default async function getAllPlayer(req:NextApiRequest,res:NextApiRespons
     await NextCors(req, res, {
         // Options
         methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
-        origin: 'https://1milliondao.com',
+        origin: 'https://1milliondao.com/',
         optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
     });
 

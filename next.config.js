@@ -13,7 +13,7 @@ module.exports =
             return [
                 {
                     source: '/api/players',
-                    destination: 'https://1milliondao.com',
+                    destination: 'https://1milliondao.com/',
                 },
             ]
         },
