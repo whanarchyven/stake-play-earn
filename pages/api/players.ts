@@ -5,7 +5,6 @@ import {open} from "sqlite";
 import {MongoClient} from "mongodb";
 import * as mongoose from "mongoose";
 import NextCors from "nextjs-cors";
-import Cors from 'cors'
 import {mongo} from "mongoose";
 // async function openDb() {
 //     return open({
@@ -17,9 +16,10 @@ import {mongo} from "mongoose";
 
 export default async function getAllPlayer(req:NextApiRequest,res:NextApiResponse){
 
-    await Cors(req, res, {
+    await NextCors(req, res, {
         // Options
         methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
+        origin: '*',
         optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
     });
 
