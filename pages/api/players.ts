@@ -23,6 +23,12 @@ export default async function getAllPlayer(req:NextApiRequest,res:NextApiRespons
         optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
     });
 
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Access-Control-Allow-Methods", "*");
+    res.setHeader("Access-Control-Allow-Headers", "content-type");
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Headers', 'origin, content-type, accept');
+
     const MongoClient = require('mongodb').MongoClient;
 // Connect to the db
 
@@ -42,6 +48,7 @@ export default async function getAllPlayer(req:NextApiRequest,res:NextApiRespons
 
             const user= await users.find().sort({score:-1}).limit(10).toArray();
             // console.log(user);
+
             res.json(user);
         } catch (e){
             console.log(e)
