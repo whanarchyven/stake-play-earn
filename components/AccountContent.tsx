@@ -102,7 +102,7 @@ const AccountContent = ({currentTab}:AccountContentItems) => {
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <a href={'/game.html'}><motion.div initial="hidden" whileInView={'visible'} viewport={{once:true}} transition={{ type:"spring",duration: 1.5, delay:0.3, bounce:0.6 ,}} variants={{visible: { opacity: 1, y:0 }, hidden: { opacity: 0, y:100 }}} className={'cursor-pointer swiper-background w-[17.1vw] h-[4.5vw] left-[12.0vw] top-[38.0vw] rounded-full text-in-shape absolute inline-flex'}>
+                    <a href={'https://1milliondao.com/game.html'}><motion.div initial="hidden" whileInView={'visible'} viewport={{once:true}} transition={{ type:"spring",duration: 1.5, delay:0.3, bounce:0.6 ,}} variants={{visible: { opacity: 1, y:0 }, hidden: { opacity: 0, y:100 }}} className={'cursor-pointer swiper-background w-[17.1vw] h-[4.5vw] left-[12.0vw] top-[38.0vw] rounded-full text-in-shape absolute inline-flex'}>
                         <p className={'text-white font-gilroy font-semibold text-[1.7vw]'}>PLAY GAME</p>
                     </motion.div></a>
 
@@ -129,7 +129,7 @@ const AccountContent = ({currentTab}:AccountContentItems) => {
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <a href={'/alien.html'}><motion.div initial="hidden" whileInView={'visible'} viewport={{once:true}} transition={{ type:"spring",duration: 1.5, delay:0.3, bounce:0.6 ,}} variants={{visible: { opacity: 1, y:0 }, hidden: { opacity: 0, y:100 }}} className={'cursor-pointer swiper-background w-[17.1vw] h-[4.5vw] left-[41.0vw] top-[38.0vw] rounded-full text-in-shape absolute inline-flex'}>
+                    <a href={'https://1milliondao.com/alien.html'}><motion.div initial="hidden" whileInView={'visible'} viewport={{once:true}} transition={{ type:"spring",duration: 1.5, delay:0.3, bounce:0.6 ,}} variants={{visible: { opacity: 1, y:0 }, hidden: { opacity: 0, y:100 }}} className={'cursor-pointer swiper-background w-[17.1vw] h-[4.5vw] left-[41.0vw] top-[38.0vw] rounded-full text-in-shape absolute inline-flex'}>
                         <p className={'text-white font-gilroy font-semibold text-[1.7vw]'}>PLAY MINIGAME</p>
                     </motion.div></a>
 
