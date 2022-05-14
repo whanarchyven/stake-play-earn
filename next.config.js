@@ -9,13 +9,12 @@ module.exports =
         loader: 'akamai',
         path: '',
       },
-        // async rewrites() {
-        //     return [
-        //         {
-        //             source: '/api/players',
-        //             destination: 'https://1milliondao.com',
-        //         },
-        //     ]
-        // },
-
+        async rewrites() {
+            return [
+                {
+                    source: '/api/:path*',
+                    destination: 'https://1milliondao.com/:path*',
+                },
+            ]
+        },
   reactStrictMode: true,}
