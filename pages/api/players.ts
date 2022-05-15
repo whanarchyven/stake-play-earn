@@ -13,18 +13,31 @@ import {mongo} from "mongoose";
 //     });
 // }
 
+import Cors from 'cors'
+import initMiddleware from '../../components/init-middleware'
+
+const cors = initMiddleware(
+    // You can read more about the available options here: https://github.com/expressjs/cors#configuration-options
+    Cors({
+        // Only allow requests with GET, POST and OPTIONS
+        methods: ['GET', 'POST', 'OPTIONS'],
+    })
+)
 
 export default async function getAllPlayer(req:NextApiRequest,res:NextApiResponse){
 
-    await NextCors(req, res, {
-        // Options
-        methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
-        origin: '*',
-        optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-    });
+    // await NextCors(req, res, {
+    //     // Options
+    //     methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
+    //     origin: '*',
+    //     optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+    // });
+    //
+    // res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+    // res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 
-    res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-    res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    await cors(req, res);
+
 
     const MongoClient = require('mongodb').MongoClient;
 // Connect to the db
