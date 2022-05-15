@@ -114,86 +114,86 @@ const Home: NextPage = () => {
                       detectRetina: true,
                   }}
                   className={'w-full z-[1] h-full'} />
-              <div className={'flex-wrap h-[100vh] bg-cover bg-[url("../public/images/account/account_tabs.png")] top-0 fixed z-[9999] w-[25%] inline-flex justify-center justify-items-center align-top p-[3vw]'}>
-                  <div className={'w-full cursor-pointer h-[4vw] block relative '} onClick={()=>{setCurrentTab('dashboard')}}>
+              <div className={'flex-wrap w-[100%] bottom-0 sm:h-[100vh] bg-cover bg-[url("../public/images/account/account_tabs.png")] sm:top-0 fixed z-[9999] sm:w-[25%] inline-flex justify-center justify-items-center align-top sm:p-[3vw]'}>
+                  <div className={'w-[13%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '} onClick={()=>{setCurrentTab('dashboard')}}>
                       {currentTab=='dashboard'?
                           <div className={'w-full h-full'}>
-                              <div className={'account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
+                              <div className={'hidden account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
                                   Dashboard
                               </div>
-                              <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
+                              <div className={'w-full h-full sm:w-[3vw] sm:h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
                                   <Image src={'/images/account/dashboard_active.svg'} layout={'fill'}></Image>
                               </div>
                           </div>
                           :
                           <div className={'w-full h-full'}>
-                              <div className={'w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
+                              <div className={'hidden w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
                                   Dashboard
                               </div>
-                              <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
+                              <div className={'w-full h-full sm:w-[3vw] sm:h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
                                   <Image src={'/images/account/dashboard.svg'} layout={'fill'}></Image>
                               </div>
                           </div>
                       }
                   </div>
-                  <div className={'w-full cursor-pointer h-[4vw] block relative '} onClick={()=>{setCurrentTab('account')}}>
+                  <div className={'w-[13%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '} onClick={()=>{setCurrentTab('account')}}>
                       {currentTab=='account'?
                           <div className={'w-full h-full'}>
-                              <div className={'account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
+                              <div className={'hidden account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
                                   Account
                               </div>
-                              <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
+                              <div className={'w-full h-full sm:w-[3vw] sm:h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
                                   <Image src={'/images/account/account_active.svg'} layout={'fill'}></Image>
                               </div>
                           </div>
                           :
                           <div className={'w-full h-full'}>
-                              <div className={'w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
+                              <div className={'hidden w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
                                   Account
                               </div>
-                              <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
+                              <div className={'w-full h-full sm:w-[3vw] sm:h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
                                   <Image src={'/images/account/account.svg'} layout={'fill'}></Image>
                               </div>
                           </div>
                       }
                   </div>
-                  <div className={'w-full cursor-pointer h-[4vw] block relative '} onClick={()=>{setCurrentTab('calculator')}}>
+                  <div className={'w-[13%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '} onClick={()=>{setCurrentTab('calculator')}}>
                       {currentTab=='calculator'?
                           <div className={'w-full h-full'}>
-                              <div className={'account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
+                              <div className={'hidden account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
                                   Calculator
                               </div>
-                              <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
+                              <div className={'w-full h-full sm:w-[3vw] sm:h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
                                   <Image src={'/images/account/calculator_active.svg'} layout={'fill'}></Image>
                               </div>
                           </div>
                           :
                           <div className={'w-full h-full'}>
-                              <div className={'w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
+                              <div className={'hidden w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
                                   Calculator
                               </div>
-                              <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
+                              <div className={'w-full h-full sm:w-[3vw] sm:h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
                                   <Image src={'/images/account/calculator.svg'} layout={'fill'}></Image>
                               </div>
                           </div>
                       }
                   </div>
-                  <div className={'w-full cursor-pointer h-[4vw] block relative '} onClick={()=>{setCurrentTab('swap')}}>
+                  <div className={'w-[13%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '} onClick={()=>{setCurrentTab('swap')}}>
                       {currentTab=='swap'?
                           <div className={'w-full h-full'}>
-                              <div className={'account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
+                              <div className={'hidden account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
                                   Swap
                               </div>
-                              <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
+                              <div className={'w-full h-full sm:w-[3vw] sm:h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
                                   <Image src={'/images/account/swap_active.svg'} layout={'fill'}></Image>
                               </div>
                           </div>
                           :
                           <div className={'w-full h-full'}>
-                              <div className={'w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
+                              <div className={'hidden w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
                                   Swap
                               </div>
-                              <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
+                              <div className={'w-full h-full sm:w-[3vw] sm:h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
                                   <Image src={'/images/account/swap.svg'} layout={'fill'}></Image>
                               </div>
                           </div>
@@ -205,7 +205,7 @@ const Home: NextPage = () => {
                   {/*            <div className={'account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>*/}
                   {/*                Docs*/}
                   {/*            </div>*/}
-                  {/*            <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>*/}
+                  {/*            <div className={'w-full h-full sm:w-[3vw] sm:h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>*/}
                   {/*                <Image src={'/images/account/docs_active.svg'} layout={'fill'}></Image>*/}
                   {/*            </div>*/}
                   {/*        </div>*/}
@@ -214,83 +214,83 @@ const Home: NextPage = () => {
                   {/*            <div className={'w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>*/}
                   {/*                Docs*/}
                   {/*            </div>*/}
-                  {/*            <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>*/}
+                  {/*            <div className={'w-full h-full sm:w-[3vw] sm:h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>*/}
                   {/*                <Image src={'/images/account/docs.svg'} layout={'fill'}></Image>*/}
                   {/*            </div>*/}
                   {/*        </div>*/}
                   {/*    }*/}
                   {/*</div>*/}
-                  <div className={'w-full cursor-pointer h-[4vw] block relative '} onClick={()=>{setCurrentTab('marketplace')}}>
+                  <div className={'w-[13%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '} onClick={()=>{setCurrentTab('marketplace')}}>
                       {currentTab=='marketplace'?
                           <div className={'w-full h-full'}>
-                              <div className={'account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
+                              <div className={'hidden account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
                                   Marketplace
                               </div>
-                              <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
+                              <div className={'w-full h-full sm:w-[3vw] sm:h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
                                   <Image src={'/images/account/marketplace_active.svg'} layout={'fill'}></Image>
                               </div>
                           </div>
                           :
                           <div className={'w-full h-full'}>
-                              <div className={'w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
+                              <div className={'hidden w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
                                   Marketplace
                               </div>
-                              <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
+                              <div className={'w-full h-full sm:w-[3vw] sm:h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
                                   <Image src={'/images/account/marketplace.svg'} layout={'fill'}></Image>
                               </div>
                           </div>
                       }
                   </div>
-                  <div className={'w-full cursor-pointer h-[4vw] block relative '} onClick={()=>{setCurrentTab('play')}}>
+                  <div className={'w-[13%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '} onClick={()=>{setCurrentTab('play')}}>
                       {currentTab=='play'?
                           <div className={'w-full h-full'}>
-                              <div className={'account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
+                              <div className={'hidden account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
                                   Play-2-Earn
                               </div>
-                              <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
+                              <div className={'w-full h-full sm:w-[3vw] sm:h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
                                   <Image src={'/images/account/play_active.svg'} layout={'fill'}></Image>
                               </div>
                           </div>
                           :
                           <div className={'w-full h-full'}>
-                              <div className={'w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
+                              <div className={'hidden w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
                                   Play-2-Earn
                               </div>
-                              <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
+                              <div className={'w-full h-full sm:w-[3vw] sm:h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
                                   <Image src={'/images/account/play.svg'} layout={'fill'}></Image>
                               </div>
                           </div>
                       }
                   </div>
-                  <div className={'w-full cursor-pointer h-[4vw] block relative '} onClick={()=>{setCurrentTab('move')}}>
+                  <div className={'w-[13%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '} onClick={()=>{setCurrentTab('move')}}>
                       {currentTab=='move'?
                           <div className={'w-full h-full'}>
-                              <div className={'account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
+                              <div className={'hidden account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
                                   Move-2-Earn
                               </div>
-                              <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
+                              <div className={'w-full h-full sm:w-[3vw] sm:h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
                                   <Image src={'/images/account/move_active.svg'} layout={'fill'}></Image>
                               </div>
                           </div>
                           :
                           <div className={'w-full h-full'}>
-                              <div className={'w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute inline-block right-0 '}>
+                              <div className={'hidden w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
                                   Move-2-Earn
                               </div>
-                              <div className={'w-[3vw] h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
+                              <div className={'w-full h-full sm:w-[3vw] sm:h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
                                   <Image src={'/images/account/move.svg'} layout={'fill'}></Image>
                               </div>
                           </div>
                       }
                   </div>
-                  <div className={'w-full h-[4vw] flex justify-around relative '} >
-                      <a target={'_blank'} rel={'noreferrer'} href={'https://twitter.com/1MillionDAO'}><div className={'w-[3vw] cursor-pointer  relative inline-block h-[3vw]'}>
+                  <div className={'w-[15%] sm:w-full h-[4vw] flex justify-around relative '} >
+                      <a target={'_blank'} rel={'noreferrer'} href={'https://twitter.com/1MillionDAO'}><div className={'w-[7vh] h-full sm:w-[3vw] cursor-pointer  relative inline-block sm:h-[3vw]'}>
                           <Image src={'/images/account/twitter.svg'} layout={'fill'}></Image>
                       </div></a>
-                      <a target={'_blank'} rel={'noreferrer'} href={'https://discord.gg/3b3SbG4N'}><div className={'w-[3vw] cursor-pointer  relative inline-block h-[3vw]'}>
+                      <a target={'_blank'} rel={'noreferrer'} href={'https://discord.gg/3b3SbG4N'}><div className={'w-[7vh] h-full sm:w-[3vw] cursor-pointer  relative inline-block sm:h-[3vw]'}>
                           <Image src={'/images/account/discord.svg'} layout={'fill'}></Image>
                       </div></a>
-                      <a target={'_blank'} rel={'noreferrer'} href={'https://t.me/one_mln_dao'}><div className={'w-[3vw] cursor-pointer  relative inline-block h-[3vw]'}>
+                      <a target={'_blank'} rel={'noreferrer'} href={'https://t.me/one_mln_dao'}><div className={'w-[7vh] h-full sm:w-[3vw] cursor-pointer  relative inline-block sm:h-[3vw]'}>
                           <Image src={'/images/account/telegram.svg'} layout={'fill'}></Image>
                       </div></a>
                   </div>
@@ -298,14 +298,14 @@ const Home: NextPage = () => {
                       <a href={'/'} className={'text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium'}>← Main page</a>
                   </div>
               </div>
-              <div className={'h-full w-[100%] z-[999] overflow-y-visible inline-flex justify-center align-top p-[3vw]'}>
+              <div className={'h-[80vh] sm:h-full w-[100%] z-[999] overflow-y-visible inline-flex justify-center align-top p-[3vw]'}>
                   <AccountContent currentTab={currentTab}></AccountContent>
               </div>
           </div>
       </main>
 
       <footer className={styles.footer}>
-          <div className={'w-[98vw] h-[21.25vw] bg-[#000] relative block'}>
+          <div className={'w-[98vw] hidden h-[21.25vw] bg-[#000] relative sm:block'}>
               {/*<p className={'absolute inline-block top-[4.2vw] left-[12.6vw] text-[1.46vw] text-white font-gilroy font-semibold'}>THE WEB 3 PROJECT</p>*/}
               {/*<p className={'absolute inline-block top-[7.5vw] left-[12.6vw] w-[22vw] text-[1.07vw] text-white font-gilroy font-light'}>Accelerating the transition to a WEB3 world.*/}
               {/*    It is your data, and only yours.</p>*/}

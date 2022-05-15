@@ -1377,15 +1377,21 @@ const Home: NextPage = () => {
 
                 {/*TEASER*/}
 
-                {/*<div className={'w-[100vw] relative block h-[60.5vw] bg-[]]'} id={'teaser'}>*/}
-                {/*    <iframe className={'inline-block absolute left-[14vw] w-[72vw] h-[37vw] top-[7vw]'} width="949" height="534" src="https://www.youtube.com/embed/0Eo1c2grmq8"*/}
-                {/*            title="YouTube video player" frameBorder="0"*/}
-                {/*            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"*/}
-                {/*            allowFullScreen></iframe>*/}
-                {/*    <div className={'justify-items-center justify-center items-center absolute inline-flex left-[39.67vw] top-[47.7vw] w-[20.8vw] h-[5.5vw] rounded-full bg-purple'}>*/}
-                {/*        <h2 className={'text-white text-center uppercase text-[1.7vw] font-gilroy font-bold'}>BUY $OMD</h2>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
+                <div className={'w-[100vw] relative block h-[60.5vw] bg-[]]'} id={'teaser'}>
+                    {/*<iframe className={'inline-block absolute left-[14vw] w-[72vw] h-[37vw] top-[7vw]'} width="949" height="534" src="https://www.youtube.com/watch?v=8tX5XfXJ6zo"*/}
+                    {/*        title="YouTube video player" frameBorder="0"*/}
+                    {/*        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"*/}
+                    {/*        allowFullScreen></iframe>*/}
+
+                    <iframe className={'inline-block absolute left-[14vw] w-[72vw] h-[37vw] top-[7vw]'} width="949" height="534" src="https://www.youtube.com/embed/8tX5XfXJ6zo"
+                            title="YouTube video player" frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen></iframe>
+
+                    <div className={'justify-items-center justify-center items-center absolute inline-flex left-[39.67vw] top-[47.7vw] w-[20.8vw] h-[5.5vw] rounded-full bg-purple'}>
+                        <h2 className={'text-white text-center uppercase text-[1.7vw] font-gilroy font-bold'}>BUY $OMD</h2>
+                    </div>
+                </div>
 
 
                 {/*SWIPER*/}
