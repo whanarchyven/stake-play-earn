@@ -188,9 +188,9 @@ const Home: NextPage = () => {
                     <div className={'z-[9999] justify-items-center justify-center items-center fixed inline-flex left-[71.2vw] text-[1vw] top-[1.2vw] w-[12.5vw] h-[3.4vw] rounded-full bg-purple'}>
                         <ConnectMM/>
                     </div>
-                    {/*<div className={'font-bold text-white z-[9999] justify-items-center justify-center items-center fixed font-gilroy text-[1.3vw] inline-flex right-[5vw] top-[1.2vw] w-[10vw] h-[3.4vw] rounded-full bg-blue'}>*/}
-                    {/*    <a href={'/account'}>APP</a>*/}
-                    {/*</div>*/}
+                    <div className={'font-bold text-white z-[9999] justify-items-center justify-center items-center fixed font-gilroy text-[1.3vw] inline-flex right-[5vw] top-[1.2vw] w-[10vw] h-[3.4vw] rounded-full bg-blue'}>
+                        <a href={'/account'}>APP</a>
+                    </div>
                 </motion.div>
 
 
@@ -405,6 +405,28 @@ const Home: NextPage = () => {
                         <Image src={'/images/telegram.svg'} layout={'fill'}></Image>
                     </div></a>
                 </div>
+
+
+
+                {/*TEASER*/}
+
+                <div className={'w-[100vw] relative block h-[60.5vw] bg-[]]'} id={'teaser'}>
+                    {/*<iframe className={'inline-block absolute left-[14vw] w-[72vw] h-[37vw] top-[7vw]'} width="949" height="534" src="https://www.youtube.com/watch?v=8tX5XfXJ6zo"*/}
+                    {/*        title="YouTube video player" frameBorder="0"*/}
+                    {/*        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"*/}
+                    {/*        allowFullScreen></iframe>*/}
+
+                    <iframe className={'inline-block absolute left-[14vw] w-[72vw] h-[37vw] top-[7vw]'} width="949" height="534" src="https://www.youtube.com/embed/8tX5XfXJ6zo"
+                            title="YouTube video player" frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen></iframe>
+
+                    <div className={'justify-items-center justify-center items-center absolute inline-flex left-[39.67vw] top-[47.7vw] w-[20.8vw] h-[5.5vw] rounded-full bg-purple'}>
+                        <h2 className={'text-white text-center uppercase text-[1.7vw] font-gilroy font-bold'}>BUY $OMD</h2>
+                    </div>
+                </div>
+
+
 
                 {/*STACKING*/}
 
@@ -1375,23 +1397,7 @@ const Home: NextPage = () => {
                 </div>
 
 
-                {/*TEASER*/}
 
-                <div className={'w-[100vw] relative block h-[60.5vw] bg-[]]'} id={'teaser'}>
-                    {/*<iframe className={'inline-block absolute left-[14vw] w-[72vw] h-[37vw] top-[7vw]'} width="949" height="534" src="https://www.youtube.com/watch?v=8tX5XfXJ6zo"*/}
-                    {/*        title="YouTube video player" frameBorder="0"*/}
-                    {/*        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"*/}
-                    {/*        allowFullScreen></iframe>*/}
-
-                    <iframe className={'inline-block absolute left-[14vw] w-[72vw] h-[37vw] top-[7vw]'} width="949" height="534" src="https://www.youtube.com/embed/8tX5XfXJ6zo"
-                            title="YouTube video player" frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen></iframe>
-
-                    <div className={'justify-items-center justify-center items-center absolute inline-flex left-[39.67vw] top-[47.7vw] w-[20.8vw] h-[5.5vw] rounded-full bg-purple'}>
-                        <h2 className={'text-white text-center uppercase text-[1.7vw] font-gilroy font-bold'}>BUY $OMD</h2>
-                    </div>
-                </div>
 
 
                 {/*SWIPER*/}

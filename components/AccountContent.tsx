@@ -82,7 +82,7 @@ const AccountContent = ({currentTab}:AccountContentItems) => {
             <div className={'w-[100vw] h-[75vh] sm:h-[100vh] z-[999]'}>
                 <h2 className={'absolute top-[9vh] left-[15vw] text-[5vh] sm:top-[6vw] sm:left-[45vw] inline-block text-white font-gilroy font-bold sm:text-[5.1vw]'}>PLAY-2-EARN</h2>
                 <div className={'w-full sm:w-[75%] h-[20vh] sm:ml-[25%] relative z-[9999] sm:h-[20vw]'}>
-                    <div className={'absolute w-[50vw] h-[50vw] top-[17vh] left-[20vw] sm:w-[22.5vw] sm:top-[13vw] bg-[#000] sm:h-[26.5vw] rounded-[1vw] border-[#D43FEC] border-[5px] sm:left-[9.3vw]'}>
+                    <div className={'absolute hidden sm:inline-block w-[50vw] h-[50vw] top-[17vh] left-[20vw] sm:w-[22.5vw] sm:top-[13vw] bg-[#000] sm:h-[26.5vw] rounded-[1vw] border-[#D43FEC] border-[5px] sm:left-[9.3vw]'}>
                         <video
                             id="background-video"
                             loop
@@ -102,11 +102,19 @@ const AccountContent = ({currentTab}:AccountContentItems) => {
                             Your browser does not support the video tag.
                         </video>
                     </div>
+
+
+                    <div className={'absolute sm:hidden inline-block w-[50vw] h-[50vw] top-[17vh] left-[20vw] sm:w-[22.5vw] sm:top-[13vw] bg-[url("../public/images/metaverse/game_preview.jpg")] bg-cover sm:h-[26.5vw] rounded-[1vw] border-[#D43FEC] border-[5px] sm:left-[9.3vw]'}>
+
+                    </div>
+
+
+
                     <a href={'https://1milliondao.com/game.html'}><motion.div initial="hidden" whileInView={'visible'} viewport={{once:true}} transition={{ type:"spring",duration: 1.5, delay:0.3, bounce:0.6 ,}} variants={{visible: { opacity: 1, y:0 }, hidden: { opacity: 0, y:100 }}} className={'cursor-pointer swiper-background w-[30vw] h-[4vh] left-[30vw] top-[38vh] sm:w-[17.1vw] sm:h-[4.5vw] sm:left-[12.0vw] sm:top-[38.0vw] rounded-full text-in-shape absolute inline-flex'}>
                         <p className={'text-white font-gilroy font-semibold text-[1.7vh] sm:text-[1.7vw]'}>PLAY GAME</p>
                     </motion.div></a>
 
-                    <div className={'absolute w-[50vw] h-[50vw] top-[50vh] left-[20vw] sm:w-[22.5vw] sm:top-[13vw] bg-[#000] sm:h-[26.5vw] sm:rounded-[1vw] border-[#D43FEC] border-[5px] sm:left-[38.0vw]'}>
+                    <div className={'absolute hidden sm:inline-block w-[50vw] h-[50vw] top-[50vh] left-[20vw] sm:w-[22.5vw] sm:top-[13vw] bg-[#000] sm:h-[26.5vw] sm:rounded-[1vw] border-[#D43FEC] border-[5px] sm:left-[38.0vw]'}>
                         <video
                             id="background-video"
                             loop
@@ -126,6 +134,14 @@ const AccountContent = ({currentTab}:AccountContentItems) => {
                             Your browser does not support the video tag.
                         </video>
                     </div>
+
+
+                    <div className={'absolute sm:hidden inline-block w-[50vw] h-[50vw] top-[50vh] left-[20vw] sm:w-[22.5vw] sm:top-[13vw] bg-[url("../public/images/metaverse/minigame_preview.jpg")] bg-cover sm:h-[26.5vw] sm:rounded-[1vw] border-[#D43FEC] border-[5px] sm:left-[38.0vw]'}>
+
+                    </div>
+
+
+
                     <a href={'https://1milliondao.com/alien.html'}><motion.div initial="hidden" whileInView={'visible'} viewport={{once:true}} transition={{ type:"spring",duration: 1.5, delay:0.3, bounce:0.6 ,}} variants={{visible: { opacity: 1, y:0 }, hidden: { opacity: 0, y:100 }}} className={'cursor-pointer swiper-background w-[30vw] h-[4vh] left-[30vw] top-[71vh] sm:w-[17.1vw] sm:h-[4.5vw] sm:left-[41.0vw] sm:top-[38.0vw] rounded-full text-in-shape absolute inline-flex'}>
                         <p className={'text-white font-gilroy font-semibold text-[1.7vh] sm:text-[1.7vw]'}>PLAY MINIGAME</p>
                     </motion.div></a>
@@ -154,7 +170,7 @@ const AccountContent = ({currentTab}:AccountContentItems) => {
                     <Image src={'/images/account/move_vector.svg'} layout={'fill'}></Image>
                 </div>
                 <p className={'absolute left-[10vw] top-[12vh] text-[2.55vh] sm:left-[34vw] sm:top-[20vw] text-white sm:text-[2.55vw] leading-[100%] font-josefin'}>
-                    Available <strong>only<br/>on mobile!</strong>
+                    Available <strong>soon!</strong>
                 </p>
                 <h2 className={'absolute text-[4vh] left-[10vw] top-[2vh] sm:top-[6vw] sm:left-[35vw] inline-block text-white font-gilroy font-bold sm:text-[4vw]'}>MOVE-2-EARN</h2>
                 <div className={'w-[75%] ml-[25%] z-[9999] h-[20vw]'}>
