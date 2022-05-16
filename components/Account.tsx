@@ -53,12 +53,12 @@ const Account = () => {
             </div>
             <div className={'stacker-unactive-token justify-between flex-wrap w-full sm:w-[80%] mt-[4vw] h-[28vh] sm:h-[28vw] rounded-[1vw] px-[2vw] flex'}>
                 <div className={'items-center align-middle w-[75%] mt-[3%] h-[32%] flex flex-wrap justify-center'}>
-                    <p className={'h-fit w-full text-left mt-[1.7vw] text-[1.8 vh] sm:text-[1.3vw] font-light font-gilroy text-white'}>Current $TOKEN Price</p>
-                    <p className={'h-fit w-full text-left mt-[1.7vw] text-[1.8 vh] sm:text-[1.3vw] font-light font-gilroy text-white'}>Next 1 hour Reward Amount</p>
-                    <p className={'h-fit w-full text-left mt-[1.7vw] text-[1.8 vh] sm:text-[1.3vw] font-light font-gilroy text-white'}>Next 1 hour Reward Amount USD</p>
-                    <p className={'h-fit w-full text-left mt-[1.7vw] text-[1.8 vh] sm:text-[1.3vw] font-light font-gilroy text-white'}>Next 1 hour Reward Yield</p>
-                    <p className={'h-fit w-full text-left mt-[1.7vw] text-[1.8 vh] sm:text-[1.3vw] font-light font-gilroy text-white'}>ROI (30-Day-Rate)</p>
-                    <p className={'h-fit w-full text-left mt-[1.7vw] text-[1.8 vh] sm:text-[1.3vw] font-light font-gilroy text-white'}>ROI (30-Day-Rate) USD</p>
+                    <p className={'h-fit w-full text-left mt-[1.7vw] text-[1.8vh] sm:text-[1.3vw] font-light font-gilroy text-white'}>Current $TOKEN Price</p>
+                    <p className={'h-fit w-full text-left mt-[1.7vw] text-[1.8vh] sm:text-[1.3vw] font-light font-gilroy text-white'}>Next 1 hour Reward Amount</p>
+                    <p className={'h-fit w-full text-left mt-[1.7vw] text-[1.8vh] sm:text-[1.3vw] font-light font-gilroy text-white'}>Next 1 hour Reward Amount USD</p>
+                    <p className={'h-fit w-full text-left mt-[1.7vw] text-[1.8vh] sm:text-[1.3vw] font-light font-gilroy text-white'}>Next 1 hour Reward Yield</p>
+                    <p className={'h-fit w-full text-left mt-[1.7vw] text-[1.8vh] sm:text-[1.3vw] font-light font-gilroy text-white'}>ROI (30-Day-Rate)</p>
+                    <p className={'h-fit w-full text-left mt-[1.7vw] text-[1.8vh] sm:text-[1.3vw] font-light font-gilroy text-white'}>ROI (30-Day-Rate) USD</p>
                 </div>
                 <div className={'items-center align-middle w-[20%] mt-[3%] h-[32%] flex flex-wrap justify-center'}>
                     <p className={'h-fit w-full text-right mt-[1.7vw] text-[1.8vh] sm:text-[1.3vw] font-medium font-gilroy text-white'}>-</p>
