@@ -534,7 +534,7 @@ const Home: NextPage = () => {
 
                 {/*CALCULATOR*/}
 
-                <motion.div  className={'w-[100vw] relative block h-[57vw] bg-cover bg-[]'} id={'calculator'}>
+                <motion.div  className={'w-[100vw] h-[75vh] relative block sm:h-[57vw] bg-cover bg-[]'} id={'calculator'}>
                     <motion.div initial="hidden"
                                 whileInView={'visible'}
                                 viewport={{once:true}}
@@ -972,7 +972,7 @@ const Home: NextPage = () => {
 
                 {/*NFT FOUNDERS COLLECTION*/}
 
-                <div className={'w-[100vw] relative block  h-[40vw] bg-cover bg-[]'} id={'dxcds'}>
+                <div className={'w-[100vw] relative block h-[45vw] sm:h-[40vw] bg-cover bg-[]'} id={'dxcds'}>
                     <motion.h2 initial="hidden"
                                whileInView={'visible'}
                                viewport={{once:true}}
@@ -1087,27 +1087,27 @@ const Home: NextPage = () => {
                 {/*MARKETPLACE*/}
 
 
-                <div className={'w-[100vw] relative block  h-[71.6vw] bg-cover bg-[]'} id={'marketplace'}>
-                    <h2 className={'absolute top-[6vw] w-full text-center inline-block text-white font-gilroy uppercase font-bold text-[5.1vw]'}>FOUNDERS LIMITED COLLECTION</h2>
-                    <p className={'absolute top-[15vw] left-[32vw] inline-block text-white font-gilroy font-medium uppercase text-[2vw]'}></p>
-                    <div className={'left-[12vw] top-[20vw] w-[79vw] h-[37vw] absolute inline-block] neon-border rounded-[2vw] border-4 '}></div>
-                    <div className={'left-[12vw] top-[20vw] w-[79vw] h-[30vw] absolute inline-block] '}>
-                        <div className={'justify-around top-[3vw] flex absolute bottom-0 w-full h-[80.3%]'}>
-                            <div className={'w-[20%] h-full relative'}>
+                <div className={'w-[100vw] relative block h-[80vh] sm:h-[71.6vw] bg-cover bg-[]'} id={'marketplace'}>
+                    <h2 className={'absolute top-[0vh] sm:top-[6vw] w-full text-center inline-block text-white font-gilroy uppercase font-bold text-[5.1vw]'}>FOUNDERS LIMITED COLLECTION</h2>
+                    {/*<p className={'top-[0vh] left-[10vw] text-[1.7vh] absolute sm:top-[9vw] sm:left-[24vw] inline-block text-white font-gilroy font-medium uppercase sm:text-[2vw]'}>NFT Boosters for <strong>$BNB</strong> Rewards pool</p>*/}
+                    <div className={'left-[10vw] top-[5vh] w-[80vw] h-[70vh] rounded-[2vh] sm:left-[24vw] sm:top-[15vw] sm:w-[70vw] sm:h-[36vw] absolute inline-block] neon-border sm:rounded-[2vw] border-4 '}></div>
+                    <div className={'left-[10vw] top-[5vh] w-[80vw] h-[65vh] sm:left-[24vw] sm:top-[15vw] sm:w-[65vw] sm:h-[30vw] absolute inline-block] '}>
+                        <div className={'flex-wrap justify-around top-[3vw] flex absolute bottom-0 w-full h-[80%]'}>
+                            <div className={'w-[40%] h-[50%] sm:w-[23%] sm:h-[95%] relative'}>
                                 <PlanetCardMarketplace category={'bronze'} quantity={200} cost={0.4} planetName={'Jupiter'} image={'/images/planets/1.png'} apyIncrease={0.01} ></PlanetCardMarketplace>
-                                <MintButton category={"bronze"}/>
+                                <MintButton category={'bronze'} />
                             </div>
-                            <div className={'w-[20%] h-full relative'}>
+                            <div className={'w-[40%] h-[50%] sm:w-[23%] sm:h-[95%] relative'}>
                                 <PlanetCardMarketplace category={'silver'} quantity={100} cost={0.8} planetName={'Neptun'} image={'/images/planets/2.png'} apyIncrease={0.04}></PlanetCardMarketplace>
-                                <MintButton category={"silver"}/>
+                                <MintButton category={'silver'} />
                             </div>
-                            <div className={'w-[20%] h-full relative'}>
+                            <div className={'w-[40%] h-[50%] mt-[6vh] sm:mt-0 sm:w-[23%] sm:h-[95%] relative'}>
                                 <PlanetCardMarketplace category={'gold'} quantity={50} cost={2.4} planetName={'Mars'} image={'/images/planets/3.png'} apyIncrease={0.12}></PlanetCardMarketplace>
-                                <MintButton category={"gold"}/>
+                                <MintButton category={'gold'} />
                             </div>
-                            <div className={'w-[20%] h-full relative'}>
+                            <div className={'w-[40%] h-[50%] mt-[6vh] sm:mt-0 sm:w-[23%] sm:h-[95%] relative'}>
                                 <PlanetCardMarketplace category={'platinum'} quantity={20} cost={10} planetName={'Pluto'} image={'/images/planets/4.png'} apyIncrease={0.4}></PlanetCardMarketplace>
-                                <MintButton category={"platinum"}/>
+                                <MintButton category={'platinum'} />
                             </div>
                         </div>
                     </div>
