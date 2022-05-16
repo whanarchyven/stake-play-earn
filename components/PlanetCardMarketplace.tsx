@@ -17,7 +17,7 @@ interface propsTestComponent {
 
 
 const PlanetCardMarketplace = ({planetName, image, apyIncrease,cost, quantity, category}: propsTestComponent) => {
-    const [supply,setSupply]=useState(-1)
+    const [supply,setSupply]=useState(0)
     const loadSupply = ()=> totalSupplyOfCategory&&totalSupplyOfCategory(category)?.then(d=>setSupply(d));
     useEffect(()=>{
         loadSupply();
