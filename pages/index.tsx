@@ -287,6 +287,17 @@ const Home: NextPage = () => {
                     <div className={' justify-items-center items-center justify-align-center w-[22vw] h-[5.5vw] left-[38vw] top-[9vw] rounded-full absolute inline-flex offer-gradient'}>
                         <h2 className={'animate-pulse w-full text-center text-white font-gilroy font-extrabold text-[2.2vw]'}>1 041 035% APY</h2>
                     </div>
+                    <a href={'https://1milliondao.com/alien'}><motion.div className={'cursor-pointer absolute inline-block left-[64vw] top-[13.4vw] w-[16.4vw] h-[3.6vw] text-[1.7vw] rounded-[20px]'} initial="hidden"
+                                                       whileInView={'visible'}
+
+                                                       viewport={{once:true}}
+                                                       transition={{ type:"spring",duration: 1.4, bounce:0.6 , delay:1.4,}}
+                                                       variants={{
+                                                           visible: { opacity: 1, y:0 },
+                                                           hidden: { opacity: 0, y: -50 }
+                                                       }}>
+                        <NeonButton title={'Play minigame'}></NeonButton>
+                    </motion.div></a>
                     <p className={' animate-pulse text-left text-white font-gilroy font-normal text-[1.2vw] w-[22vw] h-[5.5vw] left-[41vw] top-[15vw] absolute inline-flex '}>
                         rebase function is each block
                     </p>

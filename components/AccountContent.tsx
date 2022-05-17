@@ -25,7 +25,7 @@ const AccountContent = ({currentTab}:AccountContentItems) => {
         return (
             <div className={'w-full relative z-[999] h-[76vh] sm:h-[63vw]'}>
                 <h2 className={'top-[-4vh] left-[10vw] text-[3.5vh] absolute sm:top-[1vw] sm:left-[24vw] inline-block text-white font-gilroy font-bold sm:text-[5.1vw]'}>NFT MARKETPLACE</h2>
-                <p className={'top-[0vh] left-[10vw] text-[1.7vh] absolute sm:top-[9vw] sm:left-[24vw] inline-block text-white font-gilroy font-medium uppercase sm:text-[2vw]'}>NFT Boosters for <strong>$BNB</strong> Rewards pool</p>
+                <p className={'top-[0vh] left-[10vw] text-[1.7vh] absolute sm:top-[9vw] sm:left-[24vw] inline-block text-white font-gilroy font-medium uppercase sm:text-[2vw]'}>NFTs for 1MDAo Fund profit</p>
                 <div className={'left-[10vw] top-[5vh] w-[80vw] h-[70vh] rounded-[2vh] sm:left-[24vw] sm:top-[15vw] sm:w-[70vw] sm:h-[36vw] absolute inline-block] neon-border sm:rounded-[2vw] border-4 '}></div>
                 <div className={'left-[10vw] top-[5vh] w-[80vw] h-[65vh] sm:left-[24vw] sm:top-[15vw] sm:w-[65vw] sm:h-[30vw] absolute inline-block] '}>
                     <div className={'flex-wrap justify-around top-[3vw] flex absolute bottom-0 w-full h-[80%]'}>

@@ -283,6 +283,27 @@ const Home: NextPage = () => {
                           </div>
                       }
                   </div>
+                  <a href={'https://admin-176.gitbook.io/1-million-dao/about-1-million-dao/what-is-a-rebase-function'} className={'w-[13%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '}>
+                      {currentTab=='docs'?
+                          <div className={'w-full h-full'}>
+                              <div className={'hidden account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
+                                  Docs
+                              </div>
+                              <div className={'w-full h-full sm:w-[3vw] sm:h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
+                                  <Image src={'/images/account/docs_active.svg'} layout={'fill'}></Image>
+                              </div>
+                          </div>
+                          :
+                          <div className={'w-full h-full'}>
+                              <div className={'hidden w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
+                                  Docs
+                              </div>
+                              <div className={'w-full h-full sm:w-[3vw] sm:h-[3vw] mx-[0.5vw] my-[0.5vw] absolute inline-block left-0'}>
+                                  <Image src={'/images/account/docs.svg'} layout={'fill'}></Image>
+                              </div>
+                          </div>
+                      }
+                  </a>
                   <div className={'w-[15%] sm:w-full h-[4vw] flex justify-around relative '} >
                       <a target={'_blank'} rel={'noreferrer'} href={'https://twitter.com/1MillionDAO'}><div className={'w-[7vh] h-full sm:w-[3vw] cursor-pointer  relative inline-block sm:h-[3vw]'}>
                           <Image src={'/images/account/twitter.svg'} layout={'fill'}></Image>
