@@ -115,7 +115,7 @@ const Home: NextPage = () => {
                   }}
                   className={'w-full z-[1] h-full'} />
               <div className={'flex-wrap w-[100%] bottom-0 sm:h-[100vh] bg-cover bg-[url("../public/images/account/account_tabs.png")] sm:top-0 fixed z-[9999] sm:w-[25%] inline-flex justify-center justify-items-center align-top sm:p-[3vw]'}>
-                  <div className={'w-[13%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '} onClick={()=>{setCurrentTab('dashboard')}}>
+                  <div className={'w-[10%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '} onClick={()=>{setCurrentTab('dashboard')}}>
                       {currentTab=='dashboard'?
                           <div className={'w-full h-full'}>
                               <div className={'hidden account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
@@ -136,7 +136,7 @@ const Home: NextPage = () => {
                           </div>
                       }
                   </div>
-                  <div className={'w-[13%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '} onClick={()=>{setCurrentTab('account')}}>
+                  <div className={'w-[10%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '} onClick={()=>{setCurrentTab('account')}}>
                       {currentTab=='account'?
                           <div className={'w-full h-full'}>
                               <div className={'hidden account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
@@ -157,7 +157,7 @@ const Home: NextPage = () => {
                           </div>
                       }
                   </div>
-                  <div className={'w-[13%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '} onClick={()=>{setCurrentTab('calculator')}}>
+                  <div className={'w-[10%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '} onClick={()=>{setCurrentTab('calculator')}}>
                       {currentTab=='calculator'?
                           <div className={'w-full h-full'}>
                               <div className={'hidden account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
@@ -178,7 +178,7 @@ const Home: NextPage = () => {
                           </div>
                       }
                   </div>
-                  <div className={'w-[13%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '} onClick={()=>{setCurrentTab('swap')}}>
+                  <div className={'w-[10%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '} onClick={()=>{setCurrentTab('swap')}}>
                       {currentTab=='swap'?
                           <div className={'w-full h-full'}>
                               <div className={'hidden account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
@@ -220,7 +220,7 @@ const Home: NextPage = () => {
                   {/*        </div>*/}
                   {/*    }*/}
                   {/*</div>*/}
-                  <div className={'w-[13%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '} onClick={()=>{setCurrentTab('marketplace')}}>
+                  <div className={'w-[10%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '} onClick={()=>{setCurrentTab('marketplace')}}>
                       {currentTab=='marketplace'?
                           <div className={'w-full h-full'}>
                               <div className={'hidden account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
@@ -241,7 +241,7 @@ const Home: NextPage = () => {
                           </div>
                       }
                   </div>
-                  <div className={'w-[13%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '} onClick={()=>{setCurrentTab('play')}}>
+                  <div className={'w-[10%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '} onClick={()=>{setCurrentTab('play')}}>
                       {currentTab=='play'?
                           <div className={'w-full h-full'}>
                               <div className={'hidden account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
@@ -262,7 +262,7 @@ const Home: NextPage = () => {
                           </div>
                       }
                   </div>
-                  <div className={'w-[13%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '} onClick={()=>{setCurrentTab('move')}}>
+                  <div className={'w-[10%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '} onClick={()=>{setCurrentTab('move')}}>
                       {currentTab=='move'?
                           <div className={'w-full h-full'}>
                               <div className={'hidden account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
@@ -283,7 +283,7 @@ const Home: NextPage = () => {
                           </div>
                       }
                   </div>
-                  <a href={'https://admin-176.gitbook.io/1-million-dao/about-1-million-dao/what-is-a-rebase-function'} className={'w-[13%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '}>
+                  <a href={'https://admin-176.gitbook.io/1-million-dao/about-1-million-dao/what-is-a-rebase-function'} className={'w-[10%] mb-[2vh] h-[3vh] sm:w-full cursor-pointer sm:mb-0 sm:h-[4vw] block relative '}>
                       {currentTab=='docs'?
                           <div className={'w-full h-full'}>
                               <div className={'hidden account-tab-active w-[90%] rounded-full h-full text-center text-[1.6vw] leading-[200%] text-white font-gilroy font-medium absolute sm:inline-block right-0 '}>
@@ -304,7 +304,7 @@ const Home: NextPage = () => {
                           </div>
                       }
                   </a>
-                  <div className={'w-[15%] sm:w-full h-[4vw] flex justify-around relative '} >
+                  <div className={'w-[100%%] sm:w-full h-[4vw] flex justify-around relative '} >
                       <a target={'_blank'} rel={'noreferrer'} href={'https://twitter.com/1MillionDAO'}><div className={'w-[7vh] h-full sm:w-[3vw] cursor-pointer  relative inline-block sm:h-[3vw]'}>
                           <Image src={'/images/account/twitter.svg'} layout={'fill'}></Image>
                       </div></a>
